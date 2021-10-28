@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Button_seni : MonoBehaviour
+public class Button_seni_Tanaka : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
