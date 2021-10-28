@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Seni : MonoBehaviour
+public class GoMinigame_Onodera : MonoBehaviour
 {
     public void OnClickStartButton()
     {

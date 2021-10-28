@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Text : MonoBehaviour
+public class Text_Onodera : MonoBehaviour
 {
     // Start is called before the first frame update
    // public Text text;

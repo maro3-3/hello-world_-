@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoSekai : MonoBehaviour
+public class GoSekai_Onodera : MonoBehaviour
 {
     public void OnClickStartButton()
     {
