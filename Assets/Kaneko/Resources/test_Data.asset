@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e14c902242f36841bca3b547f9675f6, type: 3}
+  m_Name: test_Data
+  m_EditorClassIdentifier: 
+  sheets:
+  - name: Sheet1
+    list:
+    - CountryNo: 1
+      AreaNo: 1
+      ManufacturerNo: 1
+    - CountryNo: 1
+      AreaNo: 1
+      ManufacturerNo: 2
+    - CountryNo: 1
+      AreaNo: 1
+      ManufacturerNo: 3
+    - CountryNo: 1
+      AreaNo: 1
+      ManufacturerNo: 4
+    - CountryNo: 1
+      AreaNo: 2
+      ManufacturerNo: 1
+    - CountryNo: 1
+      AreaNo: 2
+      ManufacturerNo: 2
+    - CountryNo: 1
+      AreaNo: 2
+      ManufacturerNo: 3
+    - CountryNo: 2
+      AreaNo: 1
+      ManufacturerNo: 1
+    - CountryNo: 2
+      AreaNo: 1
+      ManufacturerNo: 2
+    - CountryNo: 2
+      AreaNo: 2
+      ManufacturerNo: 1
+    - CountryNo: 2
+      AreaNo: 2
+      ManufacturerNo: 2
