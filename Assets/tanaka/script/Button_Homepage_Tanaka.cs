@@ -4,22 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
-public class Button_seni : MonoBehaviour
+public class Button_Homepage_Tanaka : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+       
     }
+
     public void OnClick()
     {
-        SceneManager.LoadScene("Genchi");
+        SceneManager.LoadScene("homepage");
     }
 }
