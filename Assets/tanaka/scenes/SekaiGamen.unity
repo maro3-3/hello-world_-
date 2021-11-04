@@ -1014,6 +1014,7 @@ GameObject:
   - component: {fileID: 402019829}
   - component: {fileID: 402019828}
   - component: {fileID: 402019827}
+  - component: {fileID: 402019830}
   m_Layer: 5
   m_Name: Fly.m.o
   m_TagString: Untagged
@@ -1084,7 +1085,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 402019828}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 402019830}
+        m_TargetAssemblyTypeName: Button_Seni_Tanaka, Assembly-CSharp
+        m_MethodName: OnClick_flymo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &402019828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1136,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402019825}
   m_CullTransparentMesh: 1
+--- !u!114 &402019830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402019825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071fd948af9c01144b94cf05188c6068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &435011569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,6 +3211,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294458301}
   m_CullTransparentMesh: 1
+--- !u!1 &1394158201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394158202}
+  m_Layer: 0
+  m_Name: TransactionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1394158202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394158201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 972.24347, y: 577.6627, z: 34.670166}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397883003
 GameObject:
   m_ObjectHideFlags: 0
