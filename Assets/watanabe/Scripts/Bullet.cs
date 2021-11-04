@@ -78,7 +78,7 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             GameObject obj = collision.gameObject;
-            Player script = obj.GetComponent<Player>();
+            Player_Watanabe script = obj.GetComponent<Player_Watanabe>();
             script.m_Hp += -1;
 
             Debug.Log("ÉvÉåÉCÉÑÅ[Ç…ñΩíÜ");

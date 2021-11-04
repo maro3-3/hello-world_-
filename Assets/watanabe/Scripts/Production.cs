@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Production : MonoBehaviour
+public class Production : MonoBehaviour // クリックではなくハイライトだけで値を渡す
 {
     public int production; // 仮データ
     public bool Choice;

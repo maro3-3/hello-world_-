@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClientList : MonoBehaviour // Requestlist‚Éq‚ÌRequest‚ğŠi”[‚µA‚Ç‚ê‚©‚ª‰Ÿ‚³‚ê‚½Û‚É‘¼‚Ìƒ{ƒ^ƒ“‚ğ‰Ÿ‚¹‚È‚¢‚æ‚¤‚É‚·‚éB
+public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“–‚·‚éƒAƒCƒeƒ€‚ğƒnƒCƒ‰ƒCƒg•\¦‚·‚é
 {
+
+    public GameObject Productionlist;
+    ProductionList Proscript;
+
     public Request[] Requestlist;
     public bool isSearch;
     public bool isSend; // î•ñ‘—M‚ÌŠm”F
@@ -13,6 +17,9 @@ public class ClientList : MonoBehaviour // Requestlist‚Éq‚ÌRequest‚ğŠi”[‚µA‚Ç‚
     // Start is called before the first frame update
     void Start()
     {
+        Productionlist = GameObject.Find("ProductionList");
+        Proscript = Productionlist.GetComponent<ProductionList>();
+
         isSearch = true;
         isSend = false;
     }
