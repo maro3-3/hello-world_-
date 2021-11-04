@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-public class Button_Genti : MonoBehaviour
+public class Button_Genti_Tanaka : MonoBehaviour
 {
     [SerializeField] GameObject genti;
   //  [SerializeField] int scenenum;

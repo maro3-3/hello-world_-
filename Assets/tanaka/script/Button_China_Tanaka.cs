@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Button_China : MonoBehaviour
+public class Button_China_Tanaka : MonoBehaviour
 {
     [SerializeField] private GameObject map;//地図のサイズ変更のためにオブジェクト取得
 
