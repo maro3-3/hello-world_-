@@ -14,7 +14,7 @@ public class Text_Onodera : MonoBehaviour
     [SerializeField] GameObject PLAYER;
     void Start()
     {
-        PLAYER = GameObject.FindGameObjectWithTag("player");
+        PLAYER = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void OnTriggerStay(Collider other)
