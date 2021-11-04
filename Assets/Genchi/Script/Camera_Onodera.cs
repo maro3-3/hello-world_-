@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Camera_Onodera : MonoBehaviour
 {
     // é©êgÇÃTransform
     [SerializeField] private Transform _self;

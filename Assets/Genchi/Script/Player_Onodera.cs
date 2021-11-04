@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // ƒvƒŒƒCƒ„[
-public class Player : MonoBehaviour
+public class Player_Onodera : MonoBehaviour
 {
 
     [SerializeField] private Vector3 velocity;              // ˆÚ“®•ûŒü
