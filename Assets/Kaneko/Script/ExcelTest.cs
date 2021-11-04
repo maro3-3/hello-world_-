@@ -20,9 +20,6 @@ public class ExcelTest : MonoBehaviour
         Debug.Log(es.sheets[0].list[0].ManufacturerNo);
         Debug.Log(es.sheets[0].list.Count);
 
-        es.sheets[0].list[0].CountryNo = 3;
-        Debug.Log(es.sheets[0].list[0].CountryNo);
-
     }
 
     // Update is called once per frame
