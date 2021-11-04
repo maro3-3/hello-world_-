@@ -32,18 +32,24 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
     public UIManager[] UImanager;
 
+    // クライアントの情報
     public int RequestData;
     public bool RequestSend;
-
-    public int ProductionData;
-    public bool ProductionSend;
-
+    // 取引額の情報
     public int AmountData;
     public bool AmountSend;
+
+    // 生産者の情報
+    public int ProductionData;
+    public string ProductionName;
+    public bool ProductionSend;
 
     public GameObject Game;
     public GameObject Player;
     public GameObject Enemy;
+
+    public bool isWin;
+    public bool isLose;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +62,9 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         UImanager[0].UICreate(UIimage[(int)UILIST.CLIENT]);
         UImanager[1].UICreate(UIimage[(int)UILIST.PRODUCTION]);
         Step = MINIGAMESTEP.ONE;
+
+        isWin = false;
+        isLose = false;
     }
 
     // Update is called once per frame
@@ -96,7 +105,15 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
                 break;
         }
 
-
+        if (Input.GetKeyDown("space")) // スペース押したら敗北
+        {
+            UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
+            UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
+            UImanager[2].UICreate(UIimage[(int)UILIST.LOSE]);
+            isLose = true;
+            Step = MINIGAMESTEP.FOUR;
+            Game.SetActive(false);
+        }
     }
 
     void one()
@@ -129,6 +146,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.LOSE]);
+            isLose = true;
             Step = MINIGAMESTEP.FOUR;
             Game.SetActive(false);
         }
@@ -137,6 +155,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.WIN]);
+            isWin = false;
             Step = MINIGAMESTEP.FIVE;
             Game.SetActive(false);
         }

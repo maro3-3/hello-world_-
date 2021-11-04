@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52fbc706069f13d489fc9302f98a1917, type: 3}
+  m_Name: List_manufacturer
+  m_EditorClassIdentifier: 
+  sheets:
+  - name: Sheet1
+    list:
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ManufacturerNo: 1
+      string_ManufacturerName: "\u30BF\u30AB\u30CF\u30B7"
+      int_Products: 1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ManufacturerNo: 2
+      string_ManufacturerName: "\u30AA\u30AA\u30BF"
+      int_Products: 1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ManufacturerNo: 3
+      string_ManufacturerName: "\u30AB\u30CD\u30B3"
+      int_Products: 3
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ManufacturerNo: 1
+      string_ManufacturerName: "\u6CBC\u7530"
+      int_Products: 4
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ManufacturerNo: 1
+      string_ManufacturerName: "\u30AA\u30B0\u30E9"
+      int_Products: 2
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ManufacturerNo: 2
+      string_ManufacturerName: "\u30B2\u30F3\u30AD"
+      int_Products: 5
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ManufacturerNo: 1
+      string_ManufacturerName: "\u30BF\u30CA\u30AB"
+      int_Products: 4
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ManufacturerNo: 2
+      string_ManufacturerName: "\u4E2D\u5C71"
+      int_Products: 3
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ManufacturerNo: 1
+      string_ManufacturerName: "\u79CB\u5C71T"
+      int_Products: 2
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ManufacturerNo: 1
+      string_ManufacturerName: "\u30C6\u30A4"
+      int_Products: 1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ManufacturerNo: 2
+      string_ManufacturerName: "\u7551\u4E95"
+      int_Products: 5
