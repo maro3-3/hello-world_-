@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 2144535}
   - component: {fileID: 2144538}
   m_Layer: 5
-  m_Name: "\u4E2D\u56FD\u30DC\u30BF\u30F3"
+  m_Name: Chaina_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 33163240}
   - component: {fileID: 33163243}
   m_Layer: 5
-  m_Name: "\u5317\u4EAC\u30DC\u30BF\u30F3"
+  m_Name: Beijing_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 226576655}
   - component: {fileID: 226576654}
   m_Layer: 5
-  m_Name: "\u73FE\u5730\u3078\u884C\u304F_\u5317\u4EAC"
+  m_Name: Beijing_Button_Genchi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2160,7 +2160,7 @@ GameObject:
   - component: {fileID: 1047753556}
   - component: {fileID: 1047753559}
   m_Layer: 5
-  m_Name: "\u73FE\u5730\u3078\u884C\u304F_\u8CB4\u5DDE"
+  m_Name: Guizhou_Button_Genchi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2731,7 +2731,7 @@ GameObject:
   - component: {fileID: 1223979976}
   - component: {fileID: 1223979975}
   m_Layer: 5
-  m_Name: "\u73FE\u5730\u3078\u884C\u304F_\u4E0A\u6D77"
+  m_Name: Shanghai_Button_Genchi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3334,7 +3334,7 @@ GameObject:
   - component: {fileID: 1512993553}
   - component: {fileID: 1512993556}
   m_Layer: 5
-  m_Name: "\u4E0A\u6D77\u30DC\u30BF\u30F3"
+  m_Name: Shanghai_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3479,7 +3479,7 @@ GameObject:
   - component: {fileID: 1523849976}
   - component: {fileID: 1523849975}
   m_Layer: 5
-  m_Name: "\u4E16\u754C\u5730\u56F3"
+  m_Name: WorldMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3553,6 +3553,7 @@ GameObject:
   - component: {fileID: 1556361785}
   - component: {fileID: 1556361787}
   - component: {fileID: 1556361786}
+  - component: {fileID: 1556361788}
   m_Layer: 5
   m_Name: "\u6700\u5927\u30C9\u30ED\u30FC\u30F3\u6570"
   m_TagString: Untagged
@@ -3623,6 +3624,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556361784}
   m_CullTransparentMesh: 1
+--- !u!114 &1556361788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556361784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc3a28c9e92a564db9aedfe7f929217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1600039094
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,6 +4569,7 @@ GameObject:
   - component: {fileID: 2008470987}
   - component: {fileID: 2008470989}
   - component: {fileID: 2008470988}
+  - component: {fileID: 2008470990}
   m_Layer: 5
   m_Name: "\u6D3E\u9063\u4E2D\u306E\u30C9\u30ED\u30FC\u30F3"
   m_TagString: Untagged
@@ -4624,6 +4638,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008470986}
   m_CullTransparentMesh: 1
+--- !u!114 &2008470990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008470986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9b6a3141b670e4180d9897868c3f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2040506096
 GameObject:
   m_ObjectHideFlags: 0
@@ -4721,7 +4747,7 @@ GameObject:
   - component: {fileID: 2065202136}
   - component: {fileID: 2065202139}
   m_Layer: 5
-  m_Name: "\u8CB4\u5DDE\u30DC\u30BF\u30F3"
+  m_Name: Guizhou_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
