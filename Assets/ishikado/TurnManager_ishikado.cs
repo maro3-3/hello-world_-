@@ -5,13 +5,13 @@ using UnityEngine;
 public class TurnManager_ishikado : MonoBehaviour
 {
     private int TurnNum;
-    Turn turn = new Turn();
+    //public DataBase turn;
 
     // Start is called before the first frame update
     void Start()
     {
         //ゲッター
-        TurnNum = turn.GetSetTurnNum;
+      //  TurnNum = turn.GetSetTurnNum;
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class TurnManager_ishikado : MonoBehaviour
         TurnNum++;
 
         //セッター
-        turn.GetSetTurnNum = TurnNum;
+      //  turn.GetSetTurnNum = TurnNum;
 
         //ターン開始時
     }
