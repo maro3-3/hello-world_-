@@ -118,7 +118,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
     void one()
     {
-        if (RequestSend)
+        if (ProductionSend)
         {
             UImanager[0].UIDestroy();
             UImanager[0].UICreate(UIimage[(int)UILIST.PAYMENT]);
@@ -128,9 +128,9 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
     void two()
     {
-        if((ProductionSend)&&(AmountSend))
+        if(AmountSend)
         {
-            for (int i = 0; i < UImanager.Length; i++)
+            for(int i = 0;i< UImanager.Length; i++)
             {
                 UImanager[i].UIDestroy();
                 Step = MINIGAMESTEP.THREE;
