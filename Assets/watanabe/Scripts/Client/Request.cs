@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Request : MonoBehaviour// ƒf[ƒ^ƒx[ƒX‚©‚ç—v‹•¨‚ğó‚¯æ‚èAŠ‚·‚é
 {
+    private Animator animator;
     public int request;//‰¼‚ÅintŒ^
     public bool Highlight; // ƒnƒCƒ‰ƒCƒg‚·‚éê‡true
     public bool Choice;
@@ -12,6 +13,7 @@ public class Request : MonoBehaviour// ƒf[ƒ^ƒx[ƒX‚©‚ç—v‹•¨‚ğó‚¯æ‚èAŠ‚·‚
     // Start is called before the first frame update
     void Start()
     {
+        animator = this.GetComponent<Animator>();
         Highlight = false;
         Choice = false;
     }
@@ -19,11 +21,13 @@ public class Request : MonoBehaviour// ƒf[ƒ^ƒx[ƒX‚©‚ç—v‹•¨‚ğó‚¯æ‚èAŠ‚·‚
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ClickRequest()
     {
+        Highlight = true;
+        animator.SetBool("Highlight", Highlight);
         Choice = true;
     }
 }
