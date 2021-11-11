@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player_Watanabe : MonoBehaviour
 {
     public Transform m_Transform;
     public Bullet[] m_BulletPrefab; // ’e‚ÌƒvƒŒƒnƒu

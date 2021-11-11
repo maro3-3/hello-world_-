@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Image[] Image;
     public Image UI;
     public GameObject canvas;
 
@@ -27,6 +26,9 @@ public class UIManager : MonoBehaviour
     {
         // UI‚ğ¶¬‚·‚é
         UI = Instantiate(ui, this.transform.localPosition, this.transform.localRotation);
+        // –¼‘O‚É(Clone)‚ª•t‚©‚È‚¢‚æ‚¤‚É‚·‚é
+        UI.name = ui.name;
+        // UI‚ğCanvas‚Ìq‚É‚·‚é
         UI.transform.SetParent(this.canvas.transform, false);
         //UI.Init();
 
@@ -35,8 +37,12 @@ public class UIManager : MonoBehaviour
 
     public void UIDestroy()
     {
-        Destroy(UI.gameObject);
+        if (!UI)
+        {
+            return;
+        }
 
+        Destroy(UI.gameObject);
         Debug.Log("UIíœ");
     }
 }
