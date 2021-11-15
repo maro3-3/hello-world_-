@@ -56,7 +56,12 @@ public class List_Client_importer : AssetPostprocessor {
 					cell = row.GetCell(3); p.string_ClientName = (cell == null ? "" : cell.StringCellValue);
 					cell = row.GetCell(4); p.int_ClientLv = (int)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(5); p.int_ClientType = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(6); p.int_Transactions = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(6); p.int_Transaction_1 = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(7); p.int_Transaction_2 = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(8); p.int_Transaction_3 = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(9); p.int_Transaction_4 = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(10); p.int_Transaction_5 = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(11); p.int_Transaction_6 = (int)(cell == null ? 0 : cell.NumericCellValue);
 						s.list.Add (p);
 					}
 					data.sheets.Add(s);

@@ -21,74 +21,129 @@ MonoBehaviour:
       string_ClientName: "\u30BF\u30AB\u30CF\u30B7"
       int_ClientLv: 1
       int_ClientType: 1
-      int_Transactions: 1
+      int_Transaction_1: 1
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 1
       int_AreaNo: 1
       int_ClientNo: 2
       string_ClientName: "\u30AA\u30AA\u30BF"
       int_ClientLv: 1
       int_ClientType: 2
-      int_Transactions: 2
+      int_Transaction_1: 2
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 1
       int_AreaNo: 1
       int_ClientNo: 3
       string_ClientName: "\u30AB\u30CD\u30B3"
       int_ClientLv: 3
       int_ClientType: 4
-      int_Transactions: 3
+      int_Transaction_1: 3
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 1
       int_AreaNo: 2
       int_ClientNo: 1
       string_ClientName: "\u6CBC\u7530"
       int_ClientLv: 4
       int_ClientType: 5
-      int_Transactions: 1
+      int_Transaction_1: 1
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 2
       int_AreaNo: 1
       int_ClientNo: 1
       string_ClientName: "\u30AA\u30B0\u30E9"
       int_ClientLv: 2
       int_ClientType: 3
-      int_Transactions: 5
+      int_Transaction_1: 5
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 2
       int_AreaNo: 1
       int_ClientNo: 2
       string_ClientName: "\u30B2\u30F3\u30AD"
       int_ClientLv: 5
       int_ClientType: 2
-      int_Transactions: 3
+      int_Transaction_1: 3
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 2
       int_AreaNo: 2
       int_ClientNo: 1
       string_ClientName: "\u30BF\u30CA\u30AB"
       int_ClientLv: 4
       int_ClientType: 1
-      int_Transactions: 4
+      int_Transaction_1: 4
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 2
       int_AreaNo: 2
       int_ClientNo: 2
       string_ClientName: "\u4E2D\u5C71"
       int_ClientLv: 3
       int_ClientType: 3
-      int_Transactions: 5
+      int_Transaction_1: 5
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 3
       int_AreaNo: 1
       int_ClientNo: 1
       string_ClientName: "\u79CB\u5C71T"
       int_ClientLv: 2
       int_ClientType: 4
-      int_Transactions: 3
+      int_Transaction_1: 3
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 3
       int_AreaNo: 2
       int_ClientNo: 1
       string_ClientName: "\u30C6\u30A4"
       int_ClientLv: 1
       int_ClientType: 2
-      int_Transactions: 2
+      int_Transaction_1: 2
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1
     - int_CountryNo: 3
       int_AreaNo: 2
       int_ClientNo: 2
       string_ClientName: "\u7551\u4E95"
       int_ClientLv: 5
       int_ClientType: 1
-      int_Transactions: 1
+      int_Transaction_1: 1
+      int_Transaction_2: 2
+      int_Transaction_3: 5
+      int_Transaction_4: -1
+      int_Transaction_5: -1
+      int_Transaction_6: -1

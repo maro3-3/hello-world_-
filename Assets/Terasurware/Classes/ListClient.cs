@@ -23,7 +23,12 @@ public class ListClient : ScriptableObject
 		public string string_ClientName;
 		public int int_ClientLv;
 		public int int_ClientType;
-		public int int_Transactions;
+		public int int_Transaction_1;
+		public int int_Transaction_2;
+		public int int_Transaction_3;
+		public int int_Transaction_4;
+		public int int_Transaction_5;
+		public int int_Transaction_6;
 	}
 }
 
