@@ -20,11 +20,12 @@ public class Transaction_Tanaka : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //ƒ^[ƒ“I—¹‚ÉŒÄ‚Î‚ê‚é
+        Transaction();
     }
 
-    void Transaction()
+    void Transaction()//æˆø
     {
-
+        profit = sales - laborforce;//”„‚èã‚°-˜J“­—Í—˜‰v
     }
 }
