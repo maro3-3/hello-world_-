@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//最大ドローン数用のスクリプト
 public class MaxDrone_Tanaka : MonoBehaviour
 {
   //  public DataBase drone;

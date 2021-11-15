@@ -3,47 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-
-// テストクラス
 public class DataBase : ScriptableObject
 {
-    //public int _count = 10;
-    //public void SetCount(int count) { _count = count; }     // セット
-    //public int GetCount() { return _count; }                       // ゲット
 
     // 失業者 //
+    public int UnemployedNum;       // 登録した失業者数
+    public int EmploymentNum;       // 雇用数
 
-    public int _UnemployedNum;       // 登録した失業者数
-    public int _EmploymentNum;       // 雇用数
-
-    public void SetUnemployedNum(int unemployedNum) { _UnemployedNum = unemployedNum; }
-    public int GetUnemployedNum() { return _UnemployedNum; }
-    public void SetEmploymentNum(int employmentNum) { _EmploymentNum = employmentNum; }
-    public int GetEmploymentNum() { return _EmploymentNum; }
 
     // ドローン //
+    public int PossessionDroneNum;         // 手持ちドローン数
+    public int TempingDroneNum;            // 派遣中ドローン数
+    public int ExtensionStage;             // 機能拡張段階
 
-    public int _PossessionDroneNum;         // 手持ちドローン数
-    public int _TempingDroneNum;            // 派遣中ドローン数
-    public int _ExtensionStage;             // 機能拡張段階
-
-    public void SetPossessionDroneNum(int possessionDroneNum) { _PossessionDroneNum = possessionDroneNum; }
-    public int GetPossessionDroneNum() { return _PossessionDroneNum; }
-    public void SetTempingDroneNum(int tempingDroneNum) { _TempingDroneNum = tempingDroneNum; }
-    public int GetTempingDroneNum() { return _TempingDroneNum; }
-    public void SetExtensionStage(int extensionStage) { _ExtensionStage = extensionStage; }
-    public int GetExtensionStage() { return _ExtensionStage; }
 
     // ターン //
+    public int TurnNum;       // ターン数
 
-    public int _TurnNum;       // ターン数
-
-    public void SetTurnNum(int turnNum) { _TurnNum = turnNum; }
-    public int GetTurnNum() { return _TurnNum; }
 
     // ミッション //
-
-    private int _MissionState;       // ミッション段階
+    public int MissionState;       // ミッション段階
     public enum MissionRewards      // ミッション報酬
     {
         PutinChoice,    // 選択肢に入れる
@@ -51,8 +30,6 @@ public class DataBase : ScriptableObject
         Unopened        // 未開放
     }
 
-    public void SetMissionState(int missionState) { _MissionState = missionState; }
-    public int GetMissionState() { return _MissionState; }
 
     // 国 //
     public struct Country
@@ -65,7 +42,7 @@ public class DataBase : ScriptableObject
         public int CumulativeNumber;    // クライアント累積要求数
 
         // 初期化
-        public void SetInitCountry(int countryNo, int areaNo, int UnemuloyedNum , int areaLv, int cumulativeNumber)
+        public void InitCountry(int countryNo, int areaNo, int UnemuloyedNum , int areaLv, int cumulativeNumber)
         {
             CountryNo = countryNo;
             AreaNo = areaNo;
@@ -96,7 +73,7 @@ public class DataBase : ScriptableObject
         public int Payment;                 // 支払い
 
         // 初期化
-        public void SetInitManufacturer(int countryNo, int areaNo, int manuNo, string manuName, int products,
+        public void InitManufacturer(int countryNo, int areaNo, int manuNo, string manuName, int products,
             int totalassets, int amountofSales, int laborForce, int numberofEmployees, 
             int businessPartnerClient,int transactionObject, int requestNum, int payment)
         {
@@ -131,11 +108,45 @@ public class DataBase : ScriptableObject
         public int[] Transactions;         // 取引物たち（複数　ＭＡＸ６個 ）
 
         public int Transaction;             //
-        public int TransactionStatus;       
-        public string ManufacturerName;     
+        public int TransactionStatus;
+        public string ManufacturerName;
         public int Performance;             // 業績
-    }
+
+
+        // 初期化
+        public void InitClient(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
+                               int clientLv, int clientType, int transaction,
+                               int transactionStatus, string manufacturerName, int performance)
+        {
+            ClientCountryNo = clientCountryNo;
+            ClientAreaNo = clientAreaNo;
+            ClientNo = clientNo;
+            ClientName = clientName;
+            ClientLv = clientLv;
+            ClientType = clientType;
+            Transaction = transaction;
+            TransactionStatus = transactionStatus;
+            ManufacturerName = manufacturerName;
+            Performance = performance;
+        }
+        public void SetTransactions(int t1, int t2, int t3, int t4, int t5, int t6)
+        {
+            Transactions = new int[6];
+            Transactions[0] = t1;
+            Transactions[1] = t2;
+            Transactions[2] = t3;
+            Transactions[3] = t4;
+            Transactions[4] = t5;
+            Transactions[5] = t6;
+        }
+    };
+
+    public Client[] clients = new Client[11];
+
 
     // 取引物をenumで設定
-}
+    enum a
+    {
 
+    }
+}
