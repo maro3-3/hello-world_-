@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ClientList : MonoBehaviour // Productionlistを取得して、生産者に該当するアイテムをハイライト表示する
 {
 
-    public GameObject Productionlist;
+    [SerializeField] private GameObject Productionlist;
     ProductionList Proscript;
 
     public Request[] Requestlist;
