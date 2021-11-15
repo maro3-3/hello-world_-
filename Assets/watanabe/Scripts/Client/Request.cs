@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class Request : MonoBehaviour// ƒf[ƒ^ƒx[ƒX‚©‚ç—v‹•¨‚ğó‚¯æ‚èAŠ‚·‚é
 {
     private Animator animator;
-    public int request;//‰¼‚ÅintŒ^
+    public int request;//—v‹•¨ƒiƒ“ƒo[A‰¼‚ÅintŒ^
     public bool Highlight; // ƒnƒCƒ‰ƒCƒg‚·‚éê‡true
     public bool Choice;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = this.GetComponent<Animator>();
         Highlight = false;
         Choice = false;
     }
@@ -27,7 +26,6 @@ public class Request : MonoBehaviour// ƒf[ƒ^ƒx[ƒX‚©‚ç—v‹•¨‚ğó‚¯æ‚èAŠ‚·‚
     public void ClickRequest()
     {
         Highlight = true;
-        animator.SetBool("Highlight", Highlight);
         Choice = true;
     }
 }
