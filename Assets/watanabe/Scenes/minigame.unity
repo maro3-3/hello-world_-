@@ -1279,6 +1279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41eaaa613301d284697336ef3f38549c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
   Step: 0
   UIimage:
   - {fileID: 7237305432621484862, guid: 42f904c7182f2c349be29c9d5174475e, type: 3}

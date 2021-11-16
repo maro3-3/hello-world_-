@@ -6,10 +6,10 @@ using System.IO;
 
 public class InitManager : MonoBehaviour
 {
-    DataBase database = null;
-    ListManufacture ManuList;
-    ListCountry CountryList;
-    ListClient ClientList;
+    [SerializeField] DataBase database = null;
+    [SerializeField] ListManufacture ManuList;
+    [SerializeField] ListCountry CountryList;
+    [SerializeField] ListClient ClientList;
 
     // Start is called before the first frame update
     void Start()

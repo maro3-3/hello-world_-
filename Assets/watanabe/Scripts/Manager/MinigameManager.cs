@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.IO;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 {
+    [SerializeField] DataBase database;
+    
+
     public enum MINIGAMESTEP
     {
         ONE,
@@ -54,7 +58,9 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
     // Start is called before the first frame update
     void Start()
     {
-        for(int i=0; i < UImanager.Length;i++)
+        database = Resources.Load<DataBase>("DataBase");
+
+        for (int i=0; i < UImanager.Length;i++)
         {
             UImanager[i] = UImanager[i].GetComponent<UIManager>();
 
@@ -146,7 +152,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.LOSE]);
-            isLose = true;
+            database.Lose = true;
             Step = MINIGAMESTEP.FOUR;
             Game.SetActive(false);
         }
@@ -155,7 +161,9 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.WIN]);
-            isWin = false;
+
+            database.Win = true;
+            database.Amount = AmountData;
             Step = MINIGAMESTEP.FIVE;
             Game.SetActive(false);
         }
@@ -163,6 +171,10 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
     void four() // プレイヤー敗北
     {
+        if(database.Lose)
+        {
+            Debug.Log("敗北");
+        }
         if (Input.GetKeyDown("space")) // スペース押したら現地画面へ遷移
         {
             SceneManager.LoadScene("Genchi");

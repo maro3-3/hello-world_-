@@ -30,6 +30,10 @@ public class DataBase : ScriptableObject
         Unopened        // 未開放
     }
 
+    // ミニゲーム //
+    public bool Win;
+    public bool Lose;
+    public int Amount; // クライアントの取引額、Clientに入れるべき？
 
     // 国 //
     public struct Country

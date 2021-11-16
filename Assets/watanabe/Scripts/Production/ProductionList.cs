@@ -27,7 +27,7 @@ public class ProductionList : MonoBehaviour
 
             for (int i = 0; i < Productionlist.Length; i++)
             {
-                if (Productionlist[i].Choice)
+                if ((Productionlist[i].Choice)&&(Productionlist[i]))
                 {
                     Debug.Log("¶ŽYŽÒ‚ðŒŸo");
                     debug = Productionlist[i].production;
