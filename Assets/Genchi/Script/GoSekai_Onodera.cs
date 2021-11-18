@@ -7,6 +7,6 @@ public class GoSekai_Onodera : MonoBehaviour
 {
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("karisekai");
+        SceneManager.LoadScene("SekaiGamen");
     }
 }

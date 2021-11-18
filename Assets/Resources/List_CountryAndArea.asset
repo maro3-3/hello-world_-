@@ -15,36 +15,87 @@ MonoBehaviour:
   sheets:
   - name: Sheet1
     list:
-    - int_CountryNo: 1
+    - int_CountryState: 0
+      int_CountryNo: 1
+      string_CountryName: "\u4E2D\u56FD"
       int_AreaNo: 1
-      int_UnemployedNum: 20
-    - int_CountryNo: 1
+      string_AreaName: "\u5317\u4EAC"
+      int_UnemployedNum: 9
+    - int_CountryState: 0
+      int_CountryNo: 1
+      string_CountryName: "\u4E2D\u56FD"
       int_AreaNo: 2
-      int_UnemployedNum: 20
-    - int_CountryNo: 1
+      string_AreaName: "\u4E0A\u6D77"
+      int_UnemployedNum: 25
+    - int_CountryState: 0
+      int_CountryNo: 1
+      string_CountryName: "\u4E2D\u56FD"
       int_AreaNo: 3
-      int_UnemployedNum: 20
-    - int_CountryNo: 1
-      int_AreaNo: 4
-      int_UnemployedNum: 20
-    - int_CountryNo: 2
+      string_AreaName: "\u56DB\u5DDD"
+      int_UnemployedNum: 90
+    - int_CountryState: 1
+      int_CountryNo: 2
+      string_CountryName: "\u30A2\u30E1\u30EA\u30AB"
       int_AreaNo: 1
+      string_AreaName: "\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF"
       int_UnemployedNum: 20
-    - int_CountryNo: 2
+    - int_CountryState: 1
+      int_CountryNo: 2
+      string_CountryName: "\u30A2\u30E1\u30EA\u30AB"
       int_AreaNo: 2
-      int_UnemployedNum: 20
-    - int_CountryNo: 2
+      string_AreaName: "\u30BB\u30F3\u30C8\u30EB\u30A4\u30B9"
+      int_UnemployedNum: 50
+    - int_CountryState: 1
+      int_CountryNo: 2
+      string_CountryName: "\u30A2\u30E1\u30EA\u30AB"
       int_AreaNo: 3
-      int_UnemployedNum: 20
-    - int_CountryNo: 2
-      int_AreaNo: 4
-      int_UnemployedNum: 20
-    - int_CountryNo: 3
+      string_AreaName: "\u30A2\u30C8\u30E9\u30F3\u30BF"
+      int_UnemployedNum: 60
+    - int_CountryState: 0
+      int_CountryNo: 3
+      string_CountryName: "\u30ED\u30B7\u30A2"
       int_AreaNo: 1
-      int_UnemployedNum: 20
-    - int_CountryNo: 3
+      string_AreaName: "\u30E2\u30B9\u30AF\u30EF"
+      int_UnemployedNum: 80
+    - int_CountryState: 0
+      int_CountryNo: 3
+      string_CountryName: "\u30ED\u30B7\u30A2"
       int_AreaNo: 2
-      int_UnemployedNum: 20
-    - int_CountryNo: 3
+      string_AreaName: "\u30A6\u30D5\u30A1"
+      int_UnemployedNum: 140
+    - int_CountryState: 1
+      int_CountryNo: 4
+      string_CountryName: "\u30AA\u30FC\u30B9\u30C8\u30E9\u30EA\u30A2"
+      int_AreaNo: 1
+      string_AreaName: "\u30AD\u30E3\u30F3\u30D9\u30E9"
+      int_UnemployedNum: 60
+    - int_CountryState: 1
+      int_CountryNo: 4
+      string_CountryName: "\u30AA\u30FC\u30B9\u30C8\u30E9\u30EA\u30A2"
+      int_AreaNo: 2
+      string_AreaName: "\u30D1\u30FC\u30B9"
+      int_UnemployedNum: 40
+    - int_CountryState: 1
+      int_CountryNo: 4
+      string_CountryName: "\u30AA\u30FC\u30B9\u30C8\u30E9\u30EA\u30A2"
       int_AreaNo: 3
-      int_UnemployedNum: 20
+      string_AreaName: "\u30E1\u30EB\u30DC\u30EB\u30F3"
+      int_UnemployedNum: 50
+    - int_CountryState: 2
+      int_CountryNo: 5
+      string_CountryName: "\u5357\u30A2\u30D5\u30EA\u30AB"
+      int_AreaNo: 1
+      string_AreaName: "\u30D7\u30EC\u30C8\u30EA\u30A2"
+      int_UnemployedNum: 80
+    - int_CountryState: 2
+      int_CountryNo: 5
+      string_CountryName: "\u5357\u30A2\u30D5\u30EA\u30AB"
+      int_AreaNo: 2
+      string_AreaName: "\u30D6\u30EB\u30FC\u30E0\u30D5\u30A9\u30F3\u30C6\u30A4\u30F3"
+      int_UnemployedNum: 60
+    - int_CountryState: 2
+      int_CountryNo: 5
+      string_CountryName: "\u5357\u30A2\u30D5\u30EA\u30AB"
+      int_AreaNo: 3
+      string_AreaName: "\u30B1\u30FC\u30D7\u30BF\u30A6\u30F3"
+      int_UnemployedNum: 80

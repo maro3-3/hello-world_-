@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+//現地に行くボタン表示用スクリプト
 public class Button_Genti_Tanaka : MonoBehaviour
 {
     [SerializeField] GameObject genti;

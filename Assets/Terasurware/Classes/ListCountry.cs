@@ -17,8 +17,11 @@ public class ListCountry : ScriptableObject
 	public class Param
 	{
 		
+		public int int_CountryState;
 		public int int_CountryNo;
+		public string string_CountryName;
 		public int int_AreaNo;
+		public string string_AreaName;
 		public int int_UnemployedNum;
 	}
 }
