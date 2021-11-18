@@ -2986,7 +2986,7 @@ GameObject:
   - component: {fileID: 309791878}
   - component: {fileID: 309791877}
   m_Layer: 5
-  m_Name: Image
+  m_Name: image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5817,7 +5817,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &731817321
 GameObject:
@@ -6278,7 +6278,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &773082289
 GameObject:
@@ -8287,7 +8287,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &973439595
 GameObject:
@@ -8928,7 +8928,7 @@ GameObject:
   - component: {fileID: 1050689047}
   - component: {fileID: 1050689046}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TempingDroneNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8941,12 +8941,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050689044}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2073222149}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9868,6 +9868,7 @@ GameObject:
   - component: {fileID: 1150636438}
   - component: {fileID: 1150636437}
   - component: {fileID: 1150636436}
+  - component: {fileID: 1150636440}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9965,13 +9966,30 @@ RectTransform:
   - {fileID: 1232161667}
   - {fileID: 1797590782}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1150636440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150636435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7323938817f64b803d90301093c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnemployedNumT: {fileID: 1528754807}
+  EmploymentNumT: {fileID: 1248962471}
+  PossessionDroneNumT: {fileID: 1221682778}
+  TempingDroneNumT: {fileID: 1050689046}
+  TurnNumT: {fileID: 2070039358}
 --- !u!1 &1159666263
 GameObject:
   m_ObjectHideFlags: 0
@@ -10604,7 +10622,7 @@ GameObject:
   - component: {fileID: 1221682779}
   - component: {fileID: 1221682778}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PossessionDroneNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10622,7 +10640,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2073222149}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10919,7 +10937,7 @@ GameObject:
   - component: {fileID: 1248962472}
   - component: {fileID: 1248962471}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: EmploymentNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10937,7 +10955,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1701091504}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11265,7 +11283,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1278381625
 GameObject:
@@ -11910,7 +11928,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1345064781
 GameObject:
@@ -13269,7 +13287,7 @@ GameObject:
   - component: {fileID: 1476319568}
   - component: {fileID: 1476319567}
   m_Layer: 5
-  m_Name: Text
+  m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13662,7 +13680,7 @@ GameObject:
   - component: {fileID: 1528754808}
   - component: {fileID: 1528754807}
   m_Layer: 5
-  m_Name: Text (3)
+  m_Name: UnemployedNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13680,7 +13698,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1701091504}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15014,8 +15032,8 @@ RectTransform:
   - {fileID: 249052306}
   - {fileID: 1968720156}
   - {fileID: 1691875900}
-  - {fileID: 1248962470}
   - {fileID: 1528754806}
+  - {fileID: 1248962470}
   - {fileID: 309791876}
   m_Father: {fileID: 1150636439}
   m_RootOrder: 1
@@ -18118,7 +18136,7 @@ GameObject:
   - component: {fileID: 2060148799}
   - component: {fileID: 2060148798}
   m_Layer: 5
-  m_Name: koteitext
+  m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18451,7 +18469,7 @@ GameObject:
   - component: {fileID: 2070039359}
   - component: {fileID: 2070039358}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TurnNumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18627,8 +18645,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2068669795}
-  - {fileID: 1050689045}
   - {fileID: 1221682777}
+  - {fileID: 1050689045}
   - {fileID: 2122004751}
   - {fileID: 52316980}
   - {fileID: 662723055}

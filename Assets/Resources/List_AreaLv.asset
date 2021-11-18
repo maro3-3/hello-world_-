@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160e7f1e1f175d94d83e578f7e021764, type: 3}
+  m_Name: List_AreaLv
+  m_EditorClassIdentifier: 
+  sheets:
+  - name: Sheet1
+    list:
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_AreaLv2: 2000
+      int_AreaLv3: 5000
+      int_AreaLv4: 8000
+      int_AreaLv5: 10000
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_AreaLv2: 2500
+      int_AreaLv3: 6000
+      int_AreaLv4: 10000
+      int_AreaLv5: 12000
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_AreaLv2: 3000
+      int_AreaLv3: 7000
+      int_AreaLv4: 12000
+      int_AreaLv5: 15000
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_AreaLv2: 2500
+      int_AreaLv3: 5000
+      int_AreaLv4: 7000
+      int_AreaLv5: 10000
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_AreaLv2: 3000
+      int_AreaLv3: 6000
+      int_AreaLv4: 9000
+      int_AreaLv5: 11000
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_AreaLv2: 2500
+      int_AreaLv3: 5000
+      int_AreaLv4: 7500
+      int_AreaLv5: 11500
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_AreaLv2: 3000
+      int_AreaLv3: 7000
+      int_AreaLv4: 9000
+      int_AreaLv5: 12000
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_AreaLv2: 3500
+      int_AreaLv3: 6500
+      int_AreaLv4: 9500
+      int_AreaLv5: 13000
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_AreaLv2: 3000
+      int_AreaLv3: 5000
+      int_AreaLv4: 8500
+      int_AreaLv5: 10500
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_AreaLv2: 2500
+      int_AreaLv3: 4500
+      int_AreaLv4: 9000
+      int_AreaLv5: 11000
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_AreaLv2: 3000
+      int_AreaLv3: 5000
+      int_AreaLv4: 7000
+      int_AreaLv5: 9500
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_AreaLv2: 3000
+      int_AreaLv3: 4000
+      int_AreaLv4: 6000
+      int_AreaLv5: 9000
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_AreaLv2: 3500
+      int_AreaLv3: 5000
+      int_AreaLv4: 8000
+      int_AreaLv5: 10000
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_AreaLv2: 4000
+      int_AreaLv3: 6000
+      int_AreaLv4: 8500
+      int_AreaLv5: 11000
