@@ -4,17 +4,17 @@ using UnityEngine.UI;
 //派遣中ドローンのテキスト用のスクリプト
 public class DispatchedDrone_Tanaka : MonoBehaviour
 {
-   
+    DataBase database = null;
+
     // Start is called before the first frame update
     void Start()
     {
+        database = Resources.Load<DataBase>("DataBase");
+
        
-
-        //drone.SetTempingDroneNum = 2;
-
-        //int droneNum = drone.GetTempingDroneNum;
-        //string droneNumS = droneNum.ToString();
-        //gameObject.GetComponent<Text>().text = droneNumS;
+        int droneNum = database.TempingDroneNum;
+        string droneNumS = droneNum.ToString();
+        gameObject.GetComponent<Text>().text = droneNumS;
     }
 
     // Update is called once per frame

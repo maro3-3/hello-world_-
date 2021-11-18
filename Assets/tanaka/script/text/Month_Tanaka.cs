@@ -5,9 +5,11 @@ using UnityEngine.UI;
 //現在の月用のスクリプト
 public class Month_Tanaka : MonoBehaviour
 {
+    DataBase database = null;
     // Start is called before the first frame update
     void Start()
     {
+        database = Resources.Load<DataBase>("DataBase");
         monthCount();//現在の月計算
     }
 
@@ -20,7 +22,7 @@ public class Month_Tanaka : MonoBehaviour
     void monthCount()//現在の月計算
     {
         //ターン取得
-        int turn = 7;//仮
+        int turn = database.TurnNum;//仮
 
         int count = 0;//カウント用
 

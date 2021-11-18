@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: DataBase
   m_EditorClassIdentifier: Assembly-CSharp::DataBase
-  _UnemployedNum: 0
-  _EmploymentNum: 0
-  _PossessionDroneNum: 0
-  _TempingDroneNum: 0
-  _ExtensionStage: 0
-  _TurnNum: 0
+  UnemployedNum: 0
+  EmploymentNum: 0
+  PossessionDroneNum: 0
+  TempingDroneNum: 0
+  ExtensionStage: 0
+  TurnNum: 0
+  MissionState: 0

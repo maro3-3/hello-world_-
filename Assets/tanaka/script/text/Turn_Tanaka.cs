@@ -5,15 +5,15 @@ using UnityEngine.UI;
 //ターン用スクリプト
 public class Turn_Tanaka : MonoBehaviour
 {
-   // public DataBase turn;
+    DataBase database = null;
     // Start is called before the first frame update
     void Start()
     {
-        //turn.GetSetTurnNum = 1;
+        database = Resources.Load<DataBase>("DataBase");
 
-        //int turnNum = turn.GetSetTurnNum;
-        //string turnNumS = turnNum.ToString();
-        //gameObject.GetComponent<Text>().text = turnNumS;
+        int turnNum = database.TurnNum;
+        string turnNumS = turnNum.ToString();
+        gameObject.GetComponent<Text>().text = turnNumS;
     }
 
     // Update is called once per frame

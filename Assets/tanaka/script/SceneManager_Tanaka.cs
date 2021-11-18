@@ -7,12 +7,13 @@ using UnityEngine.UI;
 //シーンマネージャー
 public class SceneManager_Tanaka : MonoBehaviour
 {
-    public Area_Tanaka area_t;
+    [SerializeField] Area_Tanaka area_t = null;//エリアのデータ
 
     // Start is called before the first frame update
     void Start()
     {
-       // Debug.Log(area_t.area);
+        //int a = area_t.area;
+        //Debug.Log(a);
     }
 
     // Update is called once per frame
