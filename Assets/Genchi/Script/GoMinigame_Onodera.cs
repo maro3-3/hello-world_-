@@ -7,6 +7,6 @@ public class GoMinigame_Onodera : MonoBehaviour
 {
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("kari");
+        SceneManager.LoadScene("minigame");
     }
 }
