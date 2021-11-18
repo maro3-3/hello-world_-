@@ -7,10 +7,10 @@ using NPOI.HSSF.UserModel;
 using NPOI.XSSF.UserModel;
 using NPOI.SS.UserModel;
 
-public class test_Data_importer : AssetPostprocessor {
-	private static readonly string filePath = "Assets/test_Data.xls";
-	private static readonly string exportPath = "Assets/Resources/test_Data.asset";
-    private static readonly string[] sheetNames = { "Sheet1", };
+public class List_AreaLv_importer : AssetPostprocessor {
+	private static readonly string filePath = "Assets/DataList/List_AreaLv.xls";
+	private static readonly string exportPath = "Assets/Resources/List_AreaLv.asset";
+	private static readonly string[] sheetNames = { "Sheet1", };
 	
 	static void OnPostprocessAllAssets (string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
 	{
@@ -18,9 +18,9 @@ public class test_Data_importer : AssetPostprocessor {
 			if (!filePath.Equals (asset))
 				continue;
 				
-			Entity_Sheet1 data = (Entity_Sheet1)AssetDatabase.LoadAssetAtPath (exportPath, typeof(Entity_Sheet1));
+			ListAreaLv data = (ListAreaLv)AssetDatabase.LoadAssetAtPath (exportPath, typeof(ListAreaLv));
 			if (data == null) {
-				data = ScriptableObject.CreateInstance<Entity_Sheet1> ();
+				data = ScriptableObject.CreateInstance<ListAreaLv> ();
 				AssetDatabase.CreateAsset ((ScriptableObject)data, exportPath);
 				data.hideFlags = HideFlags.NotEditable;
 			}
@@ -41,18 +41,21 @@ public class test_Data_importer : AssetPostprocessor {
 						continue;
 					}
 
-					Entity_Sheet1.Sheet s = new Entity_Sheet1.Sheet ();
+					ListAreaLv.Sheet s = new ListAreaLv.Sheet ();
 					s.name = sheetName;
 				
 					for (int i=1; i<= sheet.LastRowNum; i++) {
 						IRow row = sheet.GetRow (i);
 						ICell cell = null;
 						
-						Entity_Sheet1.Param p = new Entity_Sheet1.Param ();
+						ListAreaLv.Param p = new ListAreaLv.Param ();
 						
-					cell = row.GetCell(0); p.CountryNo = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(1); p.AreaNo = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(2); p.ManufacturerNo = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(0); p.int_CountryNo = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(1); p.int_AreaNo = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(2); p.int_AreaLv2 = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(3); p.int_AreaLv3 = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(4); p.int_AreaLv4 = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(5); p.int_AreaLv5 = (int)(cell == null ? 0 : cell.NumericCellValue);
 						s.list.Add (p);
 					}
 					data.sheets.Add(s);
