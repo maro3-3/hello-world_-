@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Entity_Sheet1 : ScriptableObject
+public class ListAreaLv : ScriptableObject
 {	
 	public List<Sheet> sheets = new List<Sheet> ();
 
@@ -17,9 +17,12 @@ public class Entity_Sheet1 : ScriptableObject
 	public class Param
 	{
 		
-		public int CountryNo;
-		public int AreaNo;
-		public int ManufacturerNo;
+		public int int_CountryNo;
+		public int int_AreaNo;
+		public int int_AreaLv2;
+		public int int_AreaLv3;
+		public int int_AreaLv4;
+		public int int_AreaLv5;
 	}
 }
 

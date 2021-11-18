@@ -50,9 +50,12 @@ public class List_CountryAndArea_importer : AssetPostprocessor {
 						
 						ListCountry.Param p = new ListCountry.Param ();
 						
-					cell = row.GetCell(0); p.int_CountryNo = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(1); p.int_AreaNo = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(2); p.int_UnemployedNum = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(0); p.int_CountryState = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(1); p.int_CountryNo = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(2); p.string_CountryName = (cell == null ? "" : cell.StringCellValue);
+					cell = row.GetCell(3); p.int_AreaNo = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(4); p.string_AreaName = (cell == null ? "" : cell.StringCellValue);
+					cell = row.GetCell(5); p.int_UnemployedNum = (int)(cell == null ? 0 : cell.NumericCellValue);
 						s.list.Add (p);
 					}
 					data.sheets.Add(s);
