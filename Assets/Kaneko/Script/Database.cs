@@ -22,37 +22,40 @@ public class DataBase : ScriptableObject
 
 
     // ミッション //
-    public int MissionState;       // ミッション段階
-    public enum MissionRewards      // ミッション報酬
-    {
-        PutinChoice,    // 選択肢に入れる
-        selected,       // 選択済み
-        Unopened        // 未開放
-    }
+    public int RewardLv;               // ミッションレベル
+    public int EmploymentTarget;       // 目標雇用数
+    public int RewartContent;          // 報酬
+    public int RewartState;            // 報酬ステート
 
 
     // 国 //
     public struct Country
     {
+        public int CountryState;
         public int CountryNo;           // 国ナンバー
+        public string CountryName;      // 国の名前
         public int AreaNo;              // 地域ナンバー
+        public string AreaName;         // 地域の名前
         public int UnemployedNum;       // 失業者数
 
         public int AreaLv;              // 地域レベル
         public int CumulativeNumber;    // クライアント累積要求数
 
         // 初期化
-        public void InitCountry(int countryNo, int areaNo, int UnemuloyedNum , int areaLv, int cumulativeNumber)
+        public void InitCountry(int countryState, int countryNo, string countryName,int areaNo, string areaName, int UnemuloyedNum , int areaLv, int cumulativeNumber)
         {
+            CountryState = countryState;
             CountryNo = countryNo;
+            CountryName = countryName;
             AreaNo = areaNo;
+            AreaName = areaName;
             UnemployedNum = UnemuloyedNum;
             AreaLv = areaLv;
             CumulativeNumber = cumulativeNumber;
         }
     }
 
-    public Country[] countrys= new Country[11];
+    public Country[] countrys= new Country[14];
 
     // 生産者 //
     public struct Manufacturer
@@ -61,7 +64,7 @@ public class DataBase : ScriptableObject
         public int ManufacturerAreaNo;      // 地域ナンバー
         public int ManufacturerNo;          // 生産者ナンバー
         public string ManufacturerName;     // 生産者名
-        public int Products;                // 生産物
+        public int Products;                // 取引物
 
         public int Totalassets;             // 総資産
         public int AmountofSales;           // 売上高
@@ -93,8 +96,8 @@ public class DataBase : ScriptableObject
         }
 
     };
-
-    public Manufacturer[] manufacturers = new Manufacturer[11];
+    
+    public Manufacturer[] manufacturers = new Manufacturer[46];
 
     // クライアント //
     public struct Client

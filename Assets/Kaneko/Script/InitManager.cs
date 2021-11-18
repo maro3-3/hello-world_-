@@ -12,7 +12,7 @@ public class InitManager : MonoBehaviour
     ListClient ClientList;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {        // ScriptableObject‚Ìæ“¾
         database = Resources.Load<DataBase>("DataBase");
         ManuList = Resources.Load("List_manufacturer") as ListManufacture;
@@ -32,7 +32,6 @@ public class InitManager : MonoBehaviour
         database.TurnNum = 0;
 
         // ƒ~ƒbƒVƒ‡ƒ“‰Šú‰»
-        database.MissionState = 0;
 
 
         // ¶YÒ‰Šú‰»
@@ -48,8 +47,11 @@ public class InitManager : MonoBehaviour
         // ‘‰Šú‰»
         for (int i = 0; i < CountryList.sheets[0].list.Count; i++)
         {
-            database.countrys[i].InitCountry(CountryList.sheets[0].list[i].int_CountryNo,
+            database.countrys[i].InitCountry(CountryList.sheets[0].list[i].int_CountryState,
+                CountryList.sheets[0].list[i].int_CountryNo,
+                CountryList.sheets[0].list[i].string_CountryName,
                 CountryList.sheets[0].list[i].int_AreaNo,
+                CountryList.sheets[0].list[i].string_AreaName,
                 CountryList.sheets[0].list[i].int_UnemployedNum,
                 0, 0);
         }
@@ -71,15 +73,5 @@ public class InitManager : MonoBehaviour
                 ClientList.sheets[0].list[i].int_Transaction_5,
                 ClientList.sheets[0].list[i].int_Transaction_6);
         }
-    }
-    void Awake()
-    {
-
-
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
