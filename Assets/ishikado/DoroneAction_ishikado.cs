@@ -4,13 +4,47 @@ using UnityEngine;
 
 public class DoroneAction_ishikado : MonoBehaviour
 {
-    public void WindowActive()
+    private int UnemployedNum;       // 登録した失業者数
+    private int EmploymentNum;       // 雇用数
+
+    private int ManufacturerCountryNo;  // 
+    private int ManufacturerAreaNo;     // 
+    private int ManufacturerNo;         // 
+    private int ManufacturerName;       // 
+    private int Products;               //
+
+    private int ClientCountryNo;        //
+    private int ClientAreaNo;           //
+    private int ClientNo;               //
+    private string ClientName;          //
+    private int ClientLv;               //
+    private int ClientType;             //
+    private int Transactions;
+
+    Unemployed unemployed = new Unemployed();
+
+    Manufacturer manufacturer = new Manufacturer();
+
+    Client client = new Client();
+
+    void Start()
     {
-        gameObject.SetActive(true);//表示
+        //セッター
+        //unemployed.GetSetUnemployedNum = UnemployedNum;
+
+        //ゲッター
+        UnemployedNum = unemployed.GetSetUnemployedNum;
+
+        //ゲッター
+        ManufacturerCountryNo = manufacturer.GetSetManufacturerCountryNo;
+
+        //ゲッター
+        ClientCountryNo = client.GetSetClientCountryNo;
+
     }
 
-    public void WindowHide()
+    void Update()
     {
-        gameObject.SetActive(false);//非表示
+
     }
 }
