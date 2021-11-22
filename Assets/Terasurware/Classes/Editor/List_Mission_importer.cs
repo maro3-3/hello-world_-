@@ -51,8 +51,9 @@ public class List_Mission_importer : AssetPostprocessor {
 						ListMission.Param p = new ListMission.Param ();
 						
 					cell = row.GetCell(0); p.int_RewardLv = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(1); p.int_RewardContent = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(2); p.int_RewardState = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(1); p.int_EmploymentTarget = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(2); p.int_RewardContent = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(3); p.int_RewardState = (int)(cell == null ? 0 : cell.NumericCellValue);
 						s.list.Add (p);
 					}
 					data.sheets.Add(s);
