@@ -22,13 +22,13 @@ public class Month_Tanaka : MonoBehaviour
     void monthCount()//現在の月計算
     {
         //ターン取得
-        int turn = database.TurnNum;//仮
+        int turn = database.TurnNum;
 
         int count = 0;//カウント用
 
-        while (turn > 3)//ターンが３以下になるまで４で割る
+        while (turn > 4)//ターンが4以下になるまで４で割る
         {
-            turn /= 4;
+            turn -= 4;
             count++;
         }
 
@@ -38,7 +38,7 @@ public class Month_Tanaka : MonoBehaviour
         {
             count %= 12;
         }
-
+      
         string monthNumS = count.ToString();//stringに変換
         gameObject.GetComponent<Text>().text = monthNumS;//出力
     }

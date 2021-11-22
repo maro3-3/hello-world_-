@@ -11,14 +11,29 @@ public class Turn_Tanaka : MonoBehaviour
     {
         database = Resources.Load<DataBase>("DataBase");
 
-        int turnNum = database.TurnNum;
-        string turnNumS = turnNum.ToString();
-        gameObject.GetComponent<Text>().text = turnNumS;
+        TurnCount();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    
+    void TurnCount()//ターン計算用
+    {
+
+        int turnNum = database.TurnNum;
+
+        if(turnNum>=5)
+        {
+            turnNum %= 4;
+            if (turnNum == 0)
+            {
+                turnNum = 4;
+            }
+        }
+        string turnNumS = turnNum.ToString();
+        gameObject.GetComponent<Text>().text = turnNumS;
     }
 }
