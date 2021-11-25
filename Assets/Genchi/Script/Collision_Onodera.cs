@@ -22,16 +22,19 @@ public class Collision_Onodera : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        if (other.gameObject == PLAYER)
-        {
+
+        // if (other.gameObject == PLAYER)
+       
+        //{
             Object.SetActive(true);
-        }
+        //}
     }
     private void OnTriggerExit(Collider other)
     {
-        Object.SetActive(false);
+       
+            Object.SetActive(false);
+        
     }
-  
 
 
 }
