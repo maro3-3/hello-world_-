@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_MainScenes/Title.unity
+    guid: a5cd3196254c7304a8524b6bec2b5b89
+  - enabled: 1
     path: Assets/_MainScenes/Genchi.unity
     guid: 4fe24c87c7ee2c74ea90f1f68c852d49
   - enabled: 1
@@ -14,16 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_MainScenes/homepage.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/_MainScenes/karisekai.unity
-    guid: a3094d384ea1af94c8f02df57ef58a0a
   - enabled: 1
     path: Assets/_MainScenes/minigame.unity
     guid: 677c5739d64c77447bc684da911d8c6e
-  - enabled: 1
+  - enabled: 0
     path: Assets/tanaka/scenes/test.unity
     guid: 8a5e360faf50e254cb6dac39b22a7a11
   m_configObjects: {}
