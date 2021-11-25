@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 832e1bd8a176cc24bb3fef798a91e6da, type: 3}
-  m_Name: New Databace_Tanaka
+  m_Script: {fileID: 11500000, guid: 89b50b001a4250b48a803e87b643540f, type: 3}
+  m_Name: New Data Base_Tanaka
   m_EditorClassIdentifier: 
   UnemployedNum: 0
   EmploymentNum: 0

@@ -5,11 +5,11 @@ using UnityEngine.UI;
 //失業者数用のスクリプト
 public class Unemployed_Tanaka : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase_Tanaka database = null;
     // Start is called before the first frame update
     void Start()
     {
-        database = Resources.Load<DataBase>("DataBase");
+        //database = Resources.Load<DataBase>("DataBase");
 
         int unemployedNum = database.UnemployedNum;
         string unemployedNumS = unemployedNum.ToString();

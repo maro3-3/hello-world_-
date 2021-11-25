@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "MyScriptable/Create data")]
-public class Databace_Tanaka : ScriptableObject
+[CreateAssetMenu(menuName = "MyScriptable/Create Data")]
+public class DataBase_Tanaka : ScriptableObject
 {
     // é∏ã∆é“ //
     public int UnemployedNum;       // ìoò^ÇµÇΩé∏ã∆é“êî
@@ -200,4 +200,5 @@ public class Databace_Tanaka : ScriptableObject
         }
     }
     public ClientArrivalTable[] ClientArrivalTables = new ClientArrivalTable[14];
+
 }
