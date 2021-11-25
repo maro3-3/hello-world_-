@@ -301,7 +301,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 258331073}
         m_TargetAssemblyTypeName: SceneManager_Tanaka, Assembly-CSharp
-        m_MethodName: OnClick_Sekai
+        m_MethodName: Onclick_TitleToGenchi
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -31,6 +31,11 @@ public class SceneManager_Tanaka : MonoBehaviour
         SceneManager.LoadScene("Genchi");
     }
 
+    public void Onclick_TitleToGenchi()
+    {
+        SceneManager.LoadScene("Genchi");
+    }
+
     public void OnClick_Homepage()//ホームページに遷移
     {
         SceneManager.LoadScene("homepage");
@@ -39,11 +44,12 @@ public class SceneManager_Tanaka : MonoBehaviour
     public void OnClick_Flymo()//fly.m.oから出る（今いる現地に戻る？）テスト運用
     {
         
-        turnmanager.GetComponent<TurnManager_ishikado>().TurnUp();
-        SceneManager.LoadScene("test");
+       // turnmanager.GetComponent<TurnManager_ishikado>().TurnUp();
+        SceneManager.LoadScene("Genchi");
     }
     public void OnClick_Sekai()//世界画面への遷移
     {
         SceneManager.LoadScene("SekaiGamen");
     }
+
 }
