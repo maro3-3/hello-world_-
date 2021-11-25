@@ -18,6 +18,7 @@ public class ListMission : ScriptableObject
 	{
 		
 		public int int_RewardLv;
+		public int int_EmploymentTarget;
 		public int int_RewardContent;
 		public int int_RewardState;
 	}

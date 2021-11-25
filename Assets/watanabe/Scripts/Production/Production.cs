@@ -1,10 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Production : MonoBehaviour // ƒNƒŠƒbƒN‚Å‚Í‚È‚­ƒnƒCƒ‰ƒCƒg‚¾‚¯‚Å’l‚ğ“n‚·
+public class Production : MonoBehaviour 
 {
-    public int CountriNo;  // ‘‰¼ƒf[ƒ^
+    private GameObject Clientlist;
+    private ClientList Cliscript;
+
+    public GameObject ProductionText_obj;
+    public Text Production_Text;
+
+    public int CountryNo;  // ‘‰¼ƒf[ƒ^
     public int AreaNo;     // ’nˆæ‰¼ƒf[ƒ^
     public int ProductionNo;// ’nˆæ¶YÒƒiƒ“ƒo[ƒf[ƒ^
     public string ProductionName; // ¶YÒ‚Ì–¼‘O
@@ -14,6 +21,12 @@ public class Production : MonoBehaviour // ƒNƒŠƒbƒN‚Å‚Í‚È‚­ƒnƒCƒ‰ƒCƒg‚¾‚¯‚Å’l‚ğ“
     // Start is called before the first frame update
     void Start()
     {
+        Clientlist = GameObject.Find("ClientList");
+        Cliscript = Clientlist.GetComponent<ClientList>();
+
+        ProductionText_obj = transform.Find("ProductionText").gameObject;
+        Production_Text = ProductionText_obj.GetComponent<Text>();
+
         Choice = false;
     }
 
@@ -25,6 +38,19 @@ public class Production : MonoBehaviour // ƒNƒŠƒbƒN‚Å‚Í‚È‚­ƒnƒCƒ‰ƒCƒg‚¾‚¯‚Å’l‚ğ“
 
     public void ClickProduction()
     {
-        Choice = true;
+        GameObject Minimana = GameObject.Find("MinigameManager");
+        MinigameManager script = Minimana.GetComponent<MinigameManager>();
+
+        for (int i = 0; i < Cliscript.Requestlist.Length; i++)
+        {
+            if (Cliscript.Requestlist[i].request == production)
+            {
+                script.RequestData = Cliscript.Requestlist[i].request;
+                script.ProductionName = Production_Text.text;
+                Cliscript.Requestlist[i].Choice = true;
+                Choice = true;
+            }
+        }
+
     }
 }

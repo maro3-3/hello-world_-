@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class TurnManager_ishikado : MonoBehaviour
 {
-    private int TurnNum;
-    //public DataBase turn;
+    DataBase database = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        //ゲッター
-      //  TurnNum = turn.GetSetTurnNum;
+        database = Resources.Load<DataBase>("DataBase");
     }
 
     // Update is called once per frame
@@ -20,14 +18,11 @@ public class TurnManager_ishikado : MonoBehaviour
         
     }
 
-    void TurnUp()
+    public void TurnUp()
     {
         //ターン終了時
 
-        TurnNum++;
-
-        //セッター
-      //  turn.GetSetTurnNum = TurnNum;
+        database.TurnNum++;
 
         //ターン開始時
     }

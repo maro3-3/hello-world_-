@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Request : MonoBehaviour// ƒf[ƒ^ƒx[ƒX‚©‚ç—v‹•¨‚ğó‚¯æ‚èAŠ‚·‚é
 {
-    private Animator animator;
+
+
     public int request;//—v‹•¨ƒiƒ“ƒo[A‰¼‚ÅintŒ^
     public bool Highlight; // ƒnƒCƒ‰ƒCƒg‚·‚éê‡true
     public bool Choice;
@@ -21,11 +22,5 @@ public class Request : MonoBehaviour// ƒf[ƒ^ƒx[ƒX‚©‚ç—v‹•¨‚ğó‚¯æ‚èAŠ‚·‚
     void Update()
     {
 
-    }
-
-    public void ClickRequest()
-    {
-        Highlight = true;
-        Choice = true;
     }
 }

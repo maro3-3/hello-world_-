@@ -158,6 +158,11 @@ public class MinigameManager : MonoBehaviour@// ”j‰ó–½—ßA¶¬–½—ßì‚é
         }
         if(!Enemy)
         {
+            for (int i = 0; i < UImanager.Length; i++)
+            {
+                UImanager[i].UIDestroy();
+            }
+
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.WIN]);

@@ -5,23 +5,55 @@ using UnityEngine.UI;
 
 public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“–‚·‚éƒAƒCƒeƒ€‚ğƒnƒCƒ‰ƒCƒg•\¦‚·‚é
 {
+    [SerializeField] DataBase database;
 
     [SerializeField] private GameObject Productionlist;
     ProductionList Proscript;
+
+    [SerializeField] private GameObject ClientNameText_obj;
+    [SerializeField] private Text ClientName_Text;
+
+    [SerializeField] private GameObject ClientLevelText_obj;
+    [SerializeField] private Text ClientLevel_Text;
 
     public Request[] Requestlist;
     public bool isSearch;
     public bool isSend; // î•ñ‘—M‚ÌŠm”F
 
+    public int Client;     // ‚Ç‚ÌƒNƒ‰ƒCƒAƒ“ƒg‚©w’è‚·‚é”z—ñƒiƒ“ƒo[
+    public int CountryNo;  // ‘‰¼ƒf[ƒ^
+    public int AreaNo;     // ’nˆæ‰¼ƒf[ƒ^
+    public int ClientNo;   // ƒNƒ‰ƒCƒAƒ“ƒgƒiƒ“ƒo[ƒf[ƒ^
+    public int ClientLevel;// ƒNƒ‰ƒCƒAƒ“ƒgƒŒƒxƒ‹
+    public string ClientName;   // ƒNƒ‰ƒCƒAƒ“ƒgƒl[ƒ€
+
     public int debug; // ó‚¯æ‚Á‚½ƒf[ƒ^‚ğŠm”F‚·‚éˆ×‚Ì‰¼•Ï”
     // Start is called before the first frame update
     void Start()
     {
+        database = Resources.Load<DataBase>("DataBase");
         Productionlist = GameObject.Find("ProductionList");
         Proscript = Productionlist.GetComponent<ProductionList>();
 
+        ClientNameText_obj = transform.Find("ClientName").gameObject;
+        ClientName_Text = ClientNameText_obj.GetComponent<Text>();
+
+        ClientLevelText_obj = transform.Find("ClientLevel").gameObject;
+        ClientLevel_Text = ClientLevelText_obj.GetComponent<Text>();
+
         isSearch = true;
         isSend = false;
+
+        CountryNo = database.clients[database.MiniClieNo].ClientCountryNo;
+        AreaNo = database.clients[database.MiniClieNo].ClientAreaNo;
+        ClientNo = database.clients[database.MiniClieNo].ClientNo;
+        ClientName = database.clients[database.MiniClieNo].ClientName;
+        ClientLevel = database.clients[database.MiniClieNo].ClientLv;
+
+        ClientLevel_Text.text = "Lv " + ClientLevel;
+        ClientName_Text.text = ClientName;
+
+        RequestInit(Requestlist, database.clients[database.MiniClieNo].Transactions);
     }
 
     // Update is called once per frame
@@ -60,5 +92,14 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
                 // î•ñ‘—MŠ®—¹
             }
         }
+    }
+
+    void RequestInit(Request[] req, int[] trans)
+    {
+        for(int i = 0; i < req.Length; i++)
+        {
+            req[i].request = trans[i];
+        }
+        Debug.Log("ƒNƒ‰ƒCƒAƒ“ƒg‚Ì—v‹•¨‚ğ‰Šú‰»");
     }
 }

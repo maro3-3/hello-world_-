@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/tanaka/scenes/SekaiGamen.unity
+    path: Assets/Genchi/Scenes/SekaiGamen.unity
     guid: e2aab1ebf73ced244a33a93394b24378
   - enabled: 1
     path: Assets/Kaneko/homepage.unity
@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/kari.unity
     guid: 3538b3de0e4e0064aaad52acf85829da
   - enabled: 0
-    path: Assets/Scenes/karisekai.unity
+    path: Assets/Genchi/Scenes/karisekai.unity
     guid: a3094d384ea1af94c8f02df57ef58a0a
   - enabled: 1
-    path: Assets/Scenes/Genchi.unity
+    path: Assets/Genchi/Scenes/Genchi.unity
     guid: 4fe24c87c7ee2c74ea90f1f68c852d49
   - enabled: 1
     path: Assets/watanabe/Scenes/minigame.unity
