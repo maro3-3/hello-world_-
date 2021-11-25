@@ -4469,6 +4469,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flymo
       objectReference: {fileID: 0}
+    - target: {fileID: 9214038068178149090, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068178149090, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068178149091, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_Size.x
+      value: 4.1872168
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068178149091, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_Size.z
+      value: 1.943048
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068178149091, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_Center.x
+      value: -1.1324401
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068178149091, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_Center.z
+      value: -0.471524
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068178149091, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9214038068178149118, guid: 595c333574e08e348b652bee0b275746, type: 3}
       propertyPath: PLAYER
       value: 
