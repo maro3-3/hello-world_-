@@ -7,6 +7,12 @@ public class Player_Onodera : MonoBehaviour
     [SerializeField] private Vector3 velocity;              // ˆÚ“®•ûŒü
     [SerializeField] private float moveSpeed = 5.0f;        // ˆÚ“®‘¬“x
 
+    public enum CharacterState
+    {
+        normal,
+        talk
+    }
+
     void Update()
     {
         // WASD“ü—Í‚©‚çAXZ•½–Ê(…•½‚È’n–Ê)‚ğˆÚ“®‚·‚é•ûŒü(velocity)‚ğ“¾‚Ü‚·
