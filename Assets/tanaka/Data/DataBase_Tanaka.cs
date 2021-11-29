@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-[CreateAssetMenu]
-public class DataBase : ScriptableObject
+[CreateAssetMenu(menuName = "MyScriptable/Create Data")]
+public class DataBase_Tanaka : ScriptableObject
 {
-
     // ¸‹ÆÒ //
     public int UnemployedNum;       // “o˜^‚µ‚½¸‹ÆÒ”
     public int EmploymentNum;       // ŒÙ—p”
