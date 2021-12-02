@@ -31,6 +31,15 @@ public class ResultClientList : MonoBehaviour
 
         ClientLevel_Text.text = "Lv " + ClientLevel;
         ClientName_Text.text = ClientName;
+
+        GameObject Minimana = GameObject.Find("MinigameManager");
+        MinigameManager script = Minimana.GetComponent<MinigameManager>();
+
+        if(!script.FairTrade)
+        {
+            GameObject FairTradeText = transform.Find("Amount/FairTrade").gameObject;
+            FairTradeText.SetActive(false);
+        }
     }
 
     // Update is called once per frame

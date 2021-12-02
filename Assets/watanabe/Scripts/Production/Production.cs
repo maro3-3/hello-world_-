@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class Production : MonoBehaviour 
 {
-    private GameObject Clientlist;
-    private ClientList Cliscript;
+    [SerializeField] private GameObject Clientlist;
+    [SerializeField] private ClientList Cliscript;
 
-    public GameObject ProductionText_obj;
+    [SerializeField] private GameObject ProductionText_obj;
     public Text Production_Text;
+
+    [SerializeField] private GameObject DifficultMark_obj;
 
     public int CountryNo;  // 国仮データ
     public int AreaNo;     // 地域仮データ
@@ -40,6 +42,14 @@ public class Production : MonoBehaviour
     {
         GameObject Minimana = GameObject.Find("MinigameManager");
         MinigameManager script = Minimana.GetComponent<MinigameManager>();
+
+        if(DifficultMark_obj)
+        {
+            if (0 < script.intLog)
+            {
+                script.boolLog = true;
+            }
+        }
 
         for (int i = 0; i < Cliscript.Requestlist.Length; i++)
         {

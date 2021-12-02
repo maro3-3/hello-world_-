@@ -31,6 +31,7 @@ public class Enemy : MonoBehaviour
     public float m_speed; // ˆÚ“®‚Ì‘¬‚³
     public float m_jump;  // ƒWƒƒƒ“ƒv—Í
     public bool isGround; // Ú’n”»’è
+    public int m_MaxHp;   // Å‘å‘Ì—Í
     public int m_Hp;      // ‘Ì—Í
 
     public GameObject target;
@@ -39,6 +40,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        m_Hp = m_MaxHp;
         m_ShotInterval = 3f;
     }
 

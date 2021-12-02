@@ -10,6 +10,7 @@ public class Player_Watanabe : MonoBehaviour
     public float m_BulletSpeed;// 弾のスピード
     public float m_speed; // 移動の速さ
     public float m_jump;  // ジャンプ力
+    public int m_MaxHp;   // 最大体力
     public int m_Hp;      // 体力
 
     public GameObject enemy;
@@ -18,7 +19,7 @@ public class Player_Watanabe : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        m_Hp = m_MaxHp;
     }
 
     // Update is called once per frame

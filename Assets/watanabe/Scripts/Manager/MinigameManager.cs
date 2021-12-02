@@ -9,7 +9,6 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 {
     [SerializeField] DataBase database;
     
-
     public enum MINIGAMESTEP
     {
         ONE,
@@ -29,6 +28,9 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         PRODUCTION,
         RESULTCLIENT,
         RESULTPRODUCTION,
+        LOGISTICS,
+        LOGEXPLAN,
+        VS,
         WIN,
         LOSE,
     }
@@ -39,6 +41,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
     // クライアントの情報
     public int RequestData;
     public bool RequestSend;
+    public bool FairTrade;
     // 取引額の情報
     public int AmountData;
     public bool AmountSend;
@@ -47,6 +50,10 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
     public int ProductionData;
     public string ProductionName;
     public bool ProductionSend;
+
+    // 物流権の情報
+    public int intLog;
+    public bool boolLog; // 仮でbool型
 
     public GameObject Game;
     public GameObject Player;
@@ -67,8 +74,16 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         }
         UImanager[0].UICreate(UIimage[(int)UILIST.CLIENT]);
         UImanager[1].UICreate(UIimage[(int)UILIST.PRODUCTION]);
+
+        if( 0 < intLog)
+        {
+            UImanager[3].UICreate(UIimage[(int)UILIST.LOGISTICS]);
+            UImanager[4].UICreate(UIimage[(int)UILIST.LOGEXPLAN]);
+        }
+
         Step = MINIGAMESTEP.ONE;
 
+        FairTrade = false;
         isWin = false;
         isLose = false;
     }
@@ -110,16 +125,6 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
                 Debug.Log("どの状態にも属していない");
                 break;
         }
-
-        if (Input.GetKeyDown("space")) // スペース押したら敗北
-        {
-            UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
-            UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
-            UImanager[2].UICreate(UIimage[(int)UILIST.LOSE]);
-            isLose = true;
-            Step = MINIGAMESTEP.FOUR;
-            Game.SetActive(false);
-        }
     }
 
     void one()
@@ -134,6 +139,12 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
     void two()
     {
+        if(boolLog) // 物流権を使用した場合UI削除
+        {
+            UImanager[3].UIDestroy();
+            UImanager[4].UIDestroy();
+        }
+
         if(AmountSend)
         {
             for(int i = 0;i< UImanager.Length; i++)
@@ -142,6 +153,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
                 Step = MINIGAMESTEP.THREE;
                 Game.SetActive(true);
             }
+            UImanager[4].UICreate(UIimage[(int)UILIST.VS]);
         }
     }
 
@@ -188,7 +200,14 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
     void five() // プレイヤー勝利
     {
-
+        if (database.Win)
+        {
+            Debug.Log("勝利");
+        }
+        if (Input.GetKeyDown("space")) // スペース押したら現地画面へ遷移
+        {
+            SceneManager.LoadScene("Genchi");
+        }
     }
 
     void six()

@@ -7,6 +7,7 @@ public class Amount : MonoBehaviour
 {
     public GameObject AmountText_obj;
     public int amount; // âºÉfÅ[É^
+    public bool FairTrade;
     public bool Choice;
 
     // Start is called before the first frame update
@@ -27,6 +28,12 @@ public class Amount : MonoBehaviour
 
     public void ClickAmount()
     {
+        GameObject Minimana = GameObject.Find("MinigameManager");
+        MinigameManager script = Minimana.GetComponent<MinigameManager>();
+        if(FairTrade)
+        {
+            script.FairTrade = true;
+        }
         Choice = true;
     }
 }
