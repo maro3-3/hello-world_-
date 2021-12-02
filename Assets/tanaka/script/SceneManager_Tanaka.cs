@@ -8,14 +8,14 @@ using UnityEngine.UI;
 public class SceneManager_Tanaka : MonoBehaviour
 {
     [SerializeField] Area_Tanaka area_t = null;//エリアのデータ
-    [SerializeField] DataBase_Tanaka database = null;
-  //  DataBase database = null;
+  //  [SerializeField] DataBase_Tanaka database = null;
+    DataBase database = null;
     GameObject turnmanager;
     // Start is called before the first frame update
     void Start()
     {
         turnmanager = GameObject.Find("TurnManager");
-      //  database = Resources.Load<DataBase>("DataBase");
+        database = Resources.Load<DataBase>("DataBase");
     }
 
     // Update is called once per frame

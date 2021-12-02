@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6940a5b1a98c5e41a192ef280e2f14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &33163238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,7 +1181,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 402019830}
         m_TargetAssemblyTypeName: SceneManager_Tanaka, Assembly-CSharp
-        m_MethodName: OnClick_Genchi
+        m_MethodName: OnClick_Flymo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1408,6 +1409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9e4b56487c99a49a79874b446fad9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &510642091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,6 +1977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5f07b280b496f458ec0dcd5eec11b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!4 &781346441
 Transform:
   m_ObjectHideFlags: 0
@@ -2483,6 +2486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603539f343ce978498c80db1cf774f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &967677661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +2790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c08cb4813d160b84aaf59f333adedca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &1047753554
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,6 +3354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004d1ae5a992f464d8c37f213af83c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &1218100116
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,6 +4011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6f99b9190ab6b4eb0c1f0b82b57627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &1294458301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,6 +4226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f68d086ad091b4fa0fcbef6f0661f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &1512993551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,6 +4543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc3a28c9e92a564db9aedfe7f929217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &1600039094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,6 +5785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9b6a3141b670e4180d9897868c3f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  database: {fileID: 0}
 --- !u!1 &2040506096
 GameObject:
   m_ObjectHideFlags: 0
