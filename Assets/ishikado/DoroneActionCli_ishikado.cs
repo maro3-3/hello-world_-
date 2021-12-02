@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class drone_ishikado : MonoBehaviour
+public class DoroneActionCli_ishikado : MonoBehaviour
 {
     DataBase database = null;
-    int TurnNum;
+   //int クライアント数
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +16,8 @@ public class drone_ishikado : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int TurnCount = TurnNum;
 
-        if(TurnCount+2== TurnNum)
-        {
-            //アイコン表示
-        }
     }
+
+
 }
