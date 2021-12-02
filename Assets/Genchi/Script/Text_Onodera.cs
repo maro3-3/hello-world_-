@@ -32,10 +32,10 @@ public class Text_Onodera : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        if (other.gameObject == PLAYER)
-        {
+        //if (other.gameObject == PLAYER)
+        //{
             Object.SetActive(true);
-        }
+       // }
 
         if (employees == false)
         {
