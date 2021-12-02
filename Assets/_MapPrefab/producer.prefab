@@ -514,6 +514,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b407c5a0a3fd3c844ae1a85b9a5e9077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label1: {fileID: 0}
+  label2: {fileID: 0}
+  label3: {fileID: 0}
+  label4: {fileID: 0}
+  emp_count: 0
   Object: {fileID: 7948179891689556325}
   PLAYER: {fileID: 0}
 --- !u!222 &7948179892677318591

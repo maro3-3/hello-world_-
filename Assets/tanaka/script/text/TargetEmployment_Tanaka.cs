@@ -5,12 +5,12 @@ using UnityEngine.UI;
 //雇用目標数用のスクリプト
 public class TargetEmployment_Tanaka : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase_Tanaka database = null;
   
     // Start is called before the first frame update
     void Start()
     {
-        database = Resources.Load<DataBase>("DataBase");
+        //database = Resources.Load<DataBase>("DataBase");
        
         int targetEmploymentNum = database.EmploymentTarget[0];
         string targetEmploymentNumS = targetEmploymentNum.ToString();

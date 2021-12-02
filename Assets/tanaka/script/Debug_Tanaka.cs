@@ -4,18 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Debug_Tanaka : MonoBehaviour
 {
-    [SerializeField] Area_Tanaka area_t = null;//エリアのデータ
+    [SerializeField] DataBase_Tanaka database = null;
     // Start is called before the first frame update
     void Start()
     {
-        int a = area_t.area;
-        string b = a.ToString();
-        gameObject.GetComponent<Text>().text = b;
+        //int unemployedNum = database.area;
+        //string unemployedNumS = unemployedNum.ToString();
+        //gameObject.GetComponent<Text>().text = unemployedNumS;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }
