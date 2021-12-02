@@ -10,21 +10,21 @@ public class Producer_Onodera : MonoBehaviour
                             //                    2セントルイス　上海　ウファ　 パース　         ブルームフォンテイン
                             //                    3アトランタ　　四川　　　　　 メルボルン　　　 ケープタウン
     public int ProdNum = 0;
-    DataBase database = new DataBase();
+    //DataBase database = new DataBase();
     //DataBase.Client[] clients;
     int Arealv;
 
     void Start()
     {
 
-        Arealv = Areamanager_Onodera.GetArealv();
+        Arealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
     }
 
     void Update()
     {
         if (ProdNum > Arealv)
         {
-            Arealv = Areamanager_Onodera.GetArealv();
+            Arealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
             Producer.SetActive(false);
         }
         else

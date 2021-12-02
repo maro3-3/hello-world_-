@@ -23,14 +23,14 @@ public class Client_Onodera : MonoBehaviour
     void Start()
     {
         
-        Arealv = Areamanager_Onodera.GetArealv();
+        Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
     }
 
     void Update()
     {
        if( ClieNum>Arealv)
         {
-            Arealv = Areamanager_Onodera.GetArealv();
+            Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
             Client.SetActive(false);
         }
         else
