@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/_MainScenes/Title.unity
     guid: a5cd3196254c7304a8524b6bec2b5b89
   - enabled: 1
-    path: Assets/_MainScenes/Genchi.unity
-    guid: 4fe24c87c7ee2c74ea90f1f68c852d49
-  - enabled: 1
     path: Assets/_MainScenes/SekaiGamen.unity
     guid: e2aab1ebf73ced244a33a93394b24378
   - enabled: 1
     path: Assets/_MainScenes/homepage.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/_MainScenes/Genchi.unity
+    guid: 4fe24c87c7ee2c74ea90f1f68c852d49
   - enabled: 1
     path: Assets/_MainScenes/minigame.unity
     guid: 677c5739d64c77447bc684da911d8c6e
