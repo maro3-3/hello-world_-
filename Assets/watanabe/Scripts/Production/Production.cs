@@ -47,6 +47,7 @@ public class Production : MonoBehaviour
         {
             if (0 < script.intLog)
             {
+                script.intLog -= 1;
                 script.boolLog = true;
             }
         }

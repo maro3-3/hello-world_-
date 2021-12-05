@@ -18,6 +18,10 @@ public class Mark : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+        else
+        {
+            this.gameObject.SetActive(true);
+        }
     }
 
     // Update is called once per frame

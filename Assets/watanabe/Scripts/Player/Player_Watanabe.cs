@@ -8,6 +8,8 @@ public class Player_Watanabe : MonoBehaviour
     public Bullet[] m_BulletPrefab; // 弾のプレハブ
     public int Bulletnumber; // 発射する弾の番号
     public float m_BulletSpeed;// 弾のスピード
+    public float m_ShotTimer;       // 射撃間隔管理タイマー
+    public float m_ShotInterval;    // 射撃間隔
     public float m_speed; // 移動の速さ
     public float m_jump;  // ジャンプ力
     public int m_MaxHp;   // 最大体力
@@ -44,13 +46,13 @@ public class Player_Watanabe : MonoBehaviour
                 Bulletnumber++;
            }
        }
-      if (Input.GetKeyDown("space"))
-        {
-            var pos = m_Transform.position;
-            var dir = enemy.transform.position - pos;
-            var angle = Utils.GetAngle(Vector3.zero, dir);
-            Shoot(angle, m_BulletSpeed);
-       }
+      //if (Input.GetKeyDown("space"))
+      //  {
+      //      var pos = m_Transform.position;
+      //      var dir = enemy.transform.position - pos;
+      //      var angle = Utils.GetAngle(Vector3.zero, dir);
+      //      Shoot(angle, m_BulletSpeed);
+      // }
 
         // 回転しないように角度を固定する
         m_Transform = this.transform;
@@ -60,8 +62,32 @@ public class Player_Watanabe : MonoBehaviour
         localAngle.z = 0.0f;
         m_Transform.localEulerAngles = localAngle;
 
-        if(m_Hp <= 0)
-        Destroy(this.gameObject);
+        if (m_Hp <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
+        // 以下、射撃処理
+
+        // 弾の発射タイミングを管理するタイマーを更新する
+        m_ShotTimer += Time.deltaTime;
+
+        // まだ弾の発射タイミングではない場合は、ここで処理を終える
+        if (Input.GetKeyDown("space"))
+        {
+            if (m_ShotTimer < m_ShotInterval) return;
+
+            // 弾の発射タイミングを管理するタイマーをリセットする
+            m_ShotTimer = 0;
+
+            var pos = m_Transform.position;
+            var dir = enemy.transform.position - pos;
+            var angle = Utils.GetAngle(Vector3.zero, dir);
+            Shoot(angle, m_BulletSpeed);
+        }
+
+
+
     }
 
     void OnCollisionStay(Collision collision)

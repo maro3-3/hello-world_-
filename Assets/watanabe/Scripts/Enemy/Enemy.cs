@@ -79,7 +79,6 @@ public class Enemy : MonoBehaviour
 
         var pos = m_Transform.position;
         var dir = target.transform.position - pos;
-
         var angle = Utils.GetAngle(Vector3.zero, dir);
         Shoot(angle, m_BulletSpeed);
 

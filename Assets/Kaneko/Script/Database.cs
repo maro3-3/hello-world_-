@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [CreateAssetMenu]
 public class DataBase : ScriptableObject
 {
@@ -32,7 +33,7 @@ public class DataBase : ScriptableObject
     public bool Win;
     public bool Lose;
     public int MiniClieNo; // ミニゲーム対象のクライアントナンバー
-    public int Amount; // クライアントの取引額、Clientに入れるべき？
+    public int Amount; // クライアントの取引額
 
     public int[] RewardLv = new int[12];               // ミッションレベル
     public int[] EmploymentTarget = new int[12];       // 目標雇用数
@@ -54,7 +55,7 @@ public class DataBase : ScriptableObject
         public int CumulativeNumber;    // クライアント累積要求数
 
         // 初期化関数
-        public void InitCountry(int countryState, int countryNo, string countryName,int areaNo, string areaName, int UnemuloyedNum , int areaLv, int cumulativeNumber)
+        public void InitCountry(int countryState, int countryNo, string countryName, int areaNo, string areaName, int UnemuloyedNum, int areaLv, int cumulativeNumber)
         {
             CountryState = countryState;
             CountryNo = countryNo;
@@ -66,7 +67,7 @@ public class DataBase : ScriptableObject
             CumulativeNumber = cumulativeNumber;
         }
     }
-    public Country[] countrys= new Country[14];
+    public Country[] countrys = new Country[14];
 
     //  地域レベル //
     public struct AreaLv
@@ -91,6 +92,30 @@ public class DataBase : ScriptableObject
     }
     public AreaLv[] areaLvs = new AreaLv[14];
 
+    // 失業者 //
+    public struct Unemployed
+    {
+        public int UnemployedCountryNo;   // 国ナンバー
+        public int UnemployedAreaNo;      // 地域ナンバー
+        public int InitUnemployedNum;  // その地域の失業者数
+
+        public int CurrentUnemployedNum;        //その地域の失業者数（生存者）　リストから
+        public int EmploymentNum;               // その地域の雇用数
+        public int Faint_BreathNum;             //その地域の虫の息数　０
+        public int Death_tollNum;               //その地域の死亡者数　０
+
+        public void InitUnemployed(int countryNo, int areaNo,int initUnemployedNum, int currentUnemployedNum, int employmentNum, int faint_BreathNum, int death_tollNum)
+        {
+            UnemployedCountryNo = countryNo;
+            UnemployedAreaNo  = areaNo;
+            InitUnemployedNum = initUnemployedNum;
+            CurrentUnemployedNum = currentUnemployedNum;
+            EmploymentNum = employmentNum;
+           Faint_BreathNum = faint_BreathNum;
+            Death_tollNum = death_tollNum;
+        }
+    }
+    public Unemployed[] unemployed = new Unemployed[14];
     // 生産者 //
     public struct Manufacturer
     {
@@ -104,15 +129,15 @@ public class DataBase : ScriptableObject
         public int AmountofSales;           // 売上高
         public int LaborForce;              // 労働力
         public int NumberofEmployees;       // 雇用人数
-        public int BusinessPartnerClient;   // 取引先クライアント
+        public int BusinessPartnerClient;   // 取引先クライアント //配列（複数人
         public int TransactionObject;       // 取引物
         public int RequestNum;              // 要求数
         public int Payment;                 // 支払い
 
         // 初期化関数
         public void InitManufacturer(int countryNo, int areaNo, int manuNo, string manuName, int products,
-            int totalassets, int amountofSales, int laborForce, int numberofEmployees, 
-            int businessPartnerClient,int transactionObject, int requestNum, int payment)
+            int totalassets, int amountofSales, int laborForce, int numberofEmployees,
+            int businessPartnerClient, int transactionObject, int requestNum, int payment)
         {
             ManufacturerCountryNo = countryNo;
             ManufacturerAreaNo = areaNo;

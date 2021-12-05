@@ -54,7 +54,7 @@ public class InitManager : MonoBehaviour
                                        0, 0, 0, 0, 0, 0, 0, 0);
         }
 
-        // 国初期化
+        // 国初期化        // 失業者初期化
         for (int i = 0; i < CountryList.sheets[0].list.Count; i++)
         {
             database.countrys[i].InitCountry(CountryList.sheets[0].list[i].int_CountryState,
@@ -64,6 +64,12 @@ public class InitManager : MonoBehaviour
                 CountryList.sheets[0].list[i].string_AreaName,
                 CountryList.sheets[0].list[i].int_UnemployedNum,
                 0, 0);
+
+            database.unemployed[i].InitUnemployed(CountryList.sheets[0].list[i].int_CountryNo,
+                CountryList.sheets[0].list[i].int_AreaNo,
+                CountryList.sheets[0].list[i].int_UnemployedNum,
+                CountryList.sheets[0].list[i].int_UnemployedNum,
+                0, 0, 0);
         }
 
         // 地域レベル初期化
@@ -97,7 +103,7 @@ public class InitManager : MonoBehaviour
                 ClientList.sheets[0].list[i].int_Transaction_6);
         }
 
-        // クライアント到着テーブル
+        // クライアント到着テーブル初期化
         for(int i = 0;i < ClientArrivalTableList.sheets[0].list.Count; i++)
         {
             database.ClientArrivalTables[i].InitClientArrivalTable(ClientArrivalTableList.sheets[0].list[i].int_CountryNo,
@@ -120,6 +126,7 @@ public class InitManager : MonoBehaviour
             database.RewartContent[i] = MissionList.sheets[0].list[i].int_RewardContent;
             database.RewartState[i] = MissionList.sheets[0].list[i].int_RewardState;
         }
+
 
     }
 }

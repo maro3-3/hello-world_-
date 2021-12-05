@@ -59,6 +59,11 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
     // Update is called once per frame
     void Update()
     {
+        if(Productionlist == null)
+        {
+            Productionlist = GameObject.Find("ProductionList");
+            Proscript = Productionlist.GetComponent<ProductionList>();
+        }
         if (isSearch)
         {
             // —v‹•¨‚Ìî•ñ‚ğæ“¾‚µ‚Ä‚¢‚È‚¢ó‘Ô

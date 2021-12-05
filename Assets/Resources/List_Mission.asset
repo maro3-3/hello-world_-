@@ -16,50 +16,50 @@ MonoBehaviour:
   - name: Sheet1
     list:
     - int_RewardLv: 1
-      int_EmploymentTarget: 0
-      int_RewardContent: 45
+      int_EmploymentTarget: 45
+      int_RewardContent: 1
       int_RewardState: 1
     - int_RewardLv: 1
-      int_EmploymentTarget: 0
-      int_RewardContent: 45
-      int_RewardState: 2
-    - int_RewardLv: 2
-      int_EmploymentTarget: 0
-      int_RewardContent: 60
+      int_EmploymentTarget: 45
+      int_RewardContent: 2
       int_RewardState: 1
+    - int_RewardLv: 2
+      int_EmploymentTarget: 60
+      int_RewardContent: 1
+      int_RewardState: 0
     - int_RewardLv: 3
-      int_EmploymentTarget: 0
-      int_RewardContent: 100
+      int_EmploymentTarget: 100
+      int_RewardContent: 0
       int_RewardState: 0
     - int_RewardLv: 4
-      int_EmploymentTarget: 0
-      int_RewardContent: 120
-      int_RewardState: 3
+      int_EmploymentTarget: 120
+      int_RewardContent: 3
+      int_RewardState: 0
     - int_RewardLv: 5
-      int_EmploymentTarget: 0
-      int_RewardContent: 200
+      int_EmploymentTarget: 200
+      int_RewardContent: 0
       int_RewardState: 0
     - int_RewardLv: 6
-      int_EmploymentTarget: 0
-      int_RewardContent: 250
-      int_RewardState: 1
+      int_EmploymentTarget: 250
+      int_RewardContent: 1
+      int_RewardState: 0
     - int_RewardLv: 7
-      int_EmploymentTarget: 0
-      int_RewardContent: 280
-      int_RewardState: 2
+      int_EmploymentTarget: 280
+      int_RewardContent: 2
+      int_RewardState: 0
     - int_RewardLv: 8
-      int_EmploymentTarget: 0
-      int_RewardContent: 300
+      int_EmploymentTarget: 300
+      int_RewardContent: 0
       int_RewardState: 0
     - int_RewardLv: 9
-      int_EmploymentTarget: 0
-      int_RewardContent: 320
-      int_RewardState: 1
+      int_EmploymentTarget: 320
+      int_RewardContent: 1
+      int_RewardState: 0
     - int_RewardLv: 10
-      int_EmploymentTarget: 0
-      int_RewardContent: 350
-      int_RewardState: 3
+      int_EmploymentTarget: 350
+      int_RewardContent: 3
+      int_RewardState: 0
     - int_RewardLv: 11
-      int_EmploymentTarget: 0
-      int_RewardContent: 500
-      int_RewardState: 1
+      int_EmploymentTarget: 500
+      int_RewardContent: 1
+      int_RewardState: 0

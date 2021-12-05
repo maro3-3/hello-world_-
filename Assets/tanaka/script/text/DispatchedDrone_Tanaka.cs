@@ -4,12 +4,12 @@ using UnityEngine.UI;
 //派遣中ドローンのテキスト用のスクリプト
 public class DispatchedDrone_Tanaka : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase_Tanaka database = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        database = Resources.Load<DataBase>("DataBase");
+      //  database = Resources.Load<DataBase>("DataBase");
 
        
         int droneNum = database.TempingDroneNum;

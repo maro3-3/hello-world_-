@@ -35,7 +35,17 @@ public class ClientHighLight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(Productionlist == null)
+        {
+            Productionlist = GameObject.Find("ProductionList");
+            for (int i = 0; i < production.Length; i++) // ※必ずインスペクターで配列数を決める事
+            {
+                // クライアントリストの要求物objとスクリプトと要求物青ハイライトobjを取得
+                production[i] = Productionlist.transform.GetChild(i).gameObject;
+                Proscript[i] = production[i].GetComponent<Production>();
+                ProductionHighLight[i] = production[i].transform.Find("DarkHighLight").gameObject;
+            }
+        }
     }
 
     public void OnHightLight() // 生産物と要求物が同じであればハイライトを表示
