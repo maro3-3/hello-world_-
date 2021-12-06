@@ -2,31 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class DataBase : ScriptableObject
+[CreateAssetMenu(menuName = "MyScriptable/Create Data")]
+public class DataBase_Tanaka : ScriptableObject
 {
-
     // 失業者 //
     public int UnemployedNum;       // 登録した失業者数
     public int EmploymentNum;       // 雇用数
-
 
     // ドローン //
     public int PossessionDroneNum;         // 手持ちドローン数
     public int TempingDroneNum;            // 派遣中ドローン数
     public int ExtensionStage;             // 機能拡張段階
 
-
     // ターン //
     public int TurnNum;       // ターン数
 
-
     // ミッション //
-    public int RewardLv;               // ミッションレベル
-    public int EmploymentTarget;       // 目標雇用数
-    public int RewartContent;          // 報酬
-    public int RewartState;            // 報酬ステート
-
+    public int[] RewardLv = new int[12];               // ミッションレベル
+    public int[] EmploymentTarget = new int[12];       // 目標雇用数
+    public int[] RewartContent = new int[12];          // 報酬
+    public int[] RewartState = new int[12];            // 報酬ステート
 
     // 国 //
     public struct Country
@@ -41,8 +36,8 @@ public class DataBase : ScriptableObject
         public int AreaLv;              // 地域レベル
         public int CumulativeNumber;    // クライアント累積要求数
 
-        // 初期化
-        public void InitCountry(int countryState, int countryNo, string countryName,int areaNo, string areaName, int UnemuloyedNum , int areaLv, int cumulativeNumber)
+        // 初期化関数
+        public void InitCountry(int countryState, int countryNo, string countryName, int areaNo, string areaName, int UnemuloyedNum, int areaLv, int cumulativeNumber)
         {
             CountryState = countryState;
             CountryNo = countryNo;
@@ -54,8 +49,30 @@ public class DataBase : ScriptableObject
             CumulativeNumber = cumulativeNumber;
         }
     }
+    public Country[] countrys = new Country[14];
 
-    public Country[] countrys= new Country[14];
+    //  地域レベル //
+    public struct AreaLv
+    {
+        public int CountryNo;
+        public int AreaNo;
+        public int[] AreaLvs;
+
+        public void InitAreaLv(int countryNo, int areaNo)
+        {
+            CountryNo = countryNo;
+            AreaNo = areaNo;
+        }
+        public void InitLv(int lv2, int lv3, int lv4, int lv5)
+        {
+            AreaLvs = new int[4];
+            AreaLvs[0] = lv2;
+            AreaLvs[1] = lv3;
+            AreaLvs[2] = lv4;
+            AreaLvs[3] = lv5;
+        }
+    }
+    public AreaLv[] areaLvs = new AreaLv[14];
 
     // 生産者 //
     public struct Manufacturer
@@ -75,10 +92,10 @@ public class DataBase : ScriptableObject
         public int RequestNum;              // 要求数
         public int Payment;                 // 支払い
 
-        // 初期化
+        // 初期化関数
         public void InitManufacturer(int countryNo, int areaNo, int manuNo, string manuName, int products,
-            int totalassets, int amountofSales, int laborForce, int numberofEmployees, 
-            int businessPartnerClient,int transactionObject, int requestNum, int payment)
+            int totalassets, int amountofSales, int laborForce, int numberofEmployees,
+            int businessPartnerClient, int transactionObject, int requestNum, int payment)
         {
             ManufacturerCountryNo = countryNo;
             ManufacturerAreaNo = areaNo;
@@ -96,7 +113,6 @@ public class DataBase : ScriptableObject
         }
 
     };
-    
     public Manufacturer[] manufacturers = new Manufacturer[46];
 
     // クライアント //
@@ -116,7 +132,7 @@ public class DataBase : ScriptableObject
         public int Performance;             // 業績
 
 
-        // 初期化
+        // 初期化関数
         public void InitClient(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
                                int clientLv, int clientType, int transaction,
                                int transactionStatus, string manufacturerName, int performance)
@@ -143,13 +159,46 @@ public class DataBase : ScriptableObject
             Transactions[5] = t6;
         }
     };
-
     public Client[] clients = new Client[11];
 
-
-    // 取引物をenumで設定
-    enum a
+    // クライアント到着テーブル？ //
+    public struct ClientArrivalTable
     {
+        public int CountryNo;
+        public int AreaNo;
+        public int[] Client_Person;
 
+        public void InitClientArrivalTable(int countryNo, int areaNo)
+        {
+            CountryNo = countryNo;
+            AreaNo = areaNo;
+        }
+        public void InitClient_Person(int _1th, int _2th, int _3th, int _4th, int _5th, int _6th, int _7th, int _8th, int _9th, int _10th,
+            int _11th, int _12th, int _13th, int _14th, int _15th, int _16th, int _17th, int _18th, int _19th, int _20th)
+        {
+            Client_Person = new int[20];
+            Client_Person[0] = _1th;
+            Client_Person[1] = _2th;
+            Client_Person[2] = _3th;
+            Client_Person[3] = _4th;
+            Client_Person[4] = _5th;
+            Client_Person[5] = _6th;
+            Client_Person[6] = _7th;
+            Client_Person[7] = _8th;
+            Client_Person[8] = _9th;
+            Client_Person[9] = _10th;
+            Client_Person[10] = _11th;
+            Client_Person[11] = _12th;
+            Client_Person[12] = _13th;
+            Client_Person[13] = _14th;
+            Client_Person[14] = _15th;
+            Client_Person[15] = _16th;
+            Client_Person[16] = _17th;
+            Client_Person[17] = _18th;
+            Client_Person[18] = _19th;
+            Client_Person[19] = _20th;
+        }
     }
+    public ClientArrivalTable[] ClientArrivalTables = new ClientArrivalTable[14];
+
 }

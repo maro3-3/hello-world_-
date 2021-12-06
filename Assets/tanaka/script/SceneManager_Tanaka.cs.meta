@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - area_t: {fileID: 11400000, guid: d95a2d5ed6ed1c24983325ca725469d2, type: 2}
+  - database: {fileID: 11400000, guid: 9fff38b5436ce884ea997d1056b59edf, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

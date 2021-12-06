@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class NewBehaviourScript : MonoBehaviour
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+//ミッション報酬受け取りボタン用スクリプト
+public class ReceiveMission_Tanaka : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +16,9 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         
+    }
+    public void OnClick()
+    {
+
     }
 }

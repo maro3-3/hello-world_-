@@ -6,16 +6,16 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "MyScriptable/Create Area")]
 public class Area_Tanaka : ScriptableObject
 {
-    [SerializeField] int _area = 0;
-    public int area { get; set; }
+    public int area;
+    //public int area { get; set; }
 
-    void OnEnable()
-    {
-        Init();
-    }
+    //void OnEnable()
+    //{
+    //    Init();
+    //}
 
-    void Init()
-    {
-        area = _area;
-    }
+    //void Init()
+    //{
+    //    area = _area;
+    //}
 }
