@@ -30,16 +30,20 @@ public class Mission_Manager_Tanaka : MonoBehaviour
             return;
         }
         int count = 0;
-        while (count <= 12)
+        while (count < 12)
         {
-            if (database.RewartState[count] == 1) break;
+            if (database.RewartState[count] == 1)
+            {
+                if (database.EmploymentNum >= database.EmploymentTarget[count])//雇用数が目標雇用数より大きければ
+                {
+                    missionButton.SetActive(true);//ミッション報酬受け取りボタンを表示
+                }
+                break;
+            }
             count++;
         }
 
-        if (database.EmploymentNum >= database.EmploymentTarget[count])//雇用数が目標雇用数より大きければ
-        {
-            missionButton.SetActive(true);//ミッション報酬受け取りボタンを表示
-        }
+       
     }
 
     

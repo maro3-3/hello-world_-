@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class DataBase : ScriptableObject
+[CreateAssetMenu(menuName = "MyScriptable/Create Data")]
+public class DataBase_Tanaka : ScriptableObject
 {
-
     // 失業者 //
     public int UnemployedNum;       // 登録した失業者数
     public int EmploymentNum;       // 雇用数
@@ -38,7 +37,7 @@ public class DataBase : ScriptableObject
         public int CumulativeNumber;    // クライアント累積要求数
 
         // 初期化関数
-        public void InitCountry(int countryState, int countryNo, string countryName,int areaNo, string areaName, int UnemuloyedNum , int areaLv, int cumulativeNumber)
+        public void InitCountry(int countryState, int countryNo, string countryName, int areaNo, string areaName, int UnemuloyedNum, int areaLv, int cumulativeNumber)
         {
             CountryState = countryState;
             CountryNo = countryNo;
@@ -50,7 +49,7 @@ public class DataBase : ScriptableObject
             CumulativeNumber = cumulativeNumber;
         }
     }
-    public Country[] countrys= new Country[14];
+    public Country[] countrys = new Country[14];
 
     //  地域レベル //
     public struct AreaLv
@@ -95,8 +94,8 @@ public class DataBase : ScriptableObject
 
         // 初期化関数
         public void InitManufacturer(int countryNo, int areaNo, int manuNo, string manuName, int products,
-            int totalassets, int amountofSales, int laborForce, int numberofEmployees, 
-            int businessPartnerClient,int transactionObject, int requestNum, int payment)
+            int totalassets, int amountofSales, int laborForce, int numberofEmployees,
+            int businessPartnerClient, int transactionObject, int requestNum, int payment)
         {
             ManufacturerCountryNo = countryNo;
             ManufacturerAreaNo = areaNo;

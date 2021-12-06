@@ -14,11 +14,15 @@ public class Text_Onodera : MonoBehaviour
     //public Button button;
     [SerializeField] GameObject Object;
     [SerializeField] GameObject PLAYER;
+   // DataBase database = new DataBase();
 
-  
 
     void Start()
     {
+       
+      //  database = Resources.Load<DataBase>("DataBase");
+
+
         PLAYER = GameObject.FindGameObjectWithTag("Player");
         employees = false;
         emp_count = 5;
@@ -63,6 +67,7 @@ public class Text_Onodera : MonoBehaviour
                 label3.text = "";
                 label4.text = "";
                 Employees();
+               // database.manufacturers[0].NumberofEmployees += emp_count;
             }
             UpdateCount();
         }
