@@ -14,13 +14,12 @@ public class Text_Onodera : MonoBehaviour
     //public Button button;
     [SerializeField] GameObject Object;
     [SerializeField] GameObject PLAYER;
-   // DataBase database = new DataBase();
-
+    
 
     void Start()
     {
-       
-      //  database = Resources.Load<DataBase>("DataBase");
+       // DataBase database = new DataBase();
+        //  database = Resources.Load<DataBase>("DataBase");
 
 
         PLAYER = GameObject.FindGameObjectWithTag("Player");
@@ -36,9 +35,11 @@ public class Text_Onodera : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
+        DataBase database = new DataBase();
+
         //if (other.gameObject == PLAYER)
         //{
-            Object.SetActive(true);
+        Object.SetActive(true);
        // }
 
         if (employees == false)
@@ -67,7 +68,7 @@ public class Text_Onodera : MonoBehaviour
                 label3.text = "";
                 label4.text = "";
                 Employees();
-               // database.manufacturers[0].NumberofEmployees += emp_count;
+               database.manufacturers[0].NumberofEmployees += emp_count;
             }
             UpdateCount();
         }
@@ -93,3 +94,4 @@ public class Text_Onodera : MonoBehaviour
         return number_employees;
     }
 }
+//Getempcount
