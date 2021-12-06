@@ -1,6 +1,6 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 
 [CreateAssetMenu]
@@ -88,14 +88,14 @@ public class DataBase : ScriptableObject
         public int Faint_BreathNum;             //‚»‚Ì’nˆæ‚Ì’‚Ì‘§”@‚O
         public int Death_tollNum;               //‚»‚Ì’nˆæ‚Ì€–SÒ”@‚O
 
-        public void InitUnemployed(int countryNo, int areaNo,int initUnemployedNum, int currentUnemployedNum, int employmentNum, int faint_BreathNum, int death_tollNum)
+        public void InitUnemployed(int countryNo, int areaNo, int initUnemployedNum, int currentUnemployedNum, int employmentNum, int faint_BreathNum, int death_tollNum)
         {
             UnemployedCountryNo = countryNo;
-            UnemployedAreaNo  = areaNo;
+            UnemployedAreaNo = areaNo;
             InitUnemployedNum = initUnemployedNum;
             CurrentUnemployedNum = currentUnemployedNum;
             EmploymentNum = employmentNum;
-           Faint_BreathNum = faint_BreathNum;
+            Faint_BreathNum = faint_BreathNum;
             Death_tollNum = death_tollNum;
         }
     }
