@@ -25,7 +25,7 @@ public class Transaction_Tanaka : MonoBehaviour
     }
 
     //ターン終了時に呼ばれる
-    void Transaction()//取引
+    public void Transaction()//取引
     {
         
         for (int i = 0; i < ManuList.sheets[0].list.Count; i++)//生産者全員分
