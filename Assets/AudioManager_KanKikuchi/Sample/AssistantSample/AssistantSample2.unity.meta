@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/AudioManager_KanKikuchi/Sample/AssistantSample/AssistantSample2.unity.meta
 guid: d49d9d605cb7940d6a7693d40e2cf7f0
+=======
+guid: e1a1fd5d913b64325ac80adf758efb6c
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee:Assets/AudioManager_KanKikuchi/Sample/AssistantSample/AssistantSample1.unity.meta
+=======
+guid: d49d9d605cb7940d6a7693d40e2cf7f0
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
 DefaultImporter:
   externalObjects: {}
   userData: 

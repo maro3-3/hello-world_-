@@ -27,6 +27,7 @@ public class NewClient_Onodera : MonoBehaviour
 
     void Update()
     {
+        /*
         if (ClieLv > Arealv)
         {
             Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
@@ -36,6 +37,7 @@ public class NewClient_Onodera : MonoBehaviour
         {
             Client.SetActive(true);
         }
+        */
     }
     public void OnTriggerStay(Collider other)
     {

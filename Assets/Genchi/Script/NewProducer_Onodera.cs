@@ -35,8 +35,7 @@ public class NewProducer_Onodera : MonoBehaviour
     }
     private void Update()
     {
-
-        if (ProdLv > Arealv)
+        if (ProdLv > database.countrys[Arealv].AreaLv)
         {
             Arealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
             Producer.SetActive(false);

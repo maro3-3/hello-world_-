@@ -6,6 +6,7 @@ using System.IO;
 
 public class Areamanager_Onodera : MonoBehaviour
 {
+    
     public static int Arealevel = 1;
     public static int Arealevel1_1 = 1;
     public static int Arealevel1_2 = 1;
@@ -21,66 +22,73 @@ public class Areamanager_Onodera : MonoBehaviour
     public static int Arealevel5_1 = 1;
     public static int Arealevel5_2 = 1;
     public static int Arealevel5_3 = 1;
+    DataBase database = null;
 
-  
+    void Start()
+    {
+        database = Resources.Load<DataBase>("DataBase");
+
+    }
+
+
     public static int GetArealv(int Country,int Area)
     {
-        
-        if(Country==1&& Area==1)
+       
+        if (Country==1&& Area==1)
         {
-            Arealevel = Arealevel1_1;
+            Arealevel = 0;
         }
         if (Country == 1 && Area == 2)
         {
-            Arealevel = Arealevel1_2;
+            Arealevel = 1;
         }
         if (Country == 1 && Area == 3)
         {
-            Arealevel = Arealevel1_3;
+            Arealevel = 2;
         }
         if (Country == 2 && Area == 1)
         {
-            Arealevel = Arealevel2_1;
+            Arealevel = 3;
         }
         if (Country == 2 && Area == 2)
         {
-            Arealevel = Arealevel2_2;
+            Arealevel = 4;
         }
         if (Country == 2 && Area == 3)
         {
-            Arealevel = Arealevel2_3;
+            Arealevel = 5;
         }
         if (Country == 3 && Area == 1)
         {
-            Arealevel = Arealevel3_1;
+            Arealevel = 6;
         }
         if (Country == 3 && Area == 2)
         {
-            Arealevel = Arealevel3_2;
+            Arealevel = 7;
         }
         if (Country == 4 && Area == 1)
         {
-            Arealevel = Arealevel4_1;
+            Arealevel = 8;
         }
         if (Country == 4 && Area == 2)
         {
-            Arealevel = Arealevel4_2;
+            Arealevel = 9;
         }
         if (Country == 4 && Area == 3)
         {
-            Arealevel = Arealevel4_3;
+            Arealevel = 10;
         }
         if (Country == 5 && Area == 1)
         {
-            Arealevel = Arealevel5_1;
+            Arealevel = 11;
         }
         if (Country == 5 && Area == 2)
         {
-            Arealevel = Arealevel5_2;
+            Arealevel = 12;
         }
         if (Country == 5 && Area == 3)
         {
-            Arealevel = Arealevel5_3;
+            Arealevel = 13;
         }
         return Arealevel;
     }
@@ -454,12 +462,7 @@ public class Areamanager_Onodera : MonoBehaviour
     //DataBase database = new DataBase();
     // Entity_Sheet1 es;
     // Start is called before the first frame update
-    void Start()
-    {
-      //  es = Resources.Load("test_Data") as Entity_sheet1;
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
