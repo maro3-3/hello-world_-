@@ -46,7 +46,7 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Space))
             {
-                database.clients[num].ClientNo = 1;//ミニゲームシーンへクライアント情報を渡す
+                database.MiniClieNo = database.clients[num].ClientNo;//ミニゲームシーンへクライアント情報を渡す
                 SceneManager.LoadScene("minigame");
 
             }

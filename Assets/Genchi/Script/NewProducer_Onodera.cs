@@ -56,7 +56,7 @@ public class NewProducer_Onodera : MonoBehaviour
         roudou = database.manufacturers[num].LaborForce;
         koyo = database.manufacturers[num].NumberofEmployees;
         //sousisan, uriage, roudouryoku, koyou;
-        sousisan.text = "‘‘Y";
+        
     }
 
     public void OnTriggerStay(Collider other)
@@ -67,6 +67,11 @@ public class NewProducer_Onodera : MonoBehaviour
         //{
         Object.SetActive(true);
         // }
+
+        sousisan.text = "‘‘Y:" + sisan;
+        uriage.text = "”„ã‚:" + uri;
+        roudouryoku.text = "˜J“­—Í:" + roudou;
+        koyou.text = ""+koyo;
 
         if (employees == false)
         {
