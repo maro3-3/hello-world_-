@@ -7,17 +7,14 @@ using UnityEngine.SceneManagement;
 public class Client_Onodera : MonoBehaviour
 
 {
-    // Start is called before the first frame update
-    // public string teststring;
-    //public Button button;
+   
     [SerializeField] GameObject Client;
-    public int ClieCountry = 0;//クライアントの国 1アメリカ　   2中国　3ロシア　4オーストラリア　5南アフリカ
-    public int ClieArea = 0;//クライアントの地域　1ニューヨーク　北京　モスクワ キャンペラ　     プレトリア
-                            //                    2セントルイス　上海　ウファ　 パース　         ブルームフォンテイン
-                            //                    3アトランタ　　四川　　　　　 メルボルン　　　 ケープタウン
+    public int ClieCountry = 0;//クライアントの国 
+
+    public int ClieArea = 0;//クライアントの地域　
     public int ClieNum = 0;
-    //DataBase database = new DataBase();
-    //DataBase.Client[] clients;
+    public int ClieLv = 0;
+    
     int Arealv;
 
     void Start()
@@ -28,7 +25,7 @@ public class Client_Onodera : MonoBehaviour
 
     void Update()
     {
-       if( ClieNum>Arealv)
+       if( ClieLv>Arealv)
         {
             Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
             Client.SetActive(false);

@@ -5,13 +5,11 @@ using UnityEngine;
 public class Producer_Onodera : MonoBehaviour
 {
     [SerializeField] GameObject Producer;
-    public int ProdCountry = 0;//生産者の国 1アメリカ　   2中国　3ロシア　4オーストラリア　5南アフリカ
-    public int ProdArea = 0;//生産者の地域　1ニューヨーク　北京　モスクワ キャンペラ　     プレトリア
-                            //                    2セントルイス　上海　ウファ　 パース　         ブルームフォンテイン
-                            //                    3アトランタ　　四川　　　　　 メルボルン　　　 ケープタウン
+    public int ProdCountry = 0;//生産者の国 
+    public int ProdArea = 0;//生産者の地域　
     public int ProdNum = 0;
-    //DataBase database = new DataBase();
-    //DataBase.Client[] clients;
+    public int ProdLv = 0;
+    
     int Arealv;
 
     void Start()
@@ -22,7 +20,7 @@ public class Producer_Onodera : MonoBehaviour
 
     void Update()
     {
-        if (ProdNum > Arealv)
+        if (ProdLv > Arealv)
         {
             Arealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
             Producer.SetActive(false);
