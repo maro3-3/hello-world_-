@@ -11,11 +11,14 @@ public class SceneManager_Tanaka : MonoBehaviour
   //  [SerializeField] DataBase_Tanaka database = null;
     DataBase database = null;
     GameObject turnmanager;
+    GameObject transaction;
     // Start is called before the first frame update
     void Start()
     {
         turnmanager = GameObject.Find("TurnManager");
+        transaction = GameObject.Find("TransactionManager");
         database = Resources.Load<DataBase>("DataBase");
+
     }
 
     // Update is called once per frame
@@ -49,6 +52,7 @@ public class SceneManager_Tanaka : MonoBehaviour
     void Turn()
     {
         database.TurnNum++;//ターン+１
+        transaction.GetComponent<Transaction_Tanaka>().Transaction();
     }
 
     public void OnClick_Flymo()//fly.m.oから出る（今いる現地に戻る？）
