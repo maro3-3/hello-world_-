@@ -32,6 +32,7 @@ public class NewProducer_Onodera : MonoBehaviour
         employees = false;
         emp_count = 5;
         UpdateCount();
+        
     }
     private void Update()
     {

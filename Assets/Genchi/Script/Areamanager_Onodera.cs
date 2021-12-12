@@ -27,6 +27,7 @@ public class Areamanager_Onodera : MonoBehaviour
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
+        
 
     }
 
