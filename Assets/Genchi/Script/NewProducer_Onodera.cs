@@ -18,7 +18,6 @@ public class NewProducer_Onodera : MonoBehaviour
     [SerializeField] GameObject Object;
     
     [SerializeField] GameObject Producer;
-
     [SerializeField] GameObject Object1;
     [SerializeField] GameObject Object2;
     [SerializeField] GameObject Object3;
@@ -36,11 +35,11 @@ public class NewProducer_Onodera : MonoBehaviour
         employees = false;
         emp_count = 5;
         UpdateCount();
-        
     }
     private void Update()
     {
-        if (ProdLv > database.countrys[Arealv].AreaLv)
+
+        if (ProdLv > Arealv)
         {
             Arealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
             Producer.SetActive(false);

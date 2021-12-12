@@ -10,9 +10,9 @@ public class Unemployed_Onodera : MonoBehaviour
     [SerializeField] GameObject Object3;
     public int UnempCountry = 0;//失業者の国 
     public int UnempArea = 0;//失業者の地域　
-    public　int Unempstate = 1;//状態
+    public int Unempstate = 1;//状態
 
-    int turnget=0, turncheck=0;
+    int turnget = 0, turncheck = 0;
 
     // Start is called before the first frame update
     int Arealv;
@@ -35,12 +35,12 @@ public class Unemployed_Onodera : MonoBehaviour
         {
 
             if (turnget != turncheck)
-        {
-            int AreaCheck;//エリアのレベル
-            int ran = Random.Range(0, 100);
-            turncheck = turnget;
-            Arealv = Areamanager_Onodera.GetArealv(UnempCountry, UnempArea);
-            AreaCheck = database.countrys[Arealv].AreaLv;
+            {
+                int AreaCheck;//エリアのレベル
+                int ran = Random.Range(0, 100);
+                turncheck = turnget;
+                Arealv = Areamanager_Onodera.GetArealv(UnempCountry, UnempArea);
+                AreaCheck = database.countrys[Arealv].AreaLv;
                 if (AreaCheck == 1)//エリアのレベルが1
                 {
                     if (ran < 10 * turnget)
@@ -83,7 +83,7 @@ public class Unemployed_Onodera : MonoBehaviour
                 }
             }
 
-        
+
             Object1.SetActive(true);
             Object2.SetActive(false);
             Object3.SetActive(false);
@@ -96,7 +96,7 @@ public class Unemployed_Onodera : MonoBehaviour
                 Unempstate = 3;
                 database.unemployed[0].Death_tollNum += 1;
             }
-                Object1.SetActive(false);
+            Object1.SetActive(false);
             Object2.SetActive(true);
             Object3.SetActive(false);
         }
