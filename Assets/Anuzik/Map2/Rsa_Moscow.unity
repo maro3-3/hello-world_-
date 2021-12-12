@@ -391,7 +391,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5453410055049629663, guid: 33a12c03911e5954089d556cca68f72a, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 10
+=======
+<<<<<<< HEAD
+      value: 3
+=======
+      value: 15
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5453410055049629663, guid: 33a12c03911e5954089d556cca68f72a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1154,7 +1162,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 16
+=======
+<<<<<<< HEAD
+      value: 12
+=======
+      value: 24
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1818,7 +1834,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7112699032031079292, guid: ee1ceecd56ff17c469c3ac358a843838, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 11
+=======
+      value: 0
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 7112699032031079292, guid: ee1ceecd56ff17c469c3ac358a843838, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1875,7 +1895,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 55
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 0
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2187,7 +2215,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 549882666337971907, guid: f6fe35d1510f4684c8c985feac38cfb4, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 9
+=======
+<<<<<<< HEAD
+      value: 2
+=======
+      value: 6
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 549882666337971907, guid: f6fe35d1510f4684c8c985feac38cfb4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2436,7 +2472,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 16
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 2
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2494,7 +2538,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 41
+=======
+<<<<<<< HEAD
+      value: 3
+=======
+      value: 6
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2567,7 +2619,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 13
+=======
+<<<<<<< HEAD
+      value: 7
+=======
+      value: 0
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2629,7 +2689,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 16
+=======
+<<<<<<< HEAD
+      value: 4
+=======
+      value: 1
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2861,8 +2929,18 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
 --- !u!4 &509521130 stripped
 Transform:
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
   m_CorrespondingSourceObject: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
   m_PrefabInstance: {fileID: 509521129}
+=======
+  m_CorrespondingSourceObject: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+<<<<<<< HEAD
+  m_PrefabInstance: {fileID: 651196818}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &712645075
+=======
+  m_PrefabInstance: {fileID: 616373734}
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &517720424
 PrefabInstance:
@@ -2920,6 +2998,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &517720425 stripped
 Transform:
@@ -2927,6 +3006,11 @@ Transform:
   m_PrefabInstance: {fileID: 517720424}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &528632924
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: f6fe35d1510f4684c8c985feac38cfb4, type: 3}
+--- !u!1001 &651196818
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2935,7 +3019,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 523157643858886350, guid: 99129eea887904d4b8772ecb8ec3e057, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 8
+=======
+<<<<<<< HEAD
+      value: 3
+=======
+      value: 5
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 523157643858886350, guid: 99129eea887904d4b8772ecb8ec3e057, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5982,7 +6074,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 12
+=======
+<<<<<<< HEAD
+      value: 4
+=======
+      value: 5
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6164,7 +6264,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 523157643858886350, guid: 99129eea887904d4b8772ecb8ec3e057, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 13
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 37
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 523157643858886350, guid: 99129eea887904d4b8772ecb8ec3e057, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6263,6 +6371,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
     - target: {fileID: 2053912348648897238, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: ClieNum
       value: 1
@@ -6276,6 +6385,21 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897239, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
+=======
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 224445600}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+<<<<<<< HEAD
+      objectReference: {fileID: 215683206}
+=======
+      objectReference: {fileID: 1396021700}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       propertyPath: m_Name
       value: NewClient (9)
       objectReference: {fileID: 0}
@@ -6337,6 +6461,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
   m_SourcePrefab: {fileID: 100100000, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
 --- !u!4 &1221193073 stripped
 Transform:
@@ -6344,6 +6469,25 @@ Transform:
   m_PrefabInstance: {fileID: 1221193072}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1227670247
+=======
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &849319422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 849319421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &849319423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 849319421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &850183922
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+--- !u!1001 &1007714405
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6356,7 +6500,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 12
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 10
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6414,7 +6566,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 10
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 32
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6597,9 +6757,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 224445600}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 1396021700}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: m_Name
+      value: road_area (2)
+      objectReference: {fileID: 0}
+=======
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
   m_SourcePrefab: {fileID: 100100000, guid: 33a12c03911e5954089d556cca68f72a, type: 3}
 --- !u!1001 &1251778874
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
+--- !u!4 &1045496020 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
+  m_PrefabInstance: {fileID: 1045496019}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+--- !u!1 &976937789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 976937787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &982009353
+=======
+--- !u!1001 &1064720670
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6716,6 +6910,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
+=======
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 224445600}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 1543834548}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
+    - target: {fileID: 1798199155157019400, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+      propertyPath: m_Name
+      value: road_L-road
+      objectReference: {fileID: 0}
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &1303005132 stripped
@@ -6723,7 +6936,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
   m_PrefabInstance: {fileID: 1303005131}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
 --- !u!1001 &1329517804
+=======
+<<<<<<< HEAD
+--- !u!1 &1007714407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1007714405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1042972012
+=======
+--- !u!1001 &1170539492
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6732,7 +6958,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 46
+=======
+<<<<<<< HEAD
+      value: 7
+=======
+      value: 2
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6982,7 +7216,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 50
+=======
+<<<<<<< HEAD
+      value: 2
+=======
+      value: 10
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7051,7 +7293,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 549882666337971907, guid: f6fe35d1510f4684c8c985feac38cfb4, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 30
+=======
+      value: 2
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 549882666337971907, guid: f6fe35d1510f4684c8c985feac38cfb4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7112,7 +7358,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 12
+=======
+<<<<<<< HEAD
+      value: 3
+=======
+      value: 11
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7174,7 +7428,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 13
+=======
+<<<<<<< HEAD
+      value: 4
+=======
+      value: 35
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7274,13 +7536,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
     - target: {fileID: 867349431506003060, guid: 99129eea887904d4b8772ecb8ec3e057, type: 3}
+=======
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 224445600}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 228007544}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
+    - target: {fileID: 930630987074270329, guid: f6fe35d1510f4684c8c985feac38cfb4, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       propertyPath: m_Name
       value: Mini_sensin_tatemono3 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
   m_SourcePrefab: {fileID: 100100000, guid: 99129eea887904d4b8772ecb8ec3e057, type: 3}
 --- !u!1001 &1389950700
+=======
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &1228595800 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1228595799}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1228595801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1228595799}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1246895189
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: f6fe35d1510f4684c8c985feac38cfb4, type: 3}
+--- !u!1001 &1382973262
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -7289,7 +7587,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 38
+=======
+<<<<<<< HEAD
+      value: 8
+=======
+      value: 26
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8844,6 +9150,8 @@ PrefabInstance:
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_RootOrder
       value: 3
+<<<<<<< HEAD
+=======
       objectReference: {fileID: 0}
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8880,6 +9188,7 @@ PrefabInstance:
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
       objectReference: {fileID: 0}
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -10680,7 +10989,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 523157643858886350, guid: 99129eea887904d4b8772ecb8ec3e057, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Rsa_Moscow.unity
       value: 27
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 13
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Moscow.unity
       objectReference: {fileID: 0}
     - target: {fileID: 523157643858886350, guid: 99129eea887904d4b8772ecb8ec3e057, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12122,7 +12439,11 @@ Transform:
   - {fileID: 1349882780}
   - {fileID: 1056516113}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 11
+=======
   m_RootOrder: 24
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599764945230253
 Transform:
@@ -12153,7 +12474,11 @@ Transform:
   - {fileID: 22968518}
   - {fileID: 54975193}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 9
+=======
   m_RootOrder: 22
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765609086971
 Transform:
@@ -12184,7 +12509,11 @@ Transform:
   - {fileID: 670603993}
   - {fileID: 807416241}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 10
+=======
   m_RootOrder: 23
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765725756116
 Transform:
@@ -12215,7 +12544,11 @@ Transform:
   - {fileID: 1857230983}
   - {fileID: 416296637}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 7
+=======
   m_RootOrder: 20
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765768490933
 Transform:
@@ -12244,7 +12577,11 @@ Transform:
   - {fileID: 1374064726}
   - {fileID: 1528663677}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 4
+=======
   m_RootOrder: 17
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765973414541
 Transform:
@@ -12275,7 +12612,11 @@ Transform:
   - {fileID: 2037665454}
   - {fileID: 2022981859}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 6
+=======
   m_RootOrder: 19
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599766077050767
 Transform:
@@ -12308,7 +12649,11 @@ Transform:
   - {fileID: 481216374}
   - {fileID: 1251778875}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 8
+=======
   m_RootOrder: 21
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599766124234953
 Transform:
@@ -12339,7 +12684,11 @@ Transform:
   - {fileID: 810056841}
   - {fileID: 919984256}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 5
+=======
   m_RootOrder: 18
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &9131649717714121716
 PrefabInstance:

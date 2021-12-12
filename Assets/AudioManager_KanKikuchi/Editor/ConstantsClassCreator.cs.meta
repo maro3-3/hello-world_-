@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/AudioManager_KanKikuchi/Editor/ConstantsClassCreator.cs.meta
 guid: 1bea39b59ca91436db403212f35f3141
+=======
+guid: 9e5bf0f14ae8d477d9688e90af119976
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee:Assets/AudioManager_KanKikuchi/Editor/AudioPostProcessor.cs.meta
+=======
+guid: 1bea39b59ca91436db403212f35f3141
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

@@ -670,6 +670,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   m_GameObject: {fileID: 256705628}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
@@ -679,6 +680,13 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &276384498
+=======
+<<<<<<< HEAD
+--- !u!1001 &379945243
+=======
+--- !u!1001 &336116128
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -768,7 +776,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 1
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 0.7071068
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.x
@@ -776,7 +792,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 0
+=======
+<<<<<<< HEAD
+      value: 0
+=======
+      value: -0.7071068
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.z
@@ -788,12 +812,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 0
+=======
+<<<<<<< HEAD
+      value: 0
+=======
+      value: -90
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &280068999 stripped
@@ -802,6 +835,42 @@ Transform:
   m_PrefabInstance: {fileID: 280068998}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &305214916
+=======
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1389864448}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 857513284}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
+    - target: {fileID: 3150764572437613097, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+      propertyPath: m_Name
+      value: Mini_sensin_tatemono2 (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &405662037 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 405662036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &405662038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 405662036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &435876817
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
+--- !u!1001 &368925479
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -810,7 +879,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 5
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 39
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -976,6 +1053,7 @@ PrefabInstance:
       value: road_L-road (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   m_SourcePrefab: {fileID: 100100000, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
 --- !u!4 &363894873 stripped
 Transform:
@@ -983,6 +1061,20 @@ Transform:
   m_PrefabInstance: {fileID: 363894872}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &404415907
+=======
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+--- !u!4 &486493851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+  m_PrefabInstance: {fileID: 486493850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &523610838
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
+--- !u!1001 &405662036
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1015,7 +1107,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
+      value: -0.7071068
+=======
       value: 0
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1027,12 +1123,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+<<<<<<< HEAD
+      value: -90
+=======
       value: 0
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
     - target: {fileID: 2053912348648897238, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: ClieNum
       value: 2
@@ -1046,12 +1147,51 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897239, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
+=======
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1389864448}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+<<<<<<< HEAD
+      objectReference: {fileID: 1835287000}
+=======
+      objectReference: {fileID: 857513284}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       propertyPath: m_Name
       value: NewClient (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   m_SourcePrefab: {fileID: 100100000, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
 --- !u!1001 &415754683
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &405662037 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 405662036}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+--- !u!1 &523610840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 523610838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &588921134
+=======
+--- !u!1 &405662038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 405662036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &422001356
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1133,7 +1273,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 14
+=======
+<<<<<<< HEAD
+      value: 4
+=======
+      value: 33
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1191,7 +1339,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 3
+=======
+      value: 4
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1252,7 +1404,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 12
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 9
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1379,7 +1539,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 0
+=======
+<<<<<<< HEAD
+      value: 3
+=======
+      value: 10
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1474,7 +1642,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 1
+=======
+<<<<<<< HEAD
+      value: 0
+=======
+      value: 0.7071068
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1482,7 +1658,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 0
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: -0.7071068
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1494,13 +1678,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 0
+=======
+<<<<<<< HEAD
+      value: 180
+=======
+      value: -90
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1389864448}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 1966394643}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: m_Name
+      value: road_area (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &779477314 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 779477313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &779477315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 779477313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &799241984
+=======
+    m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &493572577 stripped
 Transform:
@@ -1508,6 +1728,11 @@ Transform:
   m_PrefabInstance: {fileID: 493572576}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &519234288
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 33a12c03911e5954089d556cca68f72a, type: 3}
+--- !u!1001 &588921134
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1652,9 +1877,143 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1353841730472893415, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
       propertyPath: m_Name
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: road_Standard
       objectReference: {fileID: 0}
     - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+=======
+<<<<<<< HEAD
+      value: road_Standard
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.4422
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.822285
+=======
+      value: New_producer (2)
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370244, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+--- !u!4 &843863847 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
+  m_PrefabInstance: {fileID: 843863846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &845874995
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6818599765787135269}
+    m_Modifications:
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.44217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.82228
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798199155157019400, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+      propertyPath: m_Name
+      value: road_L-road
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+--- !u!4 &845874996 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+  m_PrefabInstance: {fileID: 845874995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &857513282
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6818599766680457319}
+    m_Modifications:
+    - target: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
@@ -1672,7 +2031,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 0.7071068
+=======
+      value: 0
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1680,7 +2043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 0.7071068
+=======
+      value: 1
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1692,13 +2059,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 90
+=======
+      value: 180
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1838066013902438749, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1389864448}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 405662038}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: m_Name
+      value: road_area (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &857513283 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 857513282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &857513284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 857513282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &998357812
+=======
+    m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   m_SourcePrefab: {fileID: 100100000, guid: 04c3318f5c6529d4baadeb58c2e0b27b, type: 3}
 --- !u!4 &608721505 stripped
 Transform:
@@ -1706,6 +2105,11 @@ Transform:
   m_PrefabInstance: {fileID: 608721504}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &618720151
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+--- !u!1001 &643046749
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1714,7 +2118,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 2
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 4
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1776,7 +2188,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 37
+=======
+<<<<<<< HEAD
+      value: 6
+=======
+      value: 3
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1845,7 +2265,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 31
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 11
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1976,7 +2404,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 18
+=======
+<<<<<<< HEAD
+      value: 8
+=======
+      value: 5
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2037,7 +2473,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 15
+=======
+<<<<<<< HEAD
+      value: 7
+=======
+      value: 1
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3932,7 +4376,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
   m_PrefabInstance: {fileID: 1580827595}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
 --- !u!1001 &1604137098
+=======
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1337740089}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1358169236
+=======
+--- !u!1001 &1471457579
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3945,7 +4405,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7577741599499515955, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 5
+=======
+<<<<<<< HEAD
+      value: 2
+=======
+      value: 8
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 7577741599499515955, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4118,7 +4586,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
   m_PrefabInstance: {fileID: 1652524283}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
 --- !u!1001 &1660849050
+=======
+<<<<<<< HEAD
+--- !u!1001 &1389864447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 187.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 204.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920691, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_Name
+      value: Player (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+--- !u!1 &1389864448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1549515549239920691, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+  m_PrefabInstance: {fileID: 1389864447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1419209737
+=======
+--- !u!1001 &1631426898
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4127,7 +4665,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 7
+=======
+<<<<<<< HEAD
+      value: 7
+=======
+      value: 26
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4303,7 +4849,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 8
+=======
+<<<<<<< HEAD
+      value: 8
+=======
+      value: 18
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1423045355942638002, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4422,7 +4976,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 36
+=======
+<<<<<<< HEAD
+      value: 2
+=======
+      value: 22
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4803,7 +5365,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
       value: 27
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 8
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5649,7 +6219,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4707726341328820781, guid: e3c567a283a74d342bbb45d405ab8da9, type: 3}
   m_PrefabInstance: {fileID: 6527735509836154348}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
 --- !u!4 &6818599765611959311
+=======
+  m_GameObject: {fileID: 6515419412395572625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 600, y: 0, z: -200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1617336837}
+  - {fileID: 1849629072}
+  - {fileID: 1946438839}
+  - {fileID: 321532392}
+  - {fileID: 486493851}
+  - {fileID: 110626988}
+  - {fileID: 161616542}
+  - {fileID: 1817252118}
+  - {fileID: 2105459442}
+  - {fileID: 1835286999}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 9
+=======
+  m_RootOrder: 17
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599765602513551
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5676,7 +6272,15 @@ Transform:
   - {fileID: 1191570349}
   - {fileID: 434888212}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   m_RootOrder: 9
+=======
+<<<<<<< HEAD
+  m_RootOrder: 5
+=======
+  m_RootOrder: 13
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765621120802
 Transform:
@@ -5705,7 +6309,15 @@ Transform:
   - {fileID: 2014871905}
   - {fileID: 903913430}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   m_RootOrder: 11
+=======
+<<<<<<< HEAD
+  m_RootOrder: 7
+=======
+  m_RootOrder: 15
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6981599822639891744
 Transform:
@@ -5736,7 +6348,15 @@ Transform:
   - {fileID: 871343451}
   - {fileID: 1345144536}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   m_RootOrder: 10
+=======
+<<<<<<< HEAD
+  m_RootOrder: 8
+=======
+  m_RootOrder: 16
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7217092341651444866
 GameObject:
@@ -5744,6 +6364,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Chi_pekin.unity
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6981599822639891744}
@@ -5754,3 +6375,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+=======
+  m_GameObject: {fileID: 6515419411375899077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 200, y: 0, z: 200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6527735508747455146}
+  - {fileID: 5205102924086045473}
+  - {fileID: 1439895651}
+  - {fileID: 254309049}
+  - {fileID: 643046750}
+  - {fileID: 998357813}
+  - {fileID: 150953226}
+  - {fileID: 1419209738}
+  - {fileID: 1862675129}
+  - {fileID: 481802282}
+  - {fileID: 857513283}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 6
+=======
+  m_RootOrder: 14
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Melbourne.unity

@@ -925,6 +925,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
   m_PrefabInstance: {fileID: 139417999}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
+=======
+--- !u!1001 &167579627
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5495468954872370244, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_Name
+      value: New_producer (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370244, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 4
+=======
+      value: 12
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.6129494
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.894943
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
 --- !u!1001 &169455369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -976,13 +1044,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1722625785}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 733738617}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
     - target: {fileID: 7637738526322880966, guid: ee1ceecd56ff17c469c3ac358a843838, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
       propertyPath: m_Name
       value: sensin_tatemono2 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &178770288 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 178770287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &178770289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 178770287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &215503616
+=======
   m_SourcePrefab: {fileID: 100100000, guid: ee1ceecd56ff17c469c3ac358a843838, type: 3}
 --- !u!1001 &177683386
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1033,13 +1128,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1722625785}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 1454391354}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
     - target: {fileID: 3150764572437613097, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
       propertyPath: m_Name
       value: Mini_sensin_tatemono2 (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &215503617 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 215503616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &215503618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 215503616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &236816147
+=======
   m_SourcePrefab: {fileID: 100100000, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
 --- !u!1001 &178770287
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1097,7 +1219,11 @@ PrefabInstance:
     - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
       propertyPath: point
       value: 
+<<<<<<< HEAD
+      objectReference: {fileID: 1909168250}
+=======
       objectReference: {fileID: 733738617}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
     - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
       propertyPath: m_Name
       value: road_area (1)
@@ -1109,12 +1235,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
   m_PrefabInstance: {fileID: 178770287}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+--- !u!1 &236816149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 236816147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &237053516
+=======
 --- !u!1 &178770289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
   m_PrefabInstance: {fileID: 178770287}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
 --- !u!1001 &183793294
+=======
+--- !u!1001 &214759843
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1123,7 +1262,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
       value: 84
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 58
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1608,6 +1755,70 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068036708310, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068036708310, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068036708310, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068036708310, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068036708314, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_Name
+      value: Flymo
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214038068036708314, guid: 595c333574e08e348b652bee0b275746, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 595c333574e08e348b652bee0b275746, type: 3}
+--- !u!1001 &496181610
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6818599764809009659}
+    m_Modifications:
+    - target: {fileID: 7089329345519297161, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
+      propertyPath: m_Name
+      value: road_T-road
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577741599499515955, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577741599499515955, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.44217432
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577741599499515955, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577741599499515955, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.822266
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577741599499515955, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577741599499515955, guid: 105567c0b5f14d24da595d23d39516d2, type: 3}
+      propertyPath: m_LocalRotation.x
+=======
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
@@ -1830,7 +2041,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
       value: 58
+=======
+<<<<<<< HEAD
+      value: 2
+=======
+      value: 71
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2011,7 +2230,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
       value: 69
+=======
+<<<<<<< HEAD
+      value: 7
+=======
+      value: 5
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2153,7 +2380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2165,12 +2392,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &340223018 stripped
@@ -2179,6 +2407,42 @@ Transform:
   m_PrefabInstance: {fileID: 340223017}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &348721263
+=======
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1722625785}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 1812073093}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
+    - target: {fileID: 592109759317396371, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+      propertyPath: m_Name
+      value: Mini_3ren_sen_tate1 (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &657383529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 657383528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &657383530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 657383528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &707378832
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
+--- !u!1001 &482078492
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2280,15 +2544,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
       value: -0
+=======
+<<<<<<< HEAD
+      value: 0.7071068
+=======
+      value: -0.7071068
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2296,12 +2568,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1722625785}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 178770289}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: m_Name
+      value: road_area
+      objectReference: {fileID: 0}
+=======
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &379957993 stripped
@@ -2309,7 +2596,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
   m_PrefabInstance: {fileID: 379957992}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
 --- !u!1001 &380477858
+=======
+<<<<<<< HEAD
+--- !u!1 &733738617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 733738615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &773388501
+=======
+--- !u!1001 &504116446
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2384,7 +2684,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
       value: 0
+=======
+<<<<<<< HEAD
+      value: 6
+=======
+      value: 3
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4614,14 +4922,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &863452457 stripped
+=======
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1722625785}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 215503618}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
+    - target: {fileID: 1798199155157019400, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+      propertyPath: m_Name
+      value: road_L-road
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &1454391353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1454391352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1454391354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1454391352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1482794492
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 520d73fe06be97741996af2f38f532a8, type: 3}
+--- !u!4 &773388502 stripped
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
 Transform:
   m_CorrespondingSourceObject: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
   m_PrefabInstance: {fileID: 863452456}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
 --- !u!1001 &887274942
+=======
+--- !u!1001 &811716760
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -5052,13 +5401,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
   m_PrefabInstance: {fileID: 962641267}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
 --- !u!1001 &986587900
+=======
+<<<<<<< HEAD
+--- !u!1001 &1722625784
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -5121,7 +5476,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
+=======
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 786.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920690, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549515549239920691, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+      propertyPath: m_Name
+      value: Player (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+--- !u!1 &1722625785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1549515549239920691, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+  m_PrefabInstance: {fileID: 1722625784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1756641781
+=======
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
 --- !u!1001 &988983568
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10027,6 +10442,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7778948699977790831, guid: e3c2fb3d871303b45a4e1a4d2b9f4876, type: 3}
   m_PrefabInstance: {fileID: 2019155871}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1765209378}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1812073091
+=======
 --- !u!1001 &2030816226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10085,6 +10511,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee1ceecd56ff17c469c3ac358a843838, type: 3}
 --- !u!1001 &2046147373
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10093,7 +10520,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
       value: 25
+=======
+<<<<<<< HEAD
+      value: 8
+=======
+      value: 27
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10117,7 +10552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10129,19 +10564,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1722625785}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 657383530}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
     - target: {fileID: 3150764572437613097, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
       propertyPath: m_Name
       value: Mini_sensin_tatemono2 (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &1812073092 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1812073091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1812073093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1812073091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1839370924
+=======
   m_SourcePrefab: {fileID: 100100000, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
 --- !u!1001 &2051358428
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10452,7 +10914,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
       value: 54
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 56
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 251154968526426409, guid: 8ecf92c81499c09438bd0ab415a961fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10509,7 +10979,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
       value: 33
+=======
+<<<<<<< HEAD
+      value: 8
+=======
+      value: 35
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10533,7 +11011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10545,19 +11023,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2373980861440184467, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: chara
+      value: 
+      objectReference: {fileID: 1722625785}
+    - target: {fileID: 6631003287557733716, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 236816149}
+    - target: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+=======
     - target: {fileID: 3150764572437613097, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
       propertyPath: m_Name
       value: Mini_sensin_tatemono2 (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
+  m_SourcePrefab: {fileID: 100100000, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+--- !u!4 &1909168249 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6596848930678590280, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1909168248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1909168250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6631003288969722762, guid: b7e346ab83a28b341a8451891ca5f721, type: 3}
+  m_PrefabInstance: {fileID: 1909168248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2019155871
+=======
   m_SourcePrefab: {fileID: 100100000, guid: 8be75de94e473aa4aabeb96045b86962, type: 3}
 --- !u!1001 &2131563447
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10909,7 +11414,15 @@ Transform:
   - {fileID: 649261433}
   - {fileID: 1878067820}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
   m_RootOrder: 14
+=======
+<<<<<<< HEAD
+  m_RootOrder: 7
+=======
+  m_RootOrder: 16
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599764809009659
 Transform:
@@ -10938,7 +11451,15 @@ Transform:
   - {fileID: 379957993}
   - {fileID: 1305802174}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
   m_RootOrder: 16
+=======
+<<<<<<< HEAD
+  m_RootOrder: 9
+=======
+  m_RootOrder: 19
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765809597000
 Transform:
@@ -10969,7 +11490,15 @@ Transform:
   - {fileID: 284453062}
   - {fileID: 1089143409}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
   m_RootOrder: 15
+=======
+<<<<<<< HEAD
+  m_RootOrder: 8
+=======
+  m_RootOrder: 17
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765936837779
 Transform:
@@ -10996,7 +11525,15 @@ Transform:
   - {fileID: 1756978537}
   - {fileID: 1161888227}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
   m_RootOrder: 12
+=======
+<<<<<<< HEAD
+  m_RootOrder: 5
+=======
+  m_RootOrder: 14
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599766480998685
 Transform:
@@ -11027,5 +11564,13 @@ Transform:
   - {fileID: 2059761346}
   - {fileID: 380477859}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Asl_Perth.unity
   m_RootOrder: 13
+=======
+<<<<<<< HEAD
+  m_RootOrder: 6
+=======
+  m_RootOrder: 15
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Perth.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

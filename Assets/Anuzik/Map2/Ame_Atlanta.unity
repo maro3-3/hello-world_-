@@ -1921,7 +1921,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6764454773706155986, guid: 46f3b4bedc71a1a44b47a8f8450f479d, type: 3}
   m_PrefabInstance: {fileID: 458807900}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Ame_Atlanta.unity
 --- !u!1001 &464805945
+=======
+--- !u!1 &488731267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488731269}
+  - component: {fileID: 488731268}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &488731268
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488731267}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &488731269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488731267}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 7
+=======
+  m_RootOrder: 16
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &533608104
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Chi_shisen.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2358,7 +2459,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
   m_PrefabInstance: {fileID: 634086933}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Ame_Atlanta.unity
 --- !u!1001 &651757239
+=======
+<<<<<<< HEAD
+=======
+--- !u!1001 &687505711
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Chi_shisen.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2414,6 +2521,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/Ame_Atlanta.unity
   m_SourcePrefab: {fileID: 100100000, guid: 67b3a2b3d2c35f04f88c48c90932295b, type: 3}
 --- !u!4 &651757240 stripped
 Transform:
@@ -2421,6 +2529,11 @@ Transform:
   m_PrefabInstance: {fileID: 651757239}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &654393155
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &699250018
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Chi_shisen.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -7593,7 +7706,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Anuzik/Map2/Ame_Atlanta.unity
 --- !u!4 &6818599764777980806
+=======
+--- !u!4 &6818599764675610083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419411484988481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 400, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 595369045}
+  - {fileID: 724728769}
+  - {fileID: 1207183553}
+  - {fileID: 1661917115}
+  - {fileID: 1694725922}
+  - {fileID: 1843502501}
+  - {fileID: 1965608349}
+  - {fileID: 2134300778}
+  - {fileID: 431633792}
+  - {fileID: 2048986428}
+  - {fileID: 631885903}
+  - {fileID: 1419528421}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 14
+=======
+  m_RootOrder: 23
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599764690056741
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Chi_shisen.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7624,7 +7771,15 @@ Transform:
   - {fileID: 1507441376}
   - {fileID: 1250936520}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Ame_Atlanta.unity
   m_RootOrder: 8
+=======
+<<<<<<< HEAD
+  m_RootOrder: 15
+=======
+  m_RootOrder: 24
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Chi_shisen.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765473392320
 Transform:
@@ -7662,7 +7817,15 @@ Transform:
   - {fileID: 1277652764}
   - {fileID: 761726476}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Ame_Atlanta.unity
   m_RootOrder: 6
+=======
+<<<<<<< HEAD
+  m_RootOrder: 16
+=======
+  m_RootOrder: 25
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Chi_shisen.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599766473141564
 Transform:
@@ -7696,7 +7859,15 @@ Transform:
   - {fileID: 600360086}
   - {fileID: 1167067848}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/Ame_Atlanta.unity
   m_RootOrder: 7
+=======
+<<<<<<< HEAD
+  m_RootOrder: 11
+=======
+  m_RootOrder: 20
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Chi_shisen.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599766518083176
 Transform:
@@ -7709,6 +7880,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD:Assets/Anuzik/Map2/Ame_Atlanta.unity
   - {fileID: 339293839}
   - {fileID: 365314708}
   - {fileID: 458807901}
@@ -7733,4 +7905,140 @@ Transform:
   - {fileID: 333296258}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+=======
+  - {fileID: 215771419}
+  - {fileID: 322244002}
+  - {fileID: 1486772506}
+  - {fileID: 107142056}
+  - {fileID: 1121568997}
+  - {fileID: 331387274}
+  - {fileID: 975988925}
+  - {fileID: 1712152874}
+  - {fileID: 326599399}
+  - {fileID: 2019091127}
+  - {fileID: 1567125018}
+  - {fileID: 1539762305}
+  - {fileID: 1356947542}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 10
+=======
+  m_RootOrder: 19
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599765549949870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419412489089548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -200, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1626204450}
+  - {fileID: 1091804880}
+  - {fileID: 961595288}
+  - {fileID: 170650788}
+  - {fileID: 1738534939}
+  - {fileID: 605577135}
+  - {fileID: 1010596803}
+  - {fileID: 1323137072}
+  - {fileID: 297595278}
+  - {fileID: 2098636308}
+  - {fileID: 1646265326}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 9
+=======
+  m_RootOrder: 18
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599765715169808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419410443903922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 795658787}
+  - {fileID: 1403673432}
+  - {fileID: 1456359572}
+  - {fileID: 1708282785}
+  - {fileID: 108510873}
+  - {fileID: 1027994300}
+  - {fileID: 186692914}
+  - {fileID: 710056181}
+  - {fileID: 1719163362}
+  - {fileID: 2035440993}
+  - {fileID: 1446169071}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 8
+=======
+  m_RootOrder: 17
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599766495262931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419411291105649}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 173070445}
+  - {fileID: 344521907}
+  - {fileID: 699250019}
+  - {fileID: 722120086}
+  - {fileID: 1039462389}
+  - {fileID: 1114166582}
+  - {fileID: 1457007838}
+  - {fileID: 2013525831}
+  - {fileID: 2613910}
+  - {fileID: 2007213219}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 12
+=======
+  m_RootOrder: 21
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599766517959269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419411278420935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 200, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 227043157}
+  - {fileID: 433413333}
+  - {fileID: 596114152}
+  - {fileID: 943704949}
+  - {fileID: 1219065488}
+  - {fileID: 1358490511}
+  - {fileID: 1633335121}
+  - {fileID: 82156248}
+  - {fileID: 1517935241}
+  - {fileID: 410725868}
+  - {fileID: 1134397272}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 13
+=======
+  m_RootOrder: 22
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Chi_shisen.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -460,7 +460,13 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5805865496991013455, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
   m_PrefabInstance: {fileID: 92035324}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
 --- !u!1001 &169581303
+=======
+<<<<<<< HEAD
+=======
+--- !u!1001 &255614524
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -516,6 +522,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_SourcePrefab: {fileID: 100100000, guid: 46f3b4bedc71a1a44b47a8f8450f479d, type: 3}
 --- !u!4 &169581304 stripped
 Transform:
@@ -523,6 +530,11 @@ Transform:
   m_PrefabInstance: {fileID: 169581303}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &181588799
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: ab6ae175649b2654c93ff4b749c9404e, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &257098989
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1363,7 +1375,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2844834990196123374, guid: 9a48293e14d3747418572ad11b64ad76, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
       value: 5
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 14
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2844834990196123374, guid: 9a48293e14d3747418572ad11b64ad76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1926,7 +1946,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2844834990196123374, guid: 9a48293e14d3747418572ad11b64ad76, type: 3}
   m_PrefabInstance: {fileID: 665774390}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
 --- !u!1001 &678601153
+=======
+<<<<<<< HEAD
+=======
+--- !u!1001 &781900820
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2044,6 +2070,7 @@ PrefabInstance:
       value: oldRoad_PlaneTile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_SourcePrefab: {fileID: 100100000, guid: 9a48293e14d3747418572ad11b64ad76, type: 3}
 --- !u!4 &685275326 stripped
 Transform:
@@ -2051,6 +2078,11 @@ Transform:
   m_PrefabInstance: {fileID: 685275325}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &732803971
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &786369322
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2059,7 +2091,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
       value: 17
+=======
+<<<<<<< HEAD
+      value: 13
+=======
+      value: 22
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2118,8 +2158,20 @@ PrefabInstance:
       value: NewClient
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_SourcePrefab: {fileID: 100100000, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
 --- !u!1001 &766115529
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+--- !u!1 &786369323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1549515549239920691, guid: 899d1eda90c4b4241bd5bdb02f79d9c4, type: 3}
+  m_PrefabInstance: {fileID: 786369322}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &795379401
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2249,8 +2301,14 @@ PrefabInstance:
       value: NewClient (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_SourcePrefab: {fileID: 100100000, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
 --- !u!1001 &836174613
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &813880719
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3121,7 +3179,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
       value: 19
+=======
+<<<<<<< HEAD
+      value: 4
+=======
+      value: 13
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5115,7 +5181,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
       value: 29
+=======
+<<<<<<< HEAD
+      value: 3
+=======
+      value: 12
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5508,7 +5582,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
       value: 33
+=======
+<<<<<<< HEAD
+      value: 2
+=======
+      value: 11
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6084,7 +6166,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
       value: 8
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 10
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6671,7 +6761,15 @@ Transform:
   - {fileID: 1619011224}
   - {fileID: 211892272}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_RootOrder: 11
+=======
+<<<<<<< HEAD
+  m_RootOrder: 8
+=======
+  m_RootOrder: 17
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765304500083
 Transform:
@@ -6681,7 +6779,96 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6515419412214533841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_LocalPosition: {x: 0, y: 0, z: 200}
+=======
+  m_LocalPosition: {x: 400, y: 0, z: 400}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1126126763}
+  - {fileID: 907962571}
+  - {fileID: 971505305}
+  - {fileID: 358119958}
+  - {fileID: 856596954}
+  - {fileID: 183118689}
+  - {fileID: 1094250367}
+  - {fileID: 1907140046}
+  - {fileID: 1783512961}
+  - {fileID: 1685193723}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 12
+=======
+  m_RootOrder: 21
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599765580278034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419412484028592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 600, y: 0, z: 200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2104515669}
+  - {fileID: 2102371181}
+  - {fileID: 204551853}
+  - {fileID: 328405168}
+  - {fileID: 1555444947}
+  - {fileID: 983179870}
+  - {fileID: 1842980309}
+  - {fileID: 1264562890}
+  - {fileID: 1692016819}
+  - {fileID: 1276718058}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 11
+=======
+  m_RootOrder: 20
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599765732158388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419410427345430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 400, y: 0, z: -200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 942530258}
+  - {fileID: 1203307719}
+  - {fileID: 1101448528}
+  - {fileID: 1914053580}
+  - {fileID: 2059324297}
+  - {fileID: 1016922745}
+  - {fileID: 1469815033}
+  - {fileID: 1932745943}
+  - {fileID: 1932051060}
+  - {fileID: 850924061}
+  - {fileID: 652036261}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 9
+=======
+  m_RootOrder: 18
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599765851118821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419410577755463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 400, y: 0, z: 200}
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 187346221}
@@ -6702,7 +6889,15 @@ Transform:
   - {fileID: 1896615837}
   - {fileID: 1942947899}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_RootOrder: 9
+=======
+<<<<<<< HEAD
+  m_RootOrder: 10
+=======
+  m_RootOrder: 19
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765619002328
 Transform:
@@ -6733,7 +6928,15 @@ Transform:
   - {fileID: 414241211}
   - {fileID: 617052079}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_RootOrder: 10
+=======
+<<<<<<< HEAD
+  m_RootOrder: 7
+=======
+  m_RootOrder: 16
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599766510738573
 Transform:
@@ -6762,5 +6965,13 @@ Transform:
   - {fileID: 1429571144}
   - {fileID: 1273600289}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Cape Town.unity
   m_RootOrder: 8
+=======
+<<<<<<< HEAD
+  m_RootOrder: 6
+=======
+  m_RootOrder: 15
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Rsa_Ufa.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

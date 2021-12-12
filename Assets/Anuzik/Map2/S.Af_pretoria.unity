@@ -464,7 +464,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8875431505532320648, guid: a28858955d6a2624099891481302dc79, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
       value: 1
+=======
+<<<<<<< HEAD
+      value: 12
+=======
+      value: 18
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
       objectReference: {fileID: 0}
     - target: {fileID: 8875431505532320648, guid: a28858955d6a2624099891481302dc79, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1587,8 +1595,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
 --- !u!1001 &561152059
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+--- !u!4 &606185628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+  m_PrefabInstance: {fileID: 606185627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &606185629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5805865496991013455, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+  m_PrefabInstance: {fileID: 606185627}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &612161429
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1656,8 +1681,14 @@ PrefabInstance:
       value: NewClient (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_SourcePrefab: {fileID: 100100000, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
 --- !u!1001 &569287673
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &656144797
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1781,7 +1812,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
   m_PrefabInstance: {fileID: 575713101}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
 --- !u!1001 &635677471
+=======
+<<<<<<< HEAD
+=======
+--- !u!1001 &686457095
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1837,6 +1874,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &635677472 stripped
 Transform:
@@ -1844,6 +1882,11 @@ Transform:
   m_PrefabInstance: {fileID: 635677471}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &655181342
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &695226288
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2174,7 +2217,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
       value: 9
+=======
+<<<<<<< HEAD
+      value: 5
+=======
+      value: 11
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2310,7 +2361,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
       value: 14
+=======
+<<<<<<< HEAD
+      value: 4
+=======
+      value: 10
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3042,7 +3101,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
       value: 13
+=======
+<<<<<<< HEAD
+      value: 3
+=======
+      value: 9
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3164,7 +3231,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
   m_PrefabInstance: {fileID: 1071567006}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
 --- !u!1001 &1073571909
+=======
+--- !u!1 &1199903252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5805865496991013455, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+  m_PrefabInstance: {fileID: 1199903250}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &1253228296
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3232,8 +3310,14 @@ PrefabInstance:
       value: NewClient (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_SourcePrefab: {fileID: 100100000, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
 --- !u!1001 &1089872359
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &1298076964
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3494,7 +3578,13 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5805865496991013455, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
   m_PrefabInstance: {fileID: 1170840839}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
 --- !u!1001 &1208134705
+=======
+<<<<<<< HEAD
+=======
+--- !u!1001 &1423063898
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3550,6 +3640,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_SourcePrefab: {fileID: 100100000, guid: 46f3b4bedc71a1a44b47a8f8450f479d, type: 3}
 --- !u!4 &1208134706 stripped
 Transform:
@@ -3557,6 +3648,11 @@ Transform:
   m_PrefabInstance: {fileID: 1208134705}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1226218328
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &1455396986
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4073,7 +4169,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2844834990196123374, guid: 9a48293e14d3747418572ad11b64ad76, type: 3}
   m_PrefabInstance: {fileID: 1443429051}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
 --- !u!1001 &1497587710
+=======
+<<<<<<< HEAD
+=======
+--- !u!1001 &1616273331
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4129,6 +4231,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_SourcePrefab: {fileID: 100100000, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
 --- !u!4 &1497587711 stripped
 Transform:
@@ -4136,6 +4239,11 @@ Transform:
   m_PrefabInstance: {fileID: 1497587710}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1503828940
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &1623394255
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4949,7 +5057,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6732298093202409826, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
       value: 3
+=======
+<<<<<<< HEAD
+      value: 2
+=======
+      value: 8
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6732298093202409826, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5002,7 +5118,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
       value: 18
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 7
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5130,8 +5254,25 @@ PrefabInstance:
       value: NewClient (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_SourcePrefab: {fileID: 100100000, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
 --- !u!1001 &1888124288
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+--- !u!4 &1871515421 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+  m_PrefabInstance: {fileID: 1871515420}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1871515422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5805865496991013455, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+  m_PrefabInstance: {fileID: 1871515420}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &1880229198
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -5249,6 +5390,7 @@ PrefabInstance:
       value: oldRoad_PlaneTile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_SourcePrefab: {fileID: 100100000, guid: 9a48293e14d3747418572ad11b64ad76, type: 3}
 --- !u!4 &1918097378 stripped
 Transform:
@@ -5256,6 +5398,11 @@ Transform:
   m_PrefabInstance: {fileID: 1918097377}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1922154073
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &1930005397
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6312,7 +6459,99 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
 --- !u!4 &6818599764987121587
+=======
+--- !u!1 &6515419411870617416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6818599764826365674}
+  m_Layer: 0
+  m_Name: senshin_MapTile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &6515419412519832680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6818599765545049546}
+  m_Layer: 0
+  m_Name: senshin_MapTile (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6818599764651571654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419411525691492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1073560120}
+  - {fileID: 473225880}
+  - {fileID: 602658792}
+  - {fileID: 1013347458}
+  - {fileID: 459730274}
+  - {fileID: 849970664}
+  - {fileID: 437237998}
+  - {fileID: 1127247770}
+  - {fileID: 214714185}
+  - {fileID: 136031791}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 9
+=======
+  m_RootOrder: 15
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599764787236513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419411657432835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -200, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1977099814}
+  - {fileID: 2039794727}
+  - {fileID: 1726025737}
+  - {fileID: 505811493}
+  - {fileID: 2024620423}
+  - {fileID: 530557529}
+  - {fileID: 12990914}
+  - {fileID: 57789493}
+  - {fileID: 1840621622}
+  - {fileID: 1572250652}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 8
+=======
+  m_RootOrder: 14
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599764826365674
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6343,7 +6582,15 @@ Transform:
   - {fileID: 1954012685}
   - {fileID: 635677472}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_RootOrder: 8
+=======
+<<<<<<< HEAD
+  m_RootOrder: 6
+=======
+  m_RootOrder: 12
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765168756687
 Transform:
@@ -6371,7 +6618,15 @@ Transform:
   - {fileID: 29848590}
   - {fileID: 976411664}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_RootOrder: 11
+=======
+<<<<<<< HEAD
+  m_RootOrder: 11
+=======
+  m_RootOrder: 17
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765313075444
 Transform:
@@ -6400,7 +6655,15 @@ Transform:
   - {fileID: 1667136223}
   - {fileID: 829346429}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_RootOrder: 10
+=======
+<<<<<<< HEAD
+  m_RootOrder: 10
+=======
+  m_RootOrder: 16
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599766211176442
 Transform:
@@ -6429,5 +6692,13 @@ Transform:
   - {fileID: 1226218329}
   - {fileID: 1923719942}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_pretoria.unity
   m_RootOrder: 9
+=======
+<<<<<<< HEAD
+  m_RootOrder: 7
+=======
+  m_RootOrder: 13
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Asl_Canberra.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -780,7 +780,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
       value: 12
+=======
+<<<<<<< HEAD
+      value: 10
+=======
+      value: 18
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1813,11 +1821,27 @@ PrefabInstance:
       objectReference: {fileID: 1097158066}
     - target: {fileID: 5805865496991013455, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
       propertyPath: m_Name
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
       value: oldRoad_area (1)
+=======
+      value: New_producer (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370244, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
       value: 10
+=======
+<<<<<<< HEAD
+      value: 1
+=======
+      value: 9
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2073,7 +2097,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
       value: 21
+=======
+<<<<<<< HEAD
+      value: 4
+=======
+      value: 12
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2053912348648897229, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4034,8 +4066,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
     - target: {fileID: 8875431505532320648, guid: a28858955d6a2624099891481302dc79, type: 3}
       propertyPath: m_Pivot.x
+=======
+    - target: {fileID: 5495468954872370244, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_Name
+      value: New_producer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370244, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 3
+=======
+      value: 11
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -203.64215
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 213.12756
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_LocalRotation.y
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8875431505532320648, guid: a28858955d6a2624099891481302dc79, type: 3}
@@ -4082,7 +4155,56 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
     - target: {fileID: 8875431505532320648, guid: a28858955d6a2624099891481302dc79, type: 3}
+=======
+    - target: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+--- !u!4 &1521860320 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6275812902588707927, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+  m_PrefabInstance: {fileID: 1521860319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1521860321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5805865496991013455, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+  m_PrefabInstance: {fileID: 1521860319}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &1630598146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.056054
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 213.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -4092,6 +4214,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8875431505532320648, guid: a28858955d6a2624099891481302dc79, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
+=======
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008983378590287297, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642390400485662587, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+      propertyPath: m_Name
+      value: kousin_tatemono_3 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17ef2999851bd474189e52ae44c10913, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &1682858457
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6818599765460574128}
+    m_Modifications:
+    - target: {fileID: 6245361742965325160, guid: 46f3b4bedc71a1a44b47a8f8450f479d, type: 3}
+      propertyPath: m_Name
+      value: oldRoad_Standard (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764454773706155986, guid: 46f3b4bedc71a1a44b47a8f8450f479d, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764454773706155986, guid: 46f3b4bedc71a1a44b47a8f8450f479d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.442175
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764454773706155986, guid: 46f3b4bedc71a1a44b47a8f8450f479d, type: 3}
+      propertyPath: m_LocalPosition.y
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8875431505532320648, guid: a28858955d6a2624099891481302dc79, type: 3}
@@ -4325,7 +4496,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5172482906959401076, guid: 297e243548b1a1c488ef910b7d1421ba, type: 3}
   m_PrefabInstance: {fileID: 1720108018}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
 --- !u!1001 &1757751285
+=======
+--- !u!1 &1876860139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5805865496991013455, guid: 373d91b7669a7ff43ba24ffb129122d6, type: 3}
+  m_PrefabInstance: {fileID: 1876860137}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &1895125593
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4393,8 +4575,14 @@ PrefabInstance:
       value: NewClient (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
   m_SourcePrefab: {fileID: 100100000, guid: 32b4924d430a54b468030fbd5e3c4de8, type: 3}
 --- !u!1001 &1802907095
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: aaf75d531865cdc4085ce4881f984afa, type: 3}
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+--- !u!1001 &1926400648
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4730,9 +4918,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_RootOrder
       value: 13
+=======
+    - target: {fileID: 5495468954872370244, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_Name
+      value: New_producer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370244, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495468954872370247, guid: 42dab6b392deb6b4ebfdf35d7662b106, type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 2
+=======
+      value: 10
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2712553304365770768, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5290,7 +5496,73 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
 --- !u!4 &6818599764715024213
+=======
+--- !u!1 &6515419412443313423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6818599765604574381}
+  m_Layer: 0
+  m_Name: senshin_MapTile (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &6515419412448900905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6818599765605967499}
+  m_Layer: 0
+  m_Name: senshin_MapTile (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6818599765082005292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419411891113614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 677539260}
+  - {fileID: 717362000}
+  - {fileID: 1155787296}
+  - {fileID: 1180082002}
+  - {fileID: 1842323003}
+  - {fileID: 1942144559}
+  - {fileID: 2107117350}
+  - {fileID: 376447245}
+  - {fileID: 1876860138}
+  - {fileID: 1996765453}
+  - {fileID: 473282553}
+  - {fileID: 1242746093}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 6
+=======
+  m_RootOrder: 14
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599765460574128
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5319,7 +5591,15 @@ Transform:
   - {fileID: 1431826583}
   - {fileID: 267716997}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
   m_RootOrder: 7
+=======
+<<<<<<< HEAD
+  m_RootOrder: 5
+=======
+  m_RootOrder: 13
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599765751495669
 Transform:
@@ -5332,6 +5612,7 @@ Transform:
   m_LocalPosition: {x: -200, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
   - {fileID: 61306620}
   - {fileID: 605926983}
   - {fileID: 1400515277}
@@ -5349,6 +5630,54 @@ Transform:
   - {fileID: 1230945993}
   m_Father: {fileID: 0}
   m_RootOrder: 9
+=======
+  - {fileID: 137248055}
+  - {fileID: 836929734}
+  - {fileID: 880969993}
+  - {fileID: 1417799034}
+  - {fileID: 1429876623}
+  - {fileID: 1926400649}
+  - {fileID: 2032105917}
+  - {fileID: 2125634357}
+  - {fileID: 34589143}
+  - {fileID: 732398779}
+  - {fileID: 646875882}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 8
+=======
+  m_RootOrder: 16
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6818599765605967499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515419412448900905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -200, y: 0, z: 200}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1320232897}
+  - {fileID: 261545561}
+  - {fileID: 675834159}
+  - {fileID: 1934393828}
+  - {fileID: 1299269845}
+  - {fileID: 1052447910}
+  - {fileID: 1776967084}
+  - {fileID: 1764150967}
+  - {fileID: 1275001703}
+  - {fileID: 1521860320}
+  - {fileID: 566133814}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD
+  m_RootOrder: 9
+=======
+  m_RootOrder: 17
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6818599766070877653
 Transform:
@@ -5377,5 +5706,13 @@ Transform:
   - {fileID: 2146820527}
   - {fileID: 489517756}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
   m_RootOrder: 8
+=======
+<<<<<<< HEAD
+  m_RootOrder: 7
+=======
+  m_RootOrder: 15
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee
+>>>>>>> 63e3fb7fe535b2bf714e957c58aac2260a214e57:Assets/Anuzik/Maps/Ame_sentlouis.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
