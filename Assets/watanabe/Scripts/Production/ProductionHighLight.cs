@@ -6,30 +6,12 @@ using UnityEngine.UI;
 // 生産者リストがクライアントリストで条件にあてはまるものをハイライトさせる
 public class ProductionHighLight : MonoBehaviour
 {
-    private GameObject Clientlist;
-    [SerializeField] private GameObject[] request;
-    [SerializeField] private Request[] Reqscript;
-    [SerializeField] private GameObject[] RequestHighLight;
-    private GameObject RedHighLight;
-
-    private Production production; // 自身の生産物ナンバーを取得する用
+    [SerializeField] private GameObject RedHighLight;
 
     // Start is called before the first frame update
     void Start()
     {
-        Clientlist = GameObject.Find("ClientList");
-
-        for (int i = 0; i < request.Length ;i++) // ※必ずインスペクターで配列数を決める事
-        {
-            // クライアントリストの要求物objとスクリプトと要求物青ハイライトobjを取得
-            request[i] = Clientlist.transform.GetChild(i).gameObject;
-            Reqscript[i] = request[i].GetComponent<Request>();
-            RequestHighLight[i] = request[i].transform.Find("BlueHighLight").gameObject;
-        }
-
         RedHighLight = this.transform.Find("RedHighLight").gameObject;
-
-        production = this.GetComponent<Production>();
     }
 
     // Update is called once per frame
@@ -39,28 +21,38 @@ public class ProductionHighLight : MonoBehaviour
 
     public void OnHightLight() // 生産物と要求物が同じであればハイライトを表示
     {
-        for (int i = 0; i < request.Length; i++)
+        GameObject Minimana = GameObject.Find("MinigameManager");
+        MinigameManager Mini_scr = Minimana.GetComponent<MinigameManager>();
+
+        //Mini_scr.intHighLight = production;
+
+        GameObject[] Requests = GameObject.FindGameObjectsWithTag("Request");
+
+        for (int i = 0; i < Requests.Length; i++)
         {
-            if(Reqscript[i].request == production.production)
+            Debug.Log(Requests.Length);
+            Request Reqscript = Requests[i].GetComponent<Request>();
+            GameObject RequestHighLight = Requests[i].transform.Find("BlueHighLight").gameObject;
+            if (Reqscript.request == Mini_scr.intHighLight)
             {
-                if (Clientlist)
-                {
-                    RequestHighLight[i].SetActive(true);
-                }
+                Debug.Log(Reqscript.request);
+                RequestHighLight.SetActive(true);
             }
         }
+
         RedHighLight.SetActive(true);
     }
 
     public void OffHightLight()
     {
-        for (int i = 0; i < request.Length; i++)
+        GameObject[] Requests = GameObject.FindGameObjectsWithTag("Request");
+
+        for (int i = 0; i < Requests.Length; i++)
         {
-            if (Clientlist)
-            {
-                RequestHighLight[i].SetActive(false);
-            }
+            GameObject RequestHighLight = Requests[i].transform.Find("BlueHighLight").gameObject;
+            RequestHighLight.SetActive(false);
         }
+
         RedHighLight.SetActive(false);
     }
 }

@@ -20,20 +20,11 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
     public bool isSearch;
     public bool isSend; // î•ñ‘—M‚ÌŠm”F
 
-    public int Client;     // ‚Ç‚ÌƒNƒ‰ƒCƒAƒ“ƒg‚©w’è‚·‚é”z—ñƒiƒ“ƒo[
-    public int CountryNo;  // ‘‰¼ƒf[ƒ^
-    public int AreaNo;     // ’nˆæ‰¼ƒf[ƒ^
-    public int ClientNo;   // ƒNƒ‰ƒCƒAƒ“ƒgƒiƒ“ƒo[ƒf[ƒ^
-    public int ClientLevel;// ƒNƒ‰ƒCƒAƒ“ƒgƒŒƒxƒ‹
-    public string ClientName;   // ƒNƒ‰ƒCƒAƒ“ƒgƒl[ƒ€
-
     public int debug; // ó‚¯æ‚Á‚½ƒf[ƒ^‚ğŠm”F‚·‚éˆ×‚Ì‰¼•Ï”
     // Start is called before the first frame update
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
-        Productionlist = GameObject.Find("ProductionList");
-        Proscript = Productionlist.GetComponent<ProductionList>();
 
         ClientNameText_obj = transform.Find("ClientName").gameObject;
         ClientName_Text = ClientNameText_obj.GetComponent<Text>();
@@ -44,14 +35,8 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
         isSearch = true;
         isSend = false;
 
-        CountryNo = database.clients[database.MiniClieNo].ClientCountryNo;
-        AreaNo = database.clients[database.MiniClieNo].ClientAreaNo;
-        ClientNo = database.clients[database.MiniClieNo].ClientNo;
-        ClientName = database.clients[database.MiniClieNo].ClientName;
-        ClientLevel = database.clients[database.MiniClieNo].ClientLv;
-
-        ClientLevel_Text.text = "Lv " + ClientLevel;
-        ClientName_Text.text = ClientName;
+        ClientLevel_Text.text = "Lv " + database.clients[database.MiniClieNo].ClientLv;
+        ClientName_Text.text = database.clients[database.MiniClieNo].ClientName;
 
         RequestInit(Requestlist, database.clients[database.MiniClieNo].Transactions);
     }
@@ -59,11 +44,6 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
     // Update is called once per frame
     void Update()
     {
-        if(Productionlist == null)
-        {
-            Productionlist = GameObject.Find("ProductionList");
-            Proscript = Productionlist.GetComponent<ProductionList>();
-        }
         if (isSearch)
         {
             // —v‹•¨‚Ìî•ñ‚ğæ“¾‚µ‚Ä‚¢‚È‚¢ó‘Ô

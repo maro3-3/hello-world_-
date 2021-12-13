@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 2656326333641747722}
   m_Layer: 5
   m_Name: DarkHighLight
-  m_TagString: Untagged
+  m_TagString: Dark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,11 +253,10 @@ GameObject:
   - component: {fileID: 2656326333682586307}
   - component: {fileID: 2656326333682586306}
   - component: {fileID: 2656326333682586305}
-  - component: {fileID: 2656326333682586309}
   - component: {fileID: 2656326333682586304}
   m_Layer: 5
   m_Name: Production
-  m_TagString: Untagged
+  m_TagString: Production
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,42 +335,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clientlist: {fileID: 0}
   Cliscript: {fileID: 0}
+  RedHighLight: {fileID: 0}
   ProductionText_obj: {fileID: 2656326335480233561}
   Production_Text: {fileID: 2656326335480233559}
   DifficultMark_obj: {fileID: 0}
-  CountryNo: 0
-  AreaNo: 0
-  ProductionNo: 0
-  ProductionName: 
   production: 1
   Choice: 0
---- !u!114 &2656326333682586309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2656326333682586311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be18c1a34e6ee1e449fe36aa342c4bea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  request:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Reqscript:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  RequestHighLight:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &2656326333682586304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,8 +358,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2656326333682586309}
-          m_TargetAssemblyTypeName: ProductionHighLight, Assembly-CSharp
+        - m_Target: {fileID: 2656326333682586305}
+          m_TargetAssemblyTypeName: Production, Assembly-CSharp
           m_MethodName: OnHightLight
           m_Mode: 1
           m_Arguments:
@@ -405,8 +374,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2656326333682586309}
-          m_TargetAssemblyTypeName: ProductionHighLight, Assembly-CSharp
+        - m_Target: {fileID: 2656326333682586305}
+          m_TargetAssemblyTypeName: Production, Assembly-CSharp
           m_MethodName: OffHightLight
           m_Mode: 1
           m_Arguments:
@@ -547,11 +516,10 @@ GameObject:
   - component: {fileID: 2656326333979393622}
   - component: {fileID: 2656326333979393625}
   - component: {fileID: 2656326333979393620}
-  - component: {fileID: 2656326333979393618}
   - component: {fileID: 2656326333979393621}
   m_Layer: 5
   m_Name: Production
-  m_TagString: Untagged
+  m_TagString: Production
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,42 +598,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clientlist: {fileID: 0}
   Cliscript: {fileID: 0}
+  RedHighLight: {fileID: 0}
   ProductionText_obj: {fileID: 2656326334952116638}
   Production_Text: {fileID: 2656326334952116636}
   DifficultMark_obj: {fileID: 0}
-  CountryNo: 0
-  AreaNo: 0
-  ProductionNo: 0
-  ProductionName: 
   production: 0
   Choice: 0
---- !u!114 &2656326333979393618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2656326333979393626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be18c1a34e6ee1e449fe36aa342c4bea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  request:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Reqscript:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  RequestHighLight:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &2656326333979393621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,8 +621,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2656326333979393618}
-          m_TargetAssemblyTypeName: ProductionHighLight, Assembly-CSharp
+        - m_Target: {fileID: 2656326333979393620}
+          m_TargetAssemblyTypeName: Production, Assembly-CSharp
           m_MethodName: OnHightLight
           m_Mode: 1
           m_Arguments:
@@ -699,8 +637,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2656326333979393618}
-          m_TargetAssemblyTypeName: ProductionHighLight, Assembly-CSharp
+        - m_Target: {fileID: 2656326333979393620}
+          m_TargetAssemblyTypeName: Production, Assembly-CSharp
           m_MethodName: OffHightLight
           m_Mode: 1
           m_Arguments:
@@ -740,7 +678,7 @@ GameObject:
   - component: {fileID: 2656326334034896532}
   m_Layer: 5
   m_Name: DarkHighLight
-  m_TagString: Untagged
+  m_TagString: Dark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1047,11 +985,10 @@ GameObject:
   - component: {fileID: 2656326334953332937}
   - component: {fileID: 2656326334953332936}
   - component: {fileID: 2656326334953332935}
-  - component: {fileID: 2656326334953332934}
   - component: {fileID: 2656326334953332939}
   m_Layer: 5
   m_Name: Production
-  m_TagString: Untagged
+  m_TagString: Production
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1131,42 +1068,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clientlist: {fileID: 0}
   Cliscript: {fileID: 0}
+  RedHighLight: {fileID: 0}
   ProductionText_obj: {fileID: 2656326334366205828}
   Production_Text: {fileID: 2656326334366205826}
   DifficultMark_obj: {fileID: 2656326333617168238}
-  CountryNo: 0
-  AreaNo: 0
-  ProductionNo: 0
-  ProductionName: 
   production: 2
   Choice: 0
---- !u!114 &2656326334953332934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2656326334953332941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be18c1a34e6ee1e449fe36aa342c4bea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  request:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Reqscript:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  RequestHighLight:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &2656326334953332939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,8 +1091,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2656326334953332934}
-          m_TargetAssemblyTypeName: ProductionHighLight, Assembly-CSharp
+        - m_Target: {fileID: 2656326334953332935}
+          m_TargetAssemblyTypeName: Production, Assembly-CSharp
           m_MethodName: OnHightLight
           m_Mode: 1
           m_Arguments:
@@ -1200,8 +1107,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2656326334953332934}
-          m_TargetAssemblyTypeName: ProductionHighLight, Assembly-CSharp
+        - m_Target: {fileID: 2656326334953332935}
+          m_TargetAssemblyTypeName: Production, Assembly-CSharp
           m_MethodName: OffHightLight
           m_Mode: 1
           m_Arguments:
@@ -1316,7 +1223,7 @@ GameObject:
   - component: {fileID: 2656326335258995933}
   m_Layer: 5
   m_Name: DarkHighLight
-  m_TagString: Untagged
+  m_TagString: Dark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

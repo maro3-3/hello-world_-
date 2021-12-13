@@ -8,16 +8,15 @@ public class Production : MonoBehaviour
     [SerializeField] private GameObject Clientlist;
     [SerializeField] private ClientList Cliscript;
 
+    [SerializeField] private GameObject RedHighLight;
+
     [SerializeField] private GameObject ProductionText_obj;
     public Text Production_Text;
 
     [SerializeField] private GameObject DifficultMark_obj;
 
-    public int CountryNo;  // 国仮データ
-    public int AreaNo;     // 地域仮データ
-    public int ProductionNo;// 地域生産者ナンバーデータ
-    public string ProductionName; // 生産者の名前
     public int production; // 生産物仮データ
+    public int thisNo;
     public bool Choice;
 
     // Start is called before the first frame update
@@ -26,8 +25,12 @@ public class Production : MonoBehaviour
         Clientlist = GameObject.Find("ClientList");
         Cliscript = Clientlist.GetComponent<ClientList>();
 
+        RedHighLight = this.transform.Find("RedHighLight").gameObject;
+
         ProductionText_obj = transform.Find("ProductionText").gameObject;
         Production_Text = ProductionText_obj.GetComponent<Text>();
+
+
 
         Choice = false;
     }
@@ -35,7 +38,14 @@ public class Production : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(!Clientlist) // 取得できていない場合探索
+        {
+            Clientlist = GameObject.Find("ClientList");
+            if (Clientlist)
+            {
+                Cliscript = Clientlist.GetComponent<ClientList>();
+            }
+        }
     }
 
     public void ClickProduction()
@@ -63,5 +73,46 @@ public class Production : MonoBehaviour
             }
         }
 
+        script.ProductionNo = thisNo;
+    }
+
+    public void OnHightLight()
+    {
+        GameObject Minimana = GameObject.Find("MinigameManager");
+        MinigameManager Mini_scr = Minimana.GetComponent<MinigameManager>();
+
+        Mini_scr.intHighLight = production;
+
+        GameObject[] Requests = GameObject.FindGameObjectsWithTag("Request");
+
+        for (int i = 0; i < Requests.Length; i++)
+        {
+            Request Reqscript = Requests[i].GetComponent<Request>();
+            GameObject RequestHighLight = Requests[i].transform.Find("BlueHighLight").gameObject;
+            if (Reqscript.request == Mini_scr.intHighLight)
+            {
+                RequestHighLight.SetActive(true);
+            }
+        }
+
+        RedHighLight.SetActive(true);
+    }
+
+    public void OffHightLight()
+    {
+        GameObject[] Requests = GameObject.FindGameObjectsWithTag("Request");
+
+        for (int i = 0; i < Requests.Length; i++)
+        {
+            GameObject RequestHighLight = Requests[i].transform.Find("BlueHighLight").gameObject;
+            RequestHighLight.SetActive(false);
+        }
+
+        RedHighLight.SetActive(false);
+    }
+
+    public void MarkInit()
+    {
+        DifficultMark_obj = this.transform.Find("Mark").gameObject;
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Amount : MonoBehaviour
 {
     public GameObject AmountText_obj;
+    [SerializeField] private GameObject RedHighLight;
     public int amount; // âºÉfÅ[É^
     public bool FairTrade;
     public bool Choice;
@@ -15,6 +16,7 @@ public class Amount : MonoBehaviour
     {
         AmountText_obj = transform.Find("AmountText").gameObject;
         Text Amount_Text = AmountText_obj.GetComponent<Text>();
+        RedHighLight = this.transform.Find("RedHighLight").gameObject;
         Amount_Text.text = "\néxï• : " + amount;
 
         Choice = false;
@@ -36,4 +38,15 @@ public class Amount : MonoBehaviour
         }
         Choice = true;
     }
+
+    public void OnHightLight()
+    {
+        RedHighLight.SetActive(true);
+    }
+
+    public void OffHightLight()
+    {
+        RedHighLight.SetActive(false);
+    }
+
 }

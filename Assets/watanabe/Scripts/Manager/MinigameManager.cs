@@ -38,6 +38,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         STEPBACK,
         WIN,
         LOSE,
+        RESULTPLAN,
     }
     public Image[] UIimage;
 
@@ -55,13 +56,17 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
     public bool AmountSend;
 
     // 生産者の情報
+    public int ProductionNo;
     public int ProductionData;
     public bool ProductionSend;
     public string ProductionName;
 
+    //ハイライト用変数
+    public int intHighLight;
+
     // 物流権の情報
     public int intLog;
-    public bool boolLog; // 仮でbool型
+    public bool boolLog;
 
     public GameObject Game;
     public GameObject Player;
@@ -153,6 +158,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         if (ProductionSend)
         {
             UImanager[0].UIDestroy();
+            UImanager[2].UIDestroy();
             UImanager[0].UICreate(UIimage[(int)UILIST.PAYMENT]);
             UImanager[2].UICreate(UIimage[(int)UILIST.PAYMENTCHOICE]);
             UImanager[5].UICreate(UIimage[(int)UILIST.STEPBACK]);
@@ -168,6 +174,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
             UImanager[0].UICreate(UIimage[(int)UILIST.CLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.PRODUCTION]);
+            UImanager[2].UICreate(UIimage[(int)UILIST.PRODUCTIONCHOICE]);
             if (0 < intLog)
             {
                 UImanager[3].UICreate(UIimage[(int)UILIST.LOGISTICS]);
@@ -208,6 +215,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.LOSE]);
+            UImanager[4].UICreate(UIimage[(int)UILIST.RESULTPLAN]);
             database.Lose = true;
             Step = MINIGAMESTEP.LOSE;
             Game.SetActive(false);
@@ -219,8 +227,10 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.WIN]);
+            UImanager[4].UICreate(UIimage[(int)UILIST.RESULTPLAN]);
 
             database.Win = true;
+            database.manufacturers[ProductionNo].BusinessPartnerClient = database.MiniClieNo;
             database.Amount = AmountData;
             Step = MINIGAMESTEP.WIN;
             Game.SetActive(false);
