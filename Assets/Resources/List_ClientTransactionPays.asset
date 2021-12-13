@@ -1,0 +1,2177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f4c8e3ec8916c499ce4fe776b70831, type: 3}
+  m_Name: List_ClientTransactionPays
+  m_EditorClassIdentifier: 
+  sheets:
+  - name: Sheet1
+    list:
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u56FD\u5E3D"
+      int_TransactionNum: 8
+      int_RequestsNum: 1300
+      int_AmoPay_High: 1400
+      int_AmoPay_Mid: 1100
+      int_AmoPay_Low: 850
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u56FD\u5E3D"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 1800
+      int_AmoPay_Mid: 1500
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u56FD\u5E3D"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u56FD\u5E3D"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u56FD\u5E3D"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u56FD\u5E3D"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u4E2D\u9928"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 900
+      int_AmoPay_Mid: 700
+      int_AmoPay_Low: 550
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u4E2D\u9928"
+      int_TransactionNum: 5
+      int_RequestsNum: 600
+      int_AmoPay_High: 1000
+      int_AmoPay_Mid: 800
+      int_AmoPay_Low: 650
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u4E2D\u9928"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u4E2D\u9928"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u4E2D\u9928"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u4E2D\u9928"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u6D77\u9F8D"
+      int_TransactionNum: 6
+      int_RequestsNum: 1500
+      int_AmoPay_High: 1900
+      int_AmoPay_Mid: 1700
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u6D77\u9F8D"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1900
+      int_AmoPay_Mid: 1700
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u6D77\u9F8D"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u6D77\u9F8D"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u6D77\u9F8D"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u6D77\u9F8D"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u597D\u76CA"
+      int_TransactionNum: 4
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2600
+      int_AmoPay_Mid: 2300
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u597D\u76CA"
+      int_TransactionNum: 8
+      int_RequestsNum: 1300
+      int_AmoPay_High: 1400
+      int_AmoPay_Mid: 1100
+      int_AmoPay_Low: 850
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u597D\u76CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u597D\u76CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u597D\u76CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u597D\u76CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u5065\u5EB7"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 1800
+      int_AmoPay_Mid: 1400
+      int_AmoPay_Low: 1050
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u5065\u5EB7"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 2600
+      int_AmoPay_Mid: 2200
+      int_AmoPay_Low: 1850
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u5065\u5EB7"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u5065\u5EB7"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u5065\u5EB7"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u5065\u5EB7"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u53CC\u6D41"
+      int_TransactionNum: 2
+      int_RequestsNum: 1000
+      int_AmoPay_High: 1900
+      int_AmoPay_Mid: 1600
+      int_AmoPay_Low: 1350
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u53CC\u6D41"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1800
+      int_AmoPay_Mid: 1500
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u53CC\u6D41"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u53CC\u6D41"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u53CC\u6D41"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u53CC\u6D41"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u5927\u77F3"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 2100
+      int_AmoPay_Mid: 1800
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u5927\u77F3"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1100
+      int_AmoPay_Mid: 800
+      int_AmoPay_Low: 550
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u5927\u77F3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u5927\u77F3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u5927\u77F3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u5927\u77F3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u6075\u901A"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 1500
+      int_AmoPay_Mid: 1400
+      int_AmoPay_Low: 1350
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u6075\u901A"
+      int_TransactionNum: 5
+      int_RequestsNum: 600
+      int_AmoPay_High: 1000
+      int_AmoPay_Mid: 900
+      int_AmoPay_Low: 850
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u6075\u901A"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u6075\u901A"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u6075\u901A"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u6075\u901A"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 4
+      string_ClientName: "\u6B63\u9054"
+      int_TransactionNum: 2
+      int_RequestsNum: 1000
+      int_AmoPay_High: 1400
+      int_AmoPay_Mid: 1300
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 4
+      string_ClientName: "\u6B63\u9054"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 800
+      int_AmoPay_Mid: 700
+      int_AmoPay_Low: 650
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 4
+      string_ClientName: "\u6B63\u9054"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 4
+      string_ClientName: "\u6B63\u9054"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 4
+      string_ClientName: "\u6B63\u9054"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 1
+      int_AreaNo: 3
+      int_ClientNo: 4
+      string_ClientName: "\u6B63\u9054"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30D0\u30FC\u30B3"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 1700
+      int_AmoPay_Mid: 1600
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30D0\u30FC\u30B3"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 700
+      int_AmoPay_Mid: 600
+      int_AmoPay_Low: 550
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30D0\u30FC\u30B3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30D0\u30FC\u30B3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30D0\u30FC\u30B3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30D0\u30FC\u30B3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30AB\u30AB\u30CA\u30C3\u30C4"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1900
+      int_AmoPay_Mid: 1700
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30AB\u30AB\u30CA\u30C3\u30C4"
+      int_TransactionNum: 5
+      int_RequestsNum: 600
+      int_AmoPay_High: 1700
+      int_AmoPay_Mid: 1500
+      int_AmoPay_Low: 1350
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30AB\u30AB\u30CA\u30C3\u30C4"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30AB\u30AB\u30CA\u30C3\u30C4"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30AB\u30AB\u30CA\u30C3\u30C4"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30AB\u30AB\u30CA\u30C3\u30C4"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30D3\u30F3"
+      int_TransactionNum: 4
+      int_RequestsNum: 1500
+      int_AmoPay_High: 1600
+      int_AmoPay_Mid: 1400
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30D3\u30F3"
+      int_TransactionNum: 6
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2400
+      int_AmoPay_Mid: 2200
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30D3\u30F3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30D3\u30F3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30D3\u30F3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30D3\u30F3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30AF\u30FC\u30EB"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 1200
+      int_AmoPay_Mid: 1100
+      int_AmoPay_Low: 1050
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30AF\u30FC\u30EB"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 700
+      int_AmoPay_Mid: 600
+      int_AmoPay_Low: 550
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30AF\u30FC\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30AF\u30FC\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30AF\u30FC\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30AF\u30FC\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B8\u30E3\u30FC\u30EB"
+      int_TransactionNum: 2
+      int_RequestsNum: 1000
+      int_AmoPay_High: 1200
+      int_AmoPay_Mid: 1000
+      int_AmoPay_Low: 850
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B8\u30E3\u30FC\u30EB"
+      int_TransactionNum: 9
+      int_RequestsNum: 1800
+      int_AmoPay_High: 900
+      int_AmoPay_Mid: 700
+      int_AmoPay_Low: 550
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B8\u30E3\u30FC\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B8\u30E3\u30FC\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B8\u30E3\u30FC\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B8\u30E3\u30FC\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30B3\u30F3\u30D2\u30FC"
+      int_TransactionNum: 8
+      int_RequestsNum: 1300
+      int_AmoPay_High: 1600
+      int_AmoPay_Mid: 1400
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30B3\u30F3\u30D2\u30FC"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 1000
+      int_AmoPay_Mid: 800
+      int_AmoPay_Low: 650
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30B3\u30F3\u30D2\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30B3\u30F3\u30D2\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30B3\u30F3\u30D2\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30B3\u30F3\u30D2\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30B2\u30EB\u30B8\u30A2"
+      int_TransactionNum: 4
+      int_RequestsNum: 1500
+      int_AmoPay_High: 1600
+      int_AmoPay_Mid: 1300
+      int_AmoPay_Low: 1050
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30B2\u30EB\u30B8\u30A2"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1400
+      int_AmoPay_Mid: 1100
+      int_AmoPay_Low: 850
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30B2\u30EB\u30B8\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30B2\u30EB\u30B8\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30B2\u30EB\u30B8\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 2
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30B2\u30EB\u30B8\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30ED\u30D5"
+      int_TransactionNum: 5
+      int_RequestsNum: 600
+      int_AmoPay_High: 1000
+      int_AmoPay_Mid: 800
+      int_AmoPay_Low: 650
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30ED\u30D5"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 2400
+      int_AmoPay_Mid: 2200
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30ED\u30D5"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30ED\u30D5"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30ED\u30D5"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30ED\u30D5"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30A2\u30AB\u30B9\u30AD"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 1800
+      int_AmoPay_Mid: 1500
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30A2\u30AB\u30B9\u30AD"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 1400
+      int_AmoPay_Mid: 1100
+      int_AmoPay_Low: 850
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30A2\u30AB\u30B9\u30AD"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30A2\u30AB\u30B9\u30AD"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30A2\u30AB\u30B9\u30AD"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30A2\u30AB\u30B9\u30AD"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30EC\u30B0\u30D5"
+      int_TransactionNum: 4
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2100
+      int_AmoPay_Mid: 1800
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30EC\u30B0\u30D5"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1100
+      int_AmoPay_Mid: 800
+      int_AmoPay_Low: 550
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30EC\u30B0\u30D5"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30EC\u30B0\u30D5"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30EC\u30B0\u30D5"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30EC\u30B0\u30D5"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 4
+      string_ClientName: "\u30D0\u30ED\u30CA"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 2800
+      int_AmoPay_Mid: 2400
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 4
+      string_ClientName: "\u30D0\u30ED\u30CA"
+      int_TransactionNum: 6
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2300
+      int_AmoPay_Mid: 1900
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 4
+      string_ClientName: "\u30D0\u30ED\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 4
+      string_ClientName: "\u30D0\u30ED\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 4
+      string_ClientName: "\u30D0\u30ED\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 1
+      int_ClientNo: 4
+      string_ClientName: "\u30D0\u30ED\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DD\u30A4\u30C1"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 2400
+      int_AmoPay_Mid: 2200
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DD\u30A4\u30C1"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 900
+      int_AmoPay_Mid: 700
+      int_AmoPay_Low: 550
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DD\u30A4\u30C1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DD\u30A4\u30C1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DD\u30A4\u30C1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DD\u30A4\u30C1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30A8\u30A6\u30EB\u30CF"
+      int_TransactionNum: 5
+      int_RequestsNum: 600
+      int_AmoPay_High: 1200
+      int_AmoPay_Mid: 900
+      int_AmoPay_Low: 650
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30A8\u30A6\u30EB\u30CF"
+      int_TransactionNum: 2
+      int_RequestsNum: 1000
+      int_AmoPay_High: 1600
+      int_AmoPay_Mid: 1300
+      int_AmoPay_Low: 1050
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30A8\u30A6\u30EB\u30CF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30A8\u30A6\u30EB\u30CF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30A8\u30A6\u30EB\u30CF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30A8\u30A6\u30EB\u30CF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30CA\u30A4\u30EB"
+      int_TransactionNum: 4
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2300
+      int_AmoPay_Mid: 1900
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30CA\u30A4\u30EB"
+      int_TransactionNum: 6
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2300
+      int_AmoPay_Mid: 1900
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30CA\u30A4\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30CA\u30A4\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30CA\u30A4\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 3
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30CA\u30A4\u30EB"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30C8\u30C8\u30D3\u30A2"
+      int_TransactionNum: 8
+      int_RequestsNum: 1300
+      int_AmoPay_High: 1700
+      int_AmoPay_Mid: 1500
+      int_AmoPay_Low: 1350
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30C8\u30C8\u30D3\u30A2"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 2400
+      int_AmoPay_Mid: 2200
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30C8\u30C8\u30D3\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30C8\u30C8\u30D3\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30C8\u30C8\u30D3\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30C8\u30C8\u30D3\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30EF\u30A4\u30F3\u30AF"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 1800
+      int_AmoPay_Mid: 1500
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30EF\u30A4\u30F3\u30AF"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 1400
+      int_AmoPay_Mid: 1100
+      int_AmoPay_Low: 850
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30EF\u30A4\u30F3\u30AF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30EF\u30A4\u30F3\u30AF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30EF\u30A4\u30F3\u30AF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30EF\u30A4\u30F3\u30AF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30AB\u30B9\u30EA\u30CA"
+      int_TransactionNum: 5
+      int_RequestsNum: 600
+      int_AmoPay_High: 1200
+      int_AmoPay_Mid: 900
+      int_AmoPay_Low: 650
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30AB\u30B9\u30EA\u30CA"
+      int_TransactionNum: 9
+      int_RequestsNum: 1800
+      int_AmoPay_High: 2400
+      int_AmoPay_Mid: 2100
+      int_AmoPay_Low: 1850
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30AB\u30B9\u30EA\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30AB\u30B9\u30EA\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30AB\u30B9\u30EA\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30AB\u30B9\u30EA\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DE\u30FC\u30D5\u30A1"
+      int_TransactionNum: 6
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2100
+      int_AmoPay_Mid: 1800
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DE\u30FC\u30D5\u30A1"
+      int_TransactionNum: 4
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2100
+      int_AmoPay_Mid: 1800
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DE\u30FC\u30D5\u30A1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DE\u30FC\u30D5\u30A1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DE\u30FC\u30D5\u30A1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30DE\u30FC\u30D5\u30A1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30C6\u30E9"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1100
+      int_AmoPay_Mid: 800
+      int_AmoPay_Low: 550
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30C6\u30E9"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 2600
+      int_AmoPay_Mid: 2300
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30C6\u30E9"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30C6\u30E9"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30C6\u30E9"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30C6\u30E9"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B7\u30E0\u30ED"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 2000
+      int_AmoPay_Mid: 1600
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B7\u30E0\u30ED"
+      int_TransactionNum: 8
+      int_RequestsNum: 1300
+      int_AmoPay_High: 2100
+      int_AmoPay_Mid: 1700
+      int_AmoPay_Low: 1350
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B7\u30E0\u30ED"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B7\u30E0\u30ED"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B7\u30E0\u30ED"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 2
+      int_ClientNo: 3
+      string_ClientName: "\u30B7\u30E0\u30ED"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30B5\u30FC"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 1400
+      int_AmoPay_Mid: 1100
+      int_AmoPay_Low: 850
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30B5\u30FC"
+      int_TransactionNum: 5
+      int_RequestsNum: 600
+      int_AmoPay_High: 1200
+      int_AmoPay_Mid: 900
+      int_AmoPay_Low: 650
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30B5\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30B5\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30B5\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A2\u30FC\u30B5\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30C0\u30F3\u30B8\u30E3"
+      int_TransactionNum: 6
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2300
+      int_AmoPay_Mid: 1900
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30C0\u30F3\u30B8\u30E3"
+      int_TransactionNum: 9
+      int_RequestsNum: 1800
+      int_AmoPay_High: 2600
+      int_AmoPay_Mid: 2200
+      int_AmoPay_Low: 1850
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30C0\u30F3\u30B8\u30E3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30C0\u30F3\u30B8\u30E3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30C0\u30F3\u30B8\u30E3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30C0\u30F3\u30B8\u30E3"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E2\u30CF\u30B7\u30AF"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 2000
+      int_AmoPay_Mid: 1600
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E2\u30CF\u30B7\u30AF"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 2800
+      int_AmoPay_Mid: 2400
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E2\u30CF\u30B7\u30AF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E2\u30CF\u30B7\u30AF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E2\u30CF\u30B7\u30AF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 4
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E2\u30CF\u30B7\u30AF"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30A8\u30D3\u30C7"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1100
+      int_AmoPay_Mid: 800
+      int_AmoPay_Low: 550
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30A8\u30D3\u30C7"
+      int_TransactionNum: 5
+      int_RequestsNum: 600
+      int_AmoPay_High: 1200
+      int_AmoPay_Mid: 900
+      int_AmoPay_Low: 650
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30A8\u30D3\u30C7"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30A8\u30D3\u30C7"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30A8\u30D3\u30C7"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 1
+      string_ClientName: "\u30A8\u30D3\u30C7"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30E6\u30B9\u30C8"
+      int_TransactionNum: 6
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2300
+      int_AmoPay_Mid: 1900
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30E6\u30B9\u30C8"
+      int_TransactionNum: 2
+      int_RequestsNum: 1000
+      int_AmoPay_High: 1800
+      int_AmoPay_Mid: 1400
+      int_AmoPay_Low: 1050
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30E6\u30B9\u30C8"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30E6\u30B9\u30C8"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30E6\u30B9\u30C8"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 2
+      string_ClientName: "\u30E6\u30B9\u30C8"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30A2\u30B9\u30BF\u30FC"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 3000
+      int_AmoPay_Mid: 2500
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30A2\u30B9\u30BF\u30FC"
+      int_TransactionNum: 8
+      int_RequestsNum: 1300
+      int_AmoPay_High: 2300
+      int_AmoPay_Mid: 1800
+      int_AmoPay_Low: 1350
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30A2\u30B9\u30BF\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30A2\u30B9\u30BF\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30A2\u30B9\u30BF\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 1
+      int_ClientNo: 3
+      string_ClientName: "\u30A2\u30B9\u30BF\u30FC"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30EA\u30FC\u30D1"
+      int_TransactionNum: 4
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2300
+      int_AmoPay_Mid: 1900
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30EA\u30FC\u30D1"
+      int_TransactionNum: 1
+      int_RequestsNum: 800
+      int_AmoPay_High: 1600
+      int_AmoPay_Mid: 1200
+      int_AmoPay_Low: 850
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30EA\u30FC\u30D1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30EA\u30FC\u30D1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30EA\u30FC\u30D1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 1
+      string_ClientName: "\u30EA\u30FC\u30D1"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30B3\u30F3\u30E2\u30B7\u30A2"
+      int_TransactionNum: 9
+      int_RequestsNum: 1800
+      int_AmoPay_High: 2800
+      int_AmoPay_Mid: 2300
+      int_AmoPay_Low: 1850
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30B3\u30F3\u30E2\u30B7\u30A2"
+      int_TransactionNum: 3
+      int_RequestsNum: 1200
+      int_AmoPay_High: 2200
+      int_AmoPay_Mid: 1700
+      int_AmoPay_Low: 1250
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30B3\u30F3\u30E2\u30B7\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30B3\u30F3\u30E2\u30B7\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30B3\u30F3\u30E2\u30B7\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 2
+      int_ClientNo: 2
+      string_ClientName: "\u30B3\u30F3\u30E2\u30B7\u30A2"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A6\u30EB\u30D0\u30A6"
+      int_TransactionNum: 0
+      int_RequestsNum: 500
+      int_AmoPay_High: 1300
+      int_AmoPay_Mid: 900
+      int_AmoPay_Low: 550
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A6\u30EB\u30D0\u30A6"
+      int_TransactionNum: 2
+      int_RequestsNum: 1000
+      int_AmoPay_High: 1800
+      int_AmoPay_Mid: 1400
+      int_AmoPay_Low: 1050
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A6\u30EB\u30D0\u30A6"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A6\u30EB\u30D0\u30A6"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A6\u30EB\u30D0\u30A6"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 1
+      string_ClientName: "\u30A6\u30EB\u30D0\u30A6"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30E1\u30CF\u30B5\u30A4\u30CA"
+      int_TransactionNum: 7
+      int_RequestsNum: 2000
+      int_AmoPay_High: 3000
+      int_AmoPay_Mid: 2500
+      int_AmoPay_Low: 2050
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30E1\u30CF\u30B5\u30A4\u30CA"
+      int_TransactionNum: 6
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2500
+      int_AmoPay_Mid: 2000
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30E1\u30CF\u30B5\u30A4\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30E1\u30CF\u30B5\u30A4\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30E1\u30CF\u30B5\u30A4\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 2
+      string_ClientName: "\u30E1\u30CF\u30B5\u30A4\u30CA"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E4\u30B3\u30A6"
+      int_TransactionNum: 8
+      int_RequestsNum: 1300
+      int_AmoPay_High: 2300
+      int_AmoPay_Mid: 1800
+      int_AmoPay_Low: 1350
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E4\u30B3\u30A6"
+      int_TransactionNum: 4
+      int_RequestsNum: 1500
+      int_AmoPay_High: 2500
+      int_AmoPay_Mid: 2000
+      int_AmoPay_Low: 1550
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E4\u30B3\u30A6"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E4\u30B3\u30A6"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E4\u30B3\u30A6"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1
+    - int_CountryNo: 5
+      int_AreaNo: 3
+      int_ClientNo: 3
+      string_ClientName: "\u30E4\u30B3\u30A6"
+      int_TransactionNum: -1
+      int_RequestsNum: -1
+      int_AmoPay_High: -1
+      int_AmoPay_Mid: -1
+      int_AmoPay_Low: -1

@@ -4,21 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ZAF_Jozi_Manufacturer_A : MonoBehaviour, IPointerClickHandler
+public class CHN_Beijing_Client_A : MonoBehaviour, IPointerClickHandler
 {
 
     [SerializeField] private GameObject BG_Panel;
-    [SerializeField] private GameObject ManufacturerPanel;
-    [SerializeField] private GameObject ManufacturerMenuPanel;
-    [SerializeField] private GameObject ZAF_Jozi_Manufacturer_APanel;
+    [SerializeField] private GameObject ClientPanel;
+    [SerializeField] private GameObject ClientMenuPanel;
+    [SerializeField] private GameObject USA_Client_APanel;
 
     public void OnPointerClick(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
         BG_Panel.SetActive(false);
-        ManufacturerPanel.SetActive(false);
-        ManufacturerMenuPanel.SetActive(false);
-        ZAF_Jozi_Manufacturer_APanel.SetActive(true);
+        ClientPanel.SetActive(false);
+        ClientMenuPanel.SetActive(false);
+        USA_Client_APanel.SetActive(true);
     }
 
     // Start is called before the first frame update
