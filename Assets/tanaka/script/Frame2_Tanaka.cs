@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-public class Frame1_Tanaka : MonoBehaviour
+
+public class Frame2_Tanaka : MonoBehaviour
 {
+
     [SerializeField] GameObject missionbutton;
     [SerializeField] GameObject frame1;
     [SerializeField] GameObject frame2;
 
+
     [SerializeField] GameObject country1;
     [SerializeField] GameObject country2;
     [SerializeField] GameObject country3;
-
 
 
     DataBase database = null;
@@ -35,17 +36,17 @@ public class Frame1_Tanaka : MonoBehaviour
             if (database.RewartState[count] == 1) break;
             count++;
         }
-        if (database.RewartState[count] == 1)
+        if (database.RewartState[count + 1] == 1)
         {
             if (count + 1 >= 12)//配列外だったら
             {
                 return;
             }
-            switch (database.RewartContent[count])
+            switch (database.RewartContent[count + 1])
             {
                 case 0://未開放国開放権
                     database.RewartState[count] = 2;
-                    if (country1.activeSelf==false)
+                    if (country1.activeSelf == false)
                     {
                         country1.SetActive(true);
                         break;
