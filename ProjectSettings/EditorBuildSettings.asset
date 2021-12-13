@@ -51,7 +51,7 @@ EditorBuildSettings:
     path: Assets/Anuzik/Map2/Rsa_Moscow.unity
     guid: 3b27ed796382c6946b46dbcd3bbc234c
   - enabled: 1
-    path: Assets/Anuzik/Map2/Rsa_Ufa.unity
+    path: Assets/Anuzik/Maps/Rsa_Ufa.unity
     guid: 7a70d0c5206c80a4bb3680fc8ee236ba
   - enabled: 1
     path: Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
