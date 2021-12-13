@@ -246,9 +246,5 @@ public class DataBase : ScriptableObject
     }
     public ClientArrivalTable[] ClientArrivalTables = new ClientArrivalTable[14];
 
-    // ミニゲーム //
-    public bool Win;
-    public bool Lose;
-    public int MiniClieNo; // ミニゲーム対象のクライアントナンバー
-    public int Amount; // クライアントの取引額
+   
 }
