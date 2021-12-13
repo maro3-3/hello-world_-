@@ -23,6 +23,7 @@ public class Unemployed_Onodera : MonoBehaviour
         database = Resources.Load<DataBase>("DataBase");
         Arealv = Areamanager_Onodera.GetArealv(UnempCountry, UnempArea);
         startturn = database.TurnNum;
+        myturn = startturn;
     }
 
 
@@ -30,7 +31,8 @@ public class Unemployed_Onodera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        turnget = database.TurnNum;
+        startturn = database.TurnNum;
+        turnget = startturn- myturn;
         if (Unempstate == 1)
         {
 
