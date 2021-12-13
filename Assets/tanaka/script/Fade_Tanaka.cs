@@ -27,9 +27,11 @@ public class Fade_Tanaka : MonoBehaviour
     void Update()
     {
         //if(¶YÒƒ[ƒ‚¾‚Á‚½‚ç)
-        
-        fade();
-        SceneManager.LoadScene("GameOver");
+      //  if (Areamanager_Onodera.Gameover == true)
+        {
+            fade();
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     void fade()
