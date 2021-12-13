@@ -54,6 +54,9 @@ public class NewProducer_Onodera : MonoBehaviour
                 if (database.manufacturers[getArealv].AmountofSales < 500)
                 {
                     state = 2;
+                    Object1.SetActive(false);
+                    Object2.SetActive(true);
+                    Object3.SetActive(false);
                 }
             }
             if (state == 2)
@@ -62,6 +65,9 @@ public class NewProducer_Onodera : MonoBehaviour
                 if (database.manufacturers[getArealv].AmountofSales < 500)
                 {
                     state = 3;
+                    Object1.SetActive(false);
+                    Object2.SetActive(false);
+                    Object3.SetActive(true);
                     if (getArealv == 0)
                     {
                         Areamanager_Onodera.ProdNo1_1 -= 1;
@@ -192,6 +198,9 @@ public class NewProducer_Onodera : MonoBehaviour
                 else
                 {
                     state = 1;
+                    Object1.SetActive(true);
+                    Object2.SetActive(false);
+                    Object3.SetActive(false);
                 }
             }
         }
