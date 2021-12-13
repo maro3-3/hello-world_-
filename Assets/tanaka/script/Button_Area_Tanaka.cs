@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.EventSystems;
 
 public class Button_Area_Tanaka : MonoBehaviour
 {
-    [SerializeField] private GameObject map;//地図のサイズ変更のためにオブジェクト取得
+    [SerializeField] private RectTransform map;//地図のサイズ変更のためにオブジェクト取得
 
-    [SerializeField] GameObject area1;
+    //表示する地域
+    [SerializeField] GameObject area1;  
     [SerializeField] GameObject area2;
     [SerializeField] GameObject area3;
 
-
+    //国ボタン消す用
     [SerializeField] GameObject country1;
     [SerializeField] GameObject country2;
     [SerializeField] GameObject country3;
@@ -31,27 +32,40 @@ public class Button_Area_Tanaka : MonoBehaviour
         
     }
 
-    public void OnClick()
+    public void OnClick(int area)
     {
-        Debug.Log("押された");  // ログを出力
-
-
-        //スケール変更-------------------------------------------------------------------------------
+        //スケール変更-----------------------------
         float mapw = 5000;
         float maph = 3000;
-        map.GetComponent<RectTransform>().sizeDelta = new Vector2(mapw, maph);
-        //------------------------------------------------------------------------------------------
+        map.sizeDelta = new Vector2(mapw, maph);
+        //----------------------------------------
 
-        //ポジション変更-----------------------------------------------------------------------------
-        // Vector3 pos = (855,-469,0);
+        //ポジション変更-------------
         Vector3 pos;
-        pos.x = 855;
-        pos.y = -469;
+        pos.x = 900;
+        pos.y = -545;
         pos.z = 0;
-        //map.transform.position = pos;
-        // Debug.Log(pos.x);
-        //map.localPosition = new Vector3(pos.x, pos.y, pos.z);
-        //------------------------------------------------------------------------------------------
+        switch (area)
+        {
+            case 0:
+                pos.x = 900;
+                pos.y = -545;
+                pos.z = 0;
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            default:
+                break;
+        }
+
+        map.localPosition = pos;
+        //-------------------------
 
 
         //ボタンを表示させる----------
@@ -59,12 +73,12 @@ public class Button_Area_Tanaka : MonoBehaviour
         area2.SetActive(true);
         area3.SetActive(true);
         //--------------------------
-        //非表示にする----------------------------
+        //非表示にする---------------
         country1.SetActive(false);
         country2.SetActive(false);
         country3.SetActive(false);
         country4.SetActive(false);
         country5.SetActive(false);
-        //---------------------------------------
+        //--------------------------
     }
 }
