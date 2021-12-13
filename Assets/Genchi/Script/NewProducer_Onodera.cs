@@ -22,9 +22,12 @@ public class NewProducer_Onodera : MonoBehaviour
     [SerializeField] GameObject Object2;
     [SerializeField] GameObject Object3;
     DataBase database = null;
-
+ 
+    int oldturn = 0;
 
     int getArealv,Arealv, sisan = 0, uri = 0, roudou = 0, koyo = 0;
+    int state = 1;
+    bool app = false;
 
     void Start()
     {
@@ -36,9 +39,171 @@ public class NewProducer_Onodera : MonoBehaviour
         employees = false;
         emp_count = 5;
         UpdateCount();
+
+        oldturn = database.TurnNum;
+        app = false;
     }
     private void Update()
     {
+
+       if (oldturn!=database.TurnNum)
+        {
+            if (state == 1)
+            {
+                oldturn = database.TurnNum;
+                if (database.manufacturers[getArealv].AmountofSales < 500)
+                {
+                    state = 2;
+                    Object1.SetActive(false);
+                    Object2.SetActive(true);
+                    Object3.SetActive(false);
+                }
+            }
+            if (state == 2)
+            {
+                oldturn = database.TurnNum;
+                if (database.manufacturers[getArealv].AmountofSales < 500)
+                {
+                    state = 3;
+                    Object1.SetActive(false);
+                    Object2.SetActive(false);
+                    Object3.SetActive(true);
+                    if (getArealv == 0)
+                    {
+                        Areamanager_Onodera.ProdNo1_1 -= 1;
+                        if(Areamanager_Onodera.ProdNo1_1<=0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 1)
+                    {
+                        Areamanager_Onodera.ProdNo1_2 -= 1;
+                        if (Areamanager_Onodera.ProdNo1_2 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 2)
+                    {
+                        Areamanager_Onodera.ProdNo1_3 -= 1;
+                        if (Areamanager_Onodera.ProdNo1_3 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 3)
+                    {
+                        Areamanager_Onodera.ProdNo2_1 -= 1;
+                        if (Areamanager_Onodera.ProdNo2_1 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 4)
+                    {
+                        Areamanager_Onodera.ProdNo2_2 -= 1;
+                        if (Areamanager_Onodera.ProdNo2_2 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 5)
+                    {
+                        Areamanager_Onodera.ProdNo2_3 -= 1;
+                        if (Areamanager_Onodera.ProdNo2_3 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 6)
+                    {
+                        Areamanager_Onodera.ProdNo3_1 -= 1;
+                        if (Areamanager_Onodera.ProdNo3_1 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 7)
+                    {
+                        Areamanager_Onodera.ProdNo3_2 -= 1;
+                        if (Areamanager_Onodera.ProdNo3_2 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 8)
+                    {
+                        Areamanager_Onodera.ProdNo4_1 -= 1;
+                        if (Areamanager_Onodera.ProdNo4_1 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 9)
+                    {
+                        Areamanager_Onodera.ProdNo4_2 -= 1;
+                        if (Areamanager_Onodera.ProdNo4_2 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 10)
+                    {
+                        Areamanager_Onodera.ProdNo4_3 -= 1;
+                        if (Areamanager_Onodera.ProdNo4_3 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 11)
+                    {
+                        Areamanager_Onodera.ProdNo5_1 -= 1;
+                        if (Areamanager_Onodera.ProdNo5_1 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 12)
+                    {
+                        Areamanager_Onodera.ProdNo5_2 -= 1;
+                        if (Areamanager_Onodera.ProdNo5_2 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                    if (getArealv == 13)
+                    {
+                        Areamanager_Onodera.ProdNo5_3 -= 1;
+                        if (Areamanager_Onodera.ProdNo5_3 <= 0)
+                        {
+                            Areamanager_Onodera.Gameover = true;
+                        }
+
+                    }
+                }
+                else
+                {
+                    state = 1;
+                    Object1.SetActive(true);
+                    Object2.SetActive(false);
+                    Object3.SetActive(false);
+                }
+            }
+        }
 
         if (ProdLv > Arealv)
         {
@@ -48,6 +213,80 @@ public class NewProducer_Onodera : MonoBehaviour
         else
         {
             Producer.SetActive(true);
+            if(app == false)
+            {
+                app = true;
+                if(getArealv==0)
+                {
+                    Areamanager_Onodera.ProdNo1_1 += 1;
+
+                }
+                if (getArealv == 1)
+                {
+                    Areamanager_Onodera.ProdNo1_2 += 1;
+
+                }
+                if (getArealv == 2)
+                {
+                    Areamanager_Onodera.ProdNo1_3 += 1;
+
+                }
+                if (getArealv == 3)
+                {
+                    Areamanager_Onodera.ProdNo2_1 += 1;
+
+                }
+                if (getArealv == 4)
+                {
+                    Areamanager_Onodera.ProdNo2_2 += 1;
+
+                }
+                if (getArealv == 5)
+                {
+                    Areamanager_Onodera.ProdNo2_3 += 1;
+
+                }
+                if (getArealv == 6)
+                {
+                    Areamanager_Onodera.ProdNo3_1 += 1;
+
+                }
+                if (getArealv == 7)
+                {
+                    Areamanager_Onodera.ProdNo3_2 += 1;
+
+                }
+                if (getArealv == 8)
+                {
+                    Areamanager_Onodera.ProdNo4_1 += 1;
+
+                }
+                if (getArealv == 9)
+                {
+                    Areamanager_Onodera.ProdNo4_2 += 1;
+
+                }
+                if (getArealv == 10)
+                {
+                    Areamanager_Onodera.ProdNo4_3 += 1;
+
+                }
+                if (getArealv == 11)
+                {
+                    Areamanager_Onodera.ProdNo5_1 += 1;
+
+                }
+                if (getArealv == 12)
+                {
+                    Areamanager_Onodera.ProdNo5_2 += 1;
+
+                }
+                if (getArealv == 13)
+                {
+                    Areamanager_Onodera.ProdNo5_3 += 1;
+
+                }
+            }
         }
 
     }

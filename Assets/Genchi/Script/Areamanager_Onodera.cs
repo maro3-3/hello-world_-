@@ -56,12 +56,29 @@ public class Areamanager_Onodera : MonoBehaviour
     public static bool CliApp5_2 = true;
     public static bool CliApp5_3 = true;
 
-    int CliTable;
+    public static int ProdNo1_1 = 0;
+    public static int ProdNo1_2 = 0;
+    public static int ProdNo1_3 = 0;
+    public static int ProdNo2_1 = 0;
+    public static int ProdNo2_2 = 0;
+    public static int ProdNo2_3 = 0;
+    public static int ProdNo3_1 = 0;
+    public static int ProdNo3_2 = 0;
+    public static int ProdNo4_1 = 0;
+    public static int ProdNo4_2 = 0;
+    public static int ProdNo4_3 = 0;
+    public static int ProdNo5_1 = 0;
+    public static int ProdNo5_2 = 0;
+    public static int ProdNo5_3 = 0;
+
+
+    public static bool Gameover = false;
+
 
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
-        CliTable = 0;
+        
     }
 
     public static int GetArealv(int Country,int Area)
