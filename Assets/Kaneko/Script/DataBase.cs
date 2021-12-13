@@ -157,6 +157,9 @@ public class DataBase : ScriptableObject
         public string ManufacturerName;
         public int Performance;             // 業績
 
+       
+
+
 
         // 初期化関数
         public void InitClient(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
@@ -227,4 +230,9 @@ public class DataBase : ScriptableObject
     }
     public ClientArrivalTable[] ClientArrivalTables = new ClientArrivalTable[14];
 
+    // ミニゲーム //
+    public bool Win;
+    public bool Lose;
+    public int MiniClieNo; // ミニゲーム対象のクライアントナンバー
+    public int Amount; // クライアントの取引額
 }
