@@ -20,7 +20,7 @@ public class TurnManager_ishikado : MonoBehaviour
 
     void TurnUp()
     {
-        //ターン終了時
+        //ターン終了時処理
 
         if(database.TurnNum % 4==0)
         {
@@ -29,6 +29,6 @@ public class TurnManager_ishikado : MonoBehaviour
 
         database.TurnNum++;
 
-        //ターン開始時
+        //ターン開始時処理
     }
 }
