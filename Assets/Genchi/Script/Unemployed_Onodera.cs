@@ -18,14 +18,17 @@ public class Unemployed_Onodera : MonoBehaviour
     int Arealv;
     int startturn;//国解放時のターン
     int myturn;//解放されてからのターン
-    void Start()
+    public void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
         Arealv = Areamanager_Onodera.GetArealv(UnempCountry, UnempArea);
+        turnget = 0;
+        turncheck = 0;
         startturn = database.TurnNum;
         myturn = startturn;
+        
     }
-
+    
 
 
     // Update is called once per frame

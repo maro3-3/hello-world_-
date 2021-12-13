@@ -36,12 +36,17 @@ public class NewProducer_Onodera : MonoBehaviour
         getArealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
         Arealv = database.countrys[getArealv].AreaLv;
 
+        sisan = 0;
+        uri = 0;
+        roudou = 0;
+        koyo = 0;
         employees = false;
         emp_count = 5;
         UpdateCount();
 
         oldturn = database.TurnNum;
         app = false;
+
     }
     private void Update()
     {

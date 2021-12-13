@@ -24,38 +24,6 @@ public class Areamanager_Onodera : MonoBehaviour
     public static int Arealevel5_3 = 13;
 
 
-
-    public static int CliMana = 1;
-    public static int CliMana1_1 = 0;
-    public static int CliMana1_2 = 0;
-    public static int CliMana1_3 = 0;
-    public static int CliMana2_1 = 0;
-    public static int CliMana2_2 = 0;
-    public static int CliMana2_3 = 0;
-    public static int CliMana3_1 = 0;
-    public static int CliMana3_2 = 0;
-    public static int CliMana4_1 = 0;
-    public static int CliMana4_2 = 0;
-    public static int CliMana4_3 = 0;
-    public static int CliMana5_1 = 0;
-    public static int CliMana5_2 = 0;
-    public static int CliMana5_3 = 0;
-
-    public static bool CliApp1_1 = true;
-    public static bool CliApp1_2 = true;
-    public static bool CliApp1_3 = true;
-    public static bool CliApp2_1 = true;
-    public static bool CliApp2_2 = true;
-    public static bool CliApp2_3 = true;
-    public static bool CliApp3_1 = true;
-    public static bool CliApp3_2 = true;
-    public static bool CliApp4_1 = true;
-    public static bool CliApp4_2 = true;
-    public static bool CliApp4_3 = true;
-    public static bool CliApp5_1 = true;
-    public static bool CliApp5_2 = true;
-    public static bool CliApp5_3 = true;
-
     public static int ProdNo1_1 = 0;
     public static int ProdNo1_2 = 0;
     public static int ProdNo1_3 = 0;
@@ -522,4 +490,27 @@ public class Areamanager_Onodera : MonoBehaviour
         //    Arealevel += 1;
        // }
     }
+
+
+    //èâä˙âª
+    public static void InitGenchi()
+    {
+        ProdNo1_1 = 0;
+        ProdNo1_2 = 0;
+        ProdNo1_3 = 0;
+        ProdNo2_1 = 0;
+        ProdNo2_2 = 0;
+        ProdNo2_3 = 0;
+        ProdNo3_1 = 0;
+        ProdNo3_2 = 0;
+        ProdNo4_1 = 0;
+        ProdNo4_2 = 0;
+        ProdNo4_3 = 0;
+        ProdNo5_1 = 0;
+        ProdNo5_2 = 0;
+        ProdNo5_3 = 0;
+
+        Gameover = false;
+    }
+
 }
