@@ -8,7 +8,7 @@ public class Init_Tanaka : MonoBehaviour
     ListManufacture ManuList;
     ListCountry CountryList;
     ListAreaLv AreaLvList;
-    ListClient ClientList;
+    List_ClientInformation ClientList;
     ListClientArrivalTable ClientArrivalTableList;
     ListMission MissionList;
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class Init_Tanaka : MonoBehaviour
         ManuList = Resources.Load("List_manufacturer") as ListManufacture;
         CountryList = Resources.Load("List_CountryAndArea") as ListCountry;
         AreaLvList = Resources.Load("List_AreaLv") as ListAreaLv;
-        ClientList = Resources.Load("List_Client") as ListClient;
+        ClientList = Resources.Load("List_Client") as List_ClientInformation;
         ClientArrivalTableList = Resources.Load("List_ClientArrivalTable") as ListClientArrivalTable;
         MissionList = Resources.Load("List_Mission") as ListMission;
 

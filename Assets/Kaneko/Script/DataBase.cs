@@ -100,6 +100,7 @@ public class DataBase : ScriptableObject
         }
     }
     public Unemployed[] unemployed = new Unemployed[14];
+   
     // 生産者 //
     public struct Manufacturer
     {
@@ -113,7 +114,7 @@ public class DataBase : ScriptableObject
         public int AmountofSales;           // 売上高
         public int LaborForce;              // 労働力
         public int NumberofEmployees;       // 雇用人数
-        public int BusinessPartnerClient;   // 取引先クライアント //配列（複数人
+        public int BusinessPartnerClient;   // 取引先クライアント //配列（複数人?
         public int TransactionObject;       // 取引物
         public int RequestNum;              // 要求数
         public int Payment;                 // 支払い
@@ -140,52 +141,6 @@ public class DataBase : ScriptableObject
 
     };
     public Manufacturer[] manufacturers = new Manufacturer[46];
-
-    // クライアント //
-    public struct Client
-    {
-        public int ClientCountryNo;        // 国ナンバー
-        public int ClientAreaNo;           // 地域ナンバー
-        public int ClientNo;               // クライアントナンバー
-        public string ClientName;          // クライアントネーム
-        public int ClientLv;               // クライアントレベル
-        public int ClientType;             // 業績タイプ
-        public int[] Transactions;         // 取引物たち（複数　ＭＡＸ６個 ）
-
-        public int Transaction;             //
-        public int TransactionStatus;
-        public string ManufacturerName;
-        public int Performance;             // 業績
-
-
-        // 初期化関数
-        public void InitClient(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
-                               int clientLv, int clientType, int transaction,
-                               int transactionStatus, string manufacturerName, int performance)
-        {
-            ClientCountryNo = clientCountryNo;
-            ClientAreaNo = clientAreaNo;
-            ClientNo = clientNo;
-            ClientName = clientName;
-            ClientLv = clientLv;
-            ClientType = clientType;
-            Transaction = transaction;
-            TransactionStatus = transactionStatus;
-            ManufacturerName = manufacturerName;
-            Performance = performance;
-        }
-        public void SetTransactions(int t1, int t2, int t3, int t4, int t5, int t6)
-        {
-            Transactions = new int[6];
-            Transactions[0] = t1;
-            Transactions[1] = t2;
-            Transactions[2] = t3;
-            Transactions[3] = t4;
-            Transactions[4] = t5;
-            Transactions[5] = t6;
-        }
-    };
-    public Client[] clients = new Client[11];
 
     // クライアント到着テーブル？ //
     public struct ClientArrivalTable
@@ -226,5 +181,4 @@ public class DataBase : ScriptableObject
         }
     }
     public ClientArrivalTable[] ClientArrivalTables = new ClientArrivalTable[14];
-
 }
