@@ -24,13 +24,14 @@ public class NewProducer_Onodera : MonoBehaviour
     DataBase database = null;
 
 
-    int Arealv, sisan = 0, uri = 0, roudou = 0, koyo = 0;
+    int getArealv,Arealv, sisan = 0, uri = 0, roudou = 0, koyo = 0;
 
     void Start()
     {
         // DataBase database = new DataBase();
         database = Resources.Load<DataBase>("DataBase");
-        Arealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
+        getArealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
+        Arealv = database.countrys[getArealv].AreaLv;
 
         employees = false;
         emp_count = 5;

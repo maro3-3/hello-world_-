@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class NewClient_Onodera : MonoBehaviour
 {
-
+    DataBase database = null;
     public int ClieCountry = 0;//クライアントの国 
     public int ClieArea = 0;//クライアントの地域　
     public int ClieNum = 0;
     public int ClieLv = 0;
     [SerializeField] GameObject Client;
     [SerializeField] GameObject Object;
-    DataBase database = null;
+    
    
 
     int Arealv;
@@ -23,13 +23,15 @@ public class NewClient_Onodera : MonoBehaviour
     {
         database = Resources.Load<DataBase>("DataBase");
         Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
+        ClieLv = database.clients[Arealv].ClientLv;
+        
     }
 
     void Update()
     {
         if (ClieLv > Arealv)
         {
-            Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
+           // Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
             Client.SetActive(false);
         }
         else

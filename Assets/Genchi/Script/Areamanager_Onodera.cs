@@ -6,23 +6,64 @@ using System.IO;
 
 public class Areamanager_Onodera : MonoBehaviour
 {
+    DataBase database = null;
     public static int Arealevel = 1;
-    public static int Arealevel1_1 = 1;
+    public static int Arealevel1_1 = 0;
     public static int Arealevel1_2 = 1;
-    public static int Arealevel1_3 = 1;
-    public static int Arealevel2_1 = 1;
-    public static int Arealevel2_2 = 1;
-    public static int Arealevel2_3 = 1;
-    public static int Arealevel3_1 = 1;
-    public static int Arealevel3_2 = 1;
-    public static int Arealevel4_1 = 1;
-    public static int Arealevel4_2 = 1;
-    public static int Arealevel4_3 = 1;
-    public static int Arealevel5_1 = 1;
-    public static int Arealevel5_2 = 1;
-    public static int Arealevel5_3 = 1;
+    public static int Arealevel1_3 = 2;
+    public static int Arealevel2_1 = 3;
+    public static int Arealevel2_2 = 4;
+    public static int Arealevel2_3 = 5;
+    public static int Arealevel3_1 = 6;
+    public static int Arealevel3_2 = 7;
+    public static int Arealevel4_1 = 8;
+    public static int Arealevel4_2 = 9;
+    public static int Arealevel4_3 = 10;
+    public static int Arealevel5_1 = 11;
+    public static int Arealevel5_2 = 12;
+    public static int Arealevel5_3 = 13;
 
-  
+
+
+    public static int CliMana = 1;
+    public static int CliMana1_1 = 0;
+    public static int CliMana1_2 = 0;
+    public static int CliMana1_3 = 0;
+    public static int CliMana2_1 = 0;
+    public static int CliMana2_2 = 0;
+    public static int CliMana2_3 = 0;
+    public static int CliMana3_1 = 0;
+    public static int CliMana3_2 = 0;
+    public static int CliMana4_1 = 0;
+    public static int CliMana4_2 = 0;
+    public static int CliMana4_3 = 0;
+    public static int CliMana5_1 = 0;
+    public static int CliMana5_2 = 0;
+    public static int CliMana5_3 = 0;
+
+    public static bool CliApp1_1 = true;
+    public static bool CliApp1_2 = true;
+    public static bool CliApp1_3 = true;
+    public static bool CliApp2_1 = true;
+    public static bool CliApp2_2 = true;
+    public static bool CliApp2_3 = true;
+    public static bool CliApp3_1 = true;
+    public static bool CliApp3_2 = true;
+    public static bool CliApp4_1 = true;
+    public static bool CliApp4_2 = true;
+    public static bool CliApp4_3 = true;
+    public static bool CliApp5_1 = true;
+    public static bool CliApp5_2 = true;
+    public static bool CliApp5_3 = true;
+
+    int CliTable;
+
+    void Start()
+    {
+        database = Resources.Load<DataBase>("DataBase");
+        CliTable = 0;
+    }
+
     public static int GetArealv(int Country,int Area)
     {
         
@@ -454,11 +495,7 @@ public class Areamanager_Onodera : MonoBehaviour
     //DataBase database = new DataBase();
     // Entity_Sheet1 es;
     // Start is called before the first frame update
-    void Start()
-    {
-      //  es = Resources.Load("test_Data") as Entity_sheet1;
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
