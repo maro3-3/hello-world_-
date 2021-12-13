@@ -30,7 +30,6 @@ public class Fade_Tanaka : MonoBehaviour
       //  if (Areamanager_Onodera.Gameover == true)
         {
             fade();
-            SceneManager.LoadScene("GameOver");
         }
     }
 
@@ -42,6 +41,7 @@ public class Fade_Tanaka : MonoBehaviour
         if (alfa >= 1)
         {             // d)Š®‘S‚É•s“§–¾‚É‚È‚Á‚½‚çˆ—‚ğ”²‚¯‚é
             isFadeOut = false;
+            SceneManager.LoadScene("GameOver");
         }
     }
 
