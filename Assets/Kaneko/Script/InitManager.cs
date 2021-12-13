@@ -6,13 +6,16 @@ using System.IO;
 
 public class InitManager : MonoBehaviour
 {
-    DataBase database = null;
-    ListManufacture ManuList;
-    ListCountry CountryList;
-    ListAreaLv AreaLvList;
-    ListClient ClientList;
-    ListClientArrivalTable ClientArrivalTableList;
-    ListMission MissionList;
+
+    [SerializeField] DataBase database = null;
+    [SerializeField] ListManufacture ManuList;
+    [SerializeField] ListCountry CountryList;
+    [SerializeField] ListClient ClientList;
+
+    [SerializeField] ListAreaLv AreaLvList;
+    [SerializeField] ListClientArrivalTable ClientArrivalTableList;
+    [SerializeField] ListMission MissionList;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -33,6 +36,9 @@ public class InitManager : MonoBehaviour
         database.PossessionDroneNum = 0;
         database.TempingDroneNum = 0;
         database.ExtensionStage = 0;
+
+        // ÀŒ±—p‰Šú‰»
+        database.MiniClieNo = 0;
 
         // ƒ^[ƒ“‰Šú‰»
         database.TurnNum = 0;

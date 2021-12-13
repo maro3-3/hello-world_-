@@ -20,10 +20,26 @@ public class DataBase : ScriptableObject
     public int TurnNum;       // ターン数
 
     // ミッション //
+
+    public int MissionState;       // ミッション段階
+    public enum MissionRewards      // ミッション報酬
+    {
+        PutinChoice,    // 選択肢に入れる
+        selected,       // 選択済み
+        Unopened        // 未開放
+    }
+
+    // ミニゲーム //
+    public bool Win;
+    public bool Lose;
+    public int MiniClieNo; // ミニゲーム対象のクライアントナンバー
+    public int Amount; // クライアントの取引額
+
     public int[] RewardLv = new int[12];               // ミッションレベル
     public int[] EmploymentTarget = new int[12];       // 目標雇用数
     public int[] RewartContent = new int[12];          // 報酬
     public int[] RewartState = new int[12];            // 報酬ステート
+
 
     // 国 //
     public struct Country
