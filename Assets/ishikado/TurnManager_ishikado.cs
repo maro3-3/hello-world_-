@@ -22,6 +22,11 @@ public class TurnManager_ishikado : MonoBehaviour
     {
         //ターン終了時
 
+        if(database.TurnNum % 4==0)
+        {
+            //月末処理
+        }
+
         database.TurnNum++;
 
         //ターン開始時
