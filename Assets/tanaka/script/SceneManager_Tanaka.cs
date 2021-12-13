@@ -29,8 +29,8 @@ public class SceneManager_Tanaka : MonoBehaviour
 
     public void Onclick_TitleToGenchi()
     {
-          SceneManager.LoadScene("Genchi");
-       // SceneManager.LoadScene("Chi_shisen");
+         // SceneManager.LoadScene("Genchi");
+       SceneManager.LoadScene("Chi_shisen");
     }
 
     public void OnClick_Homepage()//ホームページに遷移

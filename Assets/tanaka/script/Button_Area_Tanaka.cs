@@ -47,18 +47,25 @@ public class Button_Area_Tanaka : MonoBehaviour
         pos.z = 0;
         switch (area)
         {
-            case 0:
+            case 0://中国
                 pos.x = 900;
                 pos.y = -545;
-                pos.z = 0;
                 break;
-            case 1:
+            case 1://アメリカ
+                pos.x = -1200;
+                pos.y = -395;
                 break;
-            case 2:
+            case 2://ロシア
+                pos.x = 857;
+                pos.y = -545;
                 break;
             case 3:
+                pos.x = 319;
+                pos.y = 692;
                 break;
             case 4:
+                pos.x = 1804;
+                pos.y = 530;
                 break;
             default:
                 break;
