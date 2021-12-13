@@ -109,12 +109,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b520b2072a1af54a9b226ce31572ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Client: {fileID: 7298255477753207588}
-  Object: {fileID: 1261079131264616801}
   ClieCountry: 0
   ClieArea: 0
   ClieNum: 0
   ClieLv: 0
+  Client: {fileID: 7298255477753207588}
+  Object: {fileID: 1261079131264616801}
 --- !u!1001 &2053912349633259677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122,6 +122,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2053912348648897229}
     m_Modifications:
+    - target: {fileID: 936949587560767996, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 953829831237331657, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 953829831237331657, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 953829831237331657, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4480548563826988661, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
       propertyPath: m_RootOrder
       value: 0
