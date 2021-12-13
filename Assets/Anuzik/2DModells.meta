@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Anuzik/3DModells/Prefabs.meta
+guid: c570be1341e1f6141873f188480eb8b2
+=======
 guid: cbb79ca34a2b0144bb39494492b01d3f
+>>>>>>> 73058ba25e5edb4e635e3d3743e688913fb65eee:Assets/Anuzik/2DModells.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
