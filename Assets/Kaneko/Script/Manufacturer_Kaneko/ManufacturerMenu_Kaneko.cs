@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ManufacturerMenu_Kaneko : MonoBehaviour, IPointerClickHandler
+public class ManuCountry_Kaneko : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] GameObject ClientPanel;
     [SerializeField] GameObject ManufacturerPanel;
     [SerializeField] GameObject UnemployedPanel;
-    [SerializeField] GameObject ManufacturerMenuPanel;
+    [SerializeField] GameObject ManuCountryMenuPanel;
     [SerializeField] Vector3 TargetPos;
 
     public void OnPointerClick(PointerEventData eventData)
@@ -19,9 +19,8 @@ public class ManufacturerMenu_Kaneko : MonoBehaviour, IPointerClickHandler
         UnemployedPanel.SetActive(false);
         // ç∂Ç…ìÆÇ≠èàóùÇµÇƒÇ©ÇÁï\é¶
         GameObject Parent = this.transform.parent.gameObject;
-        Debug.Log(Parent);
         Parent.transform.position = TargetPos;
-        ManufacturerMenuPanel.SetActive(true);
+        ManuCountryMenuPanel.SetActive(true);
     }
 
     // Start is called before the first frame update

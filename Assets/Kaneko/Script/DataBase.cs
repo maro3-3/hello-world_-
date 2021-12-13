@@ -40,6 +40,7 @@ public class DataBase : ScriptableObject
     public int[] RewartContent = new int[12];          // 報酬
     public int[] RewartState = new int[12];            // 報酬ステート
 
+    public int LogisticsRights;         // 物流権
 
     // 国 //
     public struct Country
@@ -173,7 +174,7 @@ public class DataBase : ScriptableObject
         public string ManufacturerName;
         public int Performance;             // 業績
 
-       
+
 
 
 
@@ -246,5 +247,5 @@ public class DataBase : ScriptableObject
     }
     public ClientArrivalTable[] ClientArrivalTables = new ClientArrivalTable[14];
 
-   
+
 }

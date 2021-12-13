@@ -6,27 +6,26 @@ using System.IO;
 
 public class InitManager : MonoBehaviour
 {
-
-    [SerializeField] DataBase database = null;
-    [SerializeField] ListManufacture ManuList;
-    [SerializeField] ListCountry CountryList;
-    [SerializeField] ListClient ClientList;
-
-    [SerializeField] ListAreaLv AreaLvList;
-    [SerializeField] ListClientArrivalTable ClientArrivalTableList;
-    [SerializeField] ListMission MissionList;
-
+    DataBase database = null;
+    ListManufacture ManuList;
+    ListCountry CountryList;
+    ListAreaLv AreaLvList;
+    ListClientArrivalTable ClientArrivalTableList;
+    ListMission MissionList;
+    List_ClientInformation ClientList;
 
     // Start is called before the first frame update
     void Awake()
-    {        // ScriptableObjectの取得
+    {       
+        // ScriptableObjectの取得
         database = Resources.Load<DataBase>("DataBase");
         ManuList = Resources.Load("List_manufacturer") as ListManufacture;
         CountryList = Resources.Load("List_CountryAndArea") as ListCountry;
         AreaLvList = Resources.Load("List_AreaLv") as ListAreaLv;
-        ClientList = Resources.Load("List_Client") as ListClient;
         ClientArrivalTableList = Resources.Load("List_ClientArrivalTable") as ListClientArrivalTable;
         MissionList = Resources.Load("List_Mission") as ListMission;
+        ClientList = Resources.Load("List_ClientInformation") as List_ClientInformation;
+
 
         // 失業者初期化
         database.UnemployedNum = 0;
@@ -37,11 +36,11 @@ public class InitManager : MonoBehaviour
         database.TempingDroneNum = 0;
         database.ExtensionStage = 0;
 
-        // 実験用初期化
-        database.MiniClieNo = 0;
-
         // ターン初期化
-        database.TurnNum = 0;
+        database.TurnNum = 1;
+
+        // 物流権初期化
+        database.LogisticsRights = 0;
 
         // 生産者初期化
         for (int i = 0; i < ManuList.sheets[0].list.Count; i++)
@@ -84,27 +83,10 @@ public class InitManager : MonoBehaviour
                                        AreaLvList.sheets[0].list[i].int_AreaLv5);
         }
 
-        // クライアント初期化           
-        for (int i = 0; i < ClientList.sheets[0].list.Count; i++)
-        {
-            database.clients[i].InitClient(ClientList.sheets[0].list[i].int_CountryNo,
-                ClientList.sheets[0].list[i].int_AreaNo,
-                ClientList.sheets[0].list[i].int_ClientNo,
-                ClientList.sheets[0].list[i].string_ClientName,
-                ClientList.sheets[0].list[i].int_ClientLv,
-                ClientList.sheets[0].list[i].int_ClientType,
-                0, 0, null, 0);
 
-            database.clients[i].SetTransactions(ClientList.sheets[0].list[i].int_Transaction_1,
-                ClientList.sheets[0].list[i].int_Transaction_2,
-                ClientList.sheets[0].list[i].int_Transaction_3,
-                ClientList.sheets[0].list[i].int_Transaction_4,
-                ClientList.sheets[0].list[i].int_Transaction_5,
-                ClientList.sheets[0].list[i].int_Transaction_6);
-        }
 
         // クライアント到着テーブル初期化
-        for(int i = 0;i < ClientArrivalTableList.sheets[0].list.Count; i++)
+        for (int i = 0;i < ClientArrivalTableList.sheets[0].list.Count; i++)
         {
             database.ClientArrivalTables[i].InitClientArrivalTable(ClientArrivalTableList.sheets[0].list[i].int_CountryNo,
                                                                    ClientArrivalTableList.sheets[0].list[i].int_AreaNo);
@@ -129,4 +111,6 @@ public class InitManager : MonoBehaviour
 
 
     }
+
 }
+

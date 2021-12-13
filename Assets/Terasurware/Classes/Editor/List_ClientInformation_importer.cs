@@ -7,9 +7,9 @@ using NPOI.HSSF.UserModel;
 using NPOI.XSSF.UserModel;
 using NPOI.SS.UserModel;
 
-public class List_Client_importer : AssetPostprocessor {
-	private static readonly string filePath = "Assets/DataList/List_Client.xls";
-	private static readonly string exportPath = "Assets/Resources/List_Client.asset";
+public class List_ClientInformation_importer : AssetPostprocessor {
+	private static readonly string filePath = "Assets/DataList/List_ClientInformation.xls";
+	private static readonly string exportPath = "Assets/Resources/List_ClientInformation.asset";
 	private static readonly string[] sheetNames = { "Sheet1", };
 	
 	static void OnPostprocessAllAssets (string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
@@ -18,9 +18,9 @@ public class List_Client_importer : AssetPostprocessor {
 			if (!filePath.Equals (asset))
 				continue;
 				
-			ListClient data = (ListClient)AssetDatabase.LoadAssetAtPath (exportPath, typeof(ListClient));
+			List_ClientInformation data = (List_ClientInformation)AssetDatabase.LoadAssetAtPath (exportPath, typeof(List_ClientInformation));
 			if (data == null) {
-				data = ScriptableObject.CreateInstance<ListClient> ();
+				data = ScriptableObject.CreateInstance<List_ClientInformation> ();
 				AssetDatabase.CreateAsset ((ScriptableObject)data, exportPath);
 				data.hideFlags = HideFlags.NotEditable;
 			}
@@ -41,14 +41,14 @@ public class List_Client_importer : AssetPostprocessor {
 						continue;
 					}
 
-					ListClient.Sheet s = new ListClient.Sheet ();
+					List_ClientInformation.Sheet s = new List_ClientInformation.Sheet ();
 					s.name = sheetName;
 				
 					for (int i=1; i<= sheet.LastRowNum; i++) {
 						IRow row = sheet.GetRow (i);
 						ICell cell = null;
 						
-						ListClient.Param p = new ListClient.Param ();
+						List_ClientInformation.Param p = new List_ClientInformation.Param ();
 						
 					cell = row.GetCell(0); p.int_CountryNo = (int)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(1); p.int_AreaNo = (int)(cell == null ? 0 : cell.NumericCellValue);

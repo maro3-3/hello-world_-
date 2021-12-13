@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class ListClient : ScriptableObject
+public class List_ClientInformation : ScriptableObject
 {	
 	public List<Sheet> sheets = new List<Sheet> ();
 
