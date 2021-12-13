@@ -39,6 +39,9 @@ public class InitManager : MonoBehaviour
         // ƒ^[ƒ“‰Šú‰»
         database.TurnNum = 1;
 
+        // •¨—¬Œ ‰Šú‰»
+        database.LogisticsRights = 0;
+
         // ¶YÒ‰Šú‰»
         for (int i = 0; i < ManuList.sheets[0].list.Count; i++)
         {
