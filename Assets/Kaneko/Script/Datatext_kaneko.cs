@@ -71,13 +71,13 @@ public class Datatext_kaneko : MonoBehaviour
 
         CHN_Beijing_manuNameList[0].text = database.manufacturers[0].ManufacturerName.ToString();
         CHN_Beijing_manuNameList[1].text = database.manufacturers[1].ManufacturerName.ToString();
-        CHN_Shanghai_manuNameList[0].text = database.manufacturers[2].ManufacturerName.ToString();
-        CHN_Shanghai_manuNameList[1].text = database.manufacturers[3].ManufacturerName.ToString();
-        CHN_Sichuan_manuNameList[0].text = database.manufacturers[4].ManufacturerName.ToString();
-        CHN_Sichuan_manuNameList[1].text = database.manufacturers[5].ManufacturerName.ToString();
-        CHN_Sichuan_manuNameList[2].text = database.manufacturers[6].ManufacturerName.ToString();
-        CHN_Sichuan_manuNameList[3].text = database.manufacturers[7].ManufacturerName.ToString();
-        CHN_Sichuan_manuNameList[4].text = database.manufacturers[8].ManufacturerName.ToString();
+        //CHN_Shanghai_manuNameList[0].text = database.manufacturers[2].ManufacturerName.ToString();
+        //CHN_Shanghai_manuNameList[1].text = database.manufacturers[3].ManufacturerName.ToString();
+        //CHN_Sichuan_manuNameList[0].text = database.manufacturers[4].ManufacturerName.ToString();
+        //CHN_Sichuan_manuNameList[1].text = database.manufacturers[5].ManufacturerName.ToString();
+        //CHN_Sichuan_manuNameList[2].text = database.manufacturers[6].ManufacturerName.ToString();
+        //CHN_Sichuan_manuNameList[3].text = database.manufacturers[7].ManufacturerName.ToString();
+        //CHN_Sichuan_manuNameList[4].text = database.manufacturers[8].ManufacturerName.ToString();
 
         CHN_Beijing_manufacturerName[0].text = database.manufacturers[0].ManufacturerName.ToString();
         CHN_Beijing_manuLaborForce[0].text = database.manufacturers[0].LaborForce.ToString();
