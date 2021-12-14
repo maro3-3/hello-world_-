@@ -6,24 +6,25 @@ using UnityEngine.UI;
 
 public class Text_Onodera : MonoBehaviour
 {
-    // Start is called before the first frame update
+   
     [SerializeField] Text label1,label2, label3, label4;
    public int emp_count;
    private bool employees;
-    // public string teststring;
-    //public Button button;
+ 
     [SerializeField] GameObject Object;
-    [SerializeField] GameObject PLAYER;
-   // DataBase database = new DataBase();
-
+    //[SerializeField] GameObject PLAYER;
+    DataBase database = null;
+    public int ProdCountry = 0;//ê∂éYé“ÇÃçë 
+    public int ProdArea = 0;//ê∂éYé“ÇÃínàÊÅ@
+    public int ProdNum = 0;
 
     void Start()
     {
-       
-      //  database = Resources.Load<DataBase>("DataBase");
+       // DataBase database = new DataBase();
+        database = Resources.Load<DataBase>("DataBase");
 
 
-        PLAYER = GameObject.FindGameObjectWithTag("Player");
+        //PLAYER = GameObject.FindGameObjectWithTag("Player");
         employees = false;
         emp_count = 5;
         UpdateCount();
@@ -36,9 +37,11 @@ public class Text_Onodera : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
+        int num = Areamanager_Onodera.CheckProdNum(ProdCountry, ProdArea, ProdNum);
+
         //if (other.gameObject == PLAYER)
         //{
-            Object.SetActive(true);
+        Object.SetActive(true);
        // }
 
         if (employees == false)
@@ -62,12 +65,13 @@ public class Text_Onodera : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Space))
             {
+               
                 employees = true;
                 label2.text = "";
                 label3.text = "";
                 label4.text = "";
                 Employees();
-               // database.manufacturers[0].NumberofEmployees += emp_count;
+               database.manufacturers[0].NumberofEmployees += emp_count;
             }
             UpdateCount();
         }
@@ -93,3 +97,4 @@ public class Text_Onodera : MonoBehaviour
         return number_employees;
     }
 }
+//Getempcount

@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class TurnManager_ishikado : MonoBehaviour
 {
-    [SerializeField] DataBase_Tanaka database = null;
-
+    DataBase database = null;
     // Start is called before the first frame update
     void Start()
     {
-         //database = Resources.Load<DataBase>("DataBase");
+         database = Resources.Load<DataBase>("DataBase");
     }
 
     // Update is called once per frame

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Debug_Tanaka : MonoBehaviour
 {
-    [SerializeField] DataBase_Tanaka database = null;
+   // [SerializeField] DataBase_Tanaka database = null;
     // Start is called before the first frame update
     void Start()
     {

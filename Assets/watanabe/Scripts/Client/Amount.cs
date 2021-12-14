@@ -5,15 +5,18 @@ using UnityEngine.UI;
 
 public class Amount : MonoBehaviour
 {
-    public GameObject Amount_obj;
+    public GameObject AmountText_obj;
+    [SerializeField] private GameObject RedHighLight;
     public int amount; // âºÉfÅ[É^
+    public bool FairTrade;
     public bool Choice;
 
     // Start is called before the first frame update
     void Start()
     {
-        Amount_obj = transform.Find("AmountText").gameObject;
-        Text Amount_Text = Amount_obj.GetComponent<Text>();
+        AmountText_obj = transform.Find("AmountText").gameObject;
+        Text Amount_Text = AmountText_obj.GetComponent<Text>();
+        RedHighLight = this.transform.Find("RedHighLight").gameObject;
         Amount_Text.text = "\néxï• : " + amount;
 
         Choice = false;
@@ -27,6 +30,23 @@ public class Amount : MonoBehaviour
 
     public void ClickAmount()
     {
+        GameObject Minimana = GameObject.Find("MinigameManager");
+        MinigameManager script = Minimana.GetComponent<MinigameManager>();
+        if(FairTrade)
+        {
+            script.FairTrade = true;
+        }
         Choice = true;
     }
+
+    public void OnHightLight()
+    {
+        RedHighLight.SetActive(true);
+    }
+
+    public void OffHightLight()
+    {
+        RedHighLight.SetActive(false);
+    }
+
 }
