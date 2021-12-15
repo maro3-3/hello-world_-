@@ -20,7 +20,7 @@ public class TurnManager_ishikado : MonoBehaviour
         
     }
 
-    void TurnUp()
+    public void TurnUp()
     {
         //ターン終了時処理
 
