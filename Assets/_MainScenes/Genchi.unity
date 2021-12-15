@@ -1461,6 +1461,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2712553304365770775, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
+      propertyPath: ProdNum
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712553304365770775, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
+      propertyPath: ProdArea
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712553304365770775, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
+      propertyPath: ProdCountry
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2712553304365770780, guid: e439c7e064e414e4fa38b2d1fe6b1d22, type: 3}
       propertyPath: m_Name
       value: NewProducer (1)

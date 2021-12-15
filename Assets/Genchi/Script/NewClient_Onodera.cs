@@ -48,7 +48,7 @@ public class NewClient_Onodera : MonoBehaviour
         if (Clitable < 0)
         {
 
-            int rand=Random.Range(0, 2);
+            int rand = 1;//Random.Range(0, 2);
             if(rand>=1)
             {
                 /*

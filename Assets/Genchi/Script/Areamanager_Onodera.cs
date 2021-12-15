@@ -619,6 +619,8 @@ public class Areamanager_Onodera : MonoBehaviour
         ClieNo5_2 = 0;
         ClieNo5_3 = 0;
 
+        //NewProducer_Onodera.state = 1;
+
         Gameover = false;
     }
 

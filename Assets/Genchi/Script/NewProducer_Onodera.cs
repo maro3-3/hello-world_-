@@ -32,6 +32,7 @@ public class NewProducer_Onodera : MonoBehaviour
     int getArealv,Arealv, sisan = 0, uri = 0, roudou = 0, koyo = 0;
     int state = 1;
     bool app = false;
+    int localstate = 0;
 
     void Start()
     {
