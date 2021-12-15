@@ -5,6 +5,7 @@ using UnityEngine;
 public class Warp_Onodera : MonoBehaviour
 {
     public Vector3 pos;
+   
 
     private void OnTriggerEnter(Collider other)
     {

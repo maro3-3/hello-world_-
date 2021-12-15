@@ -40,13 +40,30 @@ public class Areamanager_Onodera : MonoBehaviour
     public static int ProdNo5_3 = 0;
 
 
+    public static int ClieNo1_1 = 0;
+    public static int ClieNo1_2 = 0;
+    public static int ClieNo1_3 = 0;
+    public static int ClieNo2_1 = 0;
+    public static int ClieNo2_2 = 0;
+    public static int ClieNo2_3 = 0;
+    public static int ClieNo3_1 = 0;
+    public static int ClieNo3_2 = 0;
+    public static int ClieNo4_1 = 0;
+    public static int ClieNo4_2 = 0;
+    public static int ClieNo4_3 = 0;
+    public static int ClieNo5_1 = 0;
+    public static int ClieNo5_2 = 0;
+    public static int ClieNo5_3 = 0;
+
     public static bool Gameover = false;
 
 
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
-        
+       
+
+
     }
 
     public static int GetArealv(int Country,int Area)
@@ -306,7 +323,84 @@ public class Areamanager_Onodera : MonoBehaviour
     }
 
 
-    public static int CheckClieNum(int Country, int Area, int Num)
+    public static int CheckClieNum(int Country, int Area)
+    {
+        int ClieNum = 0;
+        if (Country == 1 && Area == 1)
+        {
+            ClieNum = ClieNo1_1;
+            ClieNo1_1 += 1;
+        }
+        if (Country == 1 && Area == 2)
+        {
+            ClieNum = ClieNo1_2;
+            ClieNo1_2 += 1;
+        }
+        if (Country == 1 && Area == 3)
+        {
+            ClieNum = ClieNo1_3;
+            ClieNo1_3 += 1;
+        }
+        if (Country == 2 && Area == 1)
+        {
+            ClieNum = ClieNo2_1;
+            ClieNo2_1 += 1;
+        }
+        if (Country == 2 && Area == 2)
+        {
+            ClieNum = ClieNo2_2;
+            ClieNo2_2 += 1;
+
+        }
+        if (Country == 2 && Area == 3)
+        {
+            ClieNum = ClieNo2_3;
+            ClieNo2_3 += 1;
+        }
+        if (Country == 3 && Area == 1)
+        {
+            ClieNum = ClieNo3_1;
+            ClieNo3_1 += 1;
+        }
+        if (Country == 3 && Area == 2)
+        {
+            ClieNum = ClieNo3_2;
+            ClieNo3_2 += 1;
+        }
+        if (Country == 4 && Area == 1)
+        {
+            ClieNum = ClieNo4_1;
+            ClieNo4_1 += 1;
+        }
+        if (Country == 4 && Area == 2)
+        {
+            ClieNum = ClieNo4_2;
+            ClieNo4_2 += 1;
+        }
+        if (Country == 4 && Area == 3)
+        {
+            ClieNum = ClieNo4_3;
+            ClieNo4_3 += 1;
+        }
+        if (Country == 5 && Area == 1)
+        {
+            ClieNum = ClieNo5_1;
+            ClieNo5_1 += 1;
+        }
+        if (Country == 5 && Area == 2)
+        {
+            ClieNum = ClieNo5_2;
+            ClieNo5_2 += 1;
+        }
+        if (Country == 5 && Area == 3)
+        {
+            ClieNum = ClieNo5_3;
+            ClieNo5_3 += 1;
+        }
+        return ClieNum;
+    }
+
+        public static int CheckClieNum(int Country, int Area, int Num)
     {
         int ClieNum = 0;
         if (Country == 1 && Area == 1 && Num == 1)
@@ -510,7 +604,40 @@ public class Areamanager_Onodera : MonoBehaviour
         ProdNo5_2 = 0;
         ProdNo5_3 = 0;
 
+        ClieNo1_1 = 0;
+        ClieNo1_2 = 0;
+        ClieNo1_3 = 0;
+        ClieNo2_1 = 0;
+        ClieNo2_2 = 0;
+        ClieNo2_3 = 0;
+        ClieNo3_1 = 0;
+        ClieNo3_2 = 0;
+        ClieNo4_1 = 0;
+        ClieNo4_2 = 0;
+        ClieNo4_3 = 0;
+        ClieNo5_1 = 0;
+        ClieNo5_2 = 0;
+        ClieNo5_3 = 0;
+
         Gameover = false;
     }
 
-}
+    public static void UpdataClim()
+    {
+        ClieNo1_1 = 0;
+        ClieNo1_2 = 0;
+        ClieNo1_3 = 0;
+        ClieNo2_1 = 0;
+        ClieNo2_2 = 0;
+        ClieNo2_3 = 0;
+        ClieNo3_1 = 0;
+        ClieNo3_2 = 0;
+        ClieNo4_1 = 0;
+        ClieNo4_2 = 0;
+        ClieNo4_3 = 0;
+        ClieNo5_1 = 0;
+        ClieNo5_2 = 0;
+        ClieNo5_3 = 0;
+    }
+
+    }

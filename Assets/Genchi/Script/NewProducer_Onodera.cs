@@ -22,7 +22,11 @@ public class NewProducer_Onodera : MonoBehaviour
     [SerializeField] GameObject Object2;
     [SerializeField] GameObject Object3;
     DataBase database = null;
- 
+
+    public AudioClip sound;
+    AudioSource audioSource;
+
+
     int oldturn = 0;
 
     int getArealv,Arealv, sisan = 0, uri = 0, roudou = 0, koyo = 0;
@@ -46,6 +50,8 @@ public class NewProducer_Onodera : MonoBehaviour
 
         oldturn = database.TurnNum;
         app = false;
+
+        audioSource = GetComponent<AudioSource>();
 
     }
     private void Update()
@@ -304,10 +310,11 @@ public class NewProducer_Onodera : MonoBehaviour
         roudou = database.manufacturers[num].LaborForce;
         koyo = database.manufacturers[num].NumberofEmployees;
         //sousisan, uriage, roudouryoku, koyou;
-        
+        audioSource.Play();
     }
 
-    public void OnTriggerStay(Collider other)
+
+        public void OnTriggerStay(Collider other)
     {
         int num = Areamanager_Onodera.CheckProdNum(ProdCountry, ProdArea, ProdNum);
 
@@ -355,6 +362,7 @@ public class NewProducer_Onodera : MonoBehaviour
     }
 
    
+
 
     private void OnTriggerExit(Collider other)
     {
