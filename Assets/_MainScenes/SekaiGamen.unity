@@ -8596,7 +8596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8828163103103649919, guid: 3acd73601de8b0b43ab0b77ae66924d7, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8828163104571352354, guid: 3acd73601de8b0b43ab0b77ae66924d7, type: 3}
       propertyPath: m_Pivot.x
@@ -8692,7 +8692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8828163104571352366, guid: 3acd73601de8b0b43ab0b77ae66924d7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3acd73601de8b0b43ab0b77ae66924d7, type: 3}
