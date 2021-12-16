@@ -8,6 +8,9 @@ public class Unemployed_Onodera : MonoBehaviour
     [SerializeField] GameObject Object1;
     [SerializeField] GameObject Object2;
     [SerializeField] GameObject Object3;
+    [SerializeField] GameObject icon1;
+    [SerializeField] GameObject icon2;
+    [SerializeField] GameObject icon3;
     public int UnempCountry = 0;//é∏ã∆é“ÇÃçë 
     public int UnempArea = 0;//é∏ã∆é“ÇÃínàÊÅ@
     public int Unempstate = 1;//èÛë‘
@@ -92,6 +95,9 @@ public class Unemployed_Onodera : MonoBehaviour
             Object1.SetActive(true);
             Object2.SetActive(false);
             Object3.SetActive(false);
+            icon1.SetActive(true);
+            icon2.SetActive(false);
+            icon3.SetActive(false);
         }
         if (Unempstate == 2)//íéÇÃëß
         {
@@ -104,6 +110,9 @@ public class Unemployed_Onodera : MonoBehaviour
             Object1.SetActive(false);
             Object2.SetActive(true);
             Object3.SetActive(false);
+            icon1.SetActive(false);
+            icon2.SetActive(true);
+            icon3.SetActive(false);
         }
 
 
@@ -112,6 +121,9 @@ public class Unemployed_Onodera : MonoBehaviour
             Object1.SetActive(false);
             Object2.SetActive(false);
             Object3.SetActive(true);
+            icon1.SetActive(false);
+            icon2.SetActive(false);
+            icon3.SetActive(true);
         }
     }
 }

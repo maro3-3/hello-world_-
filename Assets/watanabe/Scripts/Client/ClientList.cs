@@ -5,9 +5,16 @@ using UnityEngine.UI;
 
 public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“–‚·‚éƒAƒCƒeƒ€‚ğƒnƒCƒ‰ƒCƒg•\¦‚·‚é
 {
+    [SerializeField] DataBase database;
 
     [SerializeField] private GameObject Productionlist;
     ProductionList Proscript;
+
+    [SerializeField] private GameObject ClientNameText_obj;
+    [SerializeField] private Text ClientName_Text;
+
+    [SerializeField] private GameObject ClientLevelText_obj;
+    [SerializeField] private Text ClientLevel_Text;
 
     public Request[] Requestlist;
     public bool isSearch;
@@ -17,11 +24,21 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
     // Start is called before the first frame update
     void Start()
     {
-        Productionlist = GameObject.Find("ProductionList");
-        Proscript = Productionlist.GetComponent<ProductionList>();
+        database = Resources.Load<DataBase>("DataBase");
+
+        ClientNameText_obj = transform.Find("ClientName").gameObject;
+        ClientName_Text = ClientNameText_obj.GetComponent<Text>();
+
+        ClientLevelText_obj = transform.Find("ClientLevel").gameObject;
+        ClientLevel_Text = ClientLevelText_obj.GetComponent<Text>();
 
         isSearch = true;
         isSend = false;
+
+        ClientLevel_Text.text = "Lv " + database.clients[database.MiniClieNo].ClientLv;
+        ClientName_Text.text = database.clients[database.MiniClieNo].ClientName;
+
+        RequestInit(Requestlist, database.clients[database.MiniClieNo].Transactions);
     }
 
     // Update is called once per frame
@@ -60,5 +77,14 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
                 // î•ñ‘—MŠ®—¹
             }
         }
+    }
+
+    void RequestInit(Request[] req, int[] trans)
+    {
+        for(int i = 0; i < req.Length; i++)
+        {
+            req[i].request = trans[i];
+        }
+        Debug.Log("ƒNƒ‰ƒCƒAƒ“ƒg‚Ì—v‹•¨‚ğ‰Šú‰»");
     }
 }

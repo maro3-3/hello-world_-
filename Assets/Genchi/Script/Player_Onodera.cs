@@ -13,14 +13,26 @@ public class Player_Onodera : MonoBehaviour
     [SerializeField] GameObject migi;
     [SerializeField] GameObject hidari;
 
+    public AudioClip sound;
+    AudioSource audioSource;
+
     public enum CharacterState
     {
         normal,
         talk
     }
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
+
+        
+        
+           
+        
         
         velocity = Vector3.zero;
         if (Input.GetKey(KeyCode.S))
@@ -30,6 +42,7 @@ public class Player_Onodera : MonoBehaviour
             usiro.SetActive(false);
             migi.SetActive(false);
             hidari.SetActive(false);
+           
         }
         else if (Input.GetKey(KeyCode.D))
         {
@@ -38,6 +51,7 @@ public class Player_Onodera : MonoBehaviour
             usiro.SetActive(false);
             migi.SetActive(true);
             hidari.SetActive(false);
+
         }
         else if (Input.GetKey(KeyCode.W))
         {
@@ -56,12 +70,35 @@ public class Player_Onodera : MonoBehaviour
             hidari.SetActive(true);
         }
         
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            audioSource.Play();
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            audioSource.Play();
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            audioSource.Play();
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            audioSource.Play();
+        }
+        
         velocity = velocity.normalized * moveSpeed * Time.deltaTime;
 
         // ‚¢‚¸‚ê‚©‚Ì•ûŒü‚ÉˆÚ“®‚µ‚Ä‚¢‚éê‡
         if (velocity.magnitude > 0)
         {
+            
             transform.position += velocity;
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 }
