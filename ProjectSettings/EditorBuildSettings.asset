@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/_MainScenes/Genchi.unity
     guid: 4fe24c87c7ee2c74ea90f1f68c852d49
   - enabled: 1
-    path: Assets/_MainScenes/minigame.unity
+    path: Assets/watanabe/Scenes/minigame.unity
     guid: 677c5739d64c77447bc684da911d8c6e
   - enabled: 1
     path: Assets/_MainScenes/GameOver.unity

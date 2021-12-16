@@ -58,7 +58,7 @@ public class Areamanager_Onodera : MonoBehaviour
     public static int[] Prodstate = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
     public static int ProdStateNum = 0;
 
-    public static int[] ProdSales;
+    public static int[] ProdSales = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     public static bool[] ProdApp = {false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
         false, false, false, false, false, false, false, false, false,false,false,false,false,false,false,false,false };
     public static bool Gameover = false;
@@ -69,7 +69,7 @@ public class Areamanager_Onodera : MonoBehaviour
     {
         database = Resources.Load<DataBase>("DataBase");
 
-
+        Prodstate[0] = 2;
 
     }
 
@@ -866,7 +866,7 @@ public class Areamanager_Onodera : MonoBehaviour
 
                     }
                 }
-                if (Prodstate[i] == 2)
+                else if (Prodstate[i] == 2)
                 {
 
                     if (ProdSales[i] < 500)
