@@ -20,10 +20,33 @@ public class DataBase : ScriptableObject
     public int TurnNum;       // ターン数
 
     // ミッション //
+<<<<<<< HEAD
+
+    public int MissionState;       // ミッション段階
+    public enum MissionRewards      // ミッション報酬
+    {
+        PutinChoice,    // 選択肢に入れる
+        selected,       // 選択済み
+        Unopened        // 未開放
+    }
+
+    // ミニゲーム //
+    public bool Win;
+    public bool Lose;
+    public int MiniClieNo; // ミニゲーム対象のクライアントナンバー
+    public int Amount; // クライアントの取引額
+
+=======
+>>>>>>> parent of ae06cd1 (no message)
     public int[] RewardLv = new int[12];               // ミッションレベル
     public int[] EmploymentTarget = new int[12];       // 目標雇用数
     public int[] RewartContent = new int[12];          // 報酬
     public int[] RewartState = new int[12];            // 報酬ステート
+<<<<<<< HEAD
+
+    public int LogisticsRights;         // 物流権
+=======
+>>>>>>> parent of ae06cd1 (no message)
 
     // 国 //
     public struct Country
@@ -59,6 +82,7 @@ public class DataBase : ScriptableObject
         public int CountryNo;
         public int AreaNo;
         public int[] AreaLvs;
+<<<<<<< HEAD
 
         public void InitAreaLv(int countryNo, int areaNo)
         {
@@ -83,6 +107,32 @@ public class DataBase : ScriptableObject
         public int UnemployedAreaNo;      // 地域ナンバー
         public int InitUnemployedNum;  // その地域の失業者数
 
+=======
+
+        public void InitAreaLv(int countryNo, int areaNo)
+        {
+            CountryNo = countryNo;
+            AreaNo = areaNo;
+        }
+        public void InitLv(int lv2, int lv3, int lv4, int lv5)
+        {
+            AreaLvs = new int[4];
+            AreaLvs[0] = lv2;
+            AreaLvs[1] = lv3;
+            AreaLvs[2] = lv4;
+            AreaLvs[3] = lv5;
+        }
+    }
+    public AreaLv[] areaLvs = new AreaLv[14];
+
+    // 失業者 //
+    public struct Unemployed
+    {
+        public int UnemployedCountryNo;   // 国ナンバー
+        public int UnemployedAreaNo;      // 地域ナンバー
+        public int InitUnemployedNum;  // その地域の失業者数
+
+>>>>>>> parent of ae06cd1 (no message)
         public int CurrentUnemployedNum;        //その地域の失業者数（生存者）　リストから
         public int EmploymentNum;               // その地域の雇用数
         public int Faint_BreathNum;             //その地域の虫の息数　０
@@ -161,6 +211,11 @@ public class DataBase : ScriptableObject
 
 
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> parent of ae06cd1 (no message)
         // 初期化関数
         public void InitClient(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
                                int clientLv, int clientType, int transaction,
@@ -230,9 +285,13 @@ public class DataBase : ScriptableObject
     }
     public ClientArrivalTable[] ClientArrivalTables = new ClientArrivalTable[14];
 
+<<<<<<< HEAD
+
+=======
     // ミニゲーム //
     public bool Win;
     public bool Lose;
     public int MiniClieNo; // ミニゲーム対象のクライアントナンバー
     public int Amount; // クライアントの取引額
+>>>>>>> parent of ae06cd1 (no message)
 }

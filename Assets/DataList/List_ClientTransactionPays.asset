@@ -125,7 +125,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 3
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6D77\u9F8D"
       int_TransactionNum: 6
       int_RequestsNum: 1500
@@ -134,7 +138,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1550
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 3
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6D77\u9F8D"
       int_TransactionNum: 0
       int_RequestsNum: 500
@@ -143,7 +151,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1550
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 3
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6D77\u9F8D"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -152,7 +164,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 3
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6D77\u9F8D"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -161,7 +177,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 3
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6D77\u9F8D"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -170,7 +190,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 3
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6D77\u9F8D"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -179,7 +203,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 4
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u597D\u76CA"
       int_TransactionNum: 4
       int_RequestsNum: 1500
@@ -188,7 +216,11 @@ MonoBehaviour:
       int_AmoPay_Low: 2050
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 4
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u597D\u76CA"
       int_TransactionNum: 8
       int_RequestsNum: 1300
@@ -197,7 +229,11 @@ MonoBehaviour:
       int_AmoPay_Low: 850
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 4
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u597D\u76CA"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -206,7 +242,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 4
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u597D\u76CA"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -215,7 +255,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 4
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u597D\u76CA"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -224,7 +268,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 4
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u597D\u76CA"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -233,7 +281,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 5
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5065\u5EB7"
       int_TransactionNum: 3
       int_RequestsNum: 1200
@@ -242,7 +294,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1050
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 5
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5065\u5EB7"
       int_TransactionNum: 7
       int_RequestsNum: 2000
@@ -251,7 +307,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1850
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 5
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5065\u5EB7"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -260,7 +320,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 5
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5065\u5EB7"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -269,7 +333,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 5
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5065\u5EB7"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -278,7 +346,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 2
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 5
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5065\u5EB7"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -287,7 +359,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 6
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u53CC\u6D41"
       int_TransactionNum: 2
       int_RequestsNum: 1000
@@ -296,7 +372,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1350
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 6
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u53CC\u6D41"
       int_TransactionNum: 0
       int_RequestsNum: 500
@@ -305,7 +385,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1250
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 6
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u53CC\u6D41"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -314,7 +398,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 6
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u53CC\u6D41"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -323,7 +411,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 6
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u53CC\u6D41"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -332,7 +424,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 1
+=======
       int_ClientNo: 6
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u53CC\u6D41"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -341,7 +437,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 7
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5927\u77F3"
       int_TransactionNum: 1
       int_RequestsNum: 800
@@ -350,7 +450,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1550
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 7
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5927\u77F3"
       int_TransactionNum: 0
       int_RequestsNum: 500
@@ -359,7 +463,11 @@ MonoBehaviour:
       int_AmoPay_Low: 550
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 7
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5927\u77F3"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -368,7 +476,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 7
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5927\u77F3"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -377,7 +489,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 7
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5927\u77F3"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -386,7 +502,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 2
+=======
       int_ClientNo: 7
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u5927\u77F3"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -395,7 +515,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 8
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6075\u901A"
       int_TransactionNum: 3
       int_RequestsNum: 1200
@@ -404,7 +528,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1350
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 8
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6075\u901A"
       int_TransactionNum: 5
       int_RequestsNum: 600
@@ -413,7 +541,11 @@ MonoBehaviour:
       int_AmoPay_Low: 850
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 8
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6075\u901A"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -422,7 +554,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 8
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6075\u901A"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -431,7 +567,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 8
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6075\u901A"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -440,7 +580,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 3
+=======
       int_ClientNo: 8
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6075\u901A"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -449,7 +593,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 4
+=======
       int_ClientNo: 9
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6B63\u9054"
       int_TransactionNum: 2
       int_RequestsNum: 1000
@@ -458,7 +606,11 @@ MonoBehaviour:
       int_AmoPay_Low: 1250
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 4
+=======
       int_ClientNo: 9
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6B63\u9054"
       int_TransactionNum: 1
       int_RequestsNum: 800
@@ -467,7 +619,11 @@ MonoBehaviour:
       int_AmoPay_Low: 650
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 4
+=======
       int_ClientNo: 9
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6B63\u9054"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -476,7 +632,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 4
+=======
       int_ClientNo: 9
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6B63\u9054"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -485,7 +645,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 4
+=======
       int_ClientNo: 9
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6B63\u9054"
       int_TransactionNum: -1
       int_RequestsNum: -1
@@ -494,7 +658,11 @@ MonoBehaviour:
       int_AmoPay_Low: -1
     - int_CountryNo: 1
       int_AreaNo: 3
+<<<<<<< HEAD
+      int_ClientNo: 4
+=======
       int_ClientNo: 9
+>>>>>>> parent of ae06cd1 (no message)
       string_ClientName: "\u6B63\u9054"
       int_TransactionNum: -1
       int_RequestsNum: -1

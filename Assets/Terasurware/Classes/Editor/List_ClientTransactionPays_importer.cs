@@ -9,7 +9,11 @@ using NPOI.SS.UserModel;
 
 public class List_ClientTransactionPays_importer : AssetPostprocessor {
 	private static readonly string filePath = "Assets/DataList/List_ClientTransactionPays.xls";
+<<<<<<< HEAD
+	private static readonly string exportPath = "Assets/Resources/List_ClientTransactionPays.asset";
+=======
 	private static readonly string exportPath = "Assets/DataList/List_ClientTransactionPays.asset";
+>>>>>>> parent of ae06cd1 (no message)
 	private static readonly string[] sheetNames = { "Sheet1", };
 	
 	static void OnPostprocessAllAssets (string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)

@@ -189,7 +189,6 @@ public class NewProducer_Onodera : MonoBehaviour
         if (Input.GetKey(KeyCode.Q))
         {
 
-
             Areamanager_Onodera.SurviveCheck();
             state = Areamanager_Onodera.GetProdState(ProdCountry, ProdArea, ProdNum);
 
