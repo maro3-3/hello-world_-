@@ -197,7 +197,7 @@ public class NewProducer_Onodera : MonoBehaviour
             Areamanager_Onodera.ProdSales[i] = database.manufacturers[i].AmountofSales;
         }
 
-        
+        /*
         if (Input.GetKey(KeyCode.Q))
         {
 
@@ -205,7 +205,7 @@ public class NewProducer_Onodera : MonoBehaviour
             state = Areamanager_Onodera.GetProdState(ProdCountry, ProdArea, ProdNum);
 
         }
-        
+        */
         
     }
 
