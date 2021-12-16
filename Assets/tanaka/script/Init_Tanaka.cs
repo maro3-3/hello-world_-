@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEditor;
 public class Init_Tanaka : MonoBehaviour
 {
     //ƒ^ƒCƒgƒ‹‚ÅŒÄ‚Ô
@@ -11,6 +11,9 @@ public class Init_Tanaka : MonoBehaviour
     void Awake()
     {
         area_t.area = 0;
+
+        EditorUtility.SetDirty(area_t);
+        AssetDatabase.SaveAssets();
 
         Areamanager_Onodera.InitGenchi();
 
