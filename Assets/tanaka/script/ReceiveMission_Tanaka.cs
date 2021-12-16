@@ -23,7 +23,11 @@ public class ReceiveMission_Tanaka : MonoBehaviour
     }
     public void OnClick()
     {
+<<<<<<< HEAD:Assets/tanaka/script/ReceiveMission_Tanaka.cs
         frame1.SetActive(true);
         frame2.SetActive(true);
+=======
+
+>>>>>>> parent of ae06cd1 (no message):Assets/tanaka/script/Button_Homepage_Tanaka.cs
     }
 }
