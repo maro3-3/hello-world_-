@@ -55,23 +55,31 @@ public class Areamanager_Onodera : MonoBehaviour
     public static int ClieNo5_2 = 0;
     public static int ClieNo5_3 = 0;
 
+    public static int[] Prodstate = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+    public static int ProdStateNum = 0;
+
+    public static int[] ProdSales;
+    public static bool[] ProdApp = {false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
+        false, false, false, false, false, false, false, false, false,false,false,false,false,false,false,false,false };
     public static bool Gameover = false;
+
 
 
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
-       
+
 
 
     }
 
-    public static int GetArealv(int Country,int Area)
+    public static int GetArealv(int Country, int Area)
     {
-        
-        if(Country==1&& Area==1)
+
+        if (Country == 1 && Area == 1)
         {
             Arealevel = Arealevel1_1;
+
         }
         if (Country == 1 && Area == 2)
         {
@@ -128,6 +136,201 @@ public class Areamanager_Onodera : MonoBehaviour
         return Arealevel;
     }
 
+    public static int GetProdState(int Country, int Area, int Num)
+    {
+        int prodstate = 0;
+
+        if (Country == 1 && Area == 1 && Num == 1)
+        {
+            prodstate = 0;
+            prodstate = Prodstate[prodstate];
+        }
+        if (Country == 1 && Area == 1 && Num == 2)
+        {
+            prodstate = 1; prodstate = Prodstate[prodstate];
+        }
+
+        if (Country == 1 && Area == 2 && Num == 1)
+        {
+            prodstate = 2; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 1 && Area == 2 && Num == 2)
+        {
+            prodstate = 3; prodstate = Prodstate[prodstate];
+        }
+
+        if (Country == 1 && Area == 3 && Num == 1)
+        {
+            prodstate = 4; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 1 && Area == 3 && Num == 2)
+        {
+            prodstate = 5; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 1 && Area == 3 && Num == 3)
+        {
+            prodstate = 6; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 1 && Area == 3 && Num == 4)
+        {
+            prodstate = 7; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 1 && Area == 3 && Num == 5)
+        {
+            prodstate = 8; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 2 && Area == 1 && Num == 1)
+        {
+            prodstate = 9; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 2 && Area == 1 && Num == 2)
+        {
+            prodstate = 10; prodstate = Prodstate[prodstate];
+        }
+
+        if (Country == 2 && Area == 2 && Num == 1)
+        {
+            prodstate = 11; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 2 && Area == 2 && Num == 2)
+        {
+            prodstate = 12; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 2 && Area == 2 && Num == 3)
+        {
+            prodstate = 13; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 2 && Area == 3 && Num == 1)
+        {
+            prodstate = 14; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 2 && Area == 3 && Num == 2)
+        {
+            prodstate = 15; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 2 && Area == 3 && Num == 3)
+        {
+            prodstate = 16; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 2 && Area == 3 && Num == 4)
+        {
+            prodstate = 17; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 3 && Area == 1 && Num == 1)
+        {
+            prodstate = 18; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 3 && Area == 1 && Num == 2)
+        {
+            prodstate = 19; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 3 && Area == 2 && Num == 1)
+        {
+            prodstate = 20; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 3 && Area == 2 && Num == 2)
+        {
+            prodstate = 21; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 3 && Area == 2 && Num == 3)
+        {
+            prodstate = 22; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 3 && Area == 2 && Num == 4)
+        {
+            prodstate = 23; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 1 && Num == 1)
+        {
+            prodstate = 24; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 1 && Num == 2)
+        {
+            prodstate = 25; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 1 && Num == 3)
+        {
+            prodstate = 26; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 1 && Num == 4)
+        {
+            prodstate = 27; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 2 && Num == 1)
+        {
+            prodstate = 28; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 2 && Num == 2)
+        {
+            prodstate = 29; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 2 && Num == 3)
+        {
+            prodstate = 30; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 3 && Num == 1)
+        {
+            prodstate = 31; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 3 && Num == 2)
+        {
+            prodstate = 32; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 4 && Area == 3 && Num == 3)
+        {
+            prodstate = 33; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 1 && Num == 1)
+        {
+            prodstate = 34; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 1 && Num == 2)
+        {
+            prodstate = 35; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 1 && Num == 3)
+        {
+            prodstate = 36; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 2 && Num == 1)
+        {
+            prodstate = 37; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 2 && Num == 2)
+        {
+            prodstate = 38; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 2 && Num == 3)
+        {
+            prodstate = 39; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 2 && Num == 4)
+        {
+            prodstate = 40; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 3 && Num == 1)
+        {
+            prodstate = 41; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 3 && Num == 2)
+        {
+            prodstate = 42; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 3 && Num == 3)
+        {
+            prodstate = 43; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 3 && Num == 4)
+        {
+            prodstate = 44; prodstate = Prodstate[prodstate];
+        }
+        if (Country == 5 && Area == 3 && Num == 5)
+        {
+            prodstate = 45; prodstate = Prodstate[prodstate];
+        }
+        return prodstate;
+    }
+
     public static int CheckProdNum(int Country, int Area, int Num)
     {
         int ProdNum = 0;
@@ -139,7 +342,7 @@ public class Areamanager_Onodera : MonoBehaviour
         {
             ProdNum = 1;
         }
-       
+
         if (Country == 1 && Area == 2 && Num == 1)
         {
             ProdNum = 2;
@@ -148,7 +351,7 @@ public class Areamanager_Onodera : MonoBehaviour
         {
             ProdNum = 3;
         }
-        
+
         if (Country == 1 && Area == 3 && Num == 1)
         {
             ProdNum = 4;
@@ -173,16 +376,16 @@ public class Areamanager_Onodera : MonoBehaviour
         {
             ProdNum = 9;
         }
-        if (Country == 2 && Area == 1 && Num ==2 )
+        if (Country == 2 && Area == 1 && Num == 2)
         {
             ProdNum = 10;
         }
-        
+
         if (Country == 2 && Area == 2 && Num == 1)
         {
             ProdNum = 11;
         }
-        if (Country == 2 && Area == 2 && Num ==2 )
+        if (Country == 2 && Area == 2 && Num == 2)
         {
             ProdNum = 12;
         }
@@ -400,7 +603,7 @@ public class Areamanager_Onodera : MonoBehaviour
         return ClieNum;
     }
 
-        public static int CheckClieNum(int Country, int Area, int Num)
+    public static int CheckClieNum(int Country, int Area, int Num)
     {
         int ClieNum = 0;
         if (Country == 1 && Area == 1 && Num == 1)
@@ -566,7 +769,7 @@ public class Areamanager_Onodera : MonoBehaviour
         {
             ClieNum = 39;
         }
-        
+
 
         return ClieNum;
     }
@@ -574,7 +777,7 @@ public class Areamanager_Onodera : MonoBehaviour
     //DataBase database = new DataBase();
     // Entity_Sheet1 es;
     // Start is called before the first frame update
-    
+
 
     // Update is called once per frame
     void Update()
@@ -582,7 +785,7 @@ public class Areamanager_Onodera : MonoBehaviour
         //if (Input.GetKey(KeyCode.UpArrow))
         //{
         //    Arealevel += 1;
-       // }
+        // }
     }
 
 
@@ -618,6 +821,8 @@ public class Areamanager_Onodera : MonoBehaviour
         ClieNo5_1 = 0;
         ClieNo5_2 = 0;
         ClieNo5_3 = 0;
+        int[] Prodstate = { 1 };
+
 
         //NewProducer_Onodera.state = 1;
 
@@ -641,5 +846,177 @@ public class Areamanager_Onodera : MonoBehaviour
         ClieNo5_2 = 0;
         ClieNo5_3 = 0;
     }
+
+
+    public static void SurviveCheck()
+    {
+        for (int i = 0; i < 46; i++)
+        {
+            if(ProdApp[i]==true)
+            {
+
+
+                if (Prodstate[i] == 1)
+                {
+
+                    if (ProdSales[i] < 500)
+                    {
+                        Prodstate[i] = 2;
+
+
+                    }
+                }
+                if (Prodstate[i] == 2)
+                {
+
+                    if (ProdSales[i] < 500)
+                    {
+                        Prodstate[i] = 3;
+                        if (i == 0 || i == 1)
+                        {
+                            ProdNo1_1 -= 1;
+                            if (ProdNo1_1 <= 0)
+                            {
+                                Gameover = true;
+                            }
+
+                        }
+                        if (i == 2 || i == 3)
+                        {
+                            Areamanager_Onodera.ProdNo1_2 -= 1;
+                            if (Areamanager_Onodera.ProdNo1_2 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 4 || i == 5 || i == 6 || i == 7 || i == 8)
+                        {
+                            Areamanager_Onodera.ProdNo1_3 -= 1;
+                            if (Areamanager_Onodera.ProdNo1_3 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 9 || i == 10)
+                        {
+                            Areamanager_Onodera.ProdNo2_1 -= 1;
+                            if (Areamanager_Onodera.ProdNo2_1 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 11 || i == 12 || i == 13)
+                        {
+                            Areamanager_Onodera.ProdNo2_2 -= 1;
+                            if (Areamanager_Onodera.ProdNo2_2 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 14 || i == 15 || i == 16 || i == 17)
+                        {
+                            Areamanager_Onodera.ProdNo2_3 -= 1;
+                            if (Areamanager_Onodera.ProdNo2_3 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 18 || i == 19)
+                        {
+                            Areamanager_Onodera.ProdNo3_1 -= 1;
+                            if (Areamanager_Onodera.ProdNo3_1 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 20 || i == 21 || i == 22 || i == 23)
+                        {
+                            Areamanager_Onodera.ProdNo3_2 -= 1;
+                            if (Areamanager_Onodera.ProdNo3_2 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 24 || i == 25 || i == 26 || i == 27)
+                        {
+                            Areamanager_Onodera.ProdNo4_1 -= 1;
+                            if (Areamanager_Onodera.ProdNo4_1 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 28 || i == 29 || i == 30)
+                        {
+                            Areamanager_Onodera.ProdNo4_2 -= 1;
+                            if (Areamanager_Onodera.ProdNo4_2 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 31 || i == 32 || i == 33)
+                        {
+                            Areamanager_Onodera.ProdNo4_3 -= 1;
+                            if (Areamanager_Onodera.ProdNo4_3 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 34 || i == 35 || i == 36)
+                        {
+                            Areamanager_Onodera.ProdNo5_1 -= 1;
+                            if (Areamanager_Onodera.ProdNo5_1 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 37 || i == 38 || i == 39 || i == 40)
+                        {
+                            Areamanager_Onodera.ProdNo5_2 -= 1;
+                            if (Areamanager_Onodera.ProdNo5_2 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                        if (i == 41 || i == 42 || i == 43 || i == 44 || i == 45)
+                        {
+                            Areamanager_Onodera.ProdNo5_3 -= 1;
+                            if (Areamanager_Onodera.ProdNo5_3 <= 0)
+                            {
+                                Areamanager_Onodera.Gameover = true;
+                            }
+
+                        }
+                    }
+                    else
+                    {
+                        Prodstate[i] = 1;
+
+                    }
+                }
+            }
+        }
+    }
+
+    public int get(int i)
+    {
+        int k = 0;
+
+        k = database.manufacturers[i].AmountofSales;
+        return k;
+    }
+
+   
 
     }

@@ -27,7 +27,7 @@ public class NewClient_Onodera : MonoBehaviour
     int Arealv;
     //int Clitable;
     bool cliapp = false;
-    private int appNum = -1;
+    //private int appNum = -1;
 
     void Start()
     {
