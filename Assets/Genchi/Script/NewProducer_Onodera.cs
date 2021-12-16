@@ -21,13 +21,22 @@ public class NewProducer_Onodera : MonoBehaviour
     [SerializeField] GameObject Object1;
     [SerializeField] GameObject Object2;
     [SerializeField] GameObject Object3;
+    [SerializeField] GameObject icon1;
+    [SerializeField] GameObject icon2;
+    [SerializeField] GameObject icon3;
     DataBase database = null;
- 
-    int oldturn = 0;
+
+   // public AudioClip sound;
+   // AudioSource audioSource;
+
+
+   // int oldturn = 0;
 
     int getArealv,Arealv, sisan = 0, uri = 0, roudou = 0, koyo = 0;
     int state = 1;
     bool app = false;
+    //int localstate = 0;
+    int prodnum;
 
     void Start()
     {
@@ -36,187 +45,77 @@ public class NewProducer_Onodera : MonoBehaviour
         getArealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
         Arealv = database.countrys[getArealv].AreaLv;
 
+        prodnum = Areamanager_Onodera.CheckProdNum(ProdCountry, ProdArea, ProdNum);
+        state=Areamanager_Onodera.GetProdState(ProdCountry, ProdArea, ProdNum); 
+
+        sisan = 0;
+        uri = 0;
+        roudou = 0;
+        koyo = 0;
         employees = false;
         emp_count = 5;
         UpdateCount();
 
-        oldturn = database.TurnNum;
+        //oldturn = 0;
         app = false;
+
+        //audioSource = GetComponent<AudioSource>();
+
     }
     private void Update()
     {
 
-       if (oldturn!=database.TurnNum)
+
+        if (state == 1)
         {
-            if (state == 1)
-            {
-                oldturn = database.TurnNum;
-                if (database.manufacturers[getArealv].AmountofSales < 500)
-                {
-                    state = 2;
-                    Object1.SetActive(false);
-                    Object2.SetActive(true);
-                    Object3.SetActive(false);
-                }
-            }
-            if (state == 2)
-            {
-                oldturn = database.TurnNum;
-                if (database.manufacturers[getArealv].AmountofSales < 500)
-                {
-                    state = 3;
-                    Object1.SetActive(false);
-                    Object2.SetActive(false);
-                    Object3.SetActive(true);
-                    if (getArealv == 0)
-                    {
-                        Areamanager_Onodera.ProdNo1_1 -= 1;
-                        if(Areamanager_Onodera.ProdNo1_1<=0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
 
-                    }
-                    if (getArealv == 1)
-                    {
-                        Areamanager_Onodera.ProdNo1_2 -= 1;
-                        if (Areamanager_Onodera.ProdNo1_2 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
 
-                    }
-                    if (getArealv == 2)
-                    {
-                        Areamanager_Onodera.ProdNo1_3 -= 1;
-                        if (Areamanager_Onodera.ProdNo1_3 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
+            Object1.SetActive(true);
+            Object2.SetActive(false);
+            Object3.SetActive(false);
+            icon1.SetActive(true);
+            icon2.SetActive(false);
+            icon3.SetActive(false);
 
-                    }
-                    if (getArealv == 3)
-                    {
-                        Areamanager_Onodera.ProdNo2_1 -= 1;
-                        if (Areamanager_Onodera.ProdNo2_1 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 4)
-                    {
-                        Areamanager_Onodera.ProdNo2_2 -= 1;
-                        if (Areamanager_Onodera.ProdNo2_2 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 5)
-                    {
-                        Areamanager_Onodera.ProdNo2_3 -= 1;
-                        if (Areamanager_Onodera.ProdNo2_3 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 6)
-                    {
-                        Areamanager_Onodera.ProdNo3_1 -= 1;
-                        if (Areamanager_Onodera.ProdNo3_1 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 7)
-                    {
-                        Areamanager_Onodera.ProdNo3_2 -= 1;
-                        if (Areamanager_Onodera.ProdNo3_2 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 8)
-                    {
-                        Areamanager_Onodera.ProdNo4_1 -= 1;
-                        if (Areamanager_Onodera.ProdNo4_1 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 9)
-                    {
-                        Areamanager_Onodera.ProdNo4_2 -= 1;
-                        if (Areamanager_Onodera.ProdNo4_2 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 10)
-                    {
-                        Areamanager_Onodera.ProdNo4_3 -= 1;
-                        if (Areamanager_Onodera.ProdNo4_3 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 11)
-                    {
-                        Areamanager_Onodera.ProdNo5_1 -= 1;
-                        if (Areamanager_Onodera.ProdNo5_1 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 12)
-                    {
-                        Areamanager_Onodera.ProdNo5_2 -= 1;
-                        if (Areamanager_Onodera.ProdNo5_2 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                    if (getArealv == 13)
-                    {
-                        Areamanager_Onodera.ProdNo5_3 -= 1;
-                        if (Areamanager_Onodera.ProdNo5_3 <= 0)
-                        {
-                            Areamanager_Onodera.Gameover = true;
-                        }
-
-                    }
-                }
-                else
-                {
-                    state = 1;
-                    Object1.SetActive(true);
-                    Object2.SetActive(false);
-                    Object3.SetActive(false);
-                }
-            }
         }
+        if (state == 2)
+        {
+
+
+            Object1.SetActive(false);
+            Object2.SetActive(true);
+            Object3.SetActive(false);
+            icon1.SetActive(false);
+            icon2.SetActive(true);
+            icon3.SetActive(false);
+
+
+        }
+        if (state == 3)
+        {
+            Object1.SetActive(false);
+            Object2.SetActive(false);
+            Object3.SetActive(true);
+            icon1.SetActive(false);
+            icon2.SetActive(false);
+            icon3.SetActive(true);
+
+        }
+
 
         if (ProdLv > Arealv)
         {
             Arealv = Areamanager_Onodera.GetArealv(ProdCountry, ProdArea);
             Producer.SetActive(false);
+            Areamanager_Onodera.ProdApp[prodnum] = false;
         }
         else
         {
             Producer.SetActive(true);
-            if(app == false)
+            if (app == false)
             {
                 app = true;
-                if(getArealv==0)
+                if (getArealv == 0)
                 {
                     Areamanager_Onodera.ProdNo1_1 += 1;
 
@@ -286,9 +185,28 @@ public class NewProducer_Onodera : MonoBehaviour
                     Areamanager_Onodera.ProdNo5_3 += 1;
 
                 }
+                Areamanager_Onodera.ProdApp[prodnum] = true;
             }
         }
 
+
+
+        
+        for (int i = 0; i < 46; i++)
+        {
+            Areamanager_Onodera.ProdSales[i] = database.manufacturers[i].AmountofSales;
+        }
+
+        /*
+        if (Input.GetKey(KeyCode.Q))
+        {
+
+            Areamanager_Onodera.SurviveCheck();
+            state = Areamanager_Onodera.GetProdState(ProdCountry, ProdArea, ProdNum);
+
+        }
+        */
+        
     }
 
     public void OnTriggerEnter(Collider other)
@@ -299,10 +217,11 @@ public class NewProducer_Onodera : MonoBehaviour
         roudou = database.manufacturers[num].LaborForce;
         koyo = database.manufacturers[num].NumberofEmployees;
         //sousisan, uriage, roudouryoku, koyou;
-        
+        //audioSource.Play();
     }
 
-    public void OnTriggerStay(Collider other)
+
+        public void OnTriggerStay(Collider other)
     {
         int num = Areamanager_Onodera.CheckProdNum(ProdCountry, ProdArea, ProdNum);
 
@@ -337,19 +256,20 @@ public class NewProducer_Onodera : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Space))
             {
-
+                
                 employees = true;
                 label2.text = "";
                 label3.text = "";
                 label4.text = "";
                 Employees();
-                database.manufacturers[0].NumberofEmployees += emp_count;
+                database.manufacturers[num].NumberofEmployees += emp_count;
             }
             UpdateCount();
         }
     }
 
    
+
 
     private void OnTriggerExit(Collider other)
     {
