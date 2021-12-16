@@ -21,45 +21,45 @@ EditorBuildSettings:
     path: Assets/_MainScenes/minigame.unity
     guid: 677c5739d64c77447bc684da911d8c6e
   - enabled: 1
-    path: Assets/Anuzik/Maps/Chi_shisen.unity
-    guid: 28ecaa053cdf6074ca104c73d8590e13
+    path: Assets/_MainScenes/GameOver.unity
+    guid: 6faee921cda8b5a46864957fb8705dc7
   - enabled: 1
-    path: Assets/Anuzik/Maps/Chi_pekin.unity
-    guid: a558054deee348d4b8772b45286ce1f6
+    path: Assets/Anuzik/Map2/Ame_Newyork.unity
+    guid: e4c86f8ab883717468c1003200c20edd
   - enabled: 1
-    path: Assets/Anuzik/Maps/Chi_syanhai.unity
-    guid: 26ca56adba901234985b4c49120196bf
+    path: Assets/Anuzik/Map2/Ame_sentlouis.unity
+    guid: fab214c8044a8f544bee19272beda75a
   - enabled: 1
-    path: Assets/Anuzik/Maps/Ame_Atlanta.unity
-    guid: bcbd9fd613cb8fd4c8ac0590a74b03f2
+    path: Assets/Anuzik/Map2/Ame_Atlanta.unity
+    guid: eabfb5b6a91eb804e9a934edca234898
   - enabled: 1
-    path: Assets/Anuzik/Maps/Ame_Newyork.unity
-    guid: e9ce8314183b7164daba2118a8062e04
+    path: Assets/Anuzik/Map2/Asl_Canberra.unity
+    guid: 38f2d38d7c3170145942575b6fd99615
   - enabled: 1
-    path: Assets/Anuzik/Maps/Ame_sentlouis.unity
-    guid: 65f1f89f7d44d654696f5429e007dfd1
+    path: Assets/Anuzik/Map2/Asl_Melbourne.unity
+    guid: 4c300d95c9dd3db41942d47dbc428682
   - enabled: 1
-    path: Assets/Anuzik/Maps/Asl_Melbourne.unity
-    guid: f8abdbdb03e429047838cd3aa428cfca
+    path: Assets/Anuzik/Map2/Chi_pekin.unity
+    guid: bff5f42caa23c9f4f94de334a24a058d
   - enabled: 1
-    path: Assets/Anuzik/Maps/Asl_Perth.unity
-    guid: b1e34bd24d6a24045a77c51a5fc2534d
+    path: Assets/Anuzik/Map2/Chi_shisen.unity
+    guid: 26696fed0cc3d0f4c9b974e21833d1a8
   - enabled: 1
-    path: Assets/Anuzik/Maps/Asl_Canberra.unity
-    guid: 2d3babf0986d4104bba05c4bf136c0a5
+    path: Assets/Anuzik/Map2/Chi_syanhai.unity
+    guid: 5f4fb2ea1f1482748adadf655efaee60
+  - enabled: 1
+    path: Assets/Anuzik/Map2/Rsa_Moscow.unity
+    guid: 3b27ed796382c6946b46dbcd3bbc234c
   - enabled: 1
     path: Assets/Anuzik/Maps/Rsa_Ufa.unity
-    guid: 9bd1cfb82d72c354e940f657ce21f0c4
+    guid: 7a70d0c5206c80a4bb3680fc8ee236ba
   - enabled: 1
-    path: Assets/Anuzik/Maps/Rsa_Moscow.unity
-    guid: 20e32003723108f44be504dabb6154b6
+    path: Assets/Anuzik/Map2/S.Af_Bloemfontein.unity
+    guid: 6cf268fdb34da38468a314a8b6986d29
   - enabled: 1
-    path: Assets/Anuzik/Maps/S.Af_Bloemfontein.unity
-    guid: 98f9abb9ac5164342a74d54bb80bec29
+    path: Assets/Anuzik/Map2/S.Af_Cape Town.unity
+    guid: a9d82b7fc09dfbd4e8961c13bd87f926
   - enabled: 1
-    path: Assets/Anuzik/Maps/S.Af_Cape Town.unity
-    guid: 588ab1ba7f6c0da46ba00d95584bc4bc
-  - enabled: 1
-    path: Assets/Anuzik/Maps/S.Af_pretoria.unity
-    guid: a45d61f4f8aaaf547b16c5c64d0a61e3
+    path: Assets/Anuzik/Map2/S.Af_pretoria.unity
+    guid: 52c8234c53b56914281d09170da1786b
   m_configObjects: {}

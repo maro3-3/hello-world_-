@@ -9,7 +9,7 @@ public class Client_Kaneko : MonoBehaviour, IPointerClickHandler
     [SerializeField] GameObject ClientPanel;
     [SerializeField] GameObject ManufacturerPanel;
     [SerializeField] GameObject UnemployedPanel;
-    [SerializeField] GameObject ClientMenuPanel;
+    [SerializeField] GameObject ClientAriaPanel;
     [SerializeField] Vector3 TargetPos;
 
     public void OnPointerClick(PointerEventData eventData)
@@ -19,9 +19,8 @@ public class Client_Kaneko : MonoBehaviour, IPointerClickHandler
         UnemployedPanel.SetActive(false);
         // ç∂Ç…ìÆÇ≠èàóùÇµÇƒÇ©ÇÁï\é¶
         GameObject Parent = this.transform.parent.gameObject;
-        Debug.Log(Parent);
         Parent.transform.position = TargetPos;
-        ClientMenuPanel.SetActive(true);
+        ClientAriaPanel.SetActive(true);
     }
 
     // Start is called before the first frame update
