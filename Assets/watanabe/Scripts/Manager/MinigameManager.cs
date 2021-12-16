@@ -230,7 +230,7 @@ public class MinigameManager : MonoBehaviourÅ@// îjâÛñΩóﬂÅAê∂ê¨ñΩóﬂçÏÇÈ
             UImanager[4].UICreate(UIimage[(int)UILIST.RESULTPLAN]);
 
             database.Win = true;
-            database.manufacturers[ProductionNo].BusinessPartnerClient = database.MiniClieNo;
+            //database.manufacturers[ProductionNo].BusinessPartnerClient = database.MiniClieNo;
             database.Amount = AmountData;
             Step = MINIGAMESTEP.WIN;
             Game.SetActive(false);
