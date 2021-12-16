@@ -316,6 +316,7 @@ GameObject:
   - component: {fileID: 4445580928911431957}
   - component: {fileID: 4445580928911431954}
   - component: {fileID: 4445580928911431958}
+  - component: {fileID: 8538281255249810145}
   - component: {fileID: 4445580928911431956}
   m_Layer: 5
   m_Name: Request
@@ -411,6 +412,25 @@ MonoBehaviour:
   request: 1
   Highlight: 0
   Choice: 0
+--- !u!114 &8538281255249810145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445580928911431952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84080b8f483464c93845cb502049e7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 239e04dbf66f4bd4587dca75966b8625, type: 3}
+  _isAutoPlay: 0
+  _volumeRate: 1
+  _delay: 0
+  _pitch: 1
+  _fadeInDuration: 0
+  _isLoop: 0
 --- !u!114 &4445580928911431956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,6 +451,18 @@ MonoBehaviour:
         - m_Target: {fileID: 4445580928911431958}
           m_TargetAssemblyTypeName: Request, Assembly-CSharp
           m_MethodName: OnHightLight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8538281255249810145}
+          m_TargetAssemblyTypeName: KanKikuchi.AudioManager.SEAssistant, Assembly-CSharp
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -622,6 +654,7 @@ GameObject:
   - component: {fileID: 4445580929112096289}
   - component: {fileID: 4445580929112096286}
   - component: {fileID: 4445580929112096290}
+  - component: {fileID: 621915104329283875}
   - component: {fileID: 4445580929112096288}
   m_Layer: 5
   m_Name: Request
@@ -717,6 +750,25 @@ MonoBehaviour:
   request: 2
   Highlight: 0
   Choice: 0
+--- !u!114 &621915104329283875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445580929112096284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84080b8f483464c93845cb502049e7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 239e04dbf66f4bd4587dca75966b8625, type: 3}
+  _isAutoPlay: 0
+  _volumeRate: 1
+  _delay: 0
+  _pitch: 1
+  _fadeInDuration: 0
+  _isLoop: 0
 --- !u!114 &4445580929112096288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,6 +789,18 @@ MonoBehaviour:
         - m_Target: {fileID: 4445580929112096290}
           m_TargetAssemblyTypeName: Request, Assembly-CSharp
           m_MethodName: OnHightLight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 621915104329283875}
+          m_TargetAssemblyTypeName: KanKikuchi.AudioManager.SEAssistant, Assembly-CSharp
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -949,12 +1013,6 @@ MonoBehaviour:
   - {fileID: 4445580929527822245}
   isSearch: 0
   isSend: 0
-  Client: 0
-  CountryNo: 0
-  AreaNo: 0
-  ClientNo: 0
-  ClientLevel: 0
-  ClientName: 
   debug: 0
 --- !u!1 &4445580929427095173
 GameObject:
@@ -1043,6 +1101,7 @@ GameObject:
   - component: {fileID: 4445580929471733070}
   - component: {fileID: 4445580929471733071}
   - component: {fileID: 4445580929471733075}
+  - component: {fileID: 7671420585956500544}
   - component: {fileID: 4445580929471733074}
   m_Layer: 5
   m_Name: Request
@@ -1138,6 +1197,25 @@ MonoBehaviour:
   request: 0
   Highlight: 0
   Choice: 0
+--- !u!114 &7671420585956500544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445580929471733069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84080b8f483464c93845cb502049e7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 239e04dbf66f4bd4587dca75966b8625, type: 3}
+  _isAutoPlay: 0
+  _volumeRate: 1
+  _delay: 0
+  _pitch: 1
+  _fadeInDuration: 0
+  _isLoop: 0
 --- !u!114 &4445580929471733074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,6 +1236,18 @@ MonoBehaviour:
         - m_Target: {fileID: 4445580929471733075}
           m_TargetAssemblyTypeName: Request, Assembly-CSharp
           m_MethodName: OnHightLight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7671420585956500544}
+          m_TargetAssemblyTypeName: KanKikuchi.AudioManager.SEAssistant, Assembly-CSharp
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1195,6 +1285,7 @@ GameObject:
   - component: {fileID: 4445580929527822240}
   - component: {fileID: 4445580929527822241}
   - component: {fileID: 4445580929527822245}
+  - component: {fileID: 3498028923568143662}
   - component: {fileID: 4445580929527822243}
   m_Layer: 5
   m_Name: Request
@@ -1290,6 +1381,25 @@ MonoBehaviour:
   request: 3
   Highlight: 0
   Choice: 0
+--- !u!114 &3498028923568143662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445580929527822239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84080b8f483464c93845cb502049e7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 239e04dbf66f4bd4587dca75966b8625, type: 3}
+  _isAutoPlay: 0
+  _volumeRate: 1
+  _delay: 0
+  _pitch: 1
+  _fadeInDuration: 0
+  _isLoop: 0
 --- !u!114 &4445580929527822243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1310,6 +1420,18 @@ MonoBehaviour:
         - m_Target: {fileID: 4445580929527822245}
           m_TargetAssemblyTypeName: Request, Assembly-CSharp
           m_MethodName: OnHightLight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 3498028923568143662}
+          m_TargetAssemblyTypeName: KanKikuchi.AudioManager.SEAssistant, Assembly-CSharp
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

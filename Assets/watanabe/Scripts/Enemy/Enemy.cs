@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using KanKikuchi.AudioManager;
 
 
 public class Enemy : MonoBehaviour
@@ -141,6 +141,8 @@ public class Enemy : MonoBehaviour
                 GetComponent<Rigidbody>().velocity = new Vector3(0, m_jump, 0);
                 // ジャンプタイミングを管理するタイマーをリセットする
                 m_JumpTimer = 0;
+
+                SEManager.Instance.Play("Jump");
             }
         }
 
@@ -158,6 +160,23 @@ public class Enemy : MonoBehaviour
 
         // 弾を発射する方向と速さを設定し生成
         Bullet.Init(angle, speed, Bulletnumber);
+
+        // 発射SE
+        switch (Bulletnumber)
+        {
+            case 0:
+                SEManager.Instance.Play("Attack1");
+                break;
+            case 1:
+                SEManager.Instance.Play("Attack2");
+                break;
+            case 2:
+                SEManager.Instance.Play("Attack3");
+                break;
+            default:
+                Debug.Log("発射SEにて異常");
+                break;
+        }
     }
 
     private void SetState(EnemyState nextstate)
@@ -183,4 +202,13 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        // 地面着地判定
+        if (collision.gameObject.tag == "Ground")
+        {
+            SEManager.Instance.Play("Landing");
+        }
+    }
 }
+
