@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1 &657949910259515722
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,6 +83,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> parent of ae06cd1 (no message)
 --- !u!1 &2053912348648897239
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +199,10 @@ MonoBehaviour:
   ClieArea: 0
   ClieNum: 0
   ClieLv: 0
+<<<<<<< HEAD
   Clitable: -1
+=======
+>>>>>>> parent of ae06cd1 (no message)
   Client: {fileID: 7298255477753207588}
   Object: {fileID: 1261079131264616801}
   sound: {fileID: 8300000, guid: 6b269a71e136b6e4f974f2e7e4842620, type: 3}
@@ -397,11 +403,14 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8775381342095078329, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
   m_PrefabInstance: {fileID: 2053912349633259677}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!4 &8259161244254516769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7934947830930284220, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
   m_PrefabInstance: {fileID: 2053912349633259677}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of ae06cd1 (no message)
 --- !u!1 &1261079131264616801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 936949587560767996, guid: 9649117218b87e541a50ace81bbf281f, type: 3}

@@ -58,7 +58,11 @@ public class Areamanager_Onodera : MonoBehaviour
     public static int[] Prodstate = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
     public static int ProdStateNum = 0;
 
+<<<<<<< HEAD
     public static int[] ProdSales = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+=======
+    public static int[] ProdSales;
+>>>>>>> parent of ae06cd1 (no message)
     public static bool[] ProdApp = {false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
         false, false, false, false, false, false, false, false, false,false,false,false,false,false,false,false,false };
     public static bool Gameover = false;
@@ -69,7 +73,11 @@ public class Areamanager_Onodera : MonoBehaviour
     {
         database = Resources.Load<DataBase>("DataBase");
 
+<<<<<<< HEAD
         Prodstate[0] = 2;
+=======
+
+>>>>>>> parent of ae06cd1 (no message)
 
     }
 
@@ -866,7 +874,11 @@ public class Areamanager_Onodera : MonoBehaviour
 
                     }
                 }
+<<<<<<< HEAD
                 else if (Prodstate[i] == 2)
+=======
+                if (Prodstate[i] == 2)
+>>>>>>> parent of ae06cd1 (no message)
                 {
 
                     if (ProdSales[i] < 500)

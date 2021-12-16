@@ -21,9 +21,6 @@ public class NewProducer_Onodera : MonoBehaviour
     [SerializeField] GameObject Object1;
     [SerializeField] GameObject Object2;
     [SerializeField] GameObject Object3;
-    [SerializeField] GameObject icon1;
-    [SerializeField] GameObject icon2;
-    [SerializeField] GameObject icon3;
     DataBase database = null;
 
    // public AudioClip sound;
@@ -73,9 +70,6 @@ public class NewProducer_Onodera : MonoBehaviour
             Object1.SetActive(true);
             Object2.SetActive(false);
             Object3.SetActive(false);
-            icon1.SetActive(true);
-            icon2.SetActive(false);
-            icon3.SetActive(false);
 
         }
         if (state == 2)
@@ -85,9 +79,6 @@ public class NewProducer_Onodera : MonoBehaviour
             Object1.SetActive(false);
             Object2.SetActive(true);
             Object3.SetActive(false);
-            icon1.SetActive(false);
-            icon2.SetActive(true);
-            icon3.SetActive(false);
 
 
         }
@@ -96,9 +87,6 @@ public class NewProducer_Onodera : MonoBehaviour
             Object1.SetActive(false);
             Object2.SetActive(false);
             Object3.SetActive(true);
-            icon1.SetActive(false);
-            icon2.SetActive(false);
-            icon3.SetActive(true);
 
         }
 
@@ -194,10 +182,10 @@ public class NewProducer_Onodera : MonoBehaviour
         
         for (int i = 0; i < 46; i++)
         {
-            Areamanager_Onodera.ProdSales[i] = database.manufacturers[i].AmountofSales;
+            Areamanager_Onodera.ProdSales[i] = 0;//database.manufacturers[i].AmountofSales;
         }
 
-        
+
         if (Input.GetKey(KeyCode.Q))
         {
 
@@ -205,7 +193,6 @@ public class NewProducer_Onodera : MonoBehaviour
             state = Areamanager_Onodera.GetProdState(ProdCountry, ProdArea, ProdNum);
 
         }
-        
         
     }
 

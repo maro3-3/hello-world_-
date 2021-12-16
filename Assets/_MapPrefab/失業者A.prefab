@@ -34,9 +34,12 @@ Transform:
   - {fileID: 4751913195937119175}
   - {fileID: 592167210474225857}
   - {fileID: 1563226453910347438}
+<<<<<<< HEAD
   - {fileID: 6386681892218906763}
   - {fileID: 2498708389455987717}
   - {fileID: 7791555213984961636}
+=======
+>>>>>>> parent of ae06cd1 (no message)
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -117,9 +120,12 @@ MonoBehaviour:
   Object1: {fileID: 5501145634065668240}
   Object2: {fileID: 7674826897605551218}
   Object3: {fileID: 3438943454331485351}
+<<<<<<< HEAD
   icon1: {fileID: 6766569787368121433}
   icon2: {fileID: 7765228337433764709}
   icon3: {fileID: 4411608846854461193}
+=======
+>>>>>>> parent of ae06cd1 (no message)
   UnempCountry: 0
   UnempArea: 0
   Unempstate: 1
@@ -205,6 +211,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &4411608846854461193
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +294,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> parent of ae06cd1 (no message)
 --- !u!1 &5501145634065668240
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +378,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &6766569787368121433
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +461,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> parent of ae06cd1 (no message)
 --- !u!1 &7674826897605551218
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +545,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &7765228337433764709
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,3 +628,5 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> parent of ae06cd1 (no message)
