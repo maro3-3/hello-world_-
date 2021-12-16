@@ -27,7 +27,7 @@ public class Fade_Tanaka : MonoBehaviour
     void Update()
     {
         //if(¶YÒƒ[ƒ‚¾‚Á‚½‚ç)
-        if (Areamanager_Onodera.Gameover == true)
+        //if (Areamanager_Onodera.Gameover == true)
         {
             fade();
         }
