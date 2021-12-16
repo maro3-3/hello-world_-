@@ -24,18 +24,21 @@ public class Transaction_Tanaka : MonoBehaviour
       
     }
 
-    //ターン終了時に呼ばれる
+    //月末に呼ばれる
     public void Transaction()//取引
     {
-        
-        for (int i = 0; i < ManuList.sheets[0].list.Count; i++)//生産者全員分
+        //クライアントの合計要求数に足りていたら
+        if (database.manufacturers[0].RequestNum <= database.manufacturers[0].LaborForce)
         {
-            int profit = 0;//利益
+            for (int i = 0; i < ManuList.sheets[0].list.Count; i++)//生産者全員分
+            {
+                int profit = 0;//利益
 
-            //売り上げ-労働力＝利益
-            profit = database.manufacturers[i].AmountofSales - database.manufacturers[i].LaborForce;
+                //売り上げ-労働力＝利益
+                profit = database.manufacturers[i].AmountofSales - database.manufacturers[i].LaborForce;
 
-            database.manufacturers[i].Totalassets += profit;
+                database.manufacturers[i].Totalassets += profit;
+            }
         }
     }
 }

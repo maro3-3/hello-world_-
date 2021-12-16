@@ -17,7 +17,7 @@ public class GameOve_Tanaka : MonoBehaviour
     {
         image.position -= new Vector3(0.0f, 0.1f, 0);
        
-        if (image.position.y<100)
+        if (image.position.y<0)
         {
             
             SceneManager.LoadScene("Title");
