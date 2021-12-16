@@ -522,4 +522,24 @@ public class Areamanager_Onodera : MonoBehaviour
         //    Arealevel += 1;
        // }
     }
+
+    public static void InitGenchi()
+    {
+        ProdNo1_1 = 0;
+        ProdNo1_2 = 0;
+        ProdNo1_3 = 0;
+        ProdNo2_1 = 0;
+        ProdNo2_2 = 0;
+        ProdNo2_3 = 0;
+        ProdNo3_1 = 0;
+        ProdNo3_2 = 0;
+        ProdNo4_1 = 0;
+        ProdNo4_2 = 0;
+        ProdNo4_3 = 0;
+        ProdNo5_1 = 0;
+        ProdNo5_2 = 0;
+        ProdNo5_3 = 0;
+
+        Gameover = false;
+    }
 }

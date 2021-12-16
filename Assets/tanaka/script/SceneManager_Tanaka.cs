@@ -29,8 +29,8 @@ public class SceneManager_Tanaka : MonoBehaviour
 
     public void Onclick_TitleToGenchi()
     {
-          SceneManager.LoadScene("Genchi");
-       // SceneManager.LoadScene("Chi_shisen");
+        // SceneManager.LoadScene("Genchi");
+        SceneManager.LoadScene("Chi_shisen");
     }
 
     public void OnClick_Homepage()//ホームページに遷移
@@ -51,8 +51,10 @@ public class SceneManager_Tanaka : MonoBehaviour
 
     void Turn()
     {
-        database.TurnNum++;//ターン+１
-        transaction.GetComponent<Transaction_Tanaka>().Transaction();
+        //ターン+１
+        turnmanager.GetComponent<TurnManager_ishikado>().TurnUp();
+        //database.TurnNum++;//ターン+１
+        //transaction.GetComponent<Transaction_Tanaka>().Transaction();
     }
 
     public void OnClick_Flymo()//fly.m.oから出る（今いる現地に戻る？）
@@ -121,15 +123,13 @@ public class SceneManager_Tanaka : MonoBehaviour
         
     }
 
-    public void OnClick_Genchi()//現地画面飛ぶ（テスト運用）
+    public void OnClick_Genchi()//現地画面飛ぶ
     {
         //ターン+１
         Turn();
 
-        //エリアに番号保存
-
-
-        //遷移
+  
+        //遷移・エリアに番号保存
         switch (transform.name)
         {
             case "Sichuan_Button_Genchi":
