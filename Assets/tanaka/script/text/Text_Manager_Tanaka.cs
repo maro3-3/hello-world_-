@@ -144,6 +144,11 @@ public class Text_Manager_Tanaka : MonoBehaviour
         }
         if (database.RewartState[count + 1] == 1)
         {
+            if (count + 1 >= 12)
+            {
+                reward = " ";
+                return;
+            }
             switch (database.RewartContent[count + 1])
             {
                 case 0:
