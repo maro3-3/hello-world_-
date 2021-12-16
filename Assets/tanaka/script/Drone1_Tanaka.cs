@@ -197,6 +197,13 @@ public class Drone1_Tanaka : MonoBehaviour
             target3.gameObject.SetActive(false);
             droneflag[num] = false;
             database.TempingDroneNum--;
+
+            int poolUnemployed = 0;
+            for (int i = 0; i < 14; i++)
+            {
+                poolUnemployed += database.unemployed[i].CurrentUnemployedNum;
+            }
+            database.UnemployedNum = poolUnemployed;
         }
     }
 

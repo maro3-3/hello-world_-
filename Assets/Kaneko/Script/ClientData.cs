@@ -7,245 +7,196 @@ using UnityEngine;
 public class ClientData : ScriptableObject
 {
     // 僋儔僀傾儞僩 //
-
-
     // 拞崙杒嫗僋儔僀傾儞僩 // 
     public struct CHN_Beijing_Client
     {
-        public int[] CHN_Beijing_CountryNo;        // 崙僫儞僶乕
-        public int[] CHN_Beijing_ClientAreaNo;           // 抧堟僫儞僶乕
-        public int[] CHN_Beijing_ClientNo;               // 僋儔僀傾儞僩僫儞僶乕
-        public string[] CHN_Beijing_ClientName;          // 僋儔僀傾儞僩僱乕儉
-        public int[] CHN_Beijing_ClientLv;               // 僋儔僀傾儞僩儗儀儖
-        public int[] CHN_Beijing_ClientType;             // 嬈愌僞僀僾
-        public int[] CHN_Beijing_T1;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-        public int[] CHN_Beijing_T2;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-        public int[] CHN_Beijing_T3;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-        public int[] CHN_Beijing_T4;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-        public int[] CHN_Beijing_T5;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-        public int[] CHN_Beijing_T6;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
+        public int CHN_Beijing_CountryNo;                      // 崙僫儞僶乕
+        public int CHN_Beijing_ClientAreaNo;                   // 抧堟僫儞僶乕
+        public int CHN_Beijing_ClientNo;                       // 僋儔僀傾儞僩僫儞僶乕
+        public string CHN_Beijing_ClientName;                  // 僋儔僀傾儞僩僱乕儉
+        public int CHN_Beijing_ClientLv;                       // 僋儔僀傾儞僩儗儀儖
+        public int CHN_Beijing_ClientType;                     // 嬈愌僞僀僾
+        public int[] CHN_Beijing_Transactions;                 // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
 
-        public int[] Transaction;             // 庢堷暔
-        public int[] TransactionStatus;       // 庢堷忬嫷
-        public string[] ManufacturerName;     // 庢堷憡庤
-        public int[] Performance;             // 嬈愌
+        public int CHN_Beijing_Transaction;                    // 庢堷暔
+        public int CHN_Beijing_TransactionStatus;              // 庢堷忬嫷
+        public string CHN_Beijing_ManufacturerName;            // 庢堷憡庤
+        public int CHN_Beijing_Performance;                    // 嬈愌
+        public int[] CHN_Beijing_DisplayingPerformance;        // 昞帵拞嬈愌
+        public int[] CHN_Beijing_UpdatePerformance;            // 嵟怴偺嬈愌
+        public int[] CHN_Beijing_ContractAmoPay;               // 宊栺巟暐妟丂弶婜侽仺宊栺帪偵寛傑偭偨妟傪偄傟傞  乮庢堷暔暘乯     
 
-        public int[] CHN_Beijing_RN1;           // 庢堷暔梫媮悢丠
-        public int[] CHN_Beijing_RN2;           // 庢堷暔梫媮悢丠
-        public int[] CHN_Beijing_RN3;           // 庢堷暔梫媮悢丠
-        public int[] CHN_Beijing_RN4;           // 庢堷暔梫媮悢丠
-        public int[] CHN_Beijing_RN5;           // 庢堷暔梫媮悢丠
-        public int[] CHN_Beijing_RN6;           // 庢堷暔梫媮悢丠
+        public int[] CHN_Beijing_RequNum;                      // 庢堷暔梫媮悢丠
+        public int[] CHN_Beijing_AmoPayHigh;                   // 庢堷暔巟暐妟丠High        
+        public int[] CHN_Beijing_AmoPayMid;                    // 庢堷暔巟暐妟丠Mid
+        public int[] CHN_Beijing_AmoPayLow;  丂 丂             // 庢堷暔巟暐妟丠Low
 
-        public int[] CHN_Beijing_AmoPayH1;      // 庢堷暔巟暐妟丠High
-        public int[] CHN_Beijing_AmoPayH2;      // 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayH3;      // 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayH4;      // 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayH5;      // 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayH6;      // 庢堷暔巟暐妟丠
+        public int CHN_Beijing_FluctuationPoint;               // 怟偁偑傝or怟壓偑傝僞僀僾偺帪偵偺傒巊梡丂俁夞偵侾夞曄摦検偑憹尭偡傞
+        public int CHN_Beijing_In_de_CreaseValue;              // 怟偁偑傝or怟壓偑傝僞僀僾偺帪偵偺傒巊梡丂俁夞偵侾夞憹尭偟偨抣傪曐帩
 
-        public int[] CHN_Beijing_AmoPayM1;      // 庢堷暔巟暐妟丠Mid
-        public int[] CHN_Beijing_AmoPayM2;      // 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayM3;      // 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayM4;      // 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayM5;      // 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayM6;      // 庢堷暔巟暐妟丠
 
-        public int[] CHN_Beijing_AmoPayL1;  丂丂// 庢堷暔巟暐妟丠Low
-        public int[] CHN_Beijing_AmoPayL2;  丂丂// 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayL3;  丂丂// 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayL4;  丂丂// 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayL5;  丂丂// 庢堷暔巟暐妟丠
-        public int[] CHN_Beijing_AmoPayL6;    // 庢堷暔巟暐妟丠
-
-        // 弶婜壔娭悢
+        // 攝楍弶婜壔
         public void CHN_Beijing_Init()
         {
-            CHN_Beijing_CountryNo = new int[2]; CHN_Beijing_ClientAreaNo = new int[2];
-            CHN_Beijing_ClientNo = new int[2]; CHN_Beijing_ClientName = new string[2];
-            CHN_Beijing_ClientLv = new int[2]; CHN_Beijing_ClientType = new int[2];
-            CHN_Beijing_T1 = new int[2]; CHN_Beijing_T2 = new int[2];
-            CHN_Beijing_T3 = new int[2]; CHN_Beijing_T4 = new int[2];
-            CHN_Beijing_T5 = new int[2]; CHN_Beijing_T6 = new int[2];
-            CHN_Beijing_RN1 = new int[2]; CHN_Beijing_RN2 = new int[2];
-            CHN_Beijing_RN3 = new int[2]; CHN_Beijing_RN4 = new int[2];
-            CHN_Beijing_RN5 = new int[2]; CHN_Beijing_RN6 = new int[2];
-            CHN_Beijing_AmoPayH1 =new int[2]; CHN_Beijing_AmoPayH2 =new int[2];
-            CHN_Beijing_AmoPayH3 =new int[2]; CHN_Beijing_AmoPayH4 =new int[2];
-            CHN_Beijing_AmoPayH5 =new int[2]; CHN_Beijing_AmoPayH6 =new int[2];
-            CHN_Beijing_AmoPayM1 =new int[2]; CHN_Beijing_AmoPayM2 =new int[2];
-            CHN_Beijing_AmoPayM3 =new int[2]; CHN_Beijing_AmoPayM4 =new int[2];
-            CHN_Beijing_AmoPayM5 =new int[2]; CHN_Beijing_AmoPayM6 =new int[2];
-            CHN_Beijing_AmoPayL1 =new int[2]; CHN_Beijing_AmoPayL2 =new int[2];
-            CHN_Beijing_AmoPayL3 =new int[2]; CHN_Beijing_AmoPayL4 =new int[2];
-            CHN_Beijing_AmoPayL5 =new int[2]; CHN_Beijing_AmoPayL6 = new int[2];
-            Transaction = new int[2]; TransactionStatus = new int[2];
-            ManufacturerName = new string[2]; Performance = new int[2];
+            CHN_Beijing_Transactions = new int[6];
+            CHN_Beijing_DisplayingPerformance = new int[4];
+            CHN_Beijing_UpdatePerformance = new int[4];
+            CHN_Beijing_ContractAmoPay = new int[6];
+            CHN_Beijing_RequNum = new int[6];
+            CHN_Beijing_AmoPayHigh = new int[6];
+            CHN_Beijing_AmoPayMid = new int[6];
+            CHN_Beijing_AmoPayLow = new int[6];
+
         }
+
+        // 僋儔僀傾儞僩婎慴弶婜壔乮崙丒抧堟丒泡兽皝E柤慜丒儗儀儖丒僞僀僾丒庢堷暔1񑓛񑺵�6丒庢堷暔丠丒庢堷忬嫷丒庢堷憡庤丒嬈愌丒曄摦抣丒曄摦抣曐帩丒梫慺斣崋乯
         public void InitCHN_Beijing_Clients(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
                                int clientLv, int clientType, int t1, int t2, int t3, int t4, int t5, int t6,
-                               int transaction, int transactionStatus, string manufacturerName, int performance, int index)
+                               int transaction, int transactionStatus, string manufacturerName, int performance, int fluctuationPoint, int in_de_CreaseValue, int index)
+        {
+            CHN_Beijing_CountryNo= clientCountryNo;
+            CHN_Beijing_ClientAreaNo = clientAreaNo;
+            CHN_Beijing_ClientNo = clientNo;
+            CHN_Beijing_ClientName = clientName;
+            CHN_Beijing_ClientLv = clientLv;
+            CHN_Beijing_ClientType = clientType;
+            CHN_Beijing_Transactions[0] = t1;
+            CHN_Beijing_Transactions[1] = t2;
+            CHN_Beijing_Transactions[2] = t3;
+            CHN_Beijing_Transactions[3] = t4;
+            CHN_Beijing_Transactions[4] = t5;
+            CHN_Beijing_Transactions[5] = t6;
+            CHN_Beijing_Transaction = transaction;
+            CHN_Beijing_TransactionStatus = transactionStatus;
+            CHN_Beijing_ManufacturerName = manufacturerName;
+            CHN_Beijing_Performance = performance;
+            CHN_Beijing_FluctuationPoint = fluctuationPoint;
+            CHN_Beijing_In_de_CreaseValue = in_de_CreaseValue;
+        }
+        // 巟暐妟弶婜壔
+        public void CHN_Beijing_AmoPayInit(int rn, int apH, int apM, int amL, int n)
+        {
+            CHN_Beijing_ContractAmoPay[n] = 0;
+            CHN_Beijing_RequNum[n] = rn;
+            CHN_Beijing_AmoPayHigh[n] = apH;
+            CHN_Beijing_AmoPayMid[n] = apM;
+            CHN_Beijing_AmoPayLow[n] = amL;
+        }
+
+        // 嬈愌僞僀僾暿曄摦抣愝掕丂寧弶傔偵屇傇
+        public void FluctuationValue(int clienttype)
         {
 
+            float random = 0.0f;
 
-            CHN_Beijing_CountryNo[index] = clientCountryNo;
-            CHN_Beijing_ClientAreaNo[index] = clientAreaNo;
-            CHN_Beijing_ClientNo[index] = clientNo;
-            CHN_Beijing_ClientName[index] = clientName;
-            CHN_Beijing_ClientLv[index] = clientLv;
-            CHN_Beijing_ClientType[index] = clientType;
-            CHN_Beijing_T1[index] = t1;
-            CHN_Beijing_T2[index] = t2;
-            CHN_Beijing_T3[index] = t3;
-            CHN_Beijing_T4[index] = t4;
-            CHN_Beijing_T5[index] = t5;
-            CHN_Beijing_T6[index] = t6;
-            Transaction[index] = transaction;
-            TransactionStatus[index] = transactionStatus;
-            ManufacturerName[index] = manufacturerName;
-            Performance[index] = performance;
+            switch (clienttype)
+            {
+                // 埨掕僞僀僾
+                case 0:
+                    random = Random.value;
+                    if (random <= 0.4)
+                        CHN_Beijing_Performance += 0;
+                    else if (random <= 0.7)
+                        CHN_Beijing_Performance += -30;
+                    else
+                        CHN_Beijing_Performance += +30;
+                    break;
+                // 怟忋偑傝僞僀僾
+                case 1:
+                    random = Random.value;
+                    if (random <= 0.7)
+                    {
+                        CHN_Beijing_FluctuationPoint += 1;
+                        if (CHN_Beijing_FluctuationPoint >= 3)
+                        {
+                            CHN_Beijing_In_de_CreaseValue += 20;
+                            CHN_Beijing_Performance += (50 + CHN_Beijing_In_de_CreaseValue);
+                            if (CHN_Beijing_Performance >= 150)
+                                CHN_Beijing_Performance += 150;
+                            CHN_Beijing_FluctuationPoint = 0;
+                        }
+                        else
+                            CHN_Beijing_Performance += 50;
+                    }
+                    else
+                        CHN_Beijing_Performance += -50;
+                    break;
+                // 怟壓偑傝僞僀僾
+                case 2:
+                    random = Random.value;
+                    if (random <= 0.7)
+                    {
+                        CHN_Beijing_FluctuationPoint += 1;
+                        if (CHN_Beijing_FluctuationPoint >= 3)
+                        {
+                            CHN_Beijing_In_de_CreaseValue -= 20;
+                            CHN_Beijing_Performance += (-50 + CHN_Beijing_In_de_CreaseValue);
+                            if (CHN_Beijing_Performance <= -150)
+                                CHN_Beijing_Performance += -150;
+                            CHN_Beijing_FluctuationPoint = 0;
+                        }
+                        else
+                            CHN_Beijing_Performance += -50;
+                    }
+                    else
+                        CHN_Beijing_Performance += 50;
+                    break;
+                // 僺乕僉乕僞僀僾
+                case 3:
+                    if (random <= 0.5)
+                        CHN_Beijing_Performance += 200;
+                    else
+                        CHN_Beijing_Performance += -200;
+                    break;
+            }
 
         }
-        public void CHN_Beijing_TransactionInit(int rn1, int rn2, int rn3, int rn4, int rn5, int rn6, int h1, int h2, int h3, int h4, int h5, int h6,
-                                                int m1, int m2, int m3, int m4, int m5, int m6, int l1, int l2, int l3, int l4, int l5, int l6, int index)
+
+        // 梫媮悢/巟暐妟丂憹尭僞僀儈儞僌
+        public void Requ_Pay_In_de_crease(int requNum , int amoPay ,int performance , int index)
         {
-            CHN_Beijing_RN1[index] = rn1;
-            CHN_Beijing_RN2[index] = rn2;
-            CHN_Beijing_RN3[index] = rn3;
-            CHN_Beijing_RN4[index] = rn4;
-            CHN_Beijing_RN5[index] = rn5;
-            CHN_Beijing_RN6[index] = rn6;
-            CHN_Beijing_AmoPayH1[index] = h1;
-            CHN_Beijing_AmoPayH2[index] = h2;
-            CHN_Beijing_AmoPayH3[index] = h3;
-            CHN_Beijing_AmoPayH4[index] = h4;
-            CHN_Beijing_AmoPayH5[index] = h5;
-            CHN_Beijing_AmoPayH6[index] = h6;
-            CHN_Beijing_AmoPayM1[index] = m1;
-            CHN_Beijing_AmoPayM2[index] = m2;
-            CHN_Beijing_AmoPayM3[index] = m3;
-            CHN_Beijing_AmoPayM4[index] = m4;
-            CHN_Beijing_AmoPayM5[index] = m5;
-            CHN_Beijing_AmoPayM6[index] = m6;
-            CHN_Beijing_AmoPayL1[index] = l1;
-            CHN_Beijing_AmoPayL2[index] = l2;
-            CHN_Beijing_AmoPayL3[index] = l3;
-            CHN_Beijing_AmoPayL4[index] = l4;
-            CHN_Beijing_AmoPayL5[index] = l5;
-            CHN_Beijing_AmoPayL6[index] = l6;
+            // 梫媮悢偑乕侾側傜曉偡
+            if (requNum == -1)
+                return;
+
+            // 嬈愌偑侾侽侽枹枮側傜曉偡
+            if (performance < 100)
+                return;
+
+            bool IsExit = false;
+
+            for (int i =  1; i <= 20;i++)
+            {
+                if (IsExit == true)
+                    break;
+                // 100埲忋200枹枮
+                if (performance >= (100*i) && performance < (100*(i+1)))
+                {
+                    CHN_Beijing_RequNum[index] = requNum + (100*i);
+                    IsExit = true;
+                }
+                else if (performance <= (-100*i) && performance > (-100*(i+1)))
+                {
+                    CHN_Beijing_RequNum[index] = requNum - (100*i);
+                    if(CHN_Beijing_RequNum[index] < 100)
+                        CHN_Beijing_RequNum[index] = 100;
+
+                    IsExit = true;
+                }
+            }
+
+            float value = 0.0f;     // 曄摦屻梫媮悢 / 尦梫媮悢
+            float requN = requNum; // 尦梫媮悢
+            float UpdaterequN = CHN_Beijing_RequNum[index]; // 曄摦屻偺梫媮悢
+            float AmoP = amoPay;        // 尦巟暐妟
+            float UpdateAmoP = 0.0f;    // 曄摦屻偺巟暐妟
+
+            value = UpdaterequN / requN;
+            UpdateAmoP = AmoP * value;
+
+            CHN_Beijing_ContractAmoPay[index] = (int)UpdateAmoP;
+
         }
     };
     public CHN_Beijing_Client[] CHN_Beijing_Clients = new CHN_Beijing_Client[20];
-
-    // 拞崙忋奀僋儔僀傾儞僩 // 
-    //public struct CHN_Shanghai_Client
-    //{
-    //    public int[] ClientCountryNo;        // 崙僫儞僶乕
-    //    public int[] ClientAreaNo;           // 抧堟僫儞僶乕
-    //    public int[] ClientNo;               // 僋儔僀傾儞僩僫儞僶乕
-    //    public string[] ClientName;          // 僋儔僀傾儞僩僱乕儉
-    //    public int[] ClientLv;               // 僋儔僀傾儞僩儗儀儖
-    //    public int[] ClientType;             // 嬈愌僞僀僾
-    //    public int[] Transaction_1;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_2;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_3;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_4;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_5;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_6;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-
-    //    public int[] Transaction;             // 庢堷暔
-    //    public int[] TransactionStatus;       // 庢堷忬嫷
-    //    public string[] ManufacturerName;     // 庢堷憡庤
-    //    public int[] Performance;             // 嬈愌
-
-
-    //    // 弶婜壔娭悢
-    //    public void InitCHN_Shanghai_Clients(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
-    //                           int clientLv, int clientType, int t1, int t2, int t3, int t4, int t5, int t6,
-    //                           int transaction, int transactionStatus, string manufacturerName, int performance, int index)
-    //    {
-    //        ClientNo = new int[3]; ClientName = new string[3];
-    //        ClientLv = new int[3]; ClientType = new int[3];
-    //        Transaction_1 = new int[3]; Transaction_2 = new int[3];
-    //        Transaction_3 = new int[3]; Transaction_4 = new int[3];
-    //        Transaction_5 = new int[3]; Transaction_6 = new int[3];
-
-    //        Transaction = new int[3]; TransactionStatus = new int[3];
-    //        ManufacturerName = new string[3]; Performance = new int[3];
-
-    //        ClientCountryNo = clientCountryNo;
-    //        ClientAreaNo = clientAreaNo;
-    //        ClientNo[index] = clientNo;
-    //        ClientName[index] = clientName;
-    //        ClientLv[index] = clientLv;
-    //        ClientType[index] = clientType;
-    //        Transaction_1[index] = t1;
-    //        Transaction_2[index] = t2;
-    //        Transaction_3[index] = t3;
-    //        Transaction_4[index] = t4;
-    //        Transaction_5[index] = t5;
-    //        Transaction_6[index] = t6;
-    //        Transaction[index] = transaction;
-    //        TransactionStatus[index] = transactionStatus;
-    //        ManufacturerName[index] = manufacturerName;
-    //        Performance[index] = performance;
-    //    }
-    //};
-    //public CHN_Shanghai_Client[] CHN_Shanghai_Clients = new CHN_Shanghai_Client[20];
-
-    //// 拞崙巐愳僋儔僀傾儞僩 // 
-    //public struct CHN_Sichuan_Client
-    //{
-    //    public int ClientCountryNo;        // 崙僫儞僶乕
-    //    public int ClientAreaNo;           // 抧堟僫儞僶乕
-    //    public int[] ClientNo;               // 僋儔僀傾儞僩僫儞僶乕
-    //    public string[] ClientName;          // 僋儔僀傾儞僩僱乕儉
-    //    public int[] ClientLv;               // 僋儔僀傾儞僩儗儀儖
-    //    public int[] ClientType;             // 嬈愌僞僀僾
-    //    public int[] Transaction_1;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_2;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_3;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_4;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_5;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-    //    public int[] Transaction_6;          // 庢堷暔乮暋悢丂俵俙倃俇屄 乯
-
-    //    public int[] Transaction;             // 庢堷暔
-    //    public int[] TransactionStatus;       // 庢堷忬嫷
-    //    public string[] ManufacturerName;     // 庢堷憡庤
-    //    public int[] Performance;             // 嬈愌
-
-
-    //    // 弶婜壔娭悢
-    //    public void InitCHN_Sichuan_Clients(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
-    //                           int clientLv, int clientType, int t1, int t2, int t3, int t4, int t5, int t6,
-    //                           int transaction, int transactionStatus, string manufacturerName, int performance, int index)
-    //    {
-    //        ClientNo = new int[4]; ClientName = new string[4];
-    //        ClientLv = new int[4]; ClientType = new int[4];
-    //        Transaction_1 = new int[4]; Transaction_2 = new int[4];
-    //        Transaction_3 = new int[4]; Transaction_4 = new int[4];
-    //        Transaction_5 = new int[4]; Transaction_6 = new int[4];
-
-    //        Transaction = new int[4]; TransactionStatus = new int[4];
-    //        ManufacturerName = new string[4]; Performance = new int[4];
-
-    //        ClientCountryNo = clientCountryNo;
-    //        ClientAreaNo = clientAreaNo;
-    //        ClientNo[index] = clientNo;
-    //        ClientName[index] = clientName;
-    //        ClientLv[index] = clientLv;
-    //        ClientType[index] = clientType;
-    //        Transaction_1[index] = t1;
-    //        Transaction_2[index] = t2;
-    //        Transaction_3[index] = t3;
-    //        Transaction_4[index] = t4;
-    //        Transaction_5[index] = t5;
-    //        Transaction_6[index] = t6;
-    //        Transaction[index] = transaction;
-    //        TransactionStatus[index] = transactionStatus;
-    //        ManufacturerName[index] = manufacturerName;
-    //        Performance[index] = performance;
-    //    }
-    //};
-    //public CHN_Sichuan_Client[] CHN_Sichuan_Clients = new CHN_Sichuan_Client[20];
 }
