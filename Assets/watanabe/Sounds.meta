@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 03f8f52636d4e564e9f84435481957ea
+=======
+<<<<<<< HEAD:Assets/watanabe/Sounds/BGM.meta
+guid: 251d113fda2144742a1d94995e8b2cef
+=======
+guid: 03f8f52636d4e564e9f84435481957ea
+>>>>>>> 09cfe027fd0dfc2046d99a3aedac2a5c24b6103a:Assets/watanabe/Sounds.meta
+>>>>>>> 09cfe027fd0dfc2046d99a3aedac2a5c24b6103a
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
