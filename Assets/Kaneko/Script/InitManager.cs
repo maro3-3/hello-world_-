@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
-using UnityEditor;
+
 public class InitManager : MonoBehaviour
 {
     DataBase database = null;
@@ -119,8 +119,7 @@ public class InitManager : MonoBehaviour
             database.RewartState[i] = MissionList.sheets[0].list[i].int_RewardState;
         }
 
-        EditorUtility.SetDirty(database);
-        AssetDatabase.SaveAssets();
+        
     }
 
 }

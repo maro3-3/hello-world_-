@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+
 public class Frame2_Tanaka : MonoBehaviour
 {
 
@@ -75,8 +75,7 @@ public class Frame2_Tanaka : MonoBehaviour
                     database.LogisticsRights++;
                     break;
             }
-            EditorUtility.SetDirty(database);
-            AssetDatabase.SaveAssets();
+          
 
             missionbutton.SetActive(false);
             frame1.SetActive(false);

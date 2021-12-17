@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+
 public class TurnManager_ishikado : MonoBehaviour
 {
     DataBase database = null;
@@ -32,8 +32,7 @@ public class TurnManager_ishikado : MonoBehaviour
 
         database.TurnNum++;
 
-        EditorUtility.SetDirty(database);
-        AssetDatabase.SaveAssets();
+      
         //ターン開始時処理
     }
 }
