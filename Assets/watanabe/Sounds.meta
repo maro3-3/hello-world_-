@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 03f8f52636d4e564e9f84435481957ea
 =======
 <<<<<<< HEAD:Assets/watanabe/Sounds/BGM.meta
@@ -8,6 +9,13 @@ guid: 251d113fda2144742a1d94995e8b2cef
 guid: 03f8f52636d4e564e9f84435481957ea
 >>>>>>> 09cfe027fd0dfc2046d99a3aedac2a5c24b6103a:Assets/watanabe/Sounds.meta
 >>>>>>> 09cfe027fd0dfc2046d99a3aedac2a5c24b6103a
+=======
+<<<<<<< HEAD:Assets/Kaneko/ホームページ画面などのアイコン(白素材).meta
+guid: 63ada5d9eebdcb4429dfaf80b7adc573
+=======
+guid: 03f8f52636d4e564e9f84435481957ea
+>>>>>>> feature/tanaka:Assets/watanabe/Sounds.meta
+>>>>>>> feature/tanaka
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEditor;
 //シーンマネージャー
 public class SceneManager_Tanaka : MonoBehaviour
 {
@@ -120,7 +121,9 @@ public class SceneManager_Tanaka : MonoBehaviour
             default:
                 break;
         }
-        
+
+        EditorUtility.SetDirty(area_t);
+        AssetDatabase.SaveAssets();
     }
 
     public void OnClick_Genchi()//現地画面飛ぶ
@@ -191,6 +194,8 @@ public class SceneManager_Tanaka : MonoBehaviour
             default:
                 break;
         }
-        
+
+        EditorUtility.SetDirty(area_t);
+        AssetDatabase.SaveAssets();
     }
 }
