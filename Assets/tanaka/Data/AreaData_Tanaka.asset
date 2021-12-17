@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a591f6df4e649408ce70326c1087f8, type: 3}
   m_Name: AreaData_Tanaka
   m_EditorClassIdentifier: 
-  _area: 0
+  area: 10

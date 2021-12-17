@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Anuzik/testtest.meta
 guid: 6d797682560911b41bcd31e7df0d0520
+=======
+guid: 63ada5d9eebdcb4429dfaf80b7adc573
+>>>>>>> feature/tanaka:Assets/Kaneko/ホームページ画面などのアイコン(白素材).meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
