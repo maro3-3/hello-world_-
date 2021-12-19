@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+
 //Žæˆø
 public class Transaction_Tanaka : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class Transaction_Tanaka : MonoBehaviour
                 profit = database.manufacturers[i].AmountofSales - database.manufacturers[i].LaborForce;
 
                 database.manufacturers[i].Totalassets += profit;
+
             }
         }
     }

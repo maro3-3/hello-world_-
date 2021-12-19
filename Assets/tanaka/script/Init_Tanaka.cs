@@ -12,6 +12,8 @@ public class Init_Tanaka : MonoBehaviour
     {
         area_t.area = 0;
 
+       
+
         Areamanager_Onodera.InitGenchi();
 
         drone_ishikado.TurnCount = new int[5];

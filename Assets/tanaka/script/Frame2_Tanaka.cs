@@ -75,6 +75,7 @@ public class Frame2_Tanaka : MonoBehaviour
                     database.LogisticsRights++;
                     break;
             }
+          
 
             missionbutton.SetActive(false);
             frame1.SetActive(false);

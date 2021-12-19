@@ -119,7 +119,7 @@ public class InitManager : MonoBehaviour
             database.RewartState[i] = MissionList.sheets[0].list[i].int_RewardState;
         }
 
-
+        
     }
 
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+
 //シーンマネージャー
 public class SceneManager_Tanaka : MonoBehaviour
 {
@@ -120,7 +121,8 @@ public class SceneManager_Tanaka : MonoBehaviour
             default:
                 break;
         }
-        
+
+      
     }
 
     public void OnClick_Genchi()//現地画面飛ぶ
@@ -191,6 +193,7 @@ public class SceneManager_Tanaka : MonoBehaviour
             default:
                 break;
         }
-        
+
+      
     }
 }

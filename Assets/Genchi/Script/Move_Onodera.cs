@@ -12,12 +12,12 @@ public class Move_Onodera : MonoBehaviour
     {
         Vector3 pos = point.transform.position;
 
-        if (other.name == chara.name)
-        {
+       // if (other.name == chara.name)
+        //{
             pos.y += 1;
             //Charaが接触したらpointオブジェクトの位置に移動する
             chara.transform.position = pos;
 
-        }
+       // }
     }
 }

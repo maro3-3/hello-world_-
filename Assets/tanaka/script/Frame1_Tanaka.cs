@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class Frame1_Tanaka : MonoBehaviour
 {
     [SerializeField] GameObject missionbutton;
@@ -74,6 +75,9 @@ public class Frame1_Tanaka : MonoBehaviour
                     database.LogisticsRights++;
                     break;
             }
+
+
+           
 
             missionbutton.SetActive(false);
             frame1.SetActive(false);

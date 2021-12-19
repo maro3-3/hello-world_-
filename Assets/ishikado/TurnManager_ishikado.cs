@@ -32,6 +32,7 @@ public class TurnManager_ishikado : MonoBehaviour
 
         database.TurnNum++;
 
+      
         //ターン開始時処理
     }
 }
