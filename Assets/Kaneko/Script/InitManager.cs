@@ -7,24 +7,28 @@ using System.IO;
 public class InitManager : MonoBehaviour
 {
     DataBase database = null;
+    ClientData clientData = null;
     ListManufacture ManuList;
     ListCountry CountryList;
     ListAreaLv AreaLvList;
     ListClientArrivalTable ClientArrivalTableList;
     ListMission MissionList;
     List_ClientInformation ClientList;
+    List_ClientTransactionPays TransactionPaysList;
 
     // Start is called before the first frame update
     void Awake()
     {       
         // ScriptableObjectの取得
         database = Resources.Load<DataBase>("DataBase");
+        clientData = Resources.Load<ClientData>("ClientData");
         ManuList = Resources.Load("List_manufacturer") as ListManufacture;
         CountryList = Resources.Load("List_CountryAndArea") as ListCountry;
         AreaLvList = Resources.Load("List_AreaLv") as ListAreaLv;
         ClientArrivalTableList = Resources.Load("List_ClientArrivalTable") as ListClientArrivalTable;
         MissionList = Resources.Load("List_Mission") as ListMission;
         ClientList = Resources.Load("List_ClientInformation") as List_ClientInformation;
+        TransactionPaysList = Resources.Load("List_ClientTransactionPays") as List_ClientTransactionPays;
 
 
         // 失業者初期化
@@ -50,7 +54,7 @@ public class InitManager : MonoBehaviour
                                        ManuList.sheets[0].list[i].int_ManufacturerNo,
                                        ManuList.sheets[0].list[i].string_ManufacturerName,
                                        ManuList.sheets[0].list[i].int_Products,
-                                       0, 0, 0, 0, 0, 0, 0, 0);
+                                       0, 0, 0, 0, 0, 0, 0);
         }
 
         // 国初期化        // 失業者初期化
@@ -83,9 +87,15 @@ public class InitManager : MonoBehaviour
                                        AreaLvList.sheets[0].list[i].int_AreaLv5);
         }
 
+        // クライアント初期化
+        for (int i = 0; i < 20; i++)
+        {
+            // 中国北京
+            clientData.CHN_Beijing_Clients[i].CHN_Beijing_Init();
+        }
 
 
-        // クライアント到着テーブル初期化
+            // クライアント到着テーブル初期化
         for (int i = 0;i < ClientArrivalTableList.sheets[0].list.Count; i++)
         {
             database.ClientArrivalTables[i].InitClientArrivalTable(ClientArrivalTableList.sheets[0].list[i].int_CountryNo,
@@ -109,7 +119,7 @@ public class InitManager : MonoBehaviour
             database.RewartState[i] = MissionList.sheets[0].list[i].int_RewardState;
         }
 
-
+        
     }
 
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.IO;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using KanKikuchi.AudioManager;
 
 public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 {
@@ -104,6 +105,8 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
         Step = MINIGAMESTEP.ONE;
 
+        BGMManager.Instance.Play("Standby", 1, 0, 1, true, false);
+
     }
 
     // Update is called once per frame
@@ -203,6 +206,8 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             Game.SetActive(true);
 
             UImanager[4].UICreate(UIimage[(int)UILIST.VS]);
+
+        BGMManager.Instance.Play("Standby", 1, 0, 1, true, false);
         }
     }
 
@@ -219,6 +224,9 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             database.Lose = true;
             Step = MINIGAMESTEP.LOSE;
             Game.SetActive(false);
+
+            SEManager.Instance.Play("Result");
+            BGMManager.Instance.Play("ResultLose", 1, 0, 1, true, false);
         }
         if(!Enemy)
         {
@@ -230,10 +238,13 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[4].UICreate(UIimage[(int)UILIST.RESULTPLAN]);
 
             database.Win = true;
-            database.manufacturers[ProductionNo].BusinessPartnerClient = database.MiniClieNo;
+            //database.manufacturers[ProductionNo].BusinessPartnerClient = database.MiniClieNo;
             database.Amount = AmountData;
             Step = MINIGAMESTEP.WIN;
             Game.SetActive(false);
+
+            SEManager.Instance.Play("Result");
+            BGMManager.Instance.Play("ResultWin", 1, 0, 1, true, false);
         }
     }
 
@@ -265,6 +276,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         }
         if (Input.GetKeyDown("space")) // スペース押したら現地画面へ遷移
         {
+            SEManager.Instance.Play("MiniGenchi");
             SceneManager.LoadScene("Genchi");
         }
     }

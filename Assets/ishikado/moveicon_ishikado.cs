@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class moveicon_ishikado : MonoBehaviour
 {
+	public Button[] button_ishikado = new Button[1];
+
+	Collider2D col;
 
 	//　アイコンが1秒間に何ピクセル移動するか
 	[SerializeField]
@@ -22,7 +27,6 @@ public class moveicon_ishikado : MonoBehaviour
 
 	void Update()
 	{
-
 		//　移動キーを押していなければ何もしない
 		if (Mathf.Approximately(Input.GetAxis("Horizontal"), 0f) && Mathf.Approximately(Input.GetAxis("Vertical"), 0f))
 		{
@@ -36,5 +40,12 @@ public class moveicon_ishikado : MonoBehaviour
 		pos.y = Mathf.Clamp(pos.y, -Screen.height * 0.5f + offset.y, Screen.height * 0.5f - offset.y);
 		//　アイコン位置を設定
 		rect.anchoredPosition = pos;
+
+		OnTriggerStay2D(col);
 	}
+
+	void OnTriggerStay2D(Collider2D col)
+    {
+		Debug.Log(col);
+    }
 }

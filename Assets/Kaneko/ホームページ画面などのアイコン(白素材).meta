@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Kaneko/ホームページ画面などのアイコン(白素材).meta
 guid: 63ada5d9eebdcb4429dfaf80b7adc573
+=======
+guid: 03f8f52636d4e564e9f84435481957ea
+>>>>>>> feature/tanaka:Assets/watanabe/Sounds.meta
+=======
+guid: 63ada5d9eebdcb4429dfaf80b7adc573
+>>>>>>> feature/tanaka
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

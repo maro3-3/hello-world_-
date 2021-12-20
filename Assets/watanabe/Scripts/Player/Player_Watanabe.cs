@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using KanKikuchi.AudioManager;
 
 public class Player_Watanabe : MonoBehaviour
 {
@@ -98,7 +99,16 @@ public class Player_Watanabe : MonoBehaviour
           if (Input.GetKey("w"))
           {
                 GetComponent<Rigidbody>().velocity = new Vector3(0, m_jump, 0);
-          }
+                SEManager.Instance.Play("Jump");
+            }
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            SEManager.Instance.Play("Landing");
         }
     }
 
@@ -112,5 +122,23 @@ public class Player_Watanabe : MonoBehaviour
 
         // ’e‚ğ”­Ë‚·‚é•ûŒü‚Æ‘¬‚³‚ğİ’è‚·‚é
         Bullet.Init(angle, speed, Bulletnumber);
+
+        // ”­ËSE
+        switch (Bulletnumber)
+        {
+            case 0:
+                SEManager.Instance.Play("Attack1");
+                break;
+            case 1:
+                SEManager.Instance.Play("Attack2");
+                break;
+            case 2:
+                SEManager.Instance.Play("Attack3");
+                break;
+            default:
+                Debug.Log("”­ËSE‚É‚ÄˆÙí");
+                break;
+        }
+
     }
 }

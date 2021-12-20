@@ -1294,6 +1294,7 @@ GameObject:
   - component: {fileID: 184832063285997110}
   - component: {fileID: 3286423553810128296}
   - component: {fileID: 8211339525688109641}
+  - component: {fileID: 3328413824200867191}
   - component: {fileID: 494074719556231431}
   m_Layer: 5
   m_Name: Amount
@@ -1380,6 +1381,25 @@ MonoBehaviour:
   amount: 1000
   FairTrade: 1
   Choice: 0
+--- !u!114 &3328413824200867191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211339525688109642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84080b8f483464c93845cb502049e7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 239e04dbf66f4bd4587dca75966b8625, type: 3}
+  _isAutoPlay: 0
+  _volumeRate: 1
+  _delay: 0
+  _pitch: 1
+  _fadeInDuration: 0
+  _isLoop: 0
 --- !u!114 &494074719556231431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,6 +1420,18 @@ MonoBehaviour:
         - m_Target: {fileID: 8211339525688109641}
           m_TargetAssemblyTypeName: Amount, Assembly-CSharp
           m_MethodName: OnHightLight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 3328413824200867191}
+          m_TargetAssemblyTypeName: KanKikuchi.AudioManager.SEAssistant, Assembly-CSharp
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1432,6 +1464,18 @@ MonoBehaviour:
         - m_Target: {fileID: 8211339525688109641}
           m_TargetAssemblyTypeName: Amount, Assembly-CSharp
           m_MethodName: ClickAmount
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 3328413824200867191}
+          m_TargetAssemblyTypeName: KanKikuchi.AudioManager.SEAssistant, Assembly-CSharp
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

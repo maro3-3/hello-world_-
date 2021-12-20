@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+
 //æˆø
 public class Transaction_Tanaka : MonoBehaviour
 {
@@ -24,18 +25,22 @@ public class Transaction_Tanaka : MonoBehaviour
       
     }
 
-    //ƒ^[ƒ“I—¹‚ÉŒÄ‚Î‚ê‚é
+    //Œ––‚ÉŒÄ‚Î‚ê‚é
     public void Transaction()//æˆø
     {
-        
-        for (int i = 0; i < ManuList.sheets[0].list.Count; i++)//¶YÒ‘Sˆõ•ª
+        //ƒNƒ‰ƒCƒAƒ“ƒg‚Ì‡Œv—v‹”‚É‘«‚è‚Ä‚¢‚½‚ç
+        if (database.manufacturers[0].RequestNum <= database.manufacturers[0].LaborForce)
         {
-            int profit = 0;//—˜‰v
+            for (int i = 0; i < ManuList.sheets[0].list.Count; i++)//¶YÒ‘Sˆõ•ª
+            {
+                int profit = 0;//—˜‰v
 
-            //”„‚èã‚°-˜J“­—Í—˜‰v
-            profit = database.manufacturers[i].AmountofSales - database.manufacturers[i].LaborForce;
+                //”„‚èã‚°-˜J“­—Í—˜‰v
+                profit = database.manufacturers[i].AmountofSales - database.manufacturers[i].LaborForce;
 
-            database.manufacturers[i].Totalassets += profit;
+                database.manufacturers[i].Totalassets += profit;
+
+            }
         }
     }
 }
