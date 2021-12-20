@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnemployedNum: 0
   EmploymentNum: 0
-  PossessionDroneNum: 0
-  TempingDroneNum: 0
+  PossessionDroneNum: 1
+  TempingDroneNum: 2
   ExtensionStage: 0
-  TurnNum: 5
+  TurnNum: 3
   MissionState: 0
   Win: 0
   Lose: 0
