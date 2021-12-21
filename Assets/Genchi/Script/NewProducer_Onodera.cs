@@ -227,8 +227,10 @@ public class NewProducer_Onodera : MonoBehaviour
 
         //if (other.gameObject == PLAYER)
         //{
-        Object.SetActive(true);
-        // }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Object.SetActive(true);
+         }
 
         sousisan.text = "‘‘Y:" + sisan;
         uriage.text = "”„ã‚:" + uri;

@@ -60,7 +60,7 @@ public class Areamanager_Onodera : MonoBehaviour
 
     public static int[] ProdSales = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     public static bool[] ProdApp = {false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
-        false, false, false, false, false, false, false, false, false,false,false,false,false,false,false,false,false };
+        false, false, false, false, false, false, false, false, false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false};
     public static bool Gameover = false;
 
 

@@ -33,7 +33,7 @@ public class NewClient_Onodera : MonoBehaviour
     {
         database = Resources.Load<DataBase>("DataBase");
         Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
-        ClieLv = database.clients[Arealv].ClientLv;
+        //ClieLv = database.clients[Arealv].ClientLv;
          Clitable = -1;
 
         Areamanager_Onodera.UpdataClim();
@@ -1380,17 +1380,20 @@ public class NewClient_Onodera : MonoBehaviour
         {
             if (cliapp == true)
             {
+                int a = num;
                 Object.SetActive(true);
-
+                database.MiniClieNo = a;//ミニゲームシーンへクライアント情報を渡す
                 if (Input.GetKey(KeyCode.Space))
                 {
                     this.timer = this.interval;
                     audioSource.Play();
-                    database.MiniClieNo = database.clients[num].ClientNo;//ミニゲームシーンへクライアント情報を渡す
+                    
                     Client.SetActive(true);
+                    //SceneManager.LoadScene("minigame");
                     StartCoroutine("GoToGameScene");
 
                 }
+                
             }
         }
    
