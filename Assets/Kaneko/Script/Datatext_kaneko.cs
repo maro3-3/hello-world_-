@@ -14,14 +14,6 @@ public class Datatext_kaneko : MonoBehaviour
     [SerializeField] private Text TempingDroneNumT;
     [SerializeField] private Text TurnNumT;// ƒ^[ƒ“
 
-    // ¸‹ÆÒ
-    [SerializeField] private Text   CHN_Beijing_AreaLv;                            // ’†‘–k‹’nˆæƒŒƒxƒ‹
-    [SerializeField] private Text   CHN_Beijing_EmploymentNum;                     // ’†‘–k‹ŒÙ—p”
-    [SerializeField] private Text[] CHN_Beijing_TotalUnemployedNum = new Text[2];  // ’†‘–k‹“o˜^Ò”
-    [SerializeField] private Text   CHN_Beijing_Death_tollNum;                     // ’†‘–k‹€–SÒ”
-    [SerializeField] private Text[] CHN_Beijing_name = new Text[2];                // ’†‘–k‹–¼‘O
-    [SerializeField] private Text[] CHN_Beijing_LaborForce = new Text[2];          // ’†‘–k‹˜J“­—Í
-    [SerializeField] private Text[] CHN_Beijing_Totalassets = new Text[2];         // ’†‘–k‹‘‘Y
 
     // ¶YÒ
     [SerializeField] private Text[] CHN_Beijing_manuNameList  = new Text[2];   // ’†‘–k‹¶YÒ–¼‘O
@@ -56,18 +48,6 @@ public class Datatext_kaneko : MonoBehaviour
         PossessionDroneNumT.text = database.PossessionDroneNum.ToString();
         TempingDroneNumT.text = database.TempingDroneNum.ToString();
         TurnNumT.text = database.TurnNum.ToString();
-
-        CHN_Beijing_AreaLv.text = database.unemployed[0].UnemployedAreaNo.ToString();
-        CHN_Beijing_EmploymentNum.text = database.unemployed[0].EmploymentNum.ToString();
-        CHN_Beijing_TotalUnemployedNum[0].text = database.unemployed[0].InitUnemployedNum.ToString();
-        CHN_Beijing_TotalUnemployedNum[1].text = database.unemployed[0].CurrentUnemployedNum.ToString();
-        CHN_Beijing_Death_tollNum.text = database.unemployed[0].Death_tollNum.ToString();
-        CHN_Beijing_name[0].text = database.manufacturers[0].ManufacturerName.ToString();
-        CHN_Beijing_LaborForce[0].text = database.manufacturers[0].LaborForce.ToString();
-        CHN_Beijing_Totalassets[0].text = database.manufacturers[0].Totalassets.ToString();
-        CHN_Beijing_name[1].text = database.manufacturers[1].ManufacturerName.ToString();
-        CHN_Beijing_LaborForce[1].text = database.manufacturers[1].LaborForce.ToString();
-        CHN_Beijing_Totalassets[1].text = database.manufacturers[1].Totalassets.ToString();
 
         CHN_Beijing_manuNameList[0].text = database.manufacturers[0].ManufacturerName.ToString();
         CHN_Beijing_manuNameList[1].text = database.manufacturers[1].ManufacturerName.ToString();

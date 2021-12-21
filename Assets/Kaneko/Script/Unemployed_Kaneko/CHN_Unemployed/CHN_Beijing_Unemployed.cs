@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ZAF_Jozi_Unemployed_A : MonoBehaviour, IPointerClickHandler
+public class CHN_Beijing_Unemployed: MonoBehaviour, IPointerClickHandler
 {
 
     [SerializeField] private GameObject BG_Panel;
     [SerializeField] private GameObject UnemployedPanel;
     [SerializeField] private GameObject UnemployedMenuPanel;
-    [SerializeField] private GameObject ZAF_Jozi_Unemployed_APanel;
+    [SerializeField] private GameObject CHN_Beijing_UnemployedPanel;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -18,18 +18,6 @@ public class ZAF_Jozi_Unemployed_A : MonoBehaviour, IPointerClickHandler
         BG_Panel.SetActive(false);
         UnemployedPanel.SetActive(false);
         UnemployedMenuPanel.SetActive(false);
-        ZAF_Jozi_Unemployed_APanel.SetActive(true);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CHN_Beijing_UnemployedPanel.SetActive(true);
     }
 }
