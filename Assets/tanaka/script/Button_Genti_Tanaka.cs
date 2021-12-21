@@ -30,8 +30,11 @@ public class Button_Genti_Tanaka : MonoBehaviour
     {
         //ƒ{ƒ^ƒ“‚ð•\Ž¦‚³‚¹‚é----------
         genti.SetActive(true);
-        drone1.SetActive(true);
 
+        if (database.PossessionDroneNum >= 1)
+        {
+            drone1.SetActive(true);
+        }
 
         if (database.RewartState[1] == 2)
         {
