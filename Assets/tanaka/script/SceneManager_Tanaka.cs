@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class SceneManager_Tanaka : MonoBehaviour
 {
     [SerializeField] Area_Tanaka area_t = null;//エリアのデータ
-  //  [SerializeField] DataBase_Tanaka database = null;
-    DataBase database = null;
+                                               //  [SerializeField] DataBase_Tanaka database = null;
+    
     GameObject turnmanager;
     GameObject transaction;
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class SceneManager_Tanaka : MonoBehaviour
     {
         turnmanager = GameObject.Find("TurnManager");
         transaction = GameObject.Find("TransactionManager");
-        database = Resources.Load<DataBase>("DataBase");
+       
 
     }
 
@@ -31,7 +31,7 @@ public class SceneManager_Tanaka : MonoBehaviour
     public void Onclick_TitleToGenchi()
     {
         // SceneManager.LoadScene("Genchi");
-        SceneManager.LoadScene("Chi_shisen");
+        SceneManager.LoadScene("SekaiGamen");
     }
 
     public void OnClick_Homepage()//ホームページに遷移

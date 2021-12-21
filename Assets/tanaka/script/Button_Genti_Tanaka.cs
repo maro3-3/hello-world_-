@@ -12,7 +12,7 @@ public class Button_Genti_Tanaka : MonoBehaviour
     [SerializeField] GameObject drone2;
     [SerializeField] GameObject drone3;
 
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
 
     // Start is called before the first frame update
     void Start()

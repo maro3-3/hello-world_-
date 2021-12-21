@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb24eeb62fe7a7408a9d2f5f8bc119a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  area_t: {fileID: 11400000, guid: d95a2d5ed6ed1c24983325ca725469d2, type: 2}
+  database: {fileID: 11400000, guid: 9ba35805146784549a28089b0ebe3f0a, type: 2}
 --- !u!1 &4781324567311236969
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,4 +238,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d947819fcddcb24295ca51e1cd4d9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  database: {fileID: 11400000, guid: 9fff38b5436ce884ea997d1056b59edf, type: 2}

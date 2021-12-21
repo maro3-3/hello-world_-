@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Text_Manager_Tanaka : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
     [SerializeField] Text month;
     [SerializeField] Text currentTurn;
     [SerializeField] Text targetEmployment;
