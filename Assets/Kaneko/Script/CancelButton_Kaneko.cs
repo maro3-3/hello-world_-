@@ -15,11 +15,11 @@ public class CancelButton_Kaneko : MonoBehaviour, IPointerClickHandler
 
     [SerializeField] private GameObject CHN_Aria_ClientList_Panel;       // 中国地域クライアントページ
     [SerializeField] private GameObject CHN_Aria_ManuList_Panel;         // 中国地域生産者ページ
-    [SerializeField] private GameObject CHN_Aria_UnemployedMenu_Panel;   // 中国地域失業者ページ
+    [SerializeField] private GameObject CHN_Aria_UnemployedMenu_Panel;         // 中国地域生産者ページ
 
     [SerializeField] private GameObject CHN_Beijing_ClientA_Panel;       // 中国北京クライアントAページ
     [SerializeField] private GameObject CHN_Beijing_ManuA_Panel;         // 中国北京生産者Aページ
-    [SerializeField] private GameObject CHN_Beijing_Unemployed_Panel;    // 中国北京失業者ページ
+    [SerializeField] private GameObject CHN_Beijing_Unemployed_Panel;         // 中国北京生産者Aページ
 
     [SerializeField] private Vector3 ClientStartPos;
     [SerializeField] private Vector3 ManufacturerStartPos;
