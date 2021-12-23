@@ -146,59 +146,59 @@ public class NewClient_Onodera : MonoBehaviour
 
         if (Arealv == 0)
         {
-            g_num = clientdata.CHN_Beijing_Clients[Arealv].CHN_Beijing_Performance;
+            g_num = clientdata.CHN_Beijing_Clients[0].CHN_Beijing_Performance;
         }
         else if (Arealv == 1)
         {
-            g_num = clientdata.CHN_Shanghai_Clients[Arealv].CHN_Shanghai_Performance;
+            g_num = clientdata.CHN_Shanghai_Clients[0].CHN_Shanghai_Performance;
         }
         else if (Arealv == 2)
         {
-            g_num = clientdata.CHN_Sichuan_Clients[Arealv].CHN_Sichuan_Performance;
+            g_num = clientdata.CHN_Sichuan_Clients[0].CHN_Sichuan_Performance;
         }
         else if (Arealv == 3)
         {
-            g_num = clientdata.USA_NewYork_Clients[Arealv].USA_NewYork_Performance;
+            g_num = clientdata.USA_NewYork_Clients[0].USA_NewYork_Performance;
         }
         else if (Arealv == 4)
         {
-            g_num = clientdata.USA_StLouis_Clients[Arealv].USA_StLouis_Performance;
+            g_num = clientdata.USA_StLouis_Clients[0].USA_StLouis_Performance;
         }
         else if (Arealv == 5)
         {
-            g_num = clientdata.USA_Atlanta_Clients[Arealv].USA_Atlanta_Performance;
+            g_num = clientdata.USA_Atlanta_Clients[0].USA_Atlanta_Performance;
         }
         else if (Arealv == 6)
         {
-            g_num = clientdata.RUS_Moscow_Clients[Arealv].RUS_Moscow_Performance;
+            g_num = clientdata.RUS_Moscow_Clients[0].RUS_Moscow_Performance;
         }
         else if (Arealv == 7)
         {
-            g_num = clientdata.RUS_Ufa_Clients[Arealv].RUS_Ufa_Performance;
+            g_num = clientdata.RUS_Ufa_Clients[0].RUS_Ufa_Performance;
         }
         else if (Arealv == 8)
         {
-            g_num = clientdata.AUS_Canberra_Clients[Arealv].AUS_Canberra_Performance;
+            g_num = clientdata.AUS_Canberra_Clients[0].AUS_Canberra_Performance;
         }
         else if (Arealv == 9)
         {
-            g_num = clientdata.AUS_Perth_Clients[Arealv].AUS_Perth_Performance;
+            g_num = clientdata.AUS_Perth_Clients[0].AUS_Perth_Performance;
         }
         else if (Arealv == 10)
         {
-            g_num = clientdata.AUS_Melbourne_Clients[Arealv].AUS_Melbourne_Performance;
+            g_num = clientdata.AUS_Melbourne_Clients[0].AUS_Melbourne_Performance;
         }
         else if (Arealv == 11)
         {
-            g_num = clientdata.ZAF_Pretoria_Clients[Arealv].ZAF_Pretoria_Performance;
+            g_num = clientdata.ZAF_Pretoria_Clients[0].ZAF_Pretoria_Performance;
         }
         else if (Arealv == 12)
         {
-            g_num = clientdata.ZAF_Bloemfontein_Clients[Arealv].ZAF_Bloemfontein_Performance;
+            g_num = clientdata.ZAF_Bloemfontein_Clients[0].ZAF_Bloemfontein_Performance;
         }
         else if (Arealv == 13)
         {
-            g_num = clientdata.ZAF_CapeTown_Clients[Arealv].ZAF_CapeTown_Performance;
+            g_num = clientdata.ZAF_CapeTown_Clients[0].ZAF_CapeTown_Performance;
         }
 
 
