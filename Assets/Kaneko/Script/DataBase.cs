@@ -130,7 +130,7 @@ public class DataBase : ScriptableObject
         public int AmountofSales;           // 売上高
         public int LaborForce;              // 労働力
         public int NumberofEmployees;       // 雇用人数
-        public int BusinessPartnerClient;   // 取引先クライアント //配列（複数人
+        public List<int> BusinessPartnerClient; // 取引先クライアント //配列（複数人
         public int TransactionObject;       // 取引物
         public int RequestNum;              // 要求数
         public int Payment;                 // 支払い
@@ -138,8 +138,9 @@ public class DataBase : ScriptableObject
         // 初期化関数
         public void InitManufacturer(int countryNo, int areaNo, int manuNo, string manuName, int products,
             int totalassets, int amountofSales, int laborForce, int numberofEmployees,
-            int businessPartnerClient, int transactionObject, int requestNum, int payment)
+            int transactionObject, int requestNum, int payment)
         {
+            BusinessPartnerClient = new List<int>();
             ManufacturerCountryNo = countryNo;
             ManufacturerAreaNo = areaNo;
             ManufacturerNo = manuNo;
@@ -149,7 +150,6 @@ public class DataBase : ScriptableObject
             AmountofSales = amountofSales;
             LaborForce = laborForce;
             NumberofEmployees = numberofEmployees;
-            BusinessPartnerClient = businessPartnerClient;
             TransactionObject = transactionObject;
             RequestNum = requestNum;
             Payment = payment;

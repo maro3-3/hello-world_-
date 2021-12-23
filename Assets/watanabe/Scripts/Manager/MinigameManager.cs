@@ -9,6 +9,7 @@ using KanKikuchi.AudioManager;
 public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 {
     [SerializeField] DataBase database;
+    [SerializeField] List_ClientInformation clientdata;
 
     public enum MINIGAMESTEP
     {
@@ -80,7 +81,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
-
+        clientdata = Resources.Load("List_ClientInformation") as List_ClientInformation;
 
         FairTrade = false;
         isWin = false;
@@ -94,14 +95,13 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         UImanager[0].UICreate(UIimage[(int)UILIST.CLIENT]);
         UImanager[1].UICreate(UIimage[(int)UILIST.PRODUCTION]);
         UImanager[2].UICreate(UIimage[(int)UILIST.PRODUCTIONCHOICE]);
-
-        if ( 0 < intLog)
+        if (0 < intLog)
         {
             UImanager[3].UICreate(UIimage[(int)UILIST.LOGISTICS]);
             UImanager[4].UICreate(UIimage[(int)UILIST.LOGEXPLAN]);
         }
+        UImanager[5].UICreate(UIimage[(int)UILIST.STEPBACK]);
 
-        
 
         Step = MINIGAMESTEP.ONE;
 
@@ -166,6 +166,11 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[2].UICreate(UIimage[(int)UILIST.PAYMENTCHOICE]);
             UImanager[5].UICreate(UIimage[(int)UILIST.STEPBACK]);
             Step = MINIGAMESTEP.TWO;
+        }
+
+        if (stepback) // 戻るを押した場合
+        {
+            SceneManager.LoadScene("Genchi");
         }
     }
 
@@ -238,7 +243,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[4].UICreate(UIimage[(int)UILIST.RESULTPLAN]);
 
             database.Win = true;
-            database.manufacturers[ProductionNo].BusinessPartnerClient = database.MiniClieNo;
+
             database.Amount = AmountData;
             Step = MINIGAMESTEP.WIN;
             Game.SetActive(false);
@@ -276,6 +281,16 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         }
         if (Input.GetKeyDown("space")) // スペース押したら現地画面へ遷移
         {
+            int ClientNum = 0;
+
+            ClientNum += clientdata.sheets[0].list[database.MiniClieNo].int_CountryNo * 1;
+            ClientNum += clientdata.sheets[0].list[database.MiniClieNo].int_AreaNo * 100;
+            ClientNum += clientdata.sheets[0].list[database.MiniClieNo].int_ClientNo * 10000;
+
+            database.manufacturers[ProductionNo].BusinessPartnerClient.Add(ClientNum);
+
+            Debug.Log(ClientNum);
+
             SEManager.Instance.Play("MiniGenchi");
             SceneManager.LoadScene("Genchi");
         }

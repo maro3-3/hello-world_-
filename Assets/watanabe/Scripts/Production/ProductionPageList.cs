@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ProductionPageList : MonoBehaviour
 {
     [SerializeField] DataBase database;
+    [SerializeField] List_ClientInformation clientdata;
+
     [SerializeField] private GameObject PageUI;
     [SerializeField] private GameObject MarkUI;
     [SerializeField] private ProductionPageButton[] ProPageButton;
@@ -19,10 +21,21 @@ public class ProductionPageList : MonoBehaviour
 
     public int debug; // 受け取ったデータを確認する為の仮変数
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
+        clientdata = Resources.Load("List_ClientInformation") as List_ClientInformation;
+
+        int[] ProductsData = { clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_1,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_2,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_3,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_4,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_5,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_6,};
+        
 
         isSearch = true;
         isSend = false;
@@ -37,13 +50,13 @@ public class ProductionPageList : MonoBehaviour
                 case 0: // 同じ地域
                     for (int j = 0; j < database.manufacturers.Length; j++) // 生産者分forを回す
                     {
-                        if (database.clients[database.MiniClieNo].ClientCountryNo == database.manufacturers[j].ManufacturerCountryNo) // 国は同じか
+                        if (clientdata.sheets[0].list[database.MiniClieNo].int_CountryNo == database.manufacturers[j].ManufacturerCountryNo) // 国は同じか
                         {
-                            if (database.clients[database.MiniClieNo].ClientAreaNo == database.manufacturers[j].ManufacturerAreaNo)   // 地域は同じか
+                            if (clientdata.sheets[0].list[database.MiniClieNo].int_AreaNo == database.manufacturers[j].ManufacturerAreaNo)   // 地域は同じか
                             {
-                                for (int k = 0; k < database.clients[database.MiniClieNo].Transactions.Length; k++)                    // クライアントの取引物の回数回す
+                                for (int k = 0; k < ProductsData.Length; k++)                    // クライアントの取引物の回数回す
                                 {
-                                    if (database.clients[database.MiniClieNo].Transactions[k] == database.manufacturers[j].Products)  // 取引物と要求物は同じか
+                                    if (ProductsData[k] == database.manufacturers[j].Products)  // 取引物と要求物は同じか
                                     {
                                         // Productions[i]に名前を配置、場合によっては生産者を指定する数字も配置
                                         int PageNo = 0;
@@ -63,6 +76,7 @@ public class ProductionPageList : MonoBehaviour
                                         {
                                             ProductionPage page_scr = ListPage[PageNo].GetComponent<ProductionPage>();
                                             page_scr.ProductionCreate(j);
+                                            break;
                                         }
                                         else
                                         {
@@ -81,6 +95,7 @@ public class ProductionPageList : MonoBehaviour
                                             {
                                                 ProductionPage page_scr = ListPage[PageNo].GetComponent<ProductionPage>();
                                                 page_scr.ProductionCreate(j);
+                                                break;
                                             }
                                         }
                                     }
@@ -95,13 +110,13 @@ public class ProductionPageList : MonoBehaviour
                 case 1:// 同じ国、違う地域
                     for (int j = 0; j < database.manufacturers.Length; j++) // 生産者分forを回す
                     {
-                        if (database.clients[database.MiniClieNo].ClientCountryNo == database.manufacturers[j].ManufacturerCountryNo) // 国は同じか
+                        if (clientdata.sheets[0].list[database.MiniClieNo].int_CountryNo == database.manufacturers[j].ManufacturerCountryNo) // 国は同じか
                         {
-                            if (database.clients[database.MiniClieNo].ClientAreaNo != database.manufacturers[j].ManufacturerAreaNo)   // 地域は違うか
+                            if (clientdata.sheets[0].list[database.MiniClieNo].int_AreaNo != database.manufacturers[j].ManufacturerAreaNo)   // 地域は違うか
                             {
-                                for (int k = 0; k < database.clients[database.MiniClieNo].Transactions.Length; k++)                    // クライアントの取引物の回数回す
+                                for (int k = 0; k < ProductsData.Length; k++)                    // クライアントの取引物の回数回す
                                 {
-                                    if (database.clients[database.MiniClieNo].Transactions[k] == database.manufacturers[j].Products)  // 取引物と要求物は同じか
+                                    if (ProductsData[k] == database.manufacturers[j].Products)  // 取引物と要求物は同じか
                                     {
                                         int PageNo = 0;
                                         bool PageSearch = false;
@@ -120,6 +135,8 @@ public class ProductionPageList : MonoBehaviour
                                         {
                                             ProductionPage page_scr = ListPage[PageNo].GetComponent<ProductionPage>();
                                             page_scr.ProductionCreate(j);
+                                            break;
+
                                         }
                                         else
                                         {
@@ -138,6 +155,7 @@ public class ProductionPageList : MonoBehaviour
                                             {
                                                 ProductionPage page_scr = ListPage[PageNo].GetComponent<ProductionPage>();
                                                 page_scr.ProductionCreate(j);
+                                                break;
                                             }
                                         }
                                     }
@@ -151,11 +169,11 @@ public class ProductionPageList : MonoBehaviour
                 case 2:// 他国
                     for (int j = 0; j < database.manufacturers.Length; j++)// 生産者分forを回す
                     {
-                        if (database.clients[database.MiniClieNo].ClientCountryNo != database.manufacturers[j].ManufacturerCountryNo) // 国は違うか
+                        if (clientdata.sheets[0].list[database.MiniClieNo].int_CountryNo != database.manufacturers[j].ManufacturerCountryNo) // 国は違うか
                         {
-                            for (int k = 0; k < database.clients[database.MiniClieNo].Transactions.Length; k++)                    // クライアントの取引物の回数回す
+                            for (int k = 0; k < ProductsData.Length; k++)                    // クライアントの取引物の回数回す
                             {
-                                if (database.clients[database.MiniClieNo].Transactions[k] == database.manufacturers[j].Products)  // 取引物と要求物は同じか
+                                if (ProductsData[k] == database.manufacturers[j].Products)  // 取引物と要求物は同じか
                                 {
                                     int PageNo = 0;
                                     bool PageSearch = false;
@@ -174,6 +192,7 @@ public class ProductionPageList : MonoBehaviour
                                     {
                                         ProductionPage page_scr = ListPage[PageNo].GetComponent<ProductionPage>();
                                         page_scr.MarkProductionCreate(j, MarkUI);
+                                        break;
                                     }
                                     else
                                     {
@@ -192,6 +211,7 @@ public class ProductionPageList : MonoBehaviour
                                         {
                                             ProductionPage page_scr = ListPage[PageNo].GetComponent<ProductionPage>();
                                             page_scr.MarkProductionCreate(j, MarkUI);
+                                            break;
                                         }
                                     }
                                 }

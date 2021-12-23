@@ -8,6 +8,9 @@ public class Unemployed_Onodera : MonoBehaviour
     [SerializeField] GameObject Object1;
     [SerializeField] GameObject Object2;
     [SerializeField] GameObject Object3;
+    [SerializeField] GameObject icon1;
+    [SerializeField] GameObject icon2;
+    [SerializeField] GameObject icon3;
     public int UnempCountry = 0;//失業者の国 
     public int UnempArea = 0;//失業者の地域　
     public int Unempstate = 1;//状態
@@ -18,14 +21,17 @@ public class Unemployed_Onodera : MonoBehaviour
     int Arealv;
     int startturn;//国解放時のターン
     int myturn;//解放されてからのターン
-    void Start()
+    public void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
         Arealv = Areamanager_Onodera.GetArealv(UnempCountry, UnempArea);
+        turnget = 0;
+        turncheck = 0;
         startturn = database.TurnNum;
         myturn = startturn;
+        
     }
-
+    
 
 
     // Update is called once per frame
@@ -89,6 +95,9 @@ public class Unemployed_Onodera : MonoBehaviour
             Object1.SetActive(true);
             Object2.SetActive(false);
             Object3.SetActive(false);
+            icon1.SetActive(true);
+            icon2.SetActive(false);
+            icon3.SetActive(false);
         }
         if (Unempstate == 2)//虫の息
         {
@@ -101,6 +110,9 @@ public class Unemployed_Onodera : MonoBehaviour
             Object1.SetActive(false);
             Object2.SetActive(true);
             Object3.SetActive(false);
+            icon1.SetActive(false);
+            icon2.SetActive(true);
+            icon3.SetActive(false);
         }
 
 
@@ -109,6 +121,9 @@ public class Unemployed_Onodera : MonoBehaviour
             Object1.SetActive(false);
             Object2.SetActive(false);
             Object3.SetActive(true);
+            icon1.SetActive(false);
+            icon2.SetActive(false);
+            icon3.SetActive(true);
         }
     }
 }

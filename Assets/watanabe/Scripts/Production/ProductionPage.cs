@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ProductionPage : MonoBehaviour
 {
     public List<GameObject> ChildProFrame = new List<GameObject>(); // 子のProductionFrame
-    //public List<GameObject> ChildProduction = new List<GameObject>(); // 子のProduction
+
     [SerializeField] private Production Production_obj;
     public bool isAllUse; //全てのProductionFrameにProductionが設置されていたらtrue;
 
