@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Drone1_Tanaka : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
 
     GameObject drone;
 

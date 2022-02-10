@@ -3,7 +3,12 @@ guid: e143b92734f4f064cba00405c596f218
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - genti: {instanceID: 0}
+  - drone1: {instanceID: 0}
+  - drone2: {instanceID: 0}
+  - drone3: {instanceID: 0}
+  - database: {fileID: 11400000, guid: 9ba35805146784549a28089b0ebe3f0a, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

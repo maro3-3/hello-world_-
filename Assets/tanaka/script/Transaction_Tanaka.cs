@@ -7,7 +7,7 @@ using System.IO;
 //Žæˆø
 public class Transaction_Tanaka : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
     ListManufacture ManuList;
 
 

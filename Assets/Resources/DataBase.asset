@@ -17,7 +17,7 @@ MonoBehaviour:
   PossessionDroneNum: 0
   TempingDroneNum: 0
   ExtensionStage: 0
-  TurnNum: 5
+  TurnNum: 1
   MissionState: 0
   Win: 0
   Lose: 0

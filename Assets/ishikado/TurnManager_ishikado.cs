@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurnManager_ishikado : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
     GameObject transaction;　//宣言 
 
     // Start is called before the first frame update

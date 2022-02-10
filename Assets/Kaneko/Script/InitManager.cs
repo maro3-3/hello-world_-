@@ -6,7 +6,7 @@ using System.IO;
 
 public class InitManager : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
     ClientData clientData = null;
     ListManufacture ManuList;
     ListCountry CountryList;
@@ -119,7 +119,7 @@ public class InitManager : MonoBehaviour
             database.RewartState[i] = MissionList.sheets[0].list[i].int_RewardState;
         }
 
-        
+       
     }
 
 }
