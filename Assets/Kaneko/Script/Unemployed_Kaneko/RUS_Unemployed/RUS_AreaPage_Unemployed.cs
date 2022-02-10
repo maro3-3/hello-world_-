@@ -6,9 +6,12 @@ using UnityEngine.EventSystems;
 
 public class RUS_AreaPage_Unemployed : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] GameObject ClientPanel;
-    [SerializeField] GameObject ManufacturerPanel;
-    [SerializeField] GameObject UnemployedPanel;
+    [SerializeField] GameObject Client_Page1Panel;
+    [SerializeField] GameObject Client_Page2Panel;
+    [SerializeField] GameObject Manufacturer_Page1Panel;
+    [SerializeField] GameObject Manufacturer_Page2Panel;
+    [SerializeField] GameObject Unemployed_Page1Panel;
+    [SerializeField] GameObject Unemployed_Page2Panel;
     [SerializeField] GameObject CHN_AreaPage_UnemployedPanel;
     [SerializeField] GameObject USA_AreaPage_UnemployedPanel;
     [SerializeField] GameObject RUS_AreaPage_UnemployedPanel;
@@ -18,8 +21,10 @@ public class RUS_AreaPage_Unemployed : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
-        ClientPanel.SetActive(false);
-        ManufacturerPanel.SetActive(false);
+        Client_Page1Panel.SetActive(false);
+        Client_Page2Panel.SetActive(false);
+        Manufacturer_Page1Panel.SetActive(false);
+        Manufacturer_Page2Panel.SetActive(false);
         CHN_AreaPage_UnemployedPanel.SetActive(false);
         USA_AreaPage_UnemployedPanel.SetActive(false);
         AUS_AreaPage_UnemployedPanel.SetActive(false);

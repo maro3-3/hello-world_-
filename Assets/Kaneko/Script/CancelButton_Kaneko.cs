@@ -7,9 +7,12 @@ using UnityEngine.EventSystems;
 public class CancelButton_Kaneko : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private GameObject BG_Panel;
-    [SerializeField] private GameObject Client_Panel;
-    [SerializeField] private GameObject Manufacturer_Panel;
-    [SerializeField] private GameObject Unemployed_Panel;
+    [SerializeField] private GameObject Client_Page1_Panel;
+    [SerializeField] private GameObject Client_Page2_Panel;
+    [SerializeField] private GameObject Manufacturer_Page1_Panel;
+    [SerializeField] private GameObject Manufacturer_Page2_Panel;
+    [SerializeField] private GameObject Unemployed_Page1_Panel;
+    [SerializeField] private GameObject Unemployed_Page2_Panel;
     [SerializeField] private GameObject CHN_Beijing_ClientList_Panel;    // 中国北京クライアントページ
     [SerializeField] private GameObject CHN_Beijing_ManuList_Panel;      // 中国北京生産者ページ
 
@@ -23,7 +26,6 @@ public class CancelButton_Kaneko : MonoBehaviour, IPointerClickHandler
 
     [SerializeField] private Vector3 ClientStartPos;
     [SerializeField] private Vector3 ManufacturerStartPos;
-
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -54,14 +56,20 @@ public class CancelButton_Kaneko : MonoBehaviour, IPointerClickHandler
         // 中国地域リストに戻る
     }
 
+    void Start()
+    {
+        //ManufacturerStartPos = Manufacturer_Panel.transform.position;
+        //ClientStartPos = Client_Panel.transform.position;
+        
+    }
     // 一番最初の画面に戻る
     private void StartPage_ChangeActive()
     {
         // クライアントと生産者を元の場所に戻す
-        GameObject Ccild = Client_Panel.transform.GetChild(0).gameObject;
-        Ccild.transform.position = ClientStartPos;
-        GameObject Mcild = Manufacturer_Panel.transform.GetChild(0).gameObject;
-        Mcild.transform.position = ManufacturerStartPos;
+        Manufacturer_Page1_Panel.transform.position = ManufacturerStartPos;
+        Manufacturer_Page2_Panel.transform.position = ManufacturerStartPos;
+        Client_Page1_Panel.transform.position = ClientStartPos;
+        Client_Page2_Panel.transform.position = ClientStartPos;
 
         if (CHN_Aria_ClientList_Panel.activeInHierarchy == true)
             CHN_Aria_ClientList_Panel.SetActive(false);
@@ -72,9 +80,12 @@ public class CancelButton_Kaneko : MonoBehaviour, IPointerClickHandler
         
         // BG・クライアント・生産者・失業者を表示
         BG_Panel.SetActive(true);
-        Client_Panel.SetActive(true);
-        Manufacturer_Panel.SetActive(true);
-        Unemployed_Panel.SetActive(true);
+        Client_Page1_Panel.SetActive(true);
+        Client_Page2_Panel.SetActive(false);
+        Manufacturer_Page1_Panel.SetActive(true);
+        Manufacturer_Page2_Panel.SetActive(false);
+        Unemployed_Page1_Panel.SetActive(true);
+        Unemployed_Page2_Panel.SetActive(false);
     }
 
     // 中国北京失業者リストに戻る
@@ -92,7 +103,7 @@ public class CancelButton_Kaneko : MonoBehaviour, IPointerClickHandler
     {
         CHN_Beijing_Unemployed_Panel.SetActive(false);
         BG_Panel.SetActive(true);
-        Unemployed_Panel.SetActive(true);
+        Unemployed_Page1_Panel.SetActive(true);
         CHN_Aria_UnemployedMenu_Panel.SetActive(true);
 
     }
@@ -101,7 +112,7 @@ public class CancelButton_Kaneko : MonoBehaviour, IPointerClickHandler
     {
         CHN_Beijing_ManuA_Panel.SetActive(false);
         BG_Panel.SetActive(true);
-        Manufacturer_Panel.SetActive(true);
+        Manufacturer_Page1_Panel.SetActive(true);
         CHN_Beijing_ManuList_Panel.SetActive(true);
 
     }
@@ -110,7 +121,7 @@ public class CancelButton_Kaneko : MonoBehaviour, IPointerClickHandler
     {
         CHN_Beijing_ClientA_Panel.SetActive(false);
         BG_Panel.SetActive(true);
-        Client_Panel.SetActive(true);
+        Client_Page1_Panel.SetActive(true);
         CHN_Beijing_ClientList_Panel.SetActive(true);
 
     }

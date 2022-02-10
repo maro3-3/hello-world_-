@@ -8,7 +8,6 @@ public class U_NextPage_kaneko : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private GameObject NextPage;
     [SerializeField] private GameObject PreviousPage;
-
     public void OnPointerClick(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
@@ -19,12 +18,6 @@ public class U_NextPage_kaneko : MonoBehaviour, IPointerClickHandler
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

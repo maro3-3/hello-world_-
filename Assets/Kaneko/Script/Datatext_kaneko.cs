@@ -14,17 +14,6 @@ public class Datatext_kaneko : MonoBehaviour
     [SerializeField] private Text TempingDroneNumT;
     [SerializeField] private Text TurnNumT;// ƒ^[ƒ“
 
-
-    // ¶YÒ
-    [SerializeField] private Text[] CHN_Beijing_manuNameList  = new Text[2];   // ’†‘–k‹¶YÒ–¼‘O
-    [SerializeField] private Text[] CHN_Shanghai_manuNameList = new Text[2];   // ’†‘ãŠC¶YÒ–¼‘O
-    [SerializeField] private Text[] CHN_Sichuan_manuNameList  = new Text[5];   // ’†‘lì¶YÒ–¼‘O
-
-    [SerializeField] private Text[] CHN_Beijing_manufacturerName  = new Text[2];        // ’†‘–k‹¶YÒ–¼‘O
-    [SerializeField] private Text[] CHN_Beijing_manuLaborForce    = new Text[2];          // ’†‘–k‹˜J“­—Í
-    [SerializeField] private Text[] CHN_Beijing_manuAmountofSales = new Text[2];       // ’†‘–k‹˜J“­—Í
-    [SerializeField] private Text[] CHN_Beijing_manuTotalassets   = new Text[2];         // ’†‘–k‹‘‘Y
-
     [SerializeField] private Text[] CHN_Beijing_manuPage_ClientName = new Text[2];        // ’†‘–k‹ƒNƒ‰ƒCƒAƒ“ƒg–¼‘O
     [SerializeField] private Text[] CHN_Beijing_Clientpage_RequNum = new Text[2];        // ’†‘–k‹—v‹”
     [SerializeField] private Text[] CHN_Beijing_Clientpage_Pays = new Text[2];        // ’†‘–k‹—v‹”
@@ -49,20 +38,6 @@ public class Datatext_kaneko : MonoBehaviour
         TempingDroneNumT.text = database.TempingDroneNum.ToString();
         TurnNumT.text = database.TurnNum.ToString();
 
-        CHN_Beijing_manuNameList[0].text = database.manufacturers[0].ManufacturerName.ToString();
-        CHN_Beijing_manuNameList[1].text = database.manufacturers[1].ManufacturerName.ToString();
-        //CHN_Shanghai_manuNameList[0].text = database.manufacturers[2].ManufacturerName.ToString();
-        //CHN_Shanghai_manuNameList[1].text = database.manufacturers[3].ManufacturerName.ToString();
-        //CHN_Sichuan_manuNameList[0].text = database.manufacturers[4].ManufacturerName.ToString();
-        //CHN_Sichuan_manuNameList[1].text = database.manufacturers[5].ManufacturerName.ToString();
-        //CHN_Sichuan_manuNameList[2].text = database.manufacturers[6].ManufacturerName.ToString();
-        //CHN_Sichuan_manuNameList[3].text = database.manufacturers[7].ManufacturerName.ToString();
-        //CHN_Sichuan_manuNameList[4].text = database.manufacturers[8].ManufacturerName.ToString();
-
-        CHN_Beijing_manufacturerName[0].text = database.manufacturers[0].ManufacturerName.ToString();
-        CHN_Beijing_manuLaborForce[0].text = database.manufacturers[0].LaborForce.ToString();
-        CHN_Beijing_manuAmountofSales[0].text = database.manufacturers[0].AmountofSales.ToString();
-        CHN_Beijing_manuTotalassets[0].text = database.manufacturers[0].Totalassets.ToString();
 
         //CHN_Beijing_manuPage_ClientName[0].text = clientData.CHN_Beijing_Clients[0].CHN_Beijing_ClientName.ToString();
         //CHN_Beijing_manuPage_ClientName[1].text = clientData.CHN_Beijing_Clients[1].CHN_Beijing_ClientName.ToString();

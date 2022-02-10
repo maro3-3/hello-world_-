@@ -11,21 +11,7 @@ public class C_PreviousPage_kaneko : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        //throw new System.NotImplementedException();
         NextPage.SetActive(false);
         PreviousPage.SetActive(true);
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
