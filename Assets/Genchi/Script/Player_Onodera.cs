@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Player_Onodera : MonoBehaviour
 {
 
+
     [SerializeField] private Vector3 velocity;              // ˆÚ“®•ûŒü
     [SerializeField] private float moveSpeed = 5.0f;        // ˆÚ“®‘¬“x
     [SerializeField] GameObject mae;
@@ -65,7 +66,7 @@ public class Player_Onodera : MonoBehaviour
         velocity = Vector3.zero;
         if (Input.GetKey(KeyCode.S))
         {
-            walkcount += 0.02f;
+            walkcount += 0.1f;
             velocity.z -= 1;
             mae.SetActive(true);
             usiro.SetActive(false);
@@ -77,8 +78,8 @@ public class Player_Onodera : MonoBehaviour
             hidari4.SetActive(false);
             hidari5.SetActive(false);
             hidari6.SetActive(false);
-            migi.SetActive(false);
-            migi.SetActive(false);
+            migi1.SetActive(false);
+            migi2.SetActive(false);
             migi3.SetActive(false);
             migi4.SetActive(false);
             migi5.SetActive(false);
@@ -165,6 +166,7 @@ public class Player_Onodera : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.D))
         {
+            walkcount += 0.1f;
             velocity.x += 1;
             mae.SetActive(false);
             usiro.SetActive(false);
@@ -263,6 +265,7 @@ public class Player_Onodera : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.W))
         {
+            walkcount += 0.1f;
             velocity.z += 1;
             mae.SetActive(false);
             usiro.SetActive(true);
@@ -280,8 +283,8 @@ public class Player_Onodera : MonoBehaviour
             hidari4.SetActive(false);
             hidari5.SetActive(false);
             hidari6.SetActive(false);
-            migi.SetActive(false);
-            migi.SetActive(false);
+            migi1.SetActive(false);
+            migi2.SetActive(false);
             migi3.SetActive(false);
             migi4.SetActive(false);
             migi5.SetActive(false);
@@ -361,7 +364,7 @@ public class Player_Onodera : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            walkcount += 0.02f;
+            walkcount +=  0.1f;
             velocity.x -= 1;
             mae.SetActive(false);
             usiro.SetActive(false);
@@ -373,8 +376,8 @@ public class Player_Onodera : MonoBehaviour
             mae4.SetActive(false);
             mae5.SetActive(false);
             mae6.SetActive(false);
-            migi.SetActive(false);
-            migi.SetActive(false);
+            migi1.SetActive(false);
+            migi2.SetActive(false);
             migi3.SetActive(false);
             migi4.SetActive(false);
             migi5.SetActive(false);
@@ -470,8 +473,8 @@ public class Player_Onodera : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.D))
         {
             migi.SetActive(true);
-            migi.SetActive(false);
-            migi.SetActive(false);
+            migi1.SetActive(false);
+            migi2.SetActive(false);
             migi3.SetActive(false);
             migi4.SetActive(false);
             migi5.SetActive(false);
