@@ -113,7 +113,7 @@ public class Enemy : MonoBehaviour
         if (m_Hp <= 5)
         {
             SetState(EnemyState.THREE);
-            m_ShotInterval = 0.6f;
+            m_ShotInterval = 0.85f;
         }
     }
 

@@ -40,7 +40,7 @@ public class ProductionPageList : MonoBehaviour
         isSearch = true;
         isSend = false;
 
-        //PageCreate(PageUI); // 一枚目のページを生成
+        PageCreate(PageUI); // 一枚目のページを生成
         Debug.Log("再生成確認");
         // 生産者生成
         for (int i = 0; i < 3; i++) // 地域内、国内、国外の三種類分
@@ -319,7 +319,7 @@ public class ProductionPageList : MonoBehaviour
         // ページの位置を初期化。
         Transform myTrans = Page.transform;
         Vector3 pos = myTrans.localPosition;
-        pos.x = 0.0f;
+        pos.x = -18.9f;
         pos.y = -25.0f;
         myTrans.localPosition = pos;
 
