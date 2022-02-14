@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class NewClient_Onodera : MonoBehaviour
 {
     DataBase database = null;
+    ClientData clientdata = null;
     public int ClieCountry = 0;//クライアントの国 
     public int ClieArea = 0;//クライアントの地域　
     public int ClieNum = 0;
@@ -29,18 +30,24 @@ public class NewClient_Onodera : MonoBehaviour
     bool cliapp = false;
     //private int appNum = -1;
 
+    int g_num = 0;
+
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
+        clientdata = Resources.Load<ClientData>("ClientData");
         Arealv = Areamanager_Onodera.GetArealv(ClieCountry, ClieArea);
         //ClieLv = database.clients[Arealv].ClientLv;
          Clitable = -1;
-
+        g_num = 0;
         Areamanager_Onodera.UpdataClim();
 
         cliapp = false;
         Client.SetActive(false);
         audioSource = GetComponent<AudioSource>();
+
+
+        
     }
 
     void Update()
@@ -137,6 +144,66 @@ public class NewClient_Onodera : MonoBehaviour
         }
 
 
+        if (Arealv == 0)
+        {
+            g_num = clientdata.CHN_Beijing_Clients[0].CHN_Beijing_Performance;
+        }
+        else if (Arealv == 1)
+        {
+            g_num = clientdata.CHN_Shanghai_Clients[0].CHN_Shanghai_Performance;
+        }
+        else if (Arealv == 2)
+        {
+            g_num = clientdata.CHN_Sichuan_Clients[0].CHN_Sichuan_Performance;
+        }
+        else if (Arealv == 3)
+        {
+            g_num = clientdata.USA_NewYork_Clients[0].USA_NewYork_Performance;
+        }
+        else if (Arealv == 4)
+        {
+            g_num = clientdata.USA_StLouis_Clients[0].USA_StLouis_Performance;
+        }
+        else if (Arealv == 5)
+        {
+            g_num = clientdata.USA_Atlanta_Clients[0].USA_Atlanta_Performance;
+        }
+        else if (Arealv == 6)
+        {
+            g_num = clientdata.RUS_Moscow_Clients[0].RUS_Moscow_Performance;
+        }
+        else if (Arealv == 7)
+        {
+            g_num = clientdata.RUS_Ufa_Clients[0].RUS_Ufa_Performance;
+        }
+        else if (Arealv == 8)
+        {
+            g_num = clientdata.AUS_Canberra_Clients[0].AUS_Canberra_Performance;
+        }
+        else if (Arealv == 9)
+        {
+            g_num = clientdata.AUS_Perth_Clients[0].AUS_Perth_Performance;
+        }
+        else if (Arealv == 10)
+        {
+            g_num = clientdata.AUS_Melbourne_Clients[0].AUS_Melbourne_Performance;
+        }
+        else if (Arealv == 11)
+        {
+            g_num = clientdata.ZAF_Pretoria_Clients[0].ZAF_Pretoria_Performance;
+        }
+        else if (Arealv == 12)
+        {
+            g_num = clientdata.ZAF_Bloemfontein_Clients[0].ZAF_Bloemfontein_Performance;
+        }
+        else if (Arealv == 13)
+        {
+            g_num = clientdata.ZAF_CapeTown_Clients[0].ZAF_CapeTown_Performance;
+        }
+
+
+
+
         if (this.timer > 0)
         {
             this.timer -= Time.deltaTime;
@@ -159,16 +226,17 @@ public class NewClient_Onodera : MonoBehaviour
             }
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 1000)
+               //int num = database.clients[Arealv].Performance;
+                
+                if (g_num >= 1000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 5 || Arealv == 8)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 500)
+       //         int num = database.clients[Arealv].Performance;
+                if (g_num >= 500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -184,32 +252,32 @@ public class NewClient_Onodera : MonoBehaviour
             }
             if (Arealv == 2 || Arealv == 5 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 1000)
+       //         int num = database.clients[Arealv].Performance;
+                if (g_num >= 1000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 2000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 2000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 4 || Arealv == 7 || Arealv == 8)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 1500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 1500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 500)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -224,40 +292,40 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0 || Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 1500)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 1500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 1000)
+        //        int num = database.clients[Arealv].Performance;
+                if (g_num >= 1000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 4 || Arealv == 9 || Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 2000)
+        //        int num = database.clients[Arealv].Performance;
+                if (g_num >= 2000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 3000)
+             //   int num = database.clients[Arealv].Performance;
+                if (g_num >= 3000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 2500)
+        //        int num = database.clients[Arealv].Performance;
+                if (g_num >= 2500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -271,40 +339,40 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0 || Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 3000)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 3000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 3 || Arealv == 13 )
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 4000)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 4000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 5 || Arealv == 6 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 2000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 2000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 2500)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 2500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 11 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 3500)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 3500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -316,40 +384,40 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0 || Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 4500)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 4500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 4 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 3000)
+              //  int num = database.clients[Arealv].Performance;
+                if (g_num >= 3000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2|| Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 4000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 4000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 3 || Arealv == 11 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 5000)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 5000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 2500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 2500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -361,40 +429,40 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0 || Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 6000)
+       //         int num = database.clients[Arealv].Performance;
+                if (g_num >= 6000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 4000)
+        //        int num = database.clients[Arealv].Performance;
+                if (g_num >= 4000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 5000)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 5000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 3500)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 3500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 3000)
+        //        int num = database.clients[Arealv].Performance;
+                if (g_num >= 3000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -402,16 +470,16 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 5500)
+        //        int num = database.clients[Arealv].Performance;
+                if (g_num >= 5500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 6500)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 6500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -423,40 +491,40 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0 )
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 7500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 5000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 5000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 6000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 6000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 4000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 4000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if ( Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7000)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 7000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -464,24 +532,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 3500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 3500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 8000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8000)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 8000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -493,24 +561,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 9000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 6000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 6000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 7000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -518,8 +586,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 8000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -527,8 +595,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 4500)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 4500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -536,24 +604,24 @@ public class NewClient_Onodera : MonoBehaviour
             
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 4000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 4000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 9500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 7500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -565,24 +633,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 10500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 10500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 7000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 8000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -590,8 +658,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 9000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -599,8 +667,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 5000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 5000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -608,24 +676,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 4500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 4500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 11000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 11000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 8500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -637,24 +705,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 12000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 12000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 8000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 9000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -662,8 +730,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 10000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 10000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -671,8 +739,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 5500)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 5500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -680,24 +748,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 5000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 5000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 12500)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 12500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9500)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 9500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -709,24 +777,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 13500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 13500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 9000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 10000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 10000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -734,8 +802,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 11000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 11000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -743,8 +811,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 6000)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 6000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -752,24 +820,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 5500)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 5500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 14000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 14000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 10500)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 10500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -781,24 +849,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 15000)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 15000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 10000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 10000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 11000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 11000)
                 {
                     Client.SetActive(true);
                 }
@@ -806,8 +874,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 12000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 12000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -815,8 +883,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 6500)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 6500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -824,24 +892,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 6000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 6000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 15500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 15500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 11500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 11500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -853,24 +921,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 16500)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 16500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 11000)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 11000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 12000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 12000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -878,8 +946,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 13000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 13000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -887,8 +955,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 7000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -896,24 +964,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 6500)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 6500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 17000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 17000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 12500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 12500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -926,24 +994,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 18000)
+         //       int num = database.clients[Arealv].Performance;
+                if (g_num >= 18000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 12000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 12000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 13000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 13000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -951,8 +1019,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 14000)
+             //   int num = database.clients[Arealv].Performance;
+                if (g_num >= 14000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -960,8 +1028,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7500)
+              //  int num = database.clients[Arealv].Performance;
+                if (g_num >= 7500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -969,24 +1037,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7000)
+              //  int num = database.clients[Arealv].Performance;
+                if (g_num >= 7000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 18500)
+              //  int num = database.clients[Arealv].Performance;
+                if (g_num >= 18500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 13500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 13500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -999,24 +1067,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 19500)
+             //   int num = database.clients[Arealv].Performance;
+                if (g_num >= 19500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 13000)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 13000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 14000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 14000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1024,8 +1092,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 15000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 15000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1033,8 +1101,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 8000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1042,24 +1110,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 7500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 7500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 20000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 20000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 14500)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 14500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1071,24 +1139,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 21000)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 21000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 14000)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 14000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 15000)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 15000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1096,8 +1164,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 16000)
+              //  int num = database.clients[Arealv].Performance;
+                if (g_num >= 16000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1105,8 +1173,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 8500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1114,24 +1182,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 8000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 21500)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 21500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 15500)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 15500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1143,24 +1211,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 22500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 22500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 15000)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 15000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 2 || Arealv == 9)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 16000)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 16000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1168,8 +1236,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 17000)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 17000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1177,8 +1245,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9000)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 9000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1186,24 +1254,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 8500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 8500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 23000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 23000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 16500)
+                //int num = database.clients[Arealv].Performance;
+                if (g_num >= 16500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1215,16 +1283,16 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 0)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 24000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 24000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 1 || Arealv == 6)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 16000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 16000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1232,7 +1300,7 @@ public class NewClient_Onodera : MonoBehaviour
             if (Arealv == 2 || Arealv == 9)
             {
                 int num = database.clients[Arealv].Performance;
-                if (num >= 17000)
+                if (g_num >= 17000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1240,8 +1308,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 18000)
+              //  int num = database.clients[Arealv].Performance;
+                if (g_num >= 18000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1249,8 +1317,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 9500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1258,24 +1326,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9000)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 9000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 24500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 24500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 17500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 17500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1288,7 +1356,7 @@ public class NewClient_Onodera : MonoBehaviour
             if (Arealv == 0)
             {
                 int num = database.clients[Arealv].Performance;
-                if (num >= 25500)
+                if (g_num >= 25500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1296,7 +1364,7 @@ public class NewClient_Onodera : MonoBehaviour
             if (Arealv == 1 || Arealv == 6)
             {
                 int num = database.clients[Arealv].Performance;
-                if (num >= 17000)
+                if (g_num >= 17000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1304,7 +1372,7 @@ public class NewClient_Onodera : MonoBehaviour
             if (Arealv == 2 || Arealv == 9)
             {
                 int num = database.clients[Arealv].Performance;
-                if (num >= 18000)
+                if (g_num >= 18000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1312,8 +1380,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 3 || Arealv == 13)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 19000)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 19000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1321,8 +1389,8 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 4)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 10000)
+          //      int num = database.clients[Arealv].Performance;
+                if (g_num >= 10000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
@@ -1330,24 +1398,24 @@ public class NewClient_Onodera : MonoBehaviour
 
             if (Arealv == 5 || Arealv == 10)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 9500)
+           //     int num = database.clients[Arealv].Performance;
+                if (g_num >= 9500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 11)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 26000)
+            //    int num = database.clients[Arealv].Performance;
+                if (g_num >= 26000)
                 {
                     Client.SetActive(true); cliapp = true;
                 }
             }
             if (Arealv == 7 || Arealv == 8 || Arealv == 12)
             {
-                int num = database.clients[Arealv].Performance;
-                if (num >= 18500)
+               // int num = database.clients[Arealv].Performance;
+                if (g_num >= 18500)
                 {
                     Client.SetActive(true); cliapp = true;
                 }

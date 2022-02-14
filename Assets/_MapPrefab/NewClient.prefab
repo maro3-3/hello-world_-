@@ -411,6 +411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Client (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4480548565627731018, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3514788271545367334, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
     - {fileID: 7492359433427684247, guid: 9649117218b87e541a50ace81bbf281f, type: 3}
