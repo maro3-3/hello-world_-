@@ -31,8 +31,14 @@ public class InitManager : MonoBehaviour
         TransactionPaysList = Resources.Load("List_ClientTransactionPays") as List_ClientTransactionPays;
 
 
-        // ¸‹ÆÒ‰Šú‰»
         database.UnemployedNum = 0;
+
+        // ¸‹ÆÒ‰Šú‰»
+        for (int i = 0; i < CountryList.sheets[0].list.Count; i++)
+        {
+            database.UnemployedNum += CountryList.sheets[0].list[i].int_UnemployedNum;
+        }
+
         database.EmploymentNum = 0;
 
         // ƒhƒ[ƒ“‰Šú‰»
