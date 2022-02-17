@@ -174,10 +174,6 @@ public class DataBase : ScriptableObject
         public string ManufacturerName;
         public int Performance;             // ‹ÆÑ
 
-
-
-
-
         // ‰Šú‰»ŠÖ”
         public void InitClient(int clientCountryNo, int clientAreaNo, int clientNo, string clientName,
                                int clientLv, int clientType, int transaction,
@@ -247,5 +243,7 @@ public class DataBase : ScriptableObject
     }
     public ClientArrivalTable[] ClientArrivalTables = new ClientArrivalTable[14];
 
+
+   
 
 }

@@ -6,9 +6,7 @@ using UnityEngine.UI;
 public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“–‚·‚éƒAƒCƒeƒ€‚ğƒnƒCƒ‰ƒCƒg•\¦‚·‚é
 {
     [SerializeField] DataBase database;
-
-    [SerializeField] private GameObject Productionlist;
-    ProductionList Proscript;
+    [SerializeField] List_ClientInformation clientdata;
 
     [SerializeField] private GameObject ClientNameText_obj;
     [SerializeField] private Text ClientName_Text;
@@ -25,6 +23,7 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
+        clientdata = Resources.Load("List_ClientInformation") as List_ClientInformation;
 
         ClientNameText_obj = transform.Find("ClientName").gameObject;
         ClientName_Text = ClientNameText_obj.GetComponent<Text>();
@@ -32,13 +31,20 @@ public class ClientList : MonoBehaviour // Productionlist‚ğæ“¾‚µ‚ÄA¶YÒ‚ÉŠY“
         ClientLevelText_obj = transform.Find("ClientLevel").gameObject;
         ClientLevel_Text = ClientLevelText_obj.GetComponent<Text>();
 
+        int[] ProductsData = { clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_1,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_2,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_3,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_4,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_5,
+                               clientdata.sheets[0].list[database.MiniClieNo].int_Transaction_6,};
+
         isSearch = true;
         isSend = false;
 
-        ClientLevel_Text.text = "Lv " + database.clients[database.MiniClieNo].ClientLv;
-        ClientName_Text.text = database.clients[database.MiniClieNo].ClientName;
+        ClientLevel_Text.text = "Lv " + clientdata.sheets[0].list[database.MiniClieNo].int_ClientLv;
+        ClientName_Text.text = clientdata.sheets[0].list[database.MiniClieNo].string_ClientName;
 
-        RequestInit(Requestlist, database.clients[database.MiniClieNo].Transactions);
+        RequestInit(Requestlist, ProductsData);
     }
 
     // Update is called once per frame
