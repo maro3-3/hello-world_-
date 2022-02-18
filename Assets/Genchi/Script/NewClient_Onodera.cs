@@ -32,6 +32,8 @@ public class NewClient_Onodera : MonoBehaviour
 
     int g_num = 0;
 
+    string Area;
+
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
@@ -1448,11 +1450,16 @@ public class NewClient_Onodera : MonoBehaviour
         {
             if (cliapp == true)
             {
+                Area = "Ame_Atlanta";//SceneManager.GetActiveScene().name;
+                database.SceneName = Area;
+
                 int a = num;
                 Object.SetActive(true);
                 database.MiniClieNo = a;//ミニゲームシーンへクライアント情報を渡す
                 if (Input.GetKey(KeyCode.Space))
                 {
+
+
                     this.timer = this.interval;
                     audioSource.Play();
                     
