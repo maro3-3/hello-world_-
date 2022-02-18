@@ -1450,7 +1450,7 @@ public class NewClient_Onodera : MonoBehaviour
         {
             if (cliapp == true)
             {
-                Area = "Ame_Atlanta";//SceneManager.GetActiveScene().name;
+                Area = SceneManager.GetActiveScene().name;
                 database.SceneName = Area;
 
                 int a = num;
@@ -1462,7 +1462,7 @@ public class NewClient_Onodera : MonoBehaviour
 
                     this.timer = this.interval;
                     audioSource.Play();
-                    
+
                     Client.SetActive(true);
                     //SceneManager.LoadScene("minigame");
                     StartCoroutine("GoToGameScene");
