@@ -86,6 +86,8 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         database = Resources.Load<DataBase>("DataBase");
         clientdata = Resources.Load("List_ClientInformation") as List_ClientInformation;
 
+        intLog = database.LogisticsRights;
+
         FairTrade = false;
         isWin = false;
         isLose = false;
@@ -102,6 +104,10 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         {
             UImanager[3].UICreate(UIimage[(int)UILIST.LOGISTICS]);
             UImanager[4].UICreate(UIimage[(int)UILIST.LOGEXPLAN]);
+        }
+        else
+        {
+            UImanager[4].UICreate(UIimage[(int)UILIST.BLUEPLAN]);
         }
         UImanager[5].UICreate(UIimage[(int)UILIST.STEPBACK]);
         UImanager[6].UICreate(UIimage[(int)UILIST.PLAYERIMAGE]);
@@ -184,7 +190,8 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
         if (stepback) // 戻るを押した場合
         {
-            SceneManager.LoadScene("Genchi");
+            SceneManager.LoadScene(database.SceneName);
+            BGMManager.Instance.Stop();
         }
     }
 
@@ -314,7 +321,8 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             Debug.Log(ClientNum);
 
             SEManager.Instance.Play("MiniGenchi");
-            SceneManager.LoadScene("Genchi");
+            SceneManager.LoadScene(database.SceneName);
+            BGMManager.Instance.Stop();
         }
     }
 
@@ -326,7 +334,8 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         }
         if (Input.GetKeyDown("space")) // スペース押したら現地画面へ遷移
         {
-            SceneManager.LoadScene("Genchi");
+            SceneManager.LoadScene(database.SceneName);
+            BGMManager.Instance.Stop();
         }
     }
 
