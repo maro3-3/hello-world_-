@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ProductionPage : MonoBehaviour
 {
     public List<GameObject> ChildProFrame = new List<GameObject>(); // 子のProductionFrame
-    //public List<GameObject> ChildProduction = new List<GameObject>(); // 子のProduction
+
     [SerializeField] private Production Production_obj;
     public bool isAllUse; //全てのProductionFrameにProductionが設置されていたらtrue;
 
@@ -125,13 +125,16 @@ public class ProductionPage : MonoBehaviour
         OBJ.production = database.manufacturers[no].Products;
         OBJ.thisNo = no;
         ChildProFrame[Frame_no].GetComponent<ProductionFrame>().Init();
+        // 位置調整
+        //Transform objTrans = OBJ.transform;
+        //Vector3 pos = objTrans.localPosition;
 
         // 高難易度マーク生成、調整
         GameObject Mark_obj = Instantiate(mark);
         Mark_obj.name = mark.name;
         Transform myTrans = Mark_obj.transform;
         Vector3 pos = myTrans.localPosition;
-        pos.x = 45.0f;
+        pos.x = 35.0f;
         pos.y = 0.0f;
         myTrans.localPosition = pos;
         Mark_obj.transform.SetParent(OBJ.transform, false);

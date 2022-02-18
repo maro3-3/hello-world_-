@@ -9,6 +9,7 @@ using KanKikuchi.AudioManager;
 public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 {
     [SerializeField] DataBase database;
+    [SerializeField] List_ClientInformation clientdata;
 
     public enum MINIGAMESTEP
     {
@@ -40,6 +41,9 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         WIN,
         LOSE,
         RESULTPLAN,
+        PLAYERIMAGE,
+        ENEMYIMAGE,
+        BLUEPLAN,
     }
     public Image[] UIimage;
 
@@ -80,7 +84,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
     void Start()
     {
         database = Resources.Load<DataBase>("DataBase");
-
+        clientdata = Resources.Load("List_ClientInformation") as List_ClientInformation;
 
         FairTrade = false;
         isWin = false;
@@ -94,14 +98,14 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         UImanager[0].UICreate(UIimage[(int)UILIST.CLIENT]);
         UImanager[1].UICreate(UIimage[(int)UILIST.PRODUCTION]);
         UImanager[2].UICreate(UIimage[(int)UILIST.PRODUCTIONCHOICE]);
-
-        if ( 0 < intLog)
+        if (0 < intLog)
         {
             UImanager[3].UICreate(UIimage[(int)UILIST.LOGISTICS]);
             UImanager[4].UICreate(UIimage[(int)UILIST.LOGEXPLAN]);
         }
-
-        
+        UImanager[5].UICreate(UIimage[(int)UILIST.STEPBACK]);
+        UImanager[6].UICreate(UIimage[(int)UILIST.PLAYERIMAGE]);
+        UImanager[7].UICreate(UIimage[(int)UILIST.ENEMYIMAGE]);
 
         Step = MINIGAMESTEP.ONE;
 
@@ -162,10 +166,25 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         {
             UImanager[0].UIDestroy();
             UImanager[2].UIDestroy();
+            UImanager[5].UIDestroy();
+            //UImanager[6].UIDestroy();
+            //UImanager[7].UIDestroy();
             UImanager[0].UICreate(UIimage[(int)UILIST.PAYMENT]);
             UImanager[2].UICreate(UIimage[(int)UILIST.PAYMENTCHOICE]);
             UImanager[5].UICreate(UIimage[(int)UILIST.STEPBACK]);
             Step = MINIGAMESTEP.TWO;
+        }
+
+        if (boolLog) // 物流権を使用した場合UI削除
+        {
+            UImanager[3].UIDestroy();
+            UImanager[4].UIDestroy();
+            UImanager[4].UICreate(UIimage[(int)UILIST.BLUEPLAN]);
+        }
+
+        if (stepback) // 戻るを押した場合
+        {
+            SceneManager.LoadScene("Genchi");
         }
     }
 
@@ -183,8 +202,10 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
                 UImanager[3].UICreate(UIimage[(int)UILIST.LOGISTICS]);
                 UImanager[4].UICreate(UIimage[(int)UILIST.LOGEXPLAN]);
             }
-
-            if(boolLog) intLog += 1; boolLog = false;
+            UImanager[5].UICreate(UIimage[(int)UILIST.STEPBACK]);
+            UImanager[6].UICreate(UIimage[(int)UILIST.PLAYERIMAGE]);
+            UImanager[7].UICreate(UIimage[(int)UILIST.ENEMYIMAGE]);
+            if (boolLog) intLog += 1; boolLog = false;
             if (FairTrade) FairTrade = false;
             ProductionSend = false;
             stepback = false;
@@ -192,20 +213,23 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             Debug.Log("一段階戻ります。");
         }
 
-        if(boolLog) // 物流権を使用した場合UI削除
+        if (boolLog) // 物流権を使用した場合UI削除
         {
             UImanager[3].UIDestroy();
             UImanager[4].UIDestroy();
+            UImanager[5].UIDestroy();
+            UImanager[4].UICreate(UIimage[(int)UILIST.BLUEPLAN]);
+            UImanager[5].UICreate(UIimage[(int)UILIST.STEPBACK]);
         }
 
-        if(AmountSend)
+        if (AmountSend)
         {
             UIAllDestroy();
 
             Step = MINIGAMESTEP.THREE;
             Game.SetActive(true);
 
-            UImanager[4].UICreate(UIimage[(int)UILIST.VS]);
+            //UImanager[4].UICreate(UIimage[(int)UILIST.VS]);
 
         BGMManager.Instance.Play("Standby", 1, 0, 1, true, false);
         }
@@ -220,7 +244,9 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.LOSE]);
-            UImanager[4].UICreate(UIimage[(int)UILIST.RESULTPLAN]);
+            UImanager[4].UICreate(UIimage[(int)UILIST.BLUEPLAN]);
+            UImanager[6].UICreate(UIimage[(int)UILIST.PLAYERIMAGE]);
+            UImanager[7].UICreate(UIimage[(int)UILIST.ENEMYIMAGE]);
             database.Lose = true;
             Step = MINIGAMESTEP.LOSE;
             Game.SetActive(false);
@@ -235,10 +261,11 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             UImanager[0].UICreate(UIimage[(int)UILIST.RESULTCLIENT]);
             UImanager[1].UICreate(UIimage[(int)UILIST.RESULTPRODUCTION]);
             UImanager[2].UICreate(UIimage[(int)UILIST.WIN]);
-            UImanager[4].UICreate(UIimage[(int)UILIST.RESULTPLAN]);
-
+            UImanager[4].UICreate(UIimage[(int)UILIST.BLUEPLAN]);
+            UImanager[6].UICreate(UIimage[(int)UILIST.PLAYERIMAGE]);
+            UImanager[7].UICreate(UIimage[(int)UILIST.ENEMYIMAGE]);
             database.Win = true;
-            //database.manufacturers[ProductionNo].BusinessPartnerClient = database.MiniClieNo;
+
             database.Amount = AmountData;
             Step = MINIGAMESTEP.WIN;
             Game.SetActive(false);
@@ -276,6 +303,16 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         }
         if (Input.GetKeyDown("space")) // スペース押したら現地画面へ遷移
         {
+            int ClientNum = 0;
+
+            ClientNum += clientdata.sheets[0].list[database.MiniClieNo].int_CountryNo * 1;
+            ClientNum += clientdata.sheets[0].list[database.MiniClieNo].int_AreaNo * 100;
+            ClientNum += clientdata.sheets[0].list[database.MiniClieNo].int_ClientNo * 10000;
+
+            database.manufacturers[ProductionNo].BusinessPartnerClient.Add(ClientNum);
+
+            Debug.Log(ClientNum);
+
             SEManager.Instance.Play("MiniGenchi");
             SceneManager.LoadScene("Genchi");
         }

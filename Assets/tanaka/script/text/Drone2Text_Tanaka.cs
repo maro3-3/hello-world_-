@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Drone2Text_Tanaka : MonoBehaviour
 {
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
     [SerializeField] int area;
     [SerializeField] Text a;
     [SerializeField] Text b;

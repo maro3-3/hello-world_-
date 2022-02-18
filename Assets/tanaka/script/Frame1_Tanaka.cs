@@ -15,7 +15,7 @@ public class Frame1_Tanaka : MonoBehaviour
 
 
 
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
     // Start is called before the first frame update
     void Start()
     {

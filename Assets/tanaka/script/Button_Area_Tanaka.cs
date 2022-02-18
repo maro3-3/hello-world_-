@@ -20,6 +20,10 @@ public class Button_Area_Tanaka : MonoBehaviour
     [SerializeField] GameObject country4;
     [SerializeField] GameObject country5;
 
+
+    //戻るボタン表示用
+    [SerializeField] GameObject ret;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,6 +83,7 @@ public class Button_Area_Tanaka : MonoBehaviour
         area1.SetActive(true);
         area2.SetActive(true);
         area3.SetActive(true);
+        ret.SetActive(true);
         //--------------------------
         //非表示にする---------------
         country1.SetActive(false);

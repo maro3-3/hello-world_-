@@ -12,7 +12,7 @@ public class Button_Genti_Tanaka : MonoBehaviour
     [SerializeField] GameObject drone2;
     [SerializeField] GameObject drone3;
 
-    DataBase database = null;
+    [SerializeField] DataBase database = null;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +30,11 @@ public class Button_Genti_Tanaka : MonoBehaviour
     {
         //ƒ{ƒ^ƒ“‚ð•\Ž¦‚³‚¹‚é----------
         genti.SetActive(true);
-        drone1.SetActive(true);
 
+        if (database.PossessionDroneNum >= 1)
+        {
+            drone1.SetActive(true);
+        }
 
         if (database.RewartState[1] == 2)
         {
