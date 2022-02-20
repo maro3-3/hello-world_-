@@ -190,7 +190,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
 
         if (stepback) // 戻るを押した場合
         {
-            SceneManager.LoadScene("Ame_Newyork");
+            SceneManager.LoadScene(database.SceneName);
             BGMManager.Instance.Stop();
         }
     }
@@ -321,7 +321,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
             Debug.Log(ClientNum);
 
             SEManager.Instance.Play("MiniGenchi");
-            SceneManager.LoadScene("Ame_Newyork");
+            SceneManager.LoadScene(database.SceneName);
             BGMManager.Instance.Stop();
         }
     }
@@ -334,7 +334,7 @@ public class MinigameManager : MonoBehaviour　// 破壊命令、生成命令作る
         }
         if (Input.GetKeyDown("space")) // スペース押したら現地画面へ遷移
         {
-            SceneManager.LoadScene("Ame_Newyork");
+            SceneManager.LoadScene(database.SceneName);
             BGMManager.Instance.Stop();
         }
     }
