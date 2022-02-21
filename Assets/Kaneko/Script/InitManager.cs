@@ -35,6 +35,11 @@ public class InitManager : MonoBehaviour
 
         // ¸‹ÆÒ‰Šú‰»
         database.UnemployedNum = 0;
+        for (int i = 0; i < CountryList.sheets[0].list.Count; i++)
+        {
+            database.UnemployedNum += CountryList.sheets[0].list[i].int_UnemployedNum;
+
+        }
         database.EmploymentNum = 0;
 
         // ƒhƒ[ƒ“‰Šú‰»
