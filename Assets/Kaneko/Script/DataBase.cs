@@ -30,6 +30,7 @@ public class DataBase : ScriptableObject
     }
 
     // ミニゲーム //
+    public string SceneName;
     public bool Win;
     public bool Lose;
     public int MiniClieNo; // ミニゲーム対象のクライアントナンバー
